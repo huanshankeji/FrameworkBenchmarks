@@ -67,11 +67,11 @@ class App : CoroutineVerticle() {
             val options = with(config) {
                 pgConnectOptionsOf(
                     cachePreparedStatements = true,
-                    host = getString("host"),
-                    port = getInteger("port", 5432),
-                    user = getString("username"),
-                    password = getString("password"),
-                    database = config.getString("database"),
+                    host = "tfb-database",
+                    port = 5432,
+                    user = "benchmarkdbuser",
+                    password = "benchmarkdbpass",
+                    database = "hello_world",
                     pipeliningLimit = 100000 // Large pipelining means less flushing and we use a single connection anyway;
                 )
             }

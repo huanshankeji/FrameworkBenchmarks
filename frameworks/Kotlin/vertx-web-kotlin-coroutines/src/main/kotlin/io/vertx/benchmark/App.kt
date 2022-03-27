@@ -7,7 +7,6 @@ import io.vertx.benchmark.model.World
 import io.vertx.core.Vertx
 import io.vertx.core.http.HttpHeaders
 import io.vertx.core.json.Json
-import io.vertx.core.json.JsonObject
 import io.vertx.core.json.jackson.DatabindCodec
 import io.vertx.ext.web.Route
 import io.vertx.ext.web.Router
@@ -57,24 +56,22 @@ class App : CoroutineVerticle() {
     /**
      * PgClient implementation
      */
-    private inner class PgClientBenchmark(vertx: Vertx, config: JsonObject) {
+    private inner class PgClientBenchmark(vertx: Vertx) {
         private val client: PgPool
 
         // In order to use a template we first need to create an engine
         private val engine: RockerTemplateEngine
 
         init {
-            val options = with(config) {
-                pgConnectOptionsOf(
-                    cachePreparedStatements = true,
-                    host = "tfb-database",
-                    port = 5432,
-                    user = "benchmarkdbuser",
-                    password = "benchmarkdbpass",
-                    database = "hello_world",
-                    pipeliningLimit = 100000 // Large pipelining means less flushing and we use a single connection anyway;
-                )
-            }
+            val options = pgConnectOptionsOf(
+                cachePreparedStatements = true,
+                host = "tfb-database",
+                port = 5432,
+                user = "benchmarkdbuser",
+                password = "benchmarkdbpass",
+                database = "hello_world",
+                pipeliningLimit = 100000 // Large pipelining means less flushing and we use a single connection anyway;
+            )
 
             client = PgPool.pool(vertx, options, poolOptionsOf(maxSize = 4))
             engine = RockerTemplateEngine.create()
@@ -222,7 +219,7 @@ class App : CoroutineVerticle() {
         date = DateTimeFormatter.RFC_1123_DATE_TIME.format(ZonedDateTime.now())
         // refresh the value as a periodic task
         vertx.setPeriodic(1000) { date = DateTimeFormatter.RFC_1123_DATE_TIME.format(ZonedDateTime.now()) }
-        val pgClientBenchmark = PgClientBenchmark(vertx, config)
+        val pgClientBenchmark = PgClientBenchmark(vertx)
 
         /*
          * This test exercises the framework fundamentals including keep-alive support, request routing, request header

@@ -25,10 +25,4 @@ CMD java \
     -Dio.netty.buffer.checkBounds=false               \
     -Dio.netty.buffer.checkAccessible=false           \
     -jar                                              \
-    build/libs/vertx-web-kotlin-coroutines-benchmark-4.1.5-fat.jar \
-    --instances                                       \
-    `grep --count ^processor /proc/cpuinfo`           \
-    --conf                                            \
-    src/main/conf/config.json                         \
-    --options                                         \
-    src/main/conf/vertx.json
+    build/libs/vertx-web-kotlin-coroutines-benchmark-4.1.5-fat.jar

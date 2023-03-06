@@ -8,8 +8,7 @@ import io.ktor.server.netty.*
 import io.ktor.server.plugins.defaultheaders.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
+import kotlinx.coroutines.*
 import kotlinx.html.*
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.encodeToString
@@ -49,9 +48,16 @@ fun main() {
 
 fun Application.module() {
     val dbRows = 10000
-    val poolSize = 48
-    val pool = HikariDataSource(HikariConfig().apply { configurePostgres(poolSize) })
-    Database.connect(pool)
+    val poolSizePerThread = 4
+    val databaseThreadLocal = ThreadLocal.withInitial {
+        val pool = HikariDataSource(HikariConfig().apply { configurePostgres(poolSizePerThread) })
+        Database.connect(pool)
+    }
+    runBlocking {
+        withContext(Dispatchers.IO) {
+            List(Runtime.getRuntime().availableProcessors()) { async { databaseThreadLocal.get() } }.awaitAll()
+        }
+    }
     suspend fun <T> withDatabaseContextAndTransaction(statement: Transaction.() -> T) =
         withContext(Dispatchers.IO) { transaction(statement = statement) }
 

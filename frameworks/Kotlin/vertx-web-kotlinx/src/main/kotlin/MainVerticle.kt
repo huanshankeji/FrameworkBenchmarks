@@ -191,11 +191,11 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle() {
                 List(size()) { getValue(it) }
 
             val r2 = r1.map { it.toList() }
-            println("batch: queries = " + queries + ", result = " + r2 + ", size = " + r2.size)
+            println("batch: queries = " + queries + ", result = " + r2 + ", size = " + r1.size() + ", row count = " + r1.rowCount())
             val r3 = updateWordQuery
                 .execute(updatedWorlds.sortedBy { it.id }.first().let { Tuple.of(it.randomNumber, it.id) }).await()
             val r4 = r3.map { it.toList() }
-            println("signle: " + r4 + ", size = " + r4.size)
+            println("signle: " + r4 + ", size = " + r3.size() + ", row count = " + r3.rowCount())
 
             /*
             // Approach 2, worse performance

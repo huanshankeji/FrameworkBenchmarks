@@ -16,6 +16,10 @@ import io.vertx.sqlclient.Row
 import io.vertx.sqlclient.RowSet
 import io.vertx.sqlclient.Tuple
 import kotlinx.coroutines.*
+import kotlinx.coroutines.channels.Channel
+import kotlinx.coroutines.flow.receiveAsFlow
+import kotlinx.coroutines.flow.take
+import kotlinx.coroutines.flow.toList
 import kotlinx.html.*
 import kotlinx.html.stream.appendHTML
 import kotlinx.serialization.Serializable
@@ -177,8 +181,8 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle() {
             }
         }
 
-        get("/updates").jsonResponseHandler {
-            val queries = it.request().getQueries()
+        get("/updates").jsonResponseHandler { ctx ->
+            val queries = ctx.request().getQueries()
             val worlds = selectRandomWorlds(queries)
             val updatedWorlds = worlds.map { it.copy(randomNumber = randomIntBetween1And10000()) }
 
@@ -190,12 +194,23 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle() {
             fun Tuple.toList() =
                 List(size()) { getValue(it) }
 
-            val r2 = r1.map { it.toList() }
-            println("batch: queries = " + queries + ", result = " + r2 + ", size = " + r1.size() + ", row count = " + r1.rowCount())
-            val r3 = updateWordQuery
+            val l1 = r1.map { it.toList() }
+            println("batch: queries = " + queries + ", result = " + l1 + ", size = " + r1.size() + ", row count = " + r1.rowCount())
+
+            val r2 = updateWordQuery
                 .execute(updatedWorlds.sortedBy { it.id }.first().let { Tuple.of(it.randomNumber, it.id) }).await()
-            val r4 = r3.map { it.toList() }
-            println("signle: " + r4 + ", size = " + r3.size() + ", row count = " + r3.rowCount())
+            val l2 = r2.map { it.toList() }
+            println("single: " + l2 + ", size = " + r2.size() + ", row count = " + r2.rowCount())
+
+            val channel = Channel<RowSet<Row>>()
+            updateWordQuery.executeBatch(updatedWorlds.sortedBy { it.id }.map { Tuple.of(it.randomNumber, it.id) }) {
+                launch {
+                    if (it.succeeded()) channel.send(it.result()!!) else ctx.fail(it.cause()!!)
+                }
+            }
+            val r3 = channel.receiveAsFlow().take(queries).toList()
+            val l3 = r3.map { it.map { it.toList() } }
+            println("batch with handler: queries = " + queries + ", results = " + l3 + ", sizes = " + r3.map { it.size() } + ", row counts = " + r3.map { it.rowCount() })
 
             /*
             // Approach 2, worse performance

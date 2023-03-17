@@ -118,6 +118,13 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle() {
             }
         }
 
+    // batch execution which seems not permitted
+    // TODO: how much faster?
+    suspend fun batchSelectRandomWorlds(queries: Int): List<World> =
+        pgPool.preparedQuery(SELECT_WORLD_SQL)
+            .executeBatch(List(queries) { Tuple.of(randomIntBetween1And10000()) }).await()
+            .map { it.toWorld() }
+
     suspend fun selectRandomWorlds(queries: Int): List<World> {
         val rowSets = List(queries) {
             selectWorldQuery.execute(Tuple.of(randomIntBetween1And10000()))

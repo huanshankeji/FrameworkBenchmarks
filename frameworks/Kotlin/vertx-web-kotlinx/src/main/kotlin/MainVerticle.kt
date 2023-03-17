@@ -184,8 +184,18 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle() {
 
             // Approach 1
             // The updated worlds need to be sorted first to avoid deadlocks.
-            updateWordQuery
+            val r1 = updateWordQuery
                 .executeBatch(updatedWorlds.sortedBy { it.id }.map { Tuple.of(it.randomNumber, it.id) }).await()
+
+            fun Tuple.toList() =
+                List(size()) { getValue(it) }
+
+            val r2 = r1.map { it.toList() }
+            println("batch: queries = " + queries + ", result = " + r2 + ", size = " + r2.size)
+            val r3 = updateWordQuery
+                .execute(updatedWorlds.sortedBy { it.id }.first().let { Tuple.of(it.randomNumber, it.id) }).await()
+            val r4 = r3.map { it.toList() }
+            println("signle: " + r4 + ", size = " + r4.size)
 
             /*
             // Approach 2, worse performance

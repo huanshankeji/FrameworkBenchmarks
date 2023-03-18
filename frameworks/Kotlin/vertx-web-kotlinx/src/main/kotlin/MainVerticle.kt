@@ -11,10 +11,7 @@ import io.vertx.kotlin.coroutines.CoroutineVerticle
 import io.vertx.kotlin.coroutines.await
 import io.vertx.kotlin.pgclient.pgConnectOptionsOf
 import io.vertx.pgclient.PgConnection
-import io.vertx.sqlclient.PreparedQuery
-import io.vertx.sqlclient.Row
-import io.vertx.sqlclient.RowSet
-import io.vertx.sqlclient.Tuple
+import io.vertx.sqlclient.*
 import kotlinx.coroutines.*
 import kotlinx.html.*
 import kotlinx.html.stream.appendHTML
@@ -46,6 +43,7 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle() {
     lateinit var httpServer: HttpServer
 
     lateinit var selectWorldQuery: PreparedQuery<RowSet<Row>>
+    lateinit var selectWorldWhereEqAnyQuery: PreparedQuery<RowSet<Row>>
     lateinit var selectFortuneQuery: PreparedQuery<RowSet<Row>>
     lateinit var updateWordQuery: PreparedQuery<RowSet<Row>>
 
@@ -71,6 +69,7 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle() {
             ).await()
 
             selectWorldQuery = pgConnection.preparedQuery(SELECT_WORLD_SQL)
+            selectWorldWhereEqAnyQuery = pgConnection.preparedQuery(SELECT_WORLD_WHERE_EQ_ANY_SQL)
             selectFortuneQuery = pgConnection.preparedQuery(SELECT_FORTUNE_SQL)
             updateWordQuery = pgConnection.preparedQuery(UPDATE_WORLD_SQL)
         }
@@ -118,12 +117,38 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle() {
             }
         }
 
-    // batch execution which seems not permitted
-    // TODO: how much faster?
+    fun <SqlResultT : SqlResult<*>> SqlResultT.batchSqlResultSequence(): Sequence<SqlResultT> =
+        generateSequence(this) {
+            @Suppress("UNCHECKED_CAST")
+            it.next() as SqlResultT?
+        }
+
+    fun SqlResult<*>.batchSqlResultRowCountSequence() =
+        batchSqlResultSequence().map { it.rowCount() }
+
+    fun <R> RowSet<R>.batchSqlResultRowSequence() =
+        batchSqlResultSequence().map { asSequence() }
+
+    // batch execution which is not permitted
     suspend fun batchSelectRandomWorlds(queries: Int): List<World> =
-        pgPool.preparedQuery(SELECT_WORLD_SQL)
+        selectWorldQuery
             .executeBatch(List(queries) { Tuple.of(randomIntBetween1And10000()) }).await()
-            .map { it.toWorld() }
+            .batchSqlResultRowSequence().flatten().map { it.toWorld() }.toList()
+
+    // select with `IN`/ `= ANY` in `WHERE` which is not permitted
+    suspend fun selectRandomWorldsWithWhereEqAny(queries: Int): List<World> {
+        val ids = Array(queries) { randomIntBetween1And10000() }
+        val rowSet = selectWorldWhereEqAnyQuery.execute(
+            Tuple.of(ids)
+        ).await()
+        val worldBucket = arrayOfNulls<World>(10001)
+        for (row in rowSet) {
+            val world = row.toWorld()
+            worldBucket[world.id] = world
+        }
+        val worlds = ids.map { worldBucket[it]!! }
+        return worlds
+    }
 
     suspend fun selectRandomWorlds(queries: Int): List<World> {
         val rowSets = List(queries) {

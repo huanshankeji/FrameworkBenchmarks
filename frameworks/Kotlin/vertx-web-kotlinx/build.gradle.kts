@@ -29,6 +29,8 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1")
     implementation("org.jetbrains.kotlinx:kotlinx-html:0.8.0")
     //implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.4.0")
+
+    runtimeOnly("com.ongres.scram:client:2.1")
 }
 
 tasks.withType<KotlinCompile> {

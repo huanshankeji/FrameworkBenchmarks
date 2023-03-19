@@ -141,12 +141,21 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle() {
         val rowSet = selectWorldWhereEqAnyQuery.execute(
             Tuple.of(ids)
         ).await()
-        val worldBucket = arrayOfNulls<World>(10001)
+
+        val worldMap = HashMap<Int, World>(queries * 2)
         for (row in rowSet) {
             val world = row.toWorld()
-            worldBucket[world.id] = world
+            worldMap[world.id] = world
         }
-        val worlds = ids.map { worldBucket[it]!! }
+        /*
+        // This implementation is more functional and concise, but yields slight worse performance.
+        val worldMap = rowSet.associate {
+            val world = it.toWorld()
+            world.id to world
+        }
+        */
+
+        val worlds = ids.map { worldMap[it]!! }
         return worlds
     }
 
@@ -169,7 +178,7 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle() {
 
         get("/queries").jsonResponseHandler {
             val queries = it.request().getQueries()
-            selectRandomWorlds(queries)
+            selectRandomWorldsWithWhereEqAny(queries)
         }
 
         get("/fortunes").checkedCoroutineHandlerUnconfined {

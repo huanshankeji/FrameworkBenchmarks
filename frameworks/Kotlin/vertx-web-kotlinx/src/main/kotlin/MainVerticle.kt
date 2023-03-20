@@ -142,11 +142,13 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle() {
             Tuple.of(ids)
         ).await()
 
+        /*
         val worldMap = HashMap<Int, World>(queries * 2)
         for (row in rowSet) {
             val world = row.toWorld()
             worldMap[world.id] = world
         }
+        */
         /*
         // This implementation is more functional and concise, but yields slight worse performance.
         val worldMap = rowSet.associate {
@@ -155,7 +157,8 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle() {
         }
         */
 
-        val worlds = ids.map { worldMap[it]!! }
+        //val worlds = ids.map { worldMap[it]!! }
+        val worlds = rowSet.map { it.toWorld() }
         return worlds
     }
 

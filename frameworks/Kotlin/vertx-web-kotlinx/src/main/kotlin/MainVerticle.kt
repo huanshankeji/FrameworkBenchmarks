@@ -24,6 +24,7 @@ import kotlinx.serialization.json.Json
 import java.net.SocketException
 import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
+import kotlin.random.Random
 
 class MainVerticle(val hasDb: Boolean) : CoroutineVerticle() {
     inline fun Route.checkedCoroutineHandlerUnconfined(crossinline requestHandler: suspend (RoutingContext) -> Unit): Route =
@@ -48,6 +49,10 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle() {
     lateinit var selectWorldQuery: PreparedQuery<RowSet<Row>>
     lateinit var selectFortuneQuery: PreparedQuery<RowSet<Row>>
     lateinit var updateWordQuery: PreparedQuery<RowSet<Row>>
+
+    val random = Random(currentTimeMillis())
+    fun randomIntBetween1And10000() =
+        random.nextInt(1, 10001)
 
     fun setCurrentDate() {
         // kotlinx-datetime doesn't support the format yet.

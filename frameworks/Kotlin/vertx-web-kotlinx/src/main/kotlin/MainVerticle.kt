@@ -15,10 +15,12 @@ import io.vertx.sqlclient.PreparedQuery
 import io.vertx.sqlclient.Row
 import io.vertx.sqlclient.RowSet
 import io.vertx.sqlclient.Tuple
-import kotlinx.coroutines.*
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import kotlinx.html.*
 import kotlinx.html.stream.appendHTML
 import kotlinx.serialization.Serializable
+import kotlinx.serialization.SerializationStrategy
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
 import java.net.SocketException
@@ -118,6 +120,17 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle() {
             }
         }
 
+    // copied and adapted from above
+    inline fun <T : Any> Route.jsonResponseHandlerWithSerializer(
+        serializer: SerializationStrategy<T>, crossinline requestHandler: suspend (RoutingContext) -> @Serializable T
+    ) =
+        checkedCoroutineHandlerUnconfined {
+            it.response().run {
+                putJsonResponseHeader()
+                end(Json.encodeToString(serializer, requestHandler(it)))/*.await()*/
+            }
+        }
+
     suspend fun selectRandomWorlds(queries: Int): List<World> {
         val rowSets = List(queries) {
             selectWorldQuery.execute(Tuple.of(randomIntBetween1And10000()))
@@ -126,7 +139,7 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle() {
     }
 
     fun Router.routes() {
-        get("/json").jsonResponseHandler {
+        get("/json").jsonResponseHandlerWithSerializer(messageSerializer) {
             jsonSerializationMessage
         }
 

@@ -126,17 +126,15 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle() {
         return rowSets.map { it.single().toWorld() }
     }
 
-    suspend inline fun selectRandomWorld() =
-        selectWorldQuery.execute(Tuple.of(randomIntBetween1And10000())).await()
-
     fun Router.routes() {
         get("/json").jsonResponseHandler {
             jsonSerializationMessage
         }
 
         get("/db").jsonResponseHandler {
-            repeat(9999) { selectRandomWorld() }
-            val rowSet = selectRandomWorld()
+            val rowSet = List(10000) {
+                selectWorldQuery.execute(Tuple.of(randomIntBetween1And10000()))
+            }.awaitAll().last()
             rowSet.single().toWorld()
         }
 

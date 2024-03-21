@@ -15,7 +15,8 @@ import io.vertx.sqlclient.PreparedQuery
 import io.vertx.sqlclient.Row
 import io.vertx.sqlclient.RowSet
 import io.vertx.sqlclient.Tuple
-import kotlinx.coroutines.*
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import kotlinx.html.*
 import kotlinx.html.stream.appendHTML
 import kotlinx.serialization.Serializable
@@ -125,13 +126,17 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle() {
         return rowSets.map { it.single().toWorld() }
     }
 
+    suspend inline fun selectRandomWorld() =
+        selectWorldQuery.execute(Tuple.of(randomIntBetween1And10000())).await()
+
     fun Router.routes() {
         get("/json").jsonResponseHandler {
             jsonSerializationMessage
         }
 
         get("/db").jsonResponseHandler {
-            val rowSet = selectWorldQuery.execute(Tuple.of(randomIntBetween1And10000())).await()
+            repeat(9999) { selectRandomWorld() }
+            val rowSet = selectRandomWorld()
             rowSet.single().toWorld()
         }
 

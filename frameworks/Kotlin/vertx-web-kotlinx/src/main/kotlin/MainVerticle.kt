@@ -19,9 +19,11 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.html.*
 import kotlinx.html.stream.appendHTML
+import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.SerializationStrategy
 import kotlinx.serialization.json.Json
+import kotlinx.serialization.json.encodeToStream
 import java.net.SocketException
 import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
@@ -117,7 +119,8 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle() {
         checkedCoroutineHandlerUnconfined {
             it.response().run {
                 putJsonResponseHeader()
-                end(Json.encodeToString(serializer, requestHandler(it)))/*.coAwait()*/
+                @OptIn(ExperimentalSerializationApi::class)
+                Json.encodeToStream(serializer, requestHandler(it), toOutputStream())
             }
         }
 

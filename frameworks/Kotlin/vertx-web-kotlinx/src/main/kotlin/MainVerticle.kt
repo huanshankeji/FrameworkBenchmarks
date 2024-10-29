@@ -1,4 +1,5 @@
 import io.netty.channel.unix.Errors.NativeIoException
+import io.vertx.core.buffer.Buffer
 import io.vertx.core.http.HttpHeaders
 import io.vertx.core.http.HttpServer
 import io.vertx.core.http.HttpServerRequest
@@ -19,9 +20,11 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.html.*
 import kotlinx.html.stream.appendHTML
+import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.SerializationStrategy
 import kotlinx.serialization.json.Json
+import kotlinx.serialization.json.encodeToStream
 import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
 
@@ -120,7 +123,11 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle() {
         checkedCoroutineHandlerUnconfined {
             it.response().run {
                 putJsonResponseHeader()
-                end(Json.encodeToString(serializer, requestHandler(it)))/*.coAwait()*/
+
+                val buffer = Buffer.buffer()
+                @OptIn(ExperimentalSerializationApi::class)
+                Json.encodeToStream(serializer, requestHandler(it), buffer.toOutputStream())
+                end(buffer)/*.coAwait()*/
             }
         }
 

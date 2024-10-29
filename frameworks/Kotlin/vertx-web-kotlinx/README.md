@@ -27,6 +27,7 @@ The tests were run with:
 * [Vert.x Reactive PostgreSQL Client](https://vertx.io/docs/vertx-pg-client/java/)
 * [kotlinx.coroutines](https://github.com/Kotlin/kotlinx.coroutines)
 * [kotlinx.serialization](https://github.com/Kotlin/kotlinx.serialization)
+* [Okio](https://square.github.io/okio/)
 * [kotlinx.html](https://github.com/Kotlin/kotlinx.html)
 
 ## Test URLs

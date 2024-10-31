@@ -20,12 +20,11 @@ import io.vertx.sqlclient.Tuple
 import kotlinx.coroutines.Dispatchers
 import kotlinx.html.*
 import kotlinx.html.stream.appendHTML
-import kotlinx.io.buffered
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.SerializationStrategy
 import kotlinx.serialization.json.Json
-import kotlinx.serialization.json.io.encodeToSink
+import kotlinx.serialization.json.vertx.encodeToBuffer
 import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
 
@@ -134,11 +133,9 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle(), CoroutineRouterSup
                 */
 
                 // approach 3
-                end(Buffer.buffer().apply {
-                    toRawSink().buffered().use { bufferedSink ->
-                        @OptIn(ExperimentalSerializationApi::class)
-                        Json.encodeToSink(serializer, requestHandler(it), bufferedSink)
-                    }
+                end(Buffer.buffer().also { buffer ->
+                    @OptIn(ExperimentalSerializationApi::class)
+                    Json.encodeToBuffer(serializer, requestHandler(it), buffer)
                 })
             }
         }

@@ -10,11 +10,12 @@ plugins {
 }
 
 repositories {
+    mavenLocal() // TODO
     mavenCentral()
 }
 
 val vertxVersion = "4.5.10"
-val kotlinxSerializationVersion = "1.7.3"
+val kotlinxSerializationVersion = "1.7.4-vertx-buffer-SNAPSHOT" // TODO
 dependencies {
     implementation(platform("io.vertx:vertx-stack-depchain:$vertxVersion"))
     implementation("io.vertx:vertx-web")
@@ -30,6 +31,7 @@ dependencies {
 
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:$kotlinxSerializationVersion")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json-io:$kotlinxSerializationVersion")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json-vertx:$kotlinxSerializationVersion")
     implementation("org.jetbrains.kotlinx:kotlinx-io-core:0.5.4")
 
     implementation("org.jetbrains.kotlinx:kotlinx-html:0.11.0")

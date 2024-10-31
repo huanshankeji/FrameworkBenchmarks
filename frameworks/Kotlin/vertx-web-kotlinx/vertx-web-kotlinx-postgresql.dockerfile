@@ -1,5 +1,7 @@
 FROM gradle:8.10.2-jdk21
 
+# Publish the dependencies to Maven local and run "copy_maven_local.sh" first.
+COPY .m2/repository/org/jetbrains/kotlinx /root/.m2/repository/org/jetbrains/kotlinx
 WORKDIR /vertx-web-kotlinx
 COPY build.gradle.kts build.gradle.kts
 COPY settings.gradle.kts settings.gradle.kts

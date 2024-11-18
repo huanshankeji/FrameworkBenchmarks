@@ -56,7 +56,7 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle(), CoroutineRouterSup
                     user = "benchmarkdbuser",
                     password = "benchmarkdbpass",
                     cachePreparedStatements = true,
-                    pipeliningLimit = 100000
+                    //pipeliningLimit = 100000
                 )
             ).coAwait()
 

@@ -55,7 +55,7 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle(), CoroutineRouterSup
                     host = "tfb-database",
                     user = "benchmarkdbuser",
                     password = "benchmarkdbpass",
-                    cachePreparedStatements = true,
+                    //cachePreparedStatements = true,
                     pipeliningLimit = 100000
                 )
             ).coAwait()

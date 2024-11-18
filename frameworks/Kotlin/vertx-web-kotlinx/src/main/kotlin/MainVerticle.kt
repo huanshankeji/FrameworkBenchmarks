@@ -20,7 +20,6 @@ import io.vertx.sqlclient.Tuple
 import kotlinx.coroutines.Dispatchers
 import kotlinx.html.*
 import kotlinx.html.stream.appendHTML
-import kotlinx.io.buffered
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.SerializationStrategy
@@ -134,11 +133,24 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle(), CoroutineRouterSup
                 */
 
                 // approach 3
-                end(Buffer.buffer().apply {
-                    toRawSink().buffered().use { bufferedSink ->
-                        @OptIn(ExperimentalSerializationApi::class)
-                        Json.encodeToSink(serializer, requestHandler(it), bufferedSink)
+
+                val kotlinxIoBuffer = kotlinx.io.Buffer()
+                @OptIn(ExperimentalSerializationApi::class)
+                Json.encodeToSink(serializer, requestHandler(it), kotlinxIoBuffer)
+
+                /*
+                val byteBuf = VertxByteBufAllocator.DEFAULT.heapBuffer(0, Int.MAX_VALUE)
+                val vertBuffer = BufferImpl.buffer(byteBuf)
+                val vertxBufferRawSink = vertBuffer.toRawSink()
+                */
+                repeat(100) {
+                    Buffer.buffer().apply {
+                        toRawSink().write(kotlinxIoBuffer.copy(), kotlinxIoBuffer.size)
                     }
+                }
+
+                end(Buffer.buffer().apply {
+                    toRawSink().write(kotlinxIoBuffer, kotlinxIoBuffer.size)
                 })
             }
         }

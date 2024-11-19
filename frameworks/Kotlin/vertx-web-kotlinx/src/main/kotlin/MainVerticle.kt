@@ -13,6 +13,7 @@ import io.vertx.kotlin.coroutines.CoroutineVerticle
 import io.vertx.kotlin.coroutines.coAwait
 import io.vertx.kotlin.pgclient.pgConnectOptionsOf
 import io.vertx.pgclient.PgBuilder
+import io.vertx.pgclient.impl.PgPoolOptions
 import io.vertx.sqlclient.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.html.*
@@ -57,6 +58,9 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle(), CoroutineRouterSup
                         pipeliningLimit = 100000
                     )
                 )
+                .with(PgPoolOptions().apply {
+                    isPipelined = true
+                })
                 .build()
 
             selectWorldQuery = pool.preparedQuery(SELECT_WORLD_SQL)

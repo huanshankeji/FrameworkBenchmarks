@@ -12,11 +12,8 @@ import io.vertx.kotlin.coroutines.CoroutineRouterSupport
 import io.vertx.kotlin.coroutines.CoroutineVerticle
 import io.vertx.kotlin.coroutines.coAwait
 import io.vertx.kotlin.pgclient.pgConnectOptionsOf
-import io.vertx.pgclient.PgConnection
-import io.vertx.sqlclient.PreparedQuery
-import io.vertx.sqlclient.Row
-import io.vertx.sqlclient.RowSet
-import io.vertx.sqlclient.Tuple
+import io.vertx.pgclient.PgBuilder
+import io.vertx.sqlclient.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.html.*
 import kotlinx.html.stream.appendHTML
@@ -31,7 +28,7 @@ import java.time.format.DateTimeFormatter
 
 class MainVerticle(val hasDb: Boolean) : CoroutineVerticle(), CoroutineRouterSupport {
     // `PgConnection`s as used in the "vertx" portion offers better performance than `PgPool`s.
-    lateinit var pgConnection: PgConnection
+    lateinit var pool: Pool
     lateinit var date: String
     lateinit var httpServer: HttpServer
 
@@ -48,21 +45,23 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle(), CoroutineRouterSup
     override suspend fun start() {
         if (hasDb) {
             // Parameters are copied from the "vertx-web" and "vertx" portions.
-            pgConnection = PgConnection.connect(
-                vertx,
-                pgConnectOptionsOf(
-                    database = "hello_world",
-                    host = "tfb-database",
-                    user = "benchmarkdbuser",
-                    password = "benchmarkdbpass",
-                    cachePreparedStatements = true,
-                    pipeliningLimit = 100000
+            pool = PgBuilder.pool()
+                .using(vertx)
+                .connectingTo(
+                    pgConnectOptionsOf(
+                        database = "hello_world",
+                        host = "tfb-database",
+                        user = "benchmarkdbuser",
+                        password = "benchmarkdbpass",
+                        cachePreparedStatements = true,
+                        pipeliningLimit = 100000
+                    )
                 )
-            ).coAwait()
+                .build()
 
-            selectWorldQuery = pgConnection.preparedQuery(SELECT_WORLD_SQL)
-            selectFortuneQuery = pgConnection.preparedQuery(SELECT_FORTUNE_SQL)
-            updateWordQuery = pgConnection.preparedQuery(UPDATE_WORLD_SQL)
+            selectWorldQuery = pool.preparedQuery(SELECT_WORLD_SQL)
+            selectFortuneQuery = pool.preparedQuery(SELECT_FORTUNE_SQL)
+            updateWordQuery = pool.preparedQuery(UPDATE_WORLD_SQL)
         }
 
         setCurrentDate()

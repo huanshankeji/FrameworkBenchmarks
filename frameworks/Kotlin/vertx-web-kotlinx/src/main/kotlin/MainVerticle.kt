@@ -19,6 +19,7 @@ import io.vertx.sqlclient.RowSet
 import io.vertx.sqlclient.Tuple
 import kotlinx.coroutines.Dispatchers
 import kotlinx.datetime.TimeZone
+import kotlinx.datetime.UtcOffset
 import kotlinx.datetime.format.DateTimeComponents
 import kotlinx.datetime.format.format
 import kotlinx.datetime.toLocalDateTime
@@ -47,8 +48,9 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle(), CoroutineRouterSup
     lateinit var updateWordQuery: PreparedQuery<RowSet<Row>>
 
     fun setCurrentDate() {
+        val now = Clock.System.now()
         date = DateTimeComponents.Formats.RFC_1123.format {
-            setDateTime(Clock.System.now().toLocalDateTime(timeZone))
+            setDateTimeOffset(now.toLocalDateTime(TimeZone.UTC), UtcOffset.ZERO)
         }
     }
 

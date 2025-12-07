@@ -34,10 +34,6 @@ import kotlinx.serialization.json.io.encodeToSink
 import kotlin.time.Clock
 
 class MainVerticle(val hasDb: Boolean) : CoroutineVerticle(), CoroutineRouterSupport {
-    companion object {
-        val timeZone = TimeZone.currentSystemDefault()
-    }
-
     // `PgConnection`s as used in the "vertx" portion offers better performance than `PgPool`s.
     lateinit var pgConnection: PgConnection
     lateinit var date: String

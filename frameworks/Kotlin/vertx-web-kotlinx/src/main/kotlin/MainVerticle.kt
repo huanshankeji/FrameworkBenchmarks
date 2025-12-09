@@ -40,7 +40,7 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle(), CoroutineRouterSup
     lateinit var updateWordQuery: PreparedQuery<RowSet<Row>>
 
     fun setCurrentDate() {
-        // Don't know how to get kotlinx-datetime to work here properly. See commit 9cf28f15b6f1806b3ed75260adee8acd822cac91 for a failed attempt.
+        // kotlinx-datetime doesn't support the format yet.
         //date = Clock.System.now().toString()
         date = DateTimeFormatter.RFC_1123_DATE_TIME.format(ZonedDateTime.now())
     }
@@ -76,7 +76,7 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle(), CoroutineRouterSup
                 /*(it is NativeIoException && it.message == "recvAddress(..) failed: Connection reset by peer")
                 || (it is SocketException && it.message == "Connection reset")*/
                 // for io_uring
-                    it is NativeIoException && it.expectedErr() == -104
+                    it is NativeIoException && it.message == "io_uring read(..) failed: Connection reset by peer"
                 )
                     return@exceptionHandler
 

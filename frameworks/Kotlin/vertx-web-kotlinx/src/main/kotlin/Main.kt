@@ -3,7 +3,6 @@ import io.vertx.core.impl.cpu.CpuCoreSensor
 import io.vertx.kotlin.core.deploymentOptionsOf
 import io.vertx.kotlin.core.vertxOptionsOf
 import io.vertx.kotlin.coroutines.coAwait
-import java.util.function.Supplier
 import java.util.logging.Logger
 
 const val SERVER_NAME = "Vert.x-Web Kotlinx Benchmark server"
@@ -19,9 +18,7 @@ suspend fun main(args: Array<String>) {
         logger.info("Vertx exception caught: $it")
         it.printStackTrace()
     }
-    vertx.deployVerticle(
-        Supplier { MainVerticle(hasDb) },
-        deploymentOptionsOf(instances = CpuCoreSensor.availableProcessors())
-    ).coAwait()
+    vertx.deployVerticle({ MainVerticle(hasDb) }, deploymentOptionsOf(instances = CpuCoreSensor.availableProcessors()))
+        .coAwait()
     logger.info("$SERVER_NAME started.")
 }

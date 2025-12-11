@@ -47,8 +47,8 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle(), CoroutineRouterSup
     lateinit var date: String
     lateinit var httpServer: HttpServer
 
-    lateinit var selectWorldQuery: PreparedQuery<RowSet<Row>>
-    lateinit var selectFortuneQuery: PreparedQuery<RowSet<Row>>
+    lateinit var selectWorldQuery: PreparedQuery<RowSet<World>>
+    lateinit var selectFortuneQuery: PreparedQuery<RowSet<Fortune>>
     lateinit var updateWorldQuery: PreparedQuery<RowSet<Row>>
 
     fun setCurrentDate() {
@@ -73,8 +73,8 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle(), CoroutineRouterSup
                 )
             ).coAwait()
 
-            selectWorldQuery = pgConnection.preparedQuery(SELECT_WORLD_SQL)
-            selectFortuneQuery = pgConnection.preparedQuery(SELECT_FORTUNE_SQL)
+            selectWorldQuery = pgConnection.preparedQuery(SELECT_WORLD_SQL).mapping(Row::toWorld)
+            selectFortuneQuery = pgConnection.preparedQuery(SELECT_FORTUNE_SQL).mapping(Row::toFortune)
             updateWorldQuery = pgConnection.preparedQuery(UPDATE_WORLD_SQL)
         }
 
@@ -157,12 +157,10 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle(), CoroutineRouterSup
         }
 
 
-    suspend fun selectRandomWorlds(queries: Int): List<World> {
-        val rowSets = List(queries) {
-            selectWorldQuery.execute(Tuple.of(randomIntBetween1And10000()))
+    suspend fun selectRandomWorlds(queries: Int): List<World> =
+        List(queries) {
+            selectWorldQuery.execute(Tuple.of(randomIntBetween1And10000())).map { it.single() }
         }.awaitAll()
-        return rowSets.map { it.single().toWorld() }
-    }
 
     fun Router.routes() {
         get("/json").jsonResponseCoHandler(Serializers.message) {
@@ -171,7 +169,7 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle(), CoroutineRouterSup
 
         get("/db").jsonResponseCoHandler(Serializers.world) {
             val rowSet = selectWorldQuery.execute(Tuple.of(randomIntBetween1And10000())).coAwait()
-            rowSet.single().toWorld()
+            rowSet.single()
         }
 
         get("/queries").jsonResponseCoHandler(Serializers.worlds) {
@@ -181,8 +179,7 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle(), CoroutineRouterSup
 
         get("/fortunes").coHandlerUnconfined {
             val fortunes = mutableListOf<Fortune>()
-            selectFortuneQuery.execute().coAwait()
-                .mapTo(fortunes) { it.toFortune() }
+            fortunes.addAll(selectFortuneQuery.execute().coAwait())
 
             fortunes.add(Fortune(0, "Additional fortune added at request time."))
             fortunes.sortBy { it.message }

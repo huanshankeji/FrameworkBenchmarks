@@ -20,6 +20,8 @@ import io.vertx.sqlclient.Row
 import io.vertx.sqlclient.RowSet
 import io.vertx.sqlclient.Tuple
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.async
+import kotlinx.coroutines.awaitAll
 import kotlinx.datetime.UtcOffset
 import kotlinx.datetime.format.DateTimeComponents
 import kotlinx.datetime.format.format
@@ -157,10 +159,10 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle(), CoroutineRouterSup
         }
 
 
-    suspend fun selectRandomWorlds(queries: Int): List<World> =
-        List(queries) {
-            selectWorldQuery.execute(Tuple.of(randomIntBetween1And10000())).map { it.single() }
-        }.awaitAll()
+    suspend fun selectRandomWorlds(queries: Int) =
+        awaitAll(*Array(queries) {
+            async { selectWorldQuery.execute(Tuple.of(randomIntBetween1And10000())).coAwait().single() }
+        })
 
     fun Router.routes() {
         get("/json").jsonResponseCoHandler(Serializers.message) {

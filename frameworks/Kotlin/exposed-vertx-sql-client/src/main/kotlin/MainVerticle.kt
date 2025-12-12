@@ -1,7 +1,10 @@
 import com.huanshankeji.exposedvertxsqlclient.DatabaseClient
 import com.huanshankeji.exposedvertxsqlclient.postgresql.PgDatabaseClientConfig
 import com.huanshankeji.exposedvertxsqlclient.postgresql.vertx.pgclient.createPgConnection
-import database.*
+import database.FortuneTable
+import database.connectionConfig
+import database.toFortune
+import database.toWorld
 import io.netty.channel.unix.Errors
 import io.netty.channel.unix.Errors.NativeIoException
 import io.vertx.core.MultiMap
@@ -18,6 +21,7 @@ import io.vertx.kotlin.coroutines.CoroutineRouterSupport
 import io.vertx.kotlin.coroutines.CoroutineVerticle
 import io.vertx.kotlin.coroutines.coAwait
 import io.vertx.pgclient.PgConnection
+import io.vertx.sqlclient.Tuple
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
@@ -32,8 +36,6 @@ import kotlinx.serialization.Serializable
 import kotlinx.serialization.SerializationStrategy
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.io.encodeToSink
-import org.jetbrains.exposed.v1.core.eq
-import org.jetbrains.exposed.v1.core.statements.buildStatement
 import org.jetbrains.exposed.v1.jdbc.Database
 import org.jetbrains.exposed.v1.jdbc.select
 import java.net.SocketException
@@ -145,7 +147,8 @@ class MainVerticle(val exposedDatabase: Database?) : CoroutineVerticle(), Corout
 
 
     suspend fun selectRandomWorld() =
-        databaseClient.executeQuery(selectWorldWithIdQuery(randomIntBetween1And10000()))
+        databaseClient.vertxSqlClient.preparedQuery("SELECT id, randomnumber from WORLD where id = $1")
+            .execute(Tuple.of(randomIntBetween1And10000())).coAwait()
             .single().toWorld()
 
     suspend fun selectRandomWorlds(queries: Int): List<World> =
@@ -208,14 +211,17 @@ class MainVerticle(val exposedDatabase: Database?) : CoroutineVerticle(), Corout
             val worlds = selectRandomWorlds(queries)
             val updatedWorlds = worlds.map { it.copy(randomNumber = randomIntBetween1And10000()) }
 
-            // Approach 1 from the `vertx-web-kotlinx` portion
-            databaseClient.executeBatchUpdate(updatedWorlds.sortedBy { it.id }.map { world ->
-                buildStatement {
-                    WorldTable.update({ WorldTable.id eq world.id }) {
-                        it[randomNumber] = world.randomNumber
-                    }
-                }
-            })
+            // Approach 1
+            // The updated worlds need to be sorted first to avoid deadlocks.
+            databaseClient.vertxSqlClient.preparedQuery("UPDATE world SET randomnumber = $1 WHERE id = $2")
+                .executeBatch(updatedWorlds.sortedBy { it.id }.map { Tuple.of(it.randomNumber, it.id) }).coAwait()
+
+            /*
+            // Approach 2, worse performance
+            updatedWorlds.map {
+                pgPool.preparedQuery(UPDATE_WORLD_SQL).execute(Tuple.of(it.randomNumber, it.id))
+            }.awaitAll()
+            */
 
             updatedWorlds
         }

@@ -47,9 +47,9 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle(), CoroutineRouterSup
     lateinit var date: String
     lateinit var httpServer: HttpServer
 
-    lateinit var selectWorldQuery: PreparedQuery<RowSet<Row>>
-    lateinit var selectFortuneQuery: PreparedQuery<RowSet<Row>>
-    lateinit var updateWorldQuery: PreparedQuery<RowSet<Row>>
+    val selectWorldQuery: PreparedQuery<RowSet<Row>> get() = pgConnection.preparedQuery(SELECT_WORLD_SQL)
+    val selectFortuneQuery: PreparedQuery<RowSet<Row>> get() = pgConnection.preparedQuery(SELECT_FORTUNE_SQL)
+    val updateWorldQuery: PreparedQuery<RowSet<Row>> get() = pgConnection.preparedQuery(UPDATE_WORLD_SQL)
 
     fun setCurrentDate() {
         date = DateTimeComponents.Formats.RFC_1123.format {
@@ -72,10 +72,6 @@ class MainVerticle(val hasDb: Boolean) : CoroutineVerticle(), CoroutineRouterSup
                     pipeliningLimit = 256
                 )
             ).coAwait()
-
-            selectWorldQuery = pgConnection.preparedQuery(SELECT_WORLD_SQL)
-            selectFortuneQuery = pgConnection.preparedQuery(SELECT_FORTUNE_SQL)
-            updateWorldQuery = pgConnection.preparedQuery(UPDATE_WORLD_SQL)
         }
 
         setCurrentDate()

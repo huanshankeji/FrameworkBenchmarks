@@ -1,5 +1,5 @@
 plugins {
-    alias(libs.plugins.kotlin.jvm)
+    id("vertx-web-kotlinx.kotlin-library-conventions")
     alias(libs.plugins.kotlin.serialization)
 }
 

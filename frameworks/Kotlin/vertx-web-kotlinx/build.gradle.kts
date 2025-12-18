@@ -7,23 +7,13 @@ plugins {
     alias(libs.plugins.kotlin.serialization) apply false
 }
 
-allprojects {
-    repositories {
-        mavenLocal() // for snapshot dependencies
-        mavenCentral()
-    }
-}
-
 subprojects {
-    apply(plugin = "org.jetbrains.kotlin.jvm")
-    
-    configure<org.jetbrains.kotlin.gradle.dsl.KotlinJvmProjectExtension> {
-        jvmToolchain(25)
-    }
-    
-    dependencies {
-        // All modules use these common dependencies
-        val implementation by configurations
-        implementation(platform(rootProject.libs.vertx.stack.depchain))
+    // Only apply to projects that have plugins applied (not parent projects)
+    plugins.withId("org.jetbrains.kotlin.jvm") {
+        dependencies {
+            // All modules use these common dependencies
+            val implementation by configurations
+            implementation(platform(rootProject.libs.vertx.stack.depchain))
+        }
     }
 }

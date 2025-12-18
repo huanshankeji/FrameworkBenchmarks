@@ -19,6 +19,9 @@ vertx-lang-kotlin-coroutines = { module = "io.vertx:vertx-lang-kotlin-coroutines
 # Netty native transport (version comes from vertx-stack-depchain platform)
 netty-transport-native-io-uring = { module = "io.netty:netty-transport-native-io_uring" }
 
+# Kotlin
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+
 # Kotlinx
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization" }

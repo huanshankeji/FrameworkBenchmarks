@@ -1,3 +1,7 @@
+pluginManagement {
+    includeBuild("build-logic")
+}
+
 rootProject.name = "vertx-web-kotlinx"
 
 // Enable version catalog

@@ -1,7 +1,6 @@
 plugins {
-    alias(libs.plugins.kotlin.jvm)
+    id("vertx-web-kotlinx.kotlin-application-conventions")
     alias(libs.plugins.kotlin.serialization)
-    application
 }
 
 dependencies {
@@ -28,20 +27,4 @@ dependencies {
     // Exposed Vert.x SQL Client
     implementation(libs.exposed.vertx.sql.client.core)
     implementation(libs.exposed.vertx.sql.client.postgresql)
-}
-
-application {
-    mainClass.set("MainKt")
-}
-
-tasks.withType<Sync> {
-    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
-}
-
-tasks.withType<Tar> {
-    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
-}
-
-tasks.withType<Zip> {
-    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }

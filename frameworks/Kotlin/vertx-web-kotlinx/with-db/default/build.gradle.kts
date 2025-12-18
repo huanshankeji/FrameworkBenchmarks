@@ -1,7 +1,6 @@
 plugins {
-    alias(libs.plugins.kotlin.jvm)
+    id("vertx-web-kotlinx.kotlin-application-conventions")
     alias(libs.plugins.kotlin.serialization)
-    application
 }
 
 dependencies {
@@ -24,20 +23,4 @@ dependencies {
     implementation(libs.kotlinx.coroutines.core)
     implementation(libs.kotlinx.serialization.json)
     implementation(libs.kotlinx.html)
-}
-
-application {
-    mainClass.set("MainKt")
-}
-
-tasks.withType<Sync> {
-    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
-}
-
-tasks.withType<Tar> {
-    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
-}
-
-tasks.withType<Zip> {
-    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }

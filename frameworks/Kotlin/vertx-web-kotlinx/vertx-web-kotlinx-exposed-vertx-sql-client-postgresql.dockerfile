@@ -1,6 +1,6 @@
 FROM gradle:9.2.1-jdk25
 
-WORKDIR /vertx-web-kotlinx-exposed-vertx-sql-client
+WORKDIR /vertx-web-kotlinx
 
 # copy the Maven local dependencies into the container for snapshot dependencies
 # First publish with `publishToMavenLocal` and copy the Maven local dependencies into this directory with `cp -r ~/.m2 ./`.
@@ -10,8 +10,10 @@ COPY .m2/repository/com/huanshankeji/exposed-vertx-sql-client-postgresql/0.7.0-S
 COPY build.gradle.kts build.gradle.kts
 COPY settings.gradle.kts settings.gradle.kts
 COPY gradle.properties gradle.properties
-COPY src src
-RUN gradle --no-daemon installDist
+COPY gradle gradle
+COPY common common
+COPY with-db with-db
+RUN gradle --no-daemon :with-db:exposed-vertx-sql-client:installDist
 
 EXPOSE 8080
 
@@ -36,4 +38,4 @@ CMD export JAVA_OPTS=" \
     -Dio.netty.buffer.checkAccessible=false \
     -Dio.netty.iouring.ringSize=16384 \
     " && \
-    build/install/vertx-web-kotlinx-exposed-vertx-sql-client-benchmark/bin/vertx-web-kotlinx-exposed-vertx-sql-client-benchmark
+    with-db/exposed-vertx-sql-client/build/install/exposed-vertx-sql-client/bin/exposed-vertx-sql-client

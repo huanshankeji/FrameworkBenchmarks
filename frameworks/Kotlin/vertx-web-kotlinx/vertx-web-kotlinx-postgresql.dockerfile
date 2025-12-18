@@ -4,8 +4,10 @@ WORKDIR /vertx-web-kotlinx
 COPY build.gradle.kts build.gradle.kts
 COPY settings.gradle.kts settings.gradle.kts
 COPY gradle.properties gradle.properties
-COPY src src
-RUN gradle --no-daemon installDist
+COPY gradle gradle
+COPY common common
+COPY with-db with-db
+RUN gradle --no-daemon :with-db:default:installDist
 
 EXPOSE 8080
 
@@ -30,4 +32,4 @@ CMD export JAVA_OPTS=" \
     -Dio.netty.buffer.checkAccessible=false \
     -Dio.netty.iouring.ringSize=16384 \
     " && \
-    build/install/vertx-web-kotlinx-benchmark/bin/vertx-web-kotlinx-benchmark true
+    with-db/default/build/install/default/bin/default

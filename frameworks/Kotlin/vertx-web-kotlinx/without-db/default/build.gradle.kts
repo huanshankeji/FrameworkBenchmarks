@@ -28,6 +28,10 @@ application {
     mainClass.set("MainKt")
 }
 
+tasks.withType<Sync> {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
 tasks.withType<Tar> {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }

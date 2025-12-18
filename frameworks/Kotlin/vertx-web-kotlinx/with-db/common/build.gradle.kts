@@ -3,7 +3,7 @@ plugins {
 }
 
 dependencies {
-    implementation(project(":common"))
+    api(project(":common"))
     
     // Vert.x
     implementation(libs.vertx.pg.client)

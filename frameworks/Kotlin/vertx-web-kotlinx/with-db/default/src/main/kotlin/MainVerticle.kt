@@ -104,7 +104,7 @@ class MainVerticle : BaseMainVerticle() {
                     addCommonHeaders(date)
                     add(HttpHeaders.CONTENT_TYPE, HttpHeaderValues.textHtmlCharsetUtf8)
                 }
-                end(htmlString)/*.coAwait()*/
+                end(htmlString) // .coAwait() intentionally omitted for better performance
             }
         }
 

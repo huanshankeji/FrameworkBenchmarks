@@ -47,7 +47,7 @@ class MainVerticle : BaseMainVerticle() {
                     addCommonHeaders(date)
                     add(HttpHeaders.CONTENT_TYPE, HttpHeaderValues.textPlain)
                 }
-                end("Hello, World!")/*.coAwait()*/
+                end("Hello, World!") // .coAwait() intentionally omitted for better performance
             }
         }
     }

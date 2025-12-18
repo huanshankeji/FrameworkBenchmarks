@@ -1,0 +1,36 @@
+[versions]
+kotlin = "2.3.0"
+vertx = "5.0.5"
+kotlinx-coroutines = "1.10.2"
+kotlinx-serialization = "1.9.0"
+kotlinx-io = "0.8.2"
+kotlinx-html = "0.12.0"
+kotlinx-datetime = "0.7.1"
+exposed-vertx-sql-client = "0.7.0-SNAPSHOT"
+
+[libraries]
+# Vert.x
+vertx-stack-depchain = { module = "io.vertx:vertx-stack-depchain", version.ref = "vertx" }
+vertx-web = { module = "io.vertx:vertx-web" }
+vertx-pg-client = { module = "io.vertx:vertx-pg-client" }
+vertx-lang-kotlin = { module = "io.vertx:vertx-lang-kotlin" }
+vertx-lang-kotlin-coroutines = { module = "io.vertx:vertx-lang-kotlin-coroutines" }
+
+# Netty native transport (version comes from vertx-stack-depchain platform)
+netty-transport-native-io-uring = { module = "io.netty:netty-transport-native-io_uring" }
+
+# Kotlinx
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
+kotlinx-serialization-json-io = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json-io", version.ref = "kotlinx-serialization" }
+kotlinx-io-core = { module = "org.jetbrains.kotlinx:kotlinx-io-core", version.ref = "kotlinx-io" }
+kotlinx-html = { module = "org.jetbrains.kotlinx:kotlinx-html", version.ref = "kotlinx-html" }
+kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinx-datetime" }
+
+# Exposed Vert.x SQL Client
+exposed-vertx-sql-client-core = { module = "com.huanshankeji:exposed-vertx-sql-client-core", version.ref = "exposed-vertx-sql-client" }
+exposed-vertx-sql-client-postgresql = { module = "com.huanshankeji:exposed-vertx-sql-client-postgresql", version.ref = "exposed-vertx-sql-client" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }

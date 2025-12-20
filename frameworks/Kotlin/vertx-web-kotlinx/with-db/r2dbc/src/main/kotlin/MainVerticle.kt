@@ -28,6 +28,8 @@ class MainVerticle : CommonWithDbVerticle.SequentialSelectWorlds<Connection>() {
             .awaitSingle()
 
     override suspend fun updateSortedWorlds(sortedWorlds: List<World>) {
+        // can't get batch updates to work
+        /*
         val statement = dbClient.createStatement(UPDATE_WORLD_SQL)
         val lastIndex = sortedWorlds.lastIndex
         sortedWorlds.forEachIndexed { index, world ->
@@ -39,6 +41,13 @@ class MainVerticle : CommonWithDbVerticle.SequentialSelectWorlds<Connection>() {
         // There is only a single result.
         // None of `awaitSingle`, `awaitLast`, `collect`, and `.asFlow().take(sortedWorlds.size).collect {}` returns here and leads to timeout.
         statement.execute().awaitFirst()
+        */
+
+        for (world in sortedWorlds)
+            dbClient.createStatement(UPDATE_WORLD_SQL)
+                .bind(0, world.randomNumber)
+                .bind(1, world.id)
+                .execute().awaitFirst()
     }
 
     override suspend fun selectFortunesInto(fortunes: MutableList<Fortune>) {

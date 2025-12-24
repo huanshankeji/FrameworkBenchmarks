@@ -11,6 +11,9 @@ import io.ktor.server.netty.*
 import io.ktor.server.plugins.defaultheaders.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
+import kotlinx.coroutines.async
+import kotlinx.coroutines.awaitAll
+import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.single
 import kotlinx.coroutines.flow.toList
@@ -95,7 +98,13 @@ interface ExposedOps<TDatabase> {
                     .single().toWorld()
 
             override suspend fun getRandomWorlds(queries: Int, random: ThreadLocalRandom): List<World> =
-                List(queries) { getWorldWithId(random.nextIntWithinRows()) }
+                coroutineScope {
+                    awaitAll(*Array(queries) {
+                        async {
+                            getWorldWithId(random.nextIntWithinRows())
+                        }
+                    })
+                }
 
             override suspend fun getAllFortunesAndAddTo(result: MutableList<Fortune>) {
                 FortuneTable.jdbcSelect(FortuneTable.id, FortuneTable.message)
@@ -161,7 +170,13 @@ interface ExposedOps<TDatabase> {
                     .single().toWorld()
 
             override suspend fun getRandomWorlds(queries: Int, random: ThreadLocalRandom): List<World> =
-                List(queries) { getWorldWithId(random.nextIntWithinRows()) }
+                coroutineScope {
+                    awaitAll(*Array(queries) {
+                        async {
+                            getWorldWithId(random.nextIntWithinRows())
+                        }
+                    })
+                }
 
             override suspend fun getAllFortunesAndAddTo(result: MutableList<Fortune>) {
                 FortuneTable.r2dbcSelect(FortuneTable.id, FortuneTable.message)

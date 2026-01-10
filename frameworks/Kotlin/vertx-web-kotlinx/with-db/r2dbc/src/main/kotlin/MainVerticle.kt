@@ -30,17 +30,15 @@ class MainVerticle : CommonWithDbVerticle<Connection, Unit>(),
             .awaitSingle()
 
     override suspend fun Unit.updateSortedWorlds(sortedWorlds: List<World>) {
-        val statement = dbClient.createStatement(UPDATE_WORLD_SQL)
-        val lastIndex = sortedWorlds.lastIndex
-        sortedWorlds.forEachIndexed { index, world ->
-            statement.bind(0, world.randomNumber)
+        for (world in sortedWorlds) {
+            dbClient.createStatement(UPDATE_WORLD_SQL)
+                .bind(0, world.randomNumber)
                 .bind(1, world.id)
-            if (index < lastIndex) statement.add()
+                .execute()
+                .awaitSingle()
+                .getRowsUpdated()
+                .awaitSingle()
         }
-        // wait for the execution to complete
-        // There is only a single result.
-        // None of `awaitSingle`, `awaitLast`, `collect`, and `.asFlow().take(sortedWorlds.size).collect {}` returns here and leads to timeout.
-        statement.execute().awaitFirst()
     }
 
     override suspend fun Unit.selectFortunesInto(fortunes: MutableList<Fortune>) {

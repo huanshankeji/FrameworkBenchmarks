@@ -54,7 +54,11 @@ class MainVerticle : CommonWithDbVerticle<ConnectionPool, Connection>(),
             }
             commitTransaction().awaitFirst()
         } catch (e: Exception) {
-            rollbackTransaction().awaitFirst()
+            try {
+                rollbackTransaction().awaitFirst()
+            } catch (_: Exception) {
+                // Ignore rollback errors to preserve the original exception
+            }
             throw e
         }
     }

@@ -121,7 +121,8 @@ abstract class CommonVerticle : CoroutineVerticle(), CoroutineRouterSupport {
                 */
 
                 // Approach 3
-                end(Buffer.buffer().apply {
+                // Pre-allocate buffer with reasonable initial size to reduce allocations
+                end(Buffer.buffer(256).apply {
                     toRawSink().buffered().use { bufferedSink ->
                         @OptIn(ExperimentalSerializationApi::class)
                         json.encodeToSink(serializer, requestHandler(it), bufferedSink)

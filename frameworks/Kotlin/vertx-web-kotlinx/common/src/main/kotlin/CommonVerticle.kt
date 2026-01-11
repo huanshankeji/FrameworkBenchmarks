@@ -22,7 +22,6 @@ import kotlinx.serialization.Serializable
 import kotlinx.serialization.SerializationStrategy
 import kotlinx.serialization.json.io.encodeToSink
 import java.net.SocketException
-import java.lang.ThreadLocal
 import java.util.concurrent.ThreadLocalRandom
 import kotlin.random.Random
 import kotlin.random.asKotlinRandom

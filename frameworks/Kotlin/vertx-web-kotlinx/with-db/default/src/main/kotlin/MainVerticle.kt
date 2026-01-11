@@ -25,6 +25,7 @@ class MainVerticle : CommonWithDbVerticle<PgConnection, Unit>(),
                 user = USER,
                 password = PASSWORD,
                 cachePreparedStatements = true,
+                preparedStatementCacheMaxSize = 1024,
                 pipeliningLimit = 256
             )
         ).coAwait().apply {
@@ -44,6 +45,10 @@ class MainVerticle : CommonWithDbVerticle<PgConnection, Unit>(),
     }
 
     override suspend fun Unit.updateSortedWorlds(sortedWorlds: List<World>) {
-        updateWorldQuery.executeBatch(sortedWorlds.map { Tuple.of(it.randomNumber, it.id) }).coAwait()
+        val tuples = ArrayList<Tuple>(sortedWorlds.size)
+        for (world in sortedWorlds) {
+            tuples.add(Tuple.of(world.randomNumber, world.id))
+        }
+        updateWorldQuery.executeBatch(tuples).coAwait()
     }
 }

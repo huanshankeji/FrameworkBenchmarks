@@ -22,6 +22,7 @@ import kotlinx.serialization.Serializable
 import kotlinx.serialization.SerializationStrategy
 import kotlinx.serialization.json.io.encodeToSink
 import java.net.SocketException
+import java.lang.ThreadLocal
 import java.util.concurrent.ThreadLocalRandom
 import kotlin.random.Random
 import kotlin.random.asKotlinRandom
@@ -37,7 +38,8 @@ abstract class CommonVerticle : CoroutineVerticle(), CoroutineRouterSupport {
 
     lateinit var httpServer: HttpServer
     lateinit var date: String
-    val random: Random get() = ThreadLocalRandom.current().asKotlinRandom()
+    private val randomLocal = ThreadLocal.withInitial { ThreadLocalRandom.current().asKotlinRandom() }
+    val random: Random get() = randomLocal.get()
 
     fun setCurrentDate() {
         date = DateTimeComponents.Formats.RFC_1123.format {

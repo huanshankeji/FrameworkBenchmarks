@@ -3,8 +3,9 @@ import io.vertx.core.http.HttpHeaders
 import io.vertx.ext.web.Router
 
 class MainVerticle : CommonVerticle() {
-    private val jsonBuffer = Buffer.buffer("""{"message":"Hello, World!"}""")
-    private val plaintextBuffer = Buffer.buffer("Hello, World!")
+    private val helloWorldMessage = "Hello, World!"
+    private val jsonBuffer = Buffer.buffer("""{"message":"$helloWorldMessage"}""")
+    private val plaintextBuffer = Buffer.buffer(helloWorldMessage)
 
     override fun Router.routes() {
         get("/json").coHandlerUnconfined {

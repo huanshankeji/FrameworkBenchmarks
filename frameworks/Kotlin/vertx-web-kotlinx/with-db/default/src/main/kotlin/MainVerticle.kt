@@ -14,7 +14,7 @@ class MainVerticle : CommonWithDbVerticle<PgConnection, Unit>(),
     lateinit var selectWorldQuery: PreparedQuery<RowSet<Row>>
     lateinit var selectFortuneQuery: PreparedQuery<RowSet<Row>>
     // Array of prepared queries for aggregated updates, indexed by (number of worlds - 1)
-    private val aggregatedUpdateWorldQueries = arrayOfNulls<PreparedQuery<RowSet<Row>>>(500)
+    private val aggregatedUpdateWorldQueries = arrayOfNulls<PreparedQuery<RowSet<Row>>>(MAX_QUERIES)
 
     override suspend fun initDbClient(): PgConnection =
         // Parameters are copied from the "vertx-web" and "vertx" portions.
@@ -31,8 +31,8 @@ class MainVerticle : CommonWithDbVerticle<PgConnection, Unit>(),
         ).coAwait().apply {
             selectWorldQuery = preparedQuery(SELECT_WORLD_SQL)
             selectFortuneQuery = preparedQuery(SELECT_FORTUNE_SQL)
-            // Pre-prepare aggregated update queries for all possible batch sizes (1-500)
-            for (i in 1..500) {
+            // Pre-prepare aggregated update queries for all possible batch sizes (1-MAX_QUERIES)
+            for (i in 1..MAX_QUERIES) {
                 aggregatedUpdateWorldQueries[i - 1] = preparedQuery(buildAggregatedUpdateQuery(i))
             }
         }
@@ -78,8 +78,8 @@ class MainVerticle : CommonWithDbVerticle<PgConnection, Unit>(),
             params.add(world.randomNumber)
         }
         // Use the pre-prepared aggregated query for this batch size
-        aggregatedUpdateWorldQueries[sortedWorlds.size - 1]!!
-            .execute(Tuple.wrap(params))
-            .coAwait()
+        val query = aggregatedUpdateWorldQueries[sortedWorlds.size - 1]
+            ?: error("No prepared query for batch size ${sortedWorlds.size}")
+        query.execute(Tuple.wrap(params)).coAwait()
     }
 }

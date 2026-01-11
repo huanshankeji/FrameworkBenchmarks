@@ -22,7 +22,7 @@ class MainVerticle(val exposedDatabase: Database) : CommonWithDbVerticle<Databas
         // Parameters are copied from the "vertx-web" and "vertx" portions.
         val pgConnection = createPgConnection(vertx, connectionConfig, {
             cachePreparedStatements = true
-            pipeliningLimit = 256
+            pipeliningLimit = 100_000 // Large pipelining means less flushing and we use a single connection anyway
         })
         return DatabaseClient(pgConnection, exposedDatabase, PgDatabaseClientConfig(validateBatch = false))
     }

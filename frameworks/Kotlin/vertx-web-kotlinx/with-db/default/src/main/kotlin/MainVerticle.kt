@@ -25,7 +25,7 @@ class MainVerticle : CommonWithDbVerticle<PgConnection, Unit>(),
                 user = USER,
                 password = PASSWORD,
                 cachePreparedStatements = true,
-                pipeliningLimit = 256
+                pipeliningLimit = 100_000 // Large pipelining means less flushing and we use a single connection anyway
             )
         ).coAwait().apply {
             selectWorldQuery = preparedQuery(SELECT_WORLD_SQL)

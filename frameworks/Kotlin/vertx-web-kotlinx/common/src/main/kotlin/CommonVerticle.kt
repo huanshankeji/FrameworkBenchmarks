@@ -37,7 +37,7 @@ abstract class CommonVerticle : CoroutineVerticle(), CoroutineRouterSupport {
 
     lateinit var httpServer: HttpServer
     lateinit var date: String
-    private val randomLocal = ThreadLocal.withInitial { ThreadLocalRandom.current().asKotlinRandom() }
+    private val randomLocal: ThreadLocal<Random> = ThreadLocal.withInitial { ThreadLocalRandom.current().asKotlinRandom() }
     val random: Random get() = randomLocal.get()
 
     fun setCurrentDate() {

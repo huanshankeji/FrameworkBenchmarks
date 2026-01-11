@@ -45,10 +45,7 @@ class MainVerticle : CommonWithDbVerticle<PgConnection, Unit>(),
     }
 
     override suspend fun Unit.updateSortedWorlds(sortedWorlds: List<World>) {
-        val tuples = ArrayList<Tuple>(sortedWorlds.size)
-        for (world in sortedWorlds) {
-            tuples.add(Tuple.of(world.randomNumber, world.id))
-        }
+        val tuples = sortedWorlds.mapTo(ArrayList(sortedWorlds.size)) { Tuple.of(it.randomNumber, it.id) }
         updateWorldQuery.executeBatch(tuples).coAwait()
     }
 }

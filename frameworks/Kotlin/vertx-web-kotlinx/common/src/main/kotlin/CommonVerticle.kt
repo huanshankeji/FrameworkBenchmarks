@@ -106,10 +106,8 @@ abstract class CommonVerticle : CoroutineVerticle(), CoroutineRouterSupport {
             it.response().run {
                 addJsonResponseHeaders()
 
-                /*
-                // Approach 1
+                // Approach 1: Simple and direct - encode to string and let Vert.x handle buffer conversion
                 end(json.encodeToString(serializer, requestHandler(it)))/*.coAwait()*/
-                */
 
                 /*
                 // Approach 2
@@ -120,7 +118,8 @@ abstract class CommonVerticle : CoroutineVerticle(), CoroutineRouterSupport {
                 }
                 */
 
-                // Approach 3
+                /*
+                // Approach 3: More complex with multiple wrapper layers
                 // Pre-allocate buffer with reasonable initial size to reduce allocations
                 end(Buffer.buffer(256).apply {
                     toRawSink().buffered().use { bufferedSink ->
@@ -128,6 +127,7 @@ abstract class CommonVerticle : CoroutineVerticle(), CoroutineRouterSupport {
                         json.encodeToSink(serializer, requestHandler(it), bufferedSink)
                     }
                 })
+                */
             }
         }
 }

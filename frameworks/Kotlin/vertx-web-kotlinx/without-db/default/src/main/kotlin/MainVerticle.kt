@@ -1,11 +1,12 @@
 import io.vertx.core.buffer.Buffer
 import io.vertx.core.http.HttpHeaders
 import io.vertx.ext.web.Router
+import kotlinx.serialization.encodeToString
 
 class MainVerticle : CommonVerticle() {
-    private val helloWorldMessage = "Hello, World!"
-    private val jsonBuffer = Buffer.buffer("""{"message":"$helloWorldMessage"}""")
-    private val plaintextBuffer = Buffer.buffer(helloWorldMessage)
+    private val helloWorldMessage = Message("Hello, World!")
+    private val jsonBuffer = Buffer.buffer(json.encodeToString(Serializers.message, helloWorldMessage))
+    private val plaintextBuffer = Buffer.buffer(helloWorldMessage.message)
 
     override fun Router.routes() {
         get("/json").coHandlerUnconfined {

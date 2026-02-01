@@ -1,0 +1,12 @@
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 1/21 : FROM gradle:9.3.1-jdk25
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> d871e2a9138f
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 2/21 : WORKDIR /vertx-web-kotlinx
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> Running in 2e4c87c3a229
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> 821c79efa5e4
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 3/21 : COPY .m2/repository/com/huanshankeji/exposed-vertx-sql-client-core/0.8.0-SNAPSHOT /root/.m2/repository/com/huanshankeji/exposed-vertx-sql-client-core/0.8.0-SNAPSHOT
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Docker build failed; terminating
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Traceback (most recent call last):
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:   File "/FrameworkBenchmarks/toolset/utils/docker_helper.py", line 53, in __build
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:     raise Exception(token['errorDetail']['message'])
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Exception: COPY failed: file not found in build context or excluded by .dockerignore: stat .m2/repository/com/huanshankeji/exposed-vertx-sql-client-core/0.8.0-SNAPSHOT: file does not exist
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Build time: 18s

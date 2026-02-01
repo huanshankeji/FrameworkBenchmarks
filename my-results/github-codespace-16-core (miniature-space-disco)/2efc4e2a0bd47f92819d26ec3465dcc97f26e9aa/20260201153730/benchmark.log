@@ -1,0 +1,54 @@
+--------------------------------------------------------------------------------
+Benchmarking vertx-web-kotlinx-exposed-vertx-sql-client-postgresql
+--------------------------------------------------------------------------------
+BENCHMARKING DB ... 
+Benchmark results:
+Complete
+BENCHMARKING QUERY ... 
+Benchmark results:
+Complete
+BENCHMARKING UPDATE ... 
+Benchmark results:
+Complete
+BENCHMARKING FORTUNE ... 
+Benchmark results:
+Complete
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Benchmarking time: 8m 19s
+wrk: Build time: 0s
+techempower/postgres:latest: Build time: 0s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Build time: 1m 37s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Time starting database: 3s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Time until accepting requests: 1s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Verify time: 9m 3s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Total test time: 10m 54s
+tfb: Total time building so far: 1m 37s
+tfb: Total time verifying so far: 9m 3s
+tfb: Total time benchmarking so far: 8m 19s
+tfb: Total execution time so far: 10m 55s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Total TCP sockets: 88
+--------------------------------------------------------------------------------
+Benchmarking vertx-web-kotlinx-postgresql
+--------------------------------------------------------------------------------
+BENCHMARKING DB ... 
+Benchmark results:
+Complete
+BENCHMARKING QUERY ... 
+Benchmark results:
+Complete
+BENCHMARKING UPDATE ... 
+Benchmark results:
+Complete
+BENCHMARKING FORTUNE ... 
+Benchmark results:
+Complete
+vertx-web-kotlinx-postgresql: Benchmarking time: 8m 18s
+vertx-web-kotlinx-postgresql: Build time: 1m 31s
+vertx-web-kotlinx-postgresql: Time starting database: 3s
+vertx-web-kotlinx-postgresql: Time until accepting requests: 1s
+vertx-web-kotlinx-postgresql: Verify time: 9m 3s
+vertx-web-kotlinx-postgresql: Total test time: 10m 47s
+tfb: Total time building so far: 3m 8s
+tfb: Total time verifying so far: 18m 6s
+tfb: Total time benchmarking so far: 16m 37s
+tfb: Total execution time so far: 21m 43s
+vertx-web-kotlinx-postgresql: Total TCP sockets: 88

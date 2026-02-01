@@ -1,0 +1,43 @@
+vertx-web-kotlinx: Step 1/9 : FROM gradle:9.2.1-jdk25
+vertx-web-kotlinx:  ---> 7e3839cec262
+vertx-web-kotlinx: Step 2/9 : WORKDIR /vertx-web-kotlinx
+vertx-web-kotlinx:  ---> Running in 7ba475816d58
+vertx-web-kotlinx:  ---> 8504fdbc25cb
+vertx-web-kotlinx: Step 3/9 : COPY build.gradle.kts build.gradle.kts
+vertx-web-kotlinx:  ---> 46f9ecbebdd4
+vertx-web-kotlinx: Step 4/9 : COPY settings.gradle.kts settings.gradle.kts
+vertx-web-kotlinx:  ---> 6a28ecf1470e
+vertx-web-kotlinx: Step 5/9 : COPY gradle.properties gradle.properties
+vertx-web-kotlinx:  ---> 9b58d606323d
+vertx-web-kotlinx: Step 6/9 : COPY src src
+vertx-web-kotlinx:  ---> bcd16d32f389
+vertx-web-kotlinx: Step 7/9 : RUN gradle --no-daemon installDist
+vertx-web-kotlinx:  ---> Running in 39097c66e9db
+vertx-web-kotlinx: To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+vertx-web-kotlinx: Daemon will be stopped at the end of the build 
+vertx-web-kotlinx: > Task :checkKotlinGradlePluginConfigurationErrors SKIPPED
+vertx-web-kotlinx: > Task :compileKotlin
+vertx-web-kotlinx: > Task :processResources NO-SOURCE
+vertx-web-kotlinx: > Task :compileJava NO-SOURCE
+vertx-web-kotlinx: > Task :classes UP-TO-DATE
+vertx-web-kotlinx: > Task :jar
+vertx-web-kotlinx: > Task :startScripts
+vertx-web-kotlinx: > Task :installDist
+vertx-web-kotlinx: [Incubating] Problems report is available at: file:///vertx-web-kotlinx/build/reports/problems/problems-report.html
+vertx-web-kotlinx: Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+vertx-web-kotlinx: You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+vertx-web-kotlinx: For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+vertx-web-kotlinx: BUILD SUCCESSFUL in 20m 14s
+vertx-web-kotlinx: 4 actionable tasks: 4 executed
+vertx-web-kotlinx: Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.2.1/userguide/configuration_cache_enabling.html
+vertx-web-kotlinx:  ---> 35e2f7697579
+vertx-web-kotlinx: Step 8/9 : EXPOSE 8080
+vertx-web-kotlinx:  ---> Running in 510b06b9fb59
+vertx-web-kotlinx:  ---> f40ad3737e50
+vertx-web-kotlinx: Step 9/9 : CMD export JAVA_OPTS="     --enable-native-access=ALL-UNNAMED     --sun-misc-unsafe-memory-access=allow     --add-opens=java.base/java.lang=ALL-UNNAMED     -server     -XX:+UseNUMA     -XX:+UseParallelGC     -XX:+UnlockDiagnosticVMOptions     -XX:+DebugNonSafepoints     -Djava.lang.Integer.IntegerCache.high=10000     -Dvertx.disableMetrics=true     -Dvertx.disableWebsockets=true     -Dvertx.disableContextTimings=true     -Dvertx.disableHttpHeadersValidation=true     -Dvertx.cacheImmutableHttpResponseHeaders=true     -Dvertx.internCommonHttpRequestHeadersToLowerCase=true     -Dio.netty.noUnsafe=false     -Dio.netty.buffer.checkBounds=false     -Dio.netty.buffer.checkAccessible=false     -Dio.netty.iouring.ringSize=16384     " &&     build/install/vertx-web-kotlinx-benchmark/bin/vertx-web-kotlinx-benchmark false
+vertx-web-kotlinx:  ---> Running in 65e100df489a
+vertx-web-kotlinx:  ---> 875e487ff896
+vertx-web-kotlinx: [Warning] One or more build-args [BENCHMARK_ENV TFB_TEST_DATABASE TFB_TEST_NAME] were not consumed
+vertx-web-kotlinx: Successfully built 875e487ff896
+vertx-web-kotlinx: Successfully tagged techempower/tfb.test.vertx-web-kotlinx:latest
+vertx-web-kotlinx: Build time: 27m 0s

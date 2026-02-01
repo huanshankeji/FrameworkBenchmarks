@@ -1,0 +1,7 @@
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 1/21 : FROM gradle:9.2.1-jdk25
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Docker build failed; terminating
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Traceback (most recent call last):
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:   File "/FrameworkBenchmarks/toolset/utils/docker_helper.py", line 53, in __build
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:     raise Exception(token['errorDetail']['message'])
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Exception: Head "https://registry-1.docker.io/v2/library/gradle/manifests/9.2.1-jdk25": Get "https://auth.docker.io/token?scope=repository%3Alibrary%2Fgradle%3Apull&service=registry.docker.io": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Build time: 25s

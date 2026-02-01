@@ -1,0 +1,10 @@
+vertx-web-kotlinx-r2dbc-postgresql: [0.001s][warning][os] NUMA support disabled: Failed to initialize libnuma
+vertx-web-kotlinx-r2dbc-postgresql: Dec 20, 2025 5:59:25 PM CommonMainKt commonRunVertxServer
+vertx-web-kotlinx-r2dbc-postgresql: INFO: Vert.x-Web Kotlinx with R2DBC (and PostgreSQL) benchmark server starting...
+vertx-web-kotlinx-r2dbc-postgresql: Dec 20, 2025 5:59:25 PM CommonMainKt commonRunVertxServer
+vertx-web-kotlinx-r2dbc-postgresql: INFO: Vert.x-Web Kotlinx with R2DBC (and PostgreSQL) benchmark server started.
+vertx-web-kotlinx-r2dbc-postgresql: sortedWorlds=[World(id=15, randomNumber=3894), World(id=4928, randomNumber=6248)]
+vertx-web-kotlinx-r2dbc-postgresql: index=0 world=World(id=15, randomNumber=3894)
+vertx-web-kotlinx-r2dbc-postgresql: index=1 world=World(id=4928, randomNumber=6248)
+vertx-web-kotlinx-r2dbc-postgresql: executed and await(take collect)
+vertx-web-kotlinx-r2dbc-postgresql: 0

@@ -1,0 +1,8 @@
+vertx-web-kotlinx-exposed-r2dbc-postgresql: [0.001s][warning][os] NUMA support disabled: Failed to initialize libnuma
+vertx-web-kotlinx-exposed-r2dbc-postgresql: SLF4J: No SLF4J providers were found.
+vertx-web-kotlinx-exposed-r2dbc-postgresql: SLF4J: Defaulting to no-operation (NOP) logger implementation
+vertx-web-kotlinx-exposed-r2dbc-postgresql: SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Dec 21, 2025 12:34:47 PM CommonMainKt commonRunVertxServer
+vertx-web-kotlinx-exposed-r2dbc-postgresql: INFO: Vert.x-Web Kotlinx with Exposed R2DBC (and PostgreSQL) benchmark server starting...
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Dec 21, 2025 12:34:47 PM CommonMainKt commonRunVertxServer
+vertx-web-kotlinx-exposed-r2dbc-postgresql: INFO: Vert.x-Web Kotlinx with Exposed R2DBC (and PostgreSQL) benchmark server started.

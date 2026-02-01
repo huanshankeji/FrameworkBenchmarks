@@ -1,0 +1,8 @@
+ktor-exposed-r2dbc-dsl: [0.001s][warning][os] NUMA support disabled: Failed to initialize libnuma
+ktor-exposed-r2dbc-dsl: [main] INFO io.ktor.server.Application - Autoreload is disabled because the development mode is off.
+ktor-exposed-r2dbc-dsl: [main] INFO io.ktor.server.Application - Application started in 0.267 seconds.
+ktor-exposed-r2dbc-dsl: WARNING: A restricted method in java.lang.System has been called
+ktor-exposed-r2dbc-dsl: WARNING: java.lang.System::loadLibrary has been called by io.netty.util.internal.NativeLibraryUtil in an unnamed module (file:/ktor-exposed/app/build/libs/app-all.jar)
+ktor-exposed-r2dbc-dsl: WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+ktor-exposed-r2dbc-dsl: WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+ktor-exposed-r2dbc-dsl: [DefaultDispatcher-worker-1] INFO io.ktor.server.Application - Responding at http://0.0.0.0:9090

@@ -1,0 +1,5 @@
+vertx-web-kotlinx: [0.000s][warning][os] NUMA support disabled: Failed to initialize libnuma
+vertx-web-kotlinx: Dec 09, 2025 6:13:24 PM MainKt main
+vertx-web-kotlinx: INFO: Vert.x-Web Kotlinx Benchmark server starting...
+vertx-web-kotlinx: Dec 09, 2025 6:13:25 PM MainKt main
+vertx-web-kotlinx: INFO: Vert.x-Web Kotlinx Benchmark server started.

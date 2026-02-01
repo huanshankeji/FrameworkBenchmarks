@@ -1,0 +1,33 @@
+ktor-exposed-r2dbc-dsl: Step 1/7 : FROM gradle:jdk25
+ktor-exposed-r2dbc-dsl:  ---> 5db57af7f714
+ktor-exposed-r2dbc-dsl: Step 2/7 : WORKDIR /ktor-exposed
+ktor-exposed-r2dbc-dsl:  ---> Running in 3ff6dac25f7c
+ktor-exposed-r2dbc-dsl:  ---> 80fc10234d71
+ktor-exposed-r2dbc-dsl: Step 3/7 : COPY ktor-exposed/settings.gradle.kts settings.gradle.kts
+ktor-exposed-r2dbc-dsl:  ---> 5f73b6e8b0a8
+ktor-exposed-r2dbc-dsl: Step 4/7 : COPY ktor-exposed/app app
+ktor-exposed-r2dbc-dsl:  ---> b3f366dc89ce
+ktor-exposed-r2dbc-dsl: Step 5/7 : RUN gradle --no-daemon shadowJar
+ktor-exposed-r2dbc-dsl:  ---> Running in b76fa17cc254
+ktor-exposed-r2dbc-dsl: To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+ktor-exposed-r2dbc-dsl: Daemon will be stopped at the end of the build 
+ktor-exposed-r2dbc-dsl: > Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+ktor-exposed-r2dbc-dsl: > Task :app:compileKotlin
+ktor-exposed-r2dbc-dsl: > Task :app:processResources NO-SOURCE
+ktor-exposed-r2dbc-dsl: > Task :app:compileJava NO-SOURCE
+ktor-exposed-r2dbc-dsl: > Task :app:classes UP-TO-DATE
+ktor-exposed-r2dbc-dsl: > Task :app:shadowJar
+ktor-exposed-r2dbc-dsl: BUILD SUCCESSFUL in 3m 12s
+ktor-exposed-r2dbc-dsl: 2 actionable tasks: 2 executed
+ktor-exposed-r2dbc-dsl: Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.3.0/userguide/configuration_cache_enabling.html
+ktor-exposed-r2dbc-dsl:  ---> be5b0c6dbca9
+ktor-exposed-r2dbc-dsl: Step 6/7 : EXPOSE 9090
+ktor-exposed-r2dbc-dsl:  ---> Running in 4599f15800b2
+ktor-exposed-r2dbc-dsl:  ---> 118b00ff9eb0
+ktor-exposed-r2dbc-dsl: Step 7/7 : CMD ["java", "-server", "-XX:+UseNUMA", "-XX:+UseParallelGC", "-XX:+AlwaysPreTouch", "-jar", "app/build/libs/app-all.jar", "R2dbc", "Dsl"]
+ktor-exposed-r2dbc-dsl:  ---> Running in 7ed3440da41a
+ktor-exposed-r2dbc-dsl:  ---> ead182d081cf
+ktor-exposed-r2dbc-dsl: [Warning] One or more build-args [BENCHMARK_ENV TFB_TEST_DATABASE TFB_TEST_NAME] were not consumed
+ktor-exposed-r2dbc-dsl: Successfully built ead182d081cf
+ktor-exposed-r2dbc-dsl: Successfully tagged techempower/tfb.test.ktor-exposed-r2dbc-dsl:latest
+ktor-exposed-r2dbc-dsl: Build time: 4m 22s

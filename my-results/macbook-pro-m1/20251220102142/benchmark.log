@@ -1,0 +1,5 @@
+vertx-web-kotlinx-r2dbc-postgresql: ERROR: Problem starting vertx-web-kotlinx-r2dbc-postgresql
+vertx-web-kotlinx-r2dbc-postgresql: Total test time: 41m 21s
+tfb: Total time building so far: 41m 28s
+tfb: Total time verifying so far: 0s
+tfb: Total execution time so far: 41m 31s

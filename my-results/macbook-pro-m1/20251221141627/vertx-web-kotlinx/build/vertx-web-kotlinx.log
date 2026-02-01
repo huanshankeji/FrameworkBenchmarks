@@ -1,0 +1,82 @@
+vertx-web-kotlinx: Step 1/15 : FROM gradle:9.2.1-jdk25
+vertx-web-kotlinx:  ---> 7e3839cec262
+vertx-web-kotlinx: Step 2/15 : WORKDIR /vertx-web-kotlinx
+vertx-web-kotlinx:  ---> Using cache
+vertx-web-kotlinx:  ---> 7dad40db67f7
+vertx-web-kotlinx: Step 3/15 : COPY gradle/libs.versions.toml gradle/libs.versions.toml
+vertx-web-kotlinx:  ---> Using cache
+vertx-web-kotlinx:  ---> 95d321770e29
+vertx-web-kotlinx: Step 4/15 : COPY buildSrc buildSrc
+vertx-web-kotlinx:  ---> Using cache
+vertx-web-kotlinx:  ---> 4ba463e307c6
+vertx-web-kotlinx: Step 5/15 : COPY settings.gradle.kts settings.gradle.kts
+vertx-web-kotlinx:  ---> Using cache
+vertx-web-kotlinx:  ---> 00717c9a8fd5
+vertx-web-kotlinx: Step 6/15 : COPY build.gradle.kts build.gradle.kts
+vertx-web-kotlinx:  ---> Using cache
+vertx-web-kotlinx:  ---> d7e004dd039d
+vertx-web-kotlinx: Step 7/15 : COPY gradle.properties gradle.properties
+vertx-web-kotlinx:  ---> Using cache
+vertx-web-kotlinx:  ---> 7c893d29bc3f
+vertx-web-kotlinx: Step 8/15 : RUN mkdir -p common without-db/default with-db/common with-db/default with-db/r2dbc-common with-db/r2dbc with-db/exposed-common with-db/exposed-r2dbc with-db/exposed-vertx-sql-client
+vertx-web-kotlinx:  ---> Using cache
+vertx-web-kotlinx:  ---> 8750b31a6ddd
+vertx-web-kotlinx: Step 9/15 : COPY common/build.gradle.kts common/build.gradle.kts
+vertx-web-kotlinx:  ---> Using cache
+vertx-web-kotlinx:  ---> c79a92cdbf87
+vertx-web-kotlinx: Step 10/15 : COPY common/src common/src
+vertx-web-kotlinx:  ---> Using cache
+vertx-web-kotlinx:  ---> 6c057d6331b9
+vertx-web-kotlinx: Step 11/15 : COPY without-db/default/build.gradle.kts without-db/default/build.gradle.kts
+vertx-web-kotlinx:  ---> 752630211261
+vertx-web-kotlinx: Step 12/15 : COPY without-db/default/src without-db/default/src
+vertx-web-kotlinx:  ---> 443f2cc45e2f
+vertx-web-kotlinx: Step 13/15 : RUN gradle --no-daemon without-db:default:installDist
+vertx-web-kotlinx:  ---> Running in f4720ad88307
+vertx-web-kotlinx: To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+vertx-web-kotlinx: Daemon will be stopped at the end of the build 
+vertx-web-kotlinx: Calculating task graph as no cached configuration is available for tasks: without-db:default:installDist
+vertx-web-kotlinx: > Configure project :buildSrc
+vertx-web-kotlinx: WARNING: Unsupported Kotlin plugin version.
+vertx-web-kotlinx: The `embedded-kotlin` and `kotlin-dsl` plugins rely on features of Kotlin `2.2.20` that might work differently than in the requested version `2.3.0`.
+vertx-web-kotlinx: > Task :buildSrc:checkKotlinGradlePluginConfigurationErrors SKIPPED
+vertx-web-kotlinx: > Task :buildSrc:generateExternalPluginSpecBuilders
+vertx-web-kotlinx: > Task :buildSrc:extractPrecompiledScriptPluginPlugins
+vertx-web-kotlinx: > Task :buildSrc:compilePluginsBlocks
+vertx-web-kotlinx: > Task :buildSrc:generateScriptPluginAdapters
+vertx-web-kotlinx: > Task :buildSrc:pluginDescriptors
+vertx-web-kotlinx: > Task :buildSrc:processResources
+vertx-web-kotlinx: > Task :buildSrc:generatePrecompiledScriptPluginAccessors
+vertx-web-kotlinx: > Task :buildSrc:compileKotlin
+vertx-web-kotlinx: > Task :buildSrc:compileJava NO-SOURCE
+vertx-web-kotlinx: > Task :buildSrc:compileGroovy NO-SOURCE
+vertx-web-kotlinx: > Task :buildSrc:classes
+vertx-web-kotlinx: > Task :buildSrc:jar
+vertx-web-kotlinx: > Task :without-db:default:checkKotlinGradlePluginConfigurationErrors SKIPPED
+vertx-web-kotlinx: > Task :common:checkKotlinGradlePluginConfigurationErrors SKIPPED
+vertx-web-kotlinx: > Task :common:processResources NO-SOURCE
+vertx-web-kotlinx: > Task :without-db:default:processResources NO-SOURCE
+vertx-web-kotlinx: > Task :common:compileKotlin
+vertx-web-kotlinx: > Task :common:compileJava NO-SOURCE
+vertx-web-kotlinx: > Task :common:classes UP-TO-DATE
+vertx-web-kotlinx: > Task :common:jar
+vertx-web-kotlinx: > Task :without-db:default:compileKotlin
+vertx-web-kotlinx: > Task :without-db:default:compileJava NO-SOURCE
+vertx-web-kotlinx: > Task :without-db:default:classes UP-TO-DATE
+vertx-web-kotlinx: > Task :without-db:default:jar
+vertx-web-kotlinx: > Task :without-db:default:startScripts
+vertx-web-kotlinx: > Task :without-db:default:installDist
+vertx-web-kotlinx: BUILD SUCCESSFUL in 3m 31s
+vertx-web-kotlinx: 15 actionable tasks: 15 executed
+vertx-web-kotlinx: Configuration cache entry stored.
+vertx-web-kotlinx:  ---> ccd1fdd2bb66
+vertx-web-kotlinx: Step 14/15 : EXPOSE 8080
+vertx-web-kotlinx:  ---> Running in 37b066e23e74
+vertx-web-kotlinx:  ---> 612234bb2912
+vertx-web-kotlinx: Step 15/15 : CMD export JAVA_OPTS="     --enable-native-access=ALL-UNNAMED     --sun-misc-unsafe-memory-access=allow     --add-opens=java.base/java.lang=ALL-UNNAMED     -server     -XX:+UseNUMA     -XX:+UseParallelGC     -XX:+UnlockDiagnosticVMOptions     -XX:+DebugNonSafepoints     -Djava.lang.Integer.IntegerCache.high=10000     -Dvertx.disableMetrics=true     -Dvertx.disableWebsockets=true     -Dvertx.disableContextTimings=true     -Dvertx.disableHttpHeadersValidation=true     -Dvertx.cacheImmutableHttpResponseHeaders=true     -Dvertx.internCommonHttpRequestHeadersToLowerCase=true     -Dio.netty.noUnsafe=false     -Dio.netty.buffer.checkBounds=false     -Dio.netty.buffer.checkAccessible=false     -Dio.netty.iouring.ringSize=16384     " &&     without-db/default/build/install/default/bin/default
+vertx-web-kotlinx:  ---> Running in d6a46bc34437
+vertx-web-kotlinx:  ---> ab9e3111ce29
+vertx-web-kotlinx: [Warning] One or more build-args [BENCHMARK_ENV TFB_TEST_DATABASE TFB_TEST_NAME] were not consumed
+vertx-web-kotlinx: Successfully built ab9e3111ce29
+vertx-web-kotlinx: Successfully tagged techempower/tfb.test.vertx-web-kotlinx:latest
+vertx-web-kotlinx: Build time: 3m 38s

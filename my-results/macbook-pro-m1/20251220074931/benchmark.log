@@ -1,0 +1,20 @@
+wrk: Build time: 3s
+techempower/postgres:latest: Build time: 3s
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Build time: 3m 9s
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Time starting database: 2s
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Time until accepting requests: 1s
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Verify time: 24s
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Failed verify!
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Total test time: 3m 38s
+tfb: Total time building so far: 3m 15s
+tfb: Total time verifying so far: 24s
+tfb: Total execution time so far: 3m 45s
+vertx-web-kotlinx-r2dbc-postgresql: Build time: 3m 0s
+vertx-web-kotlinx-r2dbc-postgresql: Time starting database: 1s
+vertx-web-kotlinx-r2dbc-postgresql: Time until accepting requests: 1s
+vertx-web-kotlinx-r2dbc-postgresql: Verify time: 15s
+vertx-web-kotlinx-r2dbc-postgresql: Failed verify!
+vertx-web-kotlinx-r2dbc-postgresql: Total test time: 3m 18s
+tfb: Total time building so far: 6m 15s
+tfb: Total time verifying so far: 39s
+tfb: Total execution time so far: 7m 7s

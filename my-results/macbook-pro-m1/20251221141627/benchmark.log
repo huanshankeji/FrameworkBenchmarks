@@ -1,0 +1,111 @@
+--------------------------------------------------------------------------------
+Benchmarking vertx-web-kotlinx
+--------------------------------------------------------------------------------
+BENCHMARKING JSON ... 
+Benchmark results:
+Complete
+BENCHMARKING PLAINTEXT ... 
+Benchmark results:
+Complete
+vertx-web-kotlinx: Benchmarking time: 3m 52s
+wrk: Build time: 6s
+techempower/postgres:latest: Build time: 6s
+vertx-web-kotlinx: Build time: 3m 38s
+vertx-web-kotlinx: Time starting database: 0s
+vertx-web-kotlinx: Time until accepting requests: 1s
+vertx-web-kotlinx: Verify time: 3m 58s
+vertx-web-kotlinx: Total test time: 7m 40s
+tfb: Total time building so far: 3m 50s
+tfb: Total time verifying so far: 3m 58s
+tfb: Total time benchmarking so far: 3m 52s
+tfb: Total execution time so far: 7m 54s
+vertx-web-kotlinx: Total TCP sockets: 22
+--------------------------------------------------------------------------------
+Benchmarking vertx-web-kotlinx-exposed-r2dbc-postgresql
+--------------------------------------------------------------------------------
+BENCHMARKING DB ... 
+Benchmark results:
+Complete
+BENCHMARKING QUERY ... 
+Benchmark results:
+Complete
+BENCHMARKING UPDATE ... 
+Benchmark results:
+Complete
+BENCHMARKING FORTUNE ... 
+Benchmark results:
+Complete
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Benchmarking time: 8m 17s
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Build time: 4m 13s
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Time starting database: 1s
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Time until accepting requests: 1s
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Verify time: 9m 5s
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Total test time: 13m 25s
+tfb: Total time building so far: 8m 3s
+tfb: Total time verifying so far: 13m 3s
+tfb: Total time benchmarking so far: 12m 9s
+tfb: Total execution time so far: 21m 20s
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Total TCP sockets: 22
+--------------------------------------------------------------------------------
+Benchmarking vertx-web-kotlinx-exposed-vertx-sql-client-postgresql
+--------------------------------------------------------------------------------
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: ERROR: Problem starting vertx-web-kotlinx-exposed-vertx-sql-client-postgresql
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Total test time: 9s
+tfb: Total time building so far: 8m 10s
+tfb: Total time verifying so far: 13m 3s
+tfb: Total time benchmarking so far: 12m 9s
+tfb: Total execution time so far: 21m 30s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Total TCP sockets: 26
+--------------------------------------------------------------------------------
+Benchmarking vertx-web-kotlinx-postgresql
+--------------------------------------------------------------------------------
+BENCHMARKING DB ... 
+Benchmark results:
+Complete
+BENCHMARKING QUERY ... 
+Benchmark results:
+Complete
+BENCHMARKING UPDATE ... 
+Benchmark results:
+Complete
+BENCHMARKING FORTUNE ... 
+Benchmark results:
+Complete
+vertx-web-kotlinx-postgresql: Benchmarking time: 13m 48s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Build time: 7s
+vertx-web-kotlinx-postgresql: Build time: 4m 37s
+vertx-web-kotlinx-postgresql: Time starting database: 1s
+vertx-web-kotlinx-postgresql: Time until accepting requests: 1s
+vertx-web-kotlinx-postgresql: Verify time: 14m 32s
+vertx-web-kotlinx-postgresql: Total test time: 19m 17s
+tfb: Total time building so far: 12m 47s
+tfb: Total time verifying so far: 27m 35s
+tfb: Total time benchmarking so far: 25m 57s
+tfb: Total execution time so far: 40m 49s
+vertx-web-kotlinx-postgresql: Total TCP sockets: 22
+--------------------------------------------------------------------------------
+Benchmarking vertx-web-kotlinx-r2dbc-postgresql
+--------------------------------------------------------------------------------
+BENCHMARKING DB ... 
+Benchmark results:
+Complete
+BENCHMARKING QUERY ... 
+Benchmark results:
+Complete
+BENCHMARKING UPDATE ... 
+Benchmark results:
+Complete
+BENCHMARKING FORTUNE ... 
+Benchmark results:
+Complete
+vertx-web-kotlinx-r2dbc-postgresql: Benchmarking time: 45m 39s
+vertx-web-kotlinx-r2dbc-postgresql: Build time: 4m 0s
+vertx-web-kotlinx-r2dbc-postgresql: Time starting database: 1s
+vertx-web-kotlinx-r2dbc-postgresql: Time until accepting requests: 1s
+vertx-web-kotlinx-r2dbc-postgresql: Verify time: 46m 20s
+vertx-web-kotlinx-r2dbc-postgresql: Total test time: 50m 28s
+tfb: Total time building so far: 16m 47s
+tfb: Total time verifying so far: 1h13m 55s
+tfb: Total time benchmarking so far: 1h11m 36s
+tfb: Total execution time so far: 1h31m 18s
+vertx-web-kotlinx-r2dbc-postgresql: Total TCP sockets: 22

@@ -1,0 +1,10 @@
+--------------------------------------------------------------------------------
+Benchmarking vertx-web-kotlinx-exposed-vertx-sql-client-postgresql
+--------------------------------------------------------------------------------
+BENCHMARKING DB ... 
+Benchmark results:
+Complete
+BENCHMARKING QUERY ... 
+Benchmark results:
+Complete
+BENCHMARKING UPDATE ... 

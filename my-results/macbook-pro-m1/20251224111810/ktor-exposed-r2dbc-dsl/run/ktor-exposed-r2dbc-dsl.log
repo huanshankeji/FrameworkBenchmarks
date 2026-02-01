@@ -1,0 +1,333 @@
+ktor-exposed-r2dbc-dsl: [0.001s][warning][os] NUMA support disabled: Failed to initialize libnuma
+ktor-exposed-r2dbc-dsl: [main] INFO io.ktor.server.Application - Autoreload is disabled because the development mode is off.
+ktor-exposed-r2dbc-dsl: [main] INFO io.ktor.server.Application - Application started in 0.275 seconds.
+ktor-exposed-r2dbc-dsl: WARNING: A restricted method in java.lang.System has been called
+ktor-exposed-r2dbc-dsl: WARNING: java.lang.System::loadLibrary has been called by io.netty.util.internal.NativeLibraryUtil in an unnamed module (file:/ktor-exposed/app/build/libs/app-all.jar)
+ktor-exposed-r2dbc-dsl: WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+ktor-exposed-r2dbc-dsl: WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+ktor-exposed-r2dbc-dsl: [DefaultDispatcher-worker-1] INFO io.ktor.server.Application - Responding at http://0.0.0.0:9090
+ktor-exposed-r2dbc-dsl: [DefaultDispatcher-worker-1] WARN Exposed - Transaction rollback failed: Job was cancelled. Statement: null
+ktor-exposed-r2dbc-dsl: kotlinx.coroutines.JobCancellationException: Job was cancelled; job=SupervisorJobImpl{Cancelling}@7cef8acb
+ktor-exposed-r2dbc-dsl: [DefaultDispatcher-worker-1] WARN Exposed - Transaction attempt #0 failed: Connection acquisition timed out after 5000ms
+ktor-exposed-r2dbc-dsl: SQL: [SELECT world.id, world.randomnumber FROM world WHERE world.id = ?]. Statement(s): SELECT world.id, world.randomnumber FROM world WHERE world.id = ?
+ktor-exposed-r2dbc-dsl: Connection acquisition timed out after 5000ms
+ktor-exposed-r2dbc-dsl: SQL: [SELECT world.id, world.randomnumber FROM world WHERE world.id = ?]
+ktor-exposed-r2dbc-dsl: 	at org.jetbrains.exposed.v1.r2dbc.statements.SuspendExecutableKt.executeIn(SuspendExecutable.kt:142)
+ktor-exposed-r2dbc-dsl: 	at org.jetbrains.exposed.v1.r2dbc.statements.SuspendExecutableKt$executeIn$1.invokeSuspend(SuspendExecutable.kt)
+ktor-exposed-r2dbc-dsl: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+ktor-exposed-r2dbc-dsl: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:98)
+ktor-exposed-r2dbc-dsl: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:586)
+ktor-exposed-r2dbc-dsl: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:829)
+ktor-exposed-r2dbc-dsl: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:717)
+ktor-exposed-r2dbc-dsl: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
+ktor-exposed-r2dbc-dsl: 	Suppressed: Connection acquisition timed out after 5000ms
+ktor-exposed-r2dbc-dsl: SQL: [SELECT world.id, world.randomnumber FROM world WHERE world.id = ?]
+ktor-exposed-r2dbc-dsl: 		... 8 more
+ktor-exposed-r2dbc-dsl: 	Caused by: io.r2dbc.spi.R2dbcTimeoutException: Connection acquisition timed out after 5000ms
+ktor-exposed-r2dbc-dsl: 		at io.r2dbc.pool.ConnectionPool.lambda$null$10(ConnectionPool.java:163)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.Mono.lambda$onErrorMap$27(Mono.java:3769)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.Mono.lambda$onErrorResume$29(Mono.java:3859)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:94)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onError(FluxContextWrite.java:121)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.handleTimeout(FluxTimeout.java:295)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.doTimeout(FluxTimeout.java:280)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxTimeout$TimeoutTimeoutSubscriber.onNext(FluxTimeout.java:419)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.MonoDelay$MonoDelayRunnable.propagateDelay(MonoDelay.java:271)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.MonoDelay$MonoDelayRunnable.run(MonoDelay.java:286)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.lang.Thread.run(Thread.java:1474)
+ktor-exposed-r2dbc-dsl: 		Suppressed: kotlinx.coroutines.JobCancellationException: Job was cancelled; job=SupervisorJobImpl{Cancelling}@7cef8acb
+ktor-exposed-r2dbc-dsl: 	Caused by: java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 5000ms in 'Connection acquisition from [PostgresqlConnectionFactory{, configuration=PostgresqlConnectionConfiguration{applicationName='r2dbc-postgresql', autodetectExtensions='true', compatibilityMode=false, connectTimeout=null, errorResponseLogLevel=DEBUG, database='hello_world', extensions=[], fetchSize=io.r2dbc.postgresql.PostgresqlConnectionConfiguration$Builder$$Lambda/0x0000001c010eb518@59d2103b, forceBinary='false', lockWaitTimeout='null, loopResources='null', multiHostConfiguration='null', noticeLogLevel='DEBUG', options='{}', password='****', preferAttachedBuffers=false, singleHostConfiguration=SingleHostConfiguration{host='tfb-database', port=5432, socket='null'}, statementTimeout=null, tcpKeepAlive=true, tcpNoDelay=true, timeZone=sun.util.calendar.ZoneInfo[id="Etc/UTC",offset=0,dstSavings=0,useDaylight=false,transitions=0,lastRule=null], username='MonoJust'}, extensions=io.r2dbc.postgresql.Extensions@39dcf4b0}]' (and no fallback has been configured)
+ktor-exposed-r2dbc-dsl: 		... 13 more
+ktor-exposed-r2dbc-dsl: 	Suppressed: Connection acquisition timed out after 5000ms
+ktor-exposed-r2dbc-dsl: SQL: [SELECT world.id, world.randomnumber FROM world WHERE world.id = ?]
+ktor-exposed-r2dbc-dsl: 		... 8 more
+ktor-exposed-r2dbc-dsl: 	Caused by: io.r2dbc.spi.R2dbcTimeoutException: Connection acquisition timed out after 5000ms
+ktor-exposed-r2dbc-dsl: 		at io.r2dbc.pool.ConnectionPool.lambda$null$10(ConnectionPool.java:163)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.Mono.lambda$onErrorMap$27(Mono.java:3769)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.Mono.lambda$onErrorResume$29(Mono.java:3859)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:94)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onError(FluxContextWrite.java:121)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.handleTimeout(FluxTimeout.java:295)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.doTimeout(FluxTimeout.java:280)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxTimeout$TimeoutTimeoutSubscriber.onNext(FluxTimeout.java:419)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.MonoDelay$MonoDelayRunnable.propagateDelay(MonoDelay.java:271)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.MonoDelay$MonoDelayRunnable.run(MonoDelay.java:286)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.lang.Thread.run(Thread.java:1474)
+ktor-exposed-r2dbc-dsl: 		Suppressed: [CIRCULAR REFERENCE: kotlinx.coroutines.JobCancellationException: Job was cancelled; job=SupervisorJobImpl{Cancelling}@7cef8acb]
+ktor-exposed-r2dbc-dsl: 	Caused by: java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 5000ms in 'Connection acquisition from [PostgresqlConnectionFactory{, configuration=PostgresqlConnectionConfiguration{applicationName='r2dbc-postgresql', autodetectExtensions='true', compatibilityMode=false, connectTimeout=null, errorResponseLogLevel=DEBUG, database='hello_world', extensions=[], fetchSize=io.r2dbc.postgresql.PostgresqlConnectionConfiguration$Builder$$Lambda/0x0000001c010eb518@59d2103b, forceBinary='false', lockWaitTimeout='null, loopResources='null', multiHostConfiguration='null', noticeLogLevel='DEBUG', options='{}', password='****', preferAttachedBuffers=false, singleHostConfiguration=SingleHostConfiguration{host='tfb-database', port=5432, socket='null'}, statementTimeout=null, tcpKeepAlive=true, tcpNoDelay=true, timeZone=sun.util.calendar.ZoneInfo[id="Etc/UTC",offset=0,dstSavings=0,useDaylight=false,transitions=0,lastRule=null], username='MonoJust'}, extensions=io.r2dbc.postgresql.Extensions@39dcf4b0}]' (and no fallback has been configured)
+ktor-exposed-r2dbc-dsl: 		... 13 more
+ktor-exposed-r2dbc-dsl: 	Suppressed: Connection acquisition timed out after 5000ms
+ktor-exposed-r2dbc-dsl: SQL: [SELECT world.id, world.randomnumber FROM world WHERE world.id = ?]
+ktor-exposed-r2dbc-dsl: 		... 8 more
+ktor-exposed-r2dbc-dsl: 	Caused by: io.r2dbc.spi.R2dbcTimeoutException: Connection acquisition timed out after 5000ms
+ktor-exposed-r2dbc-dsl: 		at io.r2dbc.pool.ConnectionPool.lambda$null$10(ConnectionPool.java:163)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.Mono.lambda$onErrorMap$27(Mono.java:3769)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.Mono.lambda$onErrorResume$29(Mono.java:3859)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:94)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onError(FluxContextWrite.java:121)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.handleTimeout(FluxTimeout.java:295)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.doTimeout(FluxTimeout.java:280)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxTimeout$TimeoutTimeoutSubscriber.onNext(FluxTimeout.java:419)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.MonoDelay$MonoDelayRunnable.propagateDelay(MonoDelay.java:271)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.MonoDelay$MonoDelayRunnable.run(MonoDelay.java:286)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.lang.Thread.run(Thread.java:1474)
+ktor-exposed-r2dbc-dsl: 		Suppressed: [CIRCULAR REFERENCE: kotlinx.coroutines.JobCancellationException: Job was cancelled; job=SupervisorJobImpl{Cancelling}@7cef8acb]
+ktor-exposed-r2dbc-dsl: 	Caused by: java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 5000ms in 'Connection acquisition from [PostgresqlConnectionFactory{, configuration=PostgresqlConnectionConfiguration{applicationName='r2dbc-postgresql', autodetectExtensions='true', compatibilityMode=false, connectTimeout=null, errorResponseLogLevel=DEBUG, database='hello_world', extensions=[], fetchSize=io.r2dbc.postgresql.PostgresqlConnectionConfiguration$Builder$$Lambda/0x0000001c010eb518@59d2103b, forceBinary='false', lockWaitTimeout='null, loopResources='null', multiHostConfiguration='null', noticeLogLevel='DEBUG', options='{}', password='****', preferAttachedBuffers=false, singleHostConfiguration=SingleHostConfiguration{host='tfb-database', port=5432, socket='null'}, statementTimeout=null, tcpKeepAlive=true, tcpNoDelay=true, timeZone=sun.util.calendar.ZoneInfo[id="Etc/UTC",offset=0,dstSavings=0,useDaylight=false,transitions=0,lastRule=null], username='MonoJust'}, extensions=io.r2dbc.postgresql.Extensions@39dcf4b0}]' (and no fallback has been configured)
+ktor-exposed-r2dbc-dsl: 		... 13 more
+ktor-exposed-r2dbc-dsl: 	Suppressed: Connection acquisition timed out after 5000ms
+ktor-exposed-r2dbc-dsl: SQL: [SELECT world.id, world.randomnumber FROM world WHERE world.id = ?]
+ktor-exposed-r2dbc-dsl: 		... 8 more
+ktor-exposed-r2dbc-dsl: 	Caused by: io.r2dbc.spi.R2dbcTimeoutException: Connection acquisition timed out after 5000ms
+ktor-exposed-r2dbc-dsl: 		at io.r2dbc.pool.ConnectionPool.lambda$null$10(ConnectionPool.java:163)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.Mono.lambda$onErrorMap$27(Mono.java:3769)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.Mono.lambda$onErrorResume$29(Mono.java:3859)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:94)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onError(FluxContextWrite.java:121)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.handleTimeout(FluxTimeout.java:295)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.doTimeout(FluxTimeout.java:280)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxTimeout$TimeoutTimeoutSubscriber.onNext(FluxTimeout.java:419)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.MonoDelay$MonoDelayRunnable.propagateDelay(MonoDelay.java:271)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.MonoDelay$MonoDelayRunnable.run(MonoDelay.java:286)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.lang.Thread.run(Thread.java:1474)
+ktor-exposed-r2dbc-dsl: 		Suppressed: [CIRCULAR REFERENCE: kotlinx.coroutines.JobCancellationException: Job was cancelled; job=SupervisorJobImpl{Cancelling}@7cef8acb]
+ktor-exposed-r2dbc-dsl: 	Caused by: java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 5000ms in 'Connection acquisition from [PostgresqlConnectionFactory{, configuration=PostgresqlConnectionConfiguration{applicationName='r2dbc-postgresql', autodetectExtensions='true', compatibilityMode=false, connectTimeout=null, errorResponseLogLevel=DEBUG, database='hello_world', extensions=[], fetchSize=io.r2dbc.postgresql.PostgresqlConnectionConfiguration$Builder$$Lambda/0x0000001c010eb518@59d2103b, forceBinary='false', lockWaitTimeout='null, loopResources='null', multiHostConfiguration='null', noticeLogLevel='DEBUG', options='{}', password='****', preferAttachedBuffers=false, singleHostConfiguration=SingleHostConfiguration{host='tfb-database', port=5432, socket='null'}, statementTimeout=null, tcpKeepAlive=true, tcpNoDelay=true, timeZone=sun.util.calendar.ZoneInfo[id="Etc/UTC",offset=0,dstSavings=0,useDaylight=false,transitions=0,lastRule=null], username='MonoJust'}, extensions=io.r2dbc.postgresql.Extensions@39dcf4b0}]' (and no fallback has been configured)
+ktor-exposed-r2dbc-dsl: 		... 13 more
+ktor-exposed-r2dbc-dsl: 	Suppressed: Connection acquisition timed out after 5000ms
+ktor-exposed-r2dbc-dsl: SQL: [SELECT world.id, world.randomnumber FROM world WHERE world.id = ?]
+ktor-exposed-r2dbc-dsl: 		... 8 more
+ktor-exposed-r2dbc-dsl: 	Caused by: io.r2dbc.spi.R2dbcTimeoutException: Connection acquisition timed out after 5000ms
+ktor-exposed-r2dbc-dsl: 		at io.r2dbc.pool.ConnectionPool.lambda$null$10(ConnectionPool.java:163)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.Mono.lambda$onErrorMap$27(Mono.java:3769)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.Mono.lambda$onErrorResume$29(Mono.java:3859)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:94)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onError(FluxContextWrite.java:121)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.handleTimeout(FluxTimeout.java:295)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.doTimeout(FluxTimeout.java:280)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxTimeout$TimeoutTimeoutSubscriber.onNext(FluxTimeout.java:419)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.MonoDelay$MonoDelayRunnable.propagateDelay(MonoDelay.java:271)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.MonoDelay$MonoDelayRunnable.run(MonoDelay.java:286)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.lang.Thread.run(Thread.java:1474)
+ktor-exposed-r2dbc-dsl: 		Suppressed: [CIRCULAR REFERENCE: kotlinx.coroutines.JobCancellationException: Job was cancelled; job=SupervisorJobImpl{Cancelling}@7cef8acb]
+ktor-exposed-r2dbc-dsl: 	Caused by: java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 5000ms in 'Connection acquisition from [PostgresqlConnectionFactory{, configuration=PostgresqlConnectionConfiguration{applicationName='r2dbc-postgresql', autodetectExtensions='true', compatibilityMode=false, connectTimeout=null, errorResponseLogLevel=DEBUG, database='hello_world', extensions=[], fetchSize=io.r2dbc.postgresql.PostgresqlConnectionConfiguration$Builder$$Lambda/0x0000001c010eb518@59d2103b, forceBinary='false', lockWaitTimeout='null, loopResources='null', multiHostConfiguration='null', noticeLogLevel='DEBUG', options='{}', password='****', preferAttachedBuffers=false, singleHostConfiguration=SingleHostConfiguration{host='tfb-database', port=5432, socket='null'}, statementTimeout=null, tcpKeepAlive=true, tcpNoDelay=true, timeZone=sun.util.calendar.ZoneInfo[id="Etc/UTC",offset=0,dstSavings=0,useDaylight=false,transitions=0,lastRule=null], username='MonoJust'}, extensions=io.r2dbc.postgresql.Extensions@39dcf4b0}]' (and no fallback has been configured)
+ktor-exposed-r2dbc-dsl: 		... 13 more
+ktor-exposed-r2dbc-dsl: 	Suppressed: Connection acquisition timed out after 5000ms
+ktor-exposed-r2dbc-dsl: SQL: [SELECT world.id, world.randomnumber FROM world WHERE world.id = ?]
+ktor-exposed-r2dbc-dsl: 		... 8 more
+ktor-exposed-r2dbc-dsl: 	Caused by: io.r2dbc.spi.R2dbcTimeoutException: Connection acquisition timed out after 5000ms
+ktor-exposed-r2dbc-dsl: 		at io.r2dbc.pool.ConnectionPool.lambda$null$10(ConnectionPool.java:163)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.Mono.lambda$onErrorMap$27(Mono.java:3769)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.Mono.lambda$onErrorResume$29(Mono.java:3859)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:94)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onError(FluxContextWrite.java:121)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.handleTimeout(FluxTimeout.java:295)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.doTimeout(FluxTimeout.java:280)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxTimeout$TimeoutTimeoutSubscriber.onNext(FluxTimeout.java:419)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.MonoDelay$MonoDelayRunnable.propagateDelay(MonoDelay.java:271)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.MonoDelay$MonoDelayRunnable.run(MonoDelay.java:286)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.lang.Thread.run(Thread.java:1474)
+ktor-exposed-r2dbc-dsl: 		Suppressed: [CIRCULAR REFERENCE: kotlinx.coroutines.JobCancellationException: Job was cancelled; job=SupervisorJobImpl{Cancelling}@7cef8acb]
+ktor-exposed-r2dbc-dsl: 	Caused by: java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 5000ms in 'Connection acquisition from [PostgresqlConnectionFactory{, configuration=PostgresqlConnectionConfiguration{applicationName='r2dbc-postgresql', autodetectExtensions='true', compatibilityMode=false, connectTimeout=null, errorResponseLogLevel=DEBUG, database='hello_world', extensions=[], fetchSize=io.r2dbc.postgresql.PostgresqlConnectionConfiguration$Builder$$Lambda/0x0000001c010eb518@59d2103b, forceBinary='false', lockWaitTimeout='null, loopResources='null', multiHostConfiguration='null', noticeLogLevel='DEBUG', options='{}', password='****', preferAttachedBuffers=false, singleHostConfiguration=SingleHostConfiguration{host='tfb-database', port=5432, socket='null'}, statementTimeout=null, tcpKeepAlive=true, tcpNoDelay=true, timeZone=sun.util.calendar.ZoneInfo[id="Etc/UTC",offset=0,dstSavings=0,useDaylight=false,transitions=0,lastRule=null], username='MonoJust'}, extensions=io.r2dbc.postgresql.Extensions@39dcf4b0}]' (and no fallback has been configured)
+ktor-exposed-r2dbc-dsl: 		... 13 more
+ktor-exposed-r2dbc-dsl: 	Suppressed: Connection acquisition timed out after 5000ms
+ktor-exposed-r2dbc-dsl: SQL: [SELECT world.id, world.randomnumber FROM world WHERE world.id = ?]
+ktor-exposed-r2dbc-dsl: 		... 8 more
+ktor-exposed-r2dbc-dsl: 	Caused by: io.r2dbc.spi.R2dbcTimeoutException: Connection acquisition timed out after 5000ms
+ktor-exposed-r2dbc-dsl: 		at io.r2dbc.pool.ConnectionPool.lambda$null$10(ConnectionPool.java:163)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.Mono.lambda$onErrorMap$27(Mono.java:3769)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.Mono.lambda$onErrorResume$29(Mono.java:3859)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:94)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onError(FluxContextWrite.java:121)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.handleTimeout(FluxTimeout.java:295)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.doTimeout(FluxTimeout.java:280)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxTimeout$TimeoutTimeoutSubscriber.onNext(FluxTimeout.java:419)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.MonoDelay$MonoDelayRunnable.propagateDelay(MonoDelay.java:271)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.MonoDelay$MonoDelayRunnable.run(MonoDelay.java:286)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.lang.Thread.run(Thread.java:1474)
+ktor-exposed-r2dbc-dsl: 		Suppressed: [CIRCULAR REFERENCE: kotlinx.coroutines.JobCancellationException: Job was cancelled; job=SupervisorJobImpl{Cancelling}@7cef8acb]
+ktor-exposed-r2dbc-dsl: 	Caused by: java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 5000ms in 'Connection acquisition from [PostgresqlConnectionFactory{, configuration=PostgresqlConnectionConfiguration{applicationName='r2dbc-postgresql', autodetectExtensions='true', compatibilityMode=false, connectTimeout=null, errorResponseLogLevel=DEBUG, database='hello_world', extensions=[], fetchSize=io.r2dbc.postgresql.PostgresqlConnectionConfiguration$Builder$$Lambda/0x0000001c010eb518@59d2103b, forceBinary='false', lockWaitTimeout='null, loopResources='null', multiHostConfiguration='null', noticeLogLevel='DEBUG', options='{}', password='****', preferAttachedBuffers=false, singleHostConfiguration=SingleHostConfiguration{host='tfb-database', port=5432, socket='null'}, statementTimeout=null, tcpKeepAlive=true, tcpNoDelay=true, timeZone=sun.util.calendar.ZoneInfo[id="Etc/UTC",offset=0,dstSavings=0,useDaylight=false,transitions=0,lastRule=null], username='MonoJust'}, extensions=io.r2dbc.postgresql.Extensions@39dcf4b0}]' (and no fallback has been configured)
+ktor-exposed-r2dbc-dsl: 		... 13 more
+ktor-exposed-r2dbc-dsl: 	Suppressed: Connection acquisition timed out after 5000ms
+ktor-exposed-r2dbc-dsl: SQL: [SELECT world.id, world.randomnumber FROM world WHERE world.id = ?]
+ktor-exposed-r2dbc-dsl: 		... 8 more
+ktor-exposed-r2dbc-dsl: 	Caused by: io.r2dbc.spi.R2dbcTimeoutException: Connection acquisition timed out after 5000ms
+ktor-exposed-r2dbc-dsl: 		at io.r2dbc.pool.ConnectionPool.lambda$null$10(ConnectionPool.java:163)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.Mono.lambda$onErrorMap$27(Mono.java:3769)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.Mono.lambda$onErrorResume$29(Mono.java:3859)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:94)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onError(FluxContextWrite.java:121)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.handleTimeout(FluxTimeout.java:295)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.doTimeout(FluxTimeout.java:280)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxTimeout$TimeoutTimeoutSubscriber.onNext(FluxTimeout.java:419)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.MonoDelay$MonoDelayRunnable.propagateDelay(MonoDelay.java:271)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.MonoDelay$MonoDelayRunnable.run(MonoDelay.java:286)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.lang.Thread.run(Thread.java:1474)
+ktor-exposed-r2dbc-dsl: 		Suppressed: [CIRCULAR REFERENCE: kotlinx.coroutines.JobCancellationException: Job was cancelled; job=SupervisorJobImpl{Cancelling}@7cef8acb]
+ktor-exposed-r2dbc-dsl: 	Caused by: java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 5000ms in 'Connection acquisition from [PostgresqlConnectionFactory{, configuration=PostgresqlConnectionConfiguration{applicationName='r2dbc-postgresql', autodetectExtensions='true', compatibilityMode=false, connectTimeout=null, errorResponseLogLevel=DEBUG, database='hello_world', extensions=[], fetchSize=io.r2dbc.postgresql.PostgresqlConnectionConfiguration$Builder$$Lambda/0x0000001c010eb518@59d2103b, forceBinary='false', lockWaitTimeout='null, loopResources='null', multiHostConfiguration='null', noticeLogLevel='DEBUG', options='{}', password='****', preferAttachedBuffers=false, singleHostConfiguration=SingleHostConfiguration{host='tfb-database', port=5432, socket='null'}, statementTimeout=null, tcpKeepAlive=true, tcpNoDelay=true, timeZone=sun.util.calendar.ZoneInfo[id="Etc/UTC",offset=0,dstSavings=0,useDaylight=false,transitions=0,lastRule=null], username='MonoJust'}, extensions=io.r2dbc.postgresql.Extensions@39dcf4b0}]' (and no fallback has been configured)
+ktor-exposed-r2dbc-dsl: 		... 13 more
+ktor-exposed-r2dbc-dsl: 	Suppressed: Connection acquisition timed out after 5000ms
+ktor-exposed-r2dbc-dsl: SQL: [SELECT world.id, world.randomnumber FROM world WHERE world.id = ?]
+ktor-exposed-r2dbc-dsl: 		... 8 more
+ktor-exposed-r2dbc-dsl: 	Caused by: io.r2dbc.spi.R2dbcTimeoutException: Connection acquisition timed out after 5000ms
+ktor-exposed-r2dbc-dsl: 		at io.r2dbc.pool.ConnectionPool.lambda$null$10(ConnectionPool.java:163)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.Mono.lambda$onErrorMap$27(Mono.java:3769)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.Mono.lambda$onErrorResume$29(Mono.java:3859)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:94)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onError(FluxContextWrite.java:121)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.handleTimeout(FluxTimeout.java:295)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.doTimeout(FluxTimeout.java:280)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxTimeout$TimeoutTimeoutSubscriber.onNext(FluxTimeout.java:419)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.MonoDelay$MonoDelayRunnable.propagateDelay(MonoDelay.java:271)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.publisher.MonoDelay$MonoDelayRunnable.run(MonoDelay.java:286)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+ktor-exposed-r2dbc-dsl: 		at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+ktor-exposed-r2dbc-dsl: 		at java.base/java.lang.Thread.run(Thread.java:1474)
+ktor-exposed-r2dbc-dsl: 		Suppressed: [CIRCULAR REFERENCE: kotlinx.coroutines.JobCancellationException: Job was cancelled; job=SupervisorJobImpl{Cancelling}@7cef8acb]
+ktor-exposed-r2dbc-dsl: 	Caused by: java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 5000ms in 'Connection acquisition from [PostgresqlConnectionFactory{, configuration=PostgresqlConnectionConfiguration{applicationName='r2dbc-postgresql', autodetectExtensions='true', compatibilityMode=false, connectTimeout=null, errorResponseLogLevel=DEBUG, database='hello_world', extensions=[], fetchSize=io.r2dbc.postgresql.PostgresqlConnectionConfiguration$Builder$$Lambda/0x0000001c010eb518@59d2103b, forceBinary='false', lockWaitTimeout='null, loopResources='null', multiHostConfiguration='null', noticeLogLevel='DEBUG', options='{}', password='****', preferAttachedBuffers=false, singleHostConfiguration=SingleHostConfiguration{host='tfb-database', port=5432, socket='null'}, statementTimeout=null, tcpKeepAlive=true, tcpNoDelay=true, timeZone=sun.util.calendar.ZoneInfo[id="Etc/UTC",offset=0,dstSavings=0,useDaylight=false,transitions=0,lastRule=null], username='MonoJust'}, extensions=io.r2dbc.postgresql.Extensions@39dcf4b0}]' (and no fallback has been configured)
+ktor-exposed-r2dbc-dsl: 		... 13 more
+ktor-exposed-r2dbc-dsl: Caused by: io.r2dbc.spi.R2dbcTimeoutException: Connection acquisition timed out after 5000ms
+ktor-exposed-r2dbc-dsl: 	at io.r2dbc.pool.ConnectionPool.lambda$null$10(ConnectionPool.java:163)
+ktor-exposed-r2dbc-dsl: 	at reactor.core.publisher.Mono.lambda$onErrorMap$27(Mono.java:3769)
+ktor-exposed-r2dbc-dsl: 	at reactor.core.publisher.Mono.lambda$onErrorResume$29(Mono.java:3859)
+ktor-exposed-r2dbc-dsl: 	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:94)
+ktor-exposed-r2dbc-dsl: 	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onError(FluxContextWrite.java:121)
+ktor-exposed-r2dbc-dsl: 	at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124)
+ktor-exposed-r2dbc-dsl: 	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.handleTimeout(FluxTimeout.java:295)
+ktor-exposed-r2dbc-dsl: 	at reactor.core.publisher.FluxTimeout$TimeoutMainSubscriber.doTimeout(FluxTimeout.java:280)
+ktor-exposed-r2dbc-dsl: 	at reactor.core.publisher.FluxTimeout$TimeoutTimeoutSubscriber.onNext(FluxTimeout.java:419)
+ktor-exposed-r2dbc-dsl: 	at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+ktor-exposed-r2dbc-dsl: 	at reactor.core.publisher.MonoDelay$MonoDelayRunnable.propagateDelay(MonoDelay.java:271)
+ktor-exposed-r2dbc-dsl: 	at reactor.core.publisher.MonoDelay$MonoDelayRunnable.run(MonoDelay.java:286)
+ktor-exposed-r2dbc-dsl: 	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+ktor-exposed-r2dbc-dsl: 	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+ktor-exposed-r2dbc-dsl: 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+ktor-exposed-r2dbc-dsl: 	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309)
+ktor-exposed-r2dbc-dsl: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+ktor-exposed-r2dbc-dsl: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+ktor-exposed-r2dbc-dsl: 	at java.base/java.lang.Thread.run(Thread.java:1474)
+ktor-exposed-r2dbc-dsl: 	Suppressed: [CIRCULAR REFERENCE: kotlinx.coroutines.JobCancellationException: Job was cancelled; job=SupervisorJobImpl{Cancelling}@7cef8acb]
+ktor-exposed-r2dbc-dsl: Caused by: java.util.concurrent.TimeoutException: Did not observe any item or terminal signal within 5000ms in 'Connection acquisition from [PostgresqlConnectionFactory{, configuration=PostgresqlConnectionConfiguration{applicationName='r2dbc-postgresql', autodetectExtensions='true', compatibilityMode=false, connectTimeout=null, errorResponseLogLevel=DEBUG, database='hello_world', extensions=[], fetchSize=io.r2dbc.postgresql.PostgresqlConnectionConfiguration$Builder$$Lambda/0x0000001c010eb518@59d2103b, forceBinary='false', lockWaitTimeout='null, loopResources='null', multiHostConfiguration='null', noticeLogLevel='DEBUG', options='{}', password='****', preferAttachedBuffers=false, singleHostConfiguration=SingleHostConfiguration{host='tfb-database', port=5432, socket='null'}, statementTimeout=null, tcpKeepAlive=true, tcpNoDelay=true, timeZone=sun.util.calendar.ZoneInfo[id="Etc/UTC",offset=0,dstSavings=0,useDaylight=false,transitions=0,lastRule=null], username='MonoJust'}, extensions=io.r2dbc.postgresql.Extensions@39dcf4b0}]' (and no fallback has been configured)
+ktor-exposed-r2dbc-dsl: 	... 13 more
+ktor-exposed-r2dbc-dsl: [DefaultDispatcher-worker-1] WARN Exposed - Transaction rollback failed: Job was cancelled. See previous log line for statement
+ktor-exposed-r2dbc-dsl: kotlinx.coroutines.JobCancellationException: Job was cancelled; job=SupervisorJobImpl{Cancelling}@7cef8acb
+ktor-exposed-r2dbc-dsl: [DefaultDispatcher-worker-1] WARN Exposed - Wait 0 milliseconds before retrying
+ktor-exposed-r2dbc-dsl: [DefaultDispatcher-worker-1] ERROR io.netty.util.concurrent.DefaultPromise.rejectedExecution - Failed to submit a listener notification task. Event loop shut down?
+ktor-exposed-r2dbc-dsl: java.util.concurrent.RejectedExecutionException: event executor terminated
+ktor-exposed-r2dbc-dsl: 	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:1123)
+ktor-exposed-r2dbc-dsl: 	at io.netty.util.concurrent.SingleThreadEventExecutor.offerTask(SingleThreadEventExecutor.java:413)
+ktor-exposed-r2dbc-dsl: 	at io.netty.util.concurrent.SingleThreadEventExecutor.addTask(SingleThreadEventExecutor.java:406)
+ktor-exposed-r2dbc-dsl: 	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:1025)
+ktor-exposed-r2dbc-dsl: 	at io.netty.util.concurrent.SingleThreadEventExecutor.execute0(SingleThreadEventExecutor.java:991)
+ktor-exposed-r2dbc-dsl: 	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:981)
+ktor-exposed-r2dbc-dsl: 	at io.netty.util.concurrent.DefaultPromise.safeExecute(DefaultPromise.java:879)
+ktor-exposed-r2dbc-dsl: 	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:514)
+ktor-exposed-r2dbc-dsl: 	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:650)
+ktor-exposed-r2dbc-dsl: 	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:639)
+ktor-exposed-r2dbc-dsl: 	at io.netty.util.concurrent.DefaultPromise.setSuccess(DefaultPromise.java:111)
+ktor-exposed-r2dbc-dsl: 	at io.netty.channel.DefaultChannelPromise.setSuccess(DefaultChannelPromise.java:78)
+ktor-exposed-r2dbc-dsl: 	at io.netty.channel.DefaultChannelPromise.setSuccess(DefaultChannelPromise.java:73)
+ktor-exposed-r2dbc-dsl: 	at io.ktor.server.netty.NettyApplicationResponse.respondFromBytes$suspendImpl(NettyApplicationResponse.kt:62)
+ktor-exposed-r2dbc-dsl: 	at io.ktor.server.netty.NettyApplicationResponse.respondFromBytes(NettyApplicationResponse.kt)
+ktor-exposed-r2dbc-dsl: 	at io.ktor.server.netty.NettyApplicationResponse.respondNoContent$suspendImpl(NettyApplicationResponse.kt:96)
+ktor-exposed-r2dbc-dsl: 	at io.ktor.server.netty.NettyApplicationResponse.respondNoContent(NettyApplicationResponse.kt)
+ktor-exposed-r2dbc-dsl: 	at io.ktor.server.engine.BaseApplicationResponse.respondOutgoingContent$suspendImpl(BaseApplicationResponse.kt:161)
+ktor-exposed-r2dbc-dsl: 	at io.ktor.server.engine.BaseApplicationResponse.respondOutgoingContent(BaseApplicationResponse.kt)
+ktor-exposed-r2dbc-dsl: 	at io.ktor.server.netty.NettyApplicationResponse.respondOutgoingContent$suspendImpl(NettyApplicationResponse.kt:38)
+ktor-exposed-r2dbc-dsl: 	at io.ktor.server.netty.NettyApplicationResponse.respondOutgoingContent(NettyApplicationResponse.kt)
+ktor-exposed-r2dbc-dsl: 	at io.ktor.server.engine.BaseApplicationResponse$Companion$setupSendPipeline$1.invokeSuspend(BaseApplicationResponse.kt:341)
+ktor-exposed-r2dbc-dsl: 	at io.ktor.server.engine.BaseApplicationResponse$Companion$setupSendPipeline$1.invoke(BaseApplicationResponse.kt)
+ktor-exposed-r2dbc-dsl: 	at io.ktor.server.engine.BaseApplicationResponse$Companion$setupSendPipeline$1.invoke(BaseApplicationResponse.kt)
+ktor-exposed-r2dbc-dsl: 	at io.ktor.util.pipeline.PipelineJvmKt.pipelineStartCoroutineUninterceptedOrReturn(PipelineJvm.kt:15)
+ktor-exposed-r2dbc-dsl: 	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:131)
+ktor-exposed-r2dbc-dsl: 	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:89)
+ktor-exposed-r2dbc-dsl: 	at io.ktor.util.pipeline.SuspendFunctionGun.proceedWith(SuspendFunctionGun.kt:99)
+ktor-exposed-r2dbc-dsl: 	at io.ktor.server.engine.DefaultTransformKt$installDefaultTransformations$1.invokeSuspend(DefaultTransform.kt:31)
+ktor-exposed-r2dbc-dsl: 	at io.ktor.server.engine.DefaultTransformKt$installDefaultTransformations$1.invoke(DefaultTransform.kt)
+ktor-exposed-r2dbc-dsl: 	at io.ktor.server.engine.DefaultTransformKt$installDefaultTransformations$1.invoke(DefaultTransform.kt)
+ktor-exposed-r2dbc-dsl: 	at io.ktor.util.pipeline.PipelineJvmKt.pipelineStartCoroutineUninterceptedOrReturn(PipelineJvm.kt:15)
+ktor-exposed-r2dbc-dsl: 	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:131)
+ktor-exposed-r2dbc-dsl: 	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:89)
+ktor-exposed-r2dbc-dsl: 	at io.ktor.util.pipeline.SuspendFunctionGun.execute$ktor_utils(SuspendFunctionGun.kt:109)
+ktor-exposed-r2dbc-dsl: 	at io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:92)
+ktor-exposed-r2dbc-dsl: 	at io.ktor.server.application.PipelineCall.respond$suspendImpl(PipelineCall.kt:132)
+ktor-exposed-r2dbc-dsl: 	at io.ktor.server.application.PipelineCall.respond(PipelineCall.kt)
+ktor-exposed-r2dbc-dsl: 	at io.ktor.server.routing.RoutingPipelineCall.respond(RoutingPipelineCall.kt:23)
+ktor-exposed-r2dbc-dsl: 	at io.ktor.server.routing.RoutingCall.respond(RoutingNode.kt:248)
+ktor-exposed-r2dbc-dsl: 	at io.ktor.server.engine.DefaultEnginePipelineKt.tryRespondError(DefaultEnginePipeline.kt:135)
+ktor-exposed-r2dbc-dsl: 	at io.ktor.server.engine.DefaultEnginePipelineKt.handleFailure(DefaultEnginePipeline.kt:67)
+ktor-exposed-r2dbc-dsl: 	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1.invokeSuspend(DefaultEnginePipeline.kt:43)
+ktor-exposed-r2dbc-dsl: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+ktor-exposed-r2dbc-dsl: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:98)
+ktor-exposed-r2dbc-dsl: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:586)
+ktor-exposed-r2dbc-dsl: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:829)
+ktor-exposed-r2dbc-dsl: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:717)
+ktor-exposed-r2dbc-dsl: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)

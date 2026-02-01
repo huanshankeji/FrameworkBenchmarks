@@ -1,0 +1,28 @@
+--------------------------------------------------------------------------------
+Benchmarking vertx-web-kotlinx-exposed-vertx-sql-client-postgresql
+--------------------------------------------------------------------------------
+BENCHMARKING DB ... 
+Benchmark results:
+Complete
+BENCHMARKING QUERY ... 
+Benchmark results:
+Complete
+BENCHMARKING UPDATE ... 
+Benchmark results:
+Complete
+BENCHMARKING FORTUNE ... 
+Benchmark results:
+Complete
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Benchmarking time: 8m 22s
+wrk: Build time: 8s
+techempower/postgres:latest: Build time: 57s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Build time: 3m 18s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Time starting database: 1s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Time until accepting requests: 1s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Verify time: 9m 6s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Total test time: 12m 33s
+tfb: Total time building so far: 4m 23s
+tfb: Total time verifying so far: 9m 6s
+tfb: Total time benchmarking so far: 8m 22s
+tfb: Total execution time so far: 13m 39s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Total TCP sockets: 22

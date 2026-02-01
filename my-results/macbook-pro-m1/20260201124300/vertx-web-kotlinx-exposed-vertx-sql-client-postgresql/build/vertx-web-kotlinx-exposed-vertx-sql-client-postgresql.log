@@ -1,0 +1,92 @@
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 1/21 : FROM gradle:9.3.1-jdk25
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> cd81416403cd
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 2/21 : WORKDIR /vertx-web-kotlinx
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> Running in 94bd902e8e3f
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> 1cb4cf003f50
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 3/21 : COPY .m2/repository/com/huanshankeji/exposed-vertx-sql-client-core/0.8.0-SNAPSHOT /root/.m2/repository/com/huanshankeji/exposed-vertx-sql-client-core/0.8.0-SNAPSHOT
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> 8fab9ceee7f5
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 4/21 : COPY .m2/repository/com/huanshankeji/exposed-vertx-sql-client-postgresql/0.8.0-SNAPSHOT /root/.m2/repository/com/huanshankeji/exposed-vertx-sql-client-postgresql/0.8.0-SNAPSHOT
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> f5b89f74a5d7
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 5/21 : COPY gradle/libs.versions.toml gradle/libs.versions.toml
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> 137fb889107e
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 6/21 : COPY buildSrc buildSrc
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> a8341b193270
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 7/21 : COPY settings.gradle.kts settings.gradle.kts
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> 1bf6ba955be0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 8/21 : COPY build.gradle.kts build.gradle.kts
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> d5752161e57a
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 9/21 : COPY gradle.properties gradle.properties
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> 02e4d7a4213d
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 10/21 : RUN mkdir -p common without-db/default with-db/common with-db/default with-db/r2dbc-common with-db/r2dbc with-db/exposed-common with-db/exposed-r2dbc with-db/exposed-vertx-sql-client
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> Running in 7d746d8d1fb3
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> a3059340167c
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 11/21 : COPY common/build.gradle.kts common/build.gradle.kts
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> 0a11298de84b
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 12/21 : COPY common/src common/src
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> 379607d50a70
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 13/21 : COPY with-db/common/build.gradle.kts with-db/common/build.gradle.kts
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> cd127272a3ce
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 14/21 : COPY with-db/common/src with-db/common/src
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> fecbaff0bd2a
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 15/21 : COPY with-db/exposed-common/build.gradle.kts with-db/exposed-common/build.gradle.kts
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> 38d4a3a04335
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 16/21 : COPY with-db/exposed-common/src with-db/exposed-common/src
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> 1b2c3ace0058
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 17/21 : COPY with-db/exposed-vertx-sql-client/build.gradle.kts with-db/exposed-vertx-sql-client/build.gradle.kts
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> bfc8b3125d50
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 18/21 : COPY with-db/exposed-vertx-sql-client/src with-db/exposed-vertx-sql-client/src
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> 642a731ef33a
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 19/21 : RUN gradle --no-daemon with-db:exposed-vertx-sql-client:installDist
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> Running in b48aef5674b8
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Daemon will be stopped at the end of the build 
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Calculating task graph as no cached configuration is available for tasks: with-db:exposed-vertx-sql-client:installDist
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: > Configure project :buildSrc
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: WARNING: Unsupported Kotlin plugin version.
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: The `embedded-kotlin` and `kotlin-dsl` plugins rely on features of Kotlin `2.2.21` that might work differently than in the requested version `2.3.0`.
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Using the `kotlin-dsl` plugin together with a different Kotlin version (for example, by using the Kotlin Gradle plugin (`kotlin(jvm)`)) in the same project is not recommended.
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: See https://docs.gradle.org/9.3.1/userguide/kotlin_dsl.html#sec:kotlin-dsl_plugin for more details on how the `kotlin-dsl` plugin works (same applies to `embedded-kotlin`).
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: It applies a certain version of the `org.jetbrains.kotlin.jvm` plugin and also add a dependency on the Kotlin Standard Library.
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Applying other version of the `org.jetbrains.kotlin.jvm` plugin in the build and/or adding dependencies to different versions of the Kotlin Standard Library can cause incompatibilities.
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: See https://docs.gradle.org/9.3.1/userguide/kotlin_dsl.html#sec:kotlin
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: > Task :buildSrc:checkKotlinGradlePluginConfigurationErrors SKIPPED
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: > Task :buildSrc:generateExternalPluginSpecBuilders
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: > Task :buildSrc:extractPrecompiledScriptPluginPlugins
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: > Task :buildSrc:generateScriptPluginAdapters
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: > Task :buildSrc:pluginDescriptors
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: > Task :buildSrc:processResources
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: > Task :buildSrc:compilePluginsBlocks
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: > Task :buildSrc:generatePrecompiledScriptPluginAccessors
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: > Task :buildSrc:compileKotlin
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: > Task :buildSrc:compileJava NO-SOURCE
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: > Task :buildSrc:compileGroovy NO-SOURCE
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: > Task :buildSrc:classes
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: > Task :buildSrc:jar
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: 1 problem was found storing the configuration cache.
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: - Task `:with-db:exposed-vertx-sql-client:compileKotlin` of type `org.jetbrains.kotlin.gradle.tasks.KotlinCompile`: error writing value of type 'org.gradle.api.internal.provider.DefaultProvider'
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: See the complete report at file:///vertx-web-kotlinx/build/reports/configuration-cache/8np4uy4ra6m6jhv9gmap43rh3/525vnxoey4qitqjdhsv84ribk/configuration-cache-report.html
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: [Incubating] Problems report is available at: file:///vertx-web-kotlinx/build/reports/problems/problems-report.html
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: FAILURE: Build failed with an exception.
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: * What went wrong:
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: 
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Configuration cache state could not be cached: field `provider` of `org.gradle.internal.serialize.codecs.core.ProviderBackedFileCollectionSpec` bean found in field `element` of `java.util.Collections$SingletonList` bean found in field `elements` of `org.gradle.internal.serialize.codecs.core.ResolutionBackedFileCollectionSpec` bean found in field `__classpathSnapshot__` of `org.jetbrains.kotlin.gradle.tasks.KotlinCompile$ClasspathSnapshotProperties_Decorated` bean found in field `__classpathSnapshotProperties__` of task `:with-db:exposed-vertx-sql-client:compileKotlin` of type `org.jetbrains.kotlin.gradle.tasks.KotlinCompile`: error writing value of type 'org.gradle.api.internal.provider.DefaultProvider'
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: > Could not resolve all files for configuration ':with-db:exposed-vertx-sql-client:compileClasspath'.
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:    > Could not download arrow-annotations-jvm-2.1.2.jar (io.arrow-kt:arrow-annotations-jvm:2.1.2)
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:       > Could not get resource 'https://repo.maven.apache.org/maven2/io/arrow-kt/arrow-annotations-jvm/2.1.2/arrow-annotations-jvm-2.1.2.jar'.
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:          > Could not GET 'https://repo.maven.apache.org/maven2/io/arrow-kt/arrow-annotations-jvm/2.1.2/arrow-annotations-jvm-2.1.2.jar'.
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:             > The server may not support the client's requested TLS protocol versions: (TLSv1.2, TLSv1.3). You may need to configure the client to allow other protocols to be used. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/build_environment.html#sec:gradle_system_properties in the Gradle documentation.
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:                > Remote host terminated the handshake
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: * Try:
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: > Run with --stacktrace option to get the stack trace.
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: > Run with --info or --debug option to get more log output.
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: > Run with --scan to get full insights from a Build Scan (powered by Develocity).
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: > Get more help at https://help.gradle.org.
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: BUILD FAILED in 1m 57s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: 9 actionable tasks: 9 executed
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Configuration cache entry discarded due to serialization error.
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Docker build failed; terminating
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Traceback (most recent call last):
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:   File "/FrameworkBenchmarks/toolset/utils/docker_helper.py", line 53, in __build
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:     raise Exception(token['errorDetail']['message'])
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Exception: The command '/bin/sh -c gradle --no-daemon with-db:exposed-vertx-sql-client:installDist' returned a non-zero code: 1
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Build time: 2m 9s

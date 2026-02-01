@@ -1,0 +1,5 @@
+vertx-web-kotlinx-r2dbc-postgresql: [0.001s][warning][os] NUMA support disabled: Failed to initialize libnuma
+vertx-web-kotlinx-r2dbc-postgresql: Dec 20, 2025 7:56:23 AM CommonMainKt commonRunVertxServer
+vertx-web-kotlinx-r2dbc-postgresql: INFO: Vert.x-Web Kotlinx with R2DBC (and PostgreSQL) benchmark server starting...
+vertx-web-kotlinx-r2dbc-postgresql: Dec 20, 2025 7:56:23 AM CommonMainKt commonRunVertxServer
+vertx-web-kotlinx-r2dbc-postgresql: INFO: Vert.x-Web Kotlinx with R2DBC (and PostgreSQL) benchmark server started.

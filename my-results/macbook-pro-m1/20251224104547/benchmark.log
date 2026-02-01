@@ -1,0 +1,34 @@
+--------------------------------------------------------------------------------
+Benchmarking ktor-exposed-jdbc-dsl
+--------------------------------------------------------------------------------
+BENCHMARKING QUERY ... 
+Benchmark results:
+Complete
+ktor-exposed-jdbc-dsl: Benchmarking time: 0s
+wrk: Build time: 7s
+techempower/postgres:latest: Build time: 5s
+ktor-exposed-jdbc-dsl: Build time: 3m 46s
+ktor-exposed-jdbc-dsl: Time starting database: 2s
+ktor-exposed-jdbc-dsl: Time until accepting requests: 1s
+ktor-exposed-jdbc-dsl: Verify time: 50s
+ktor-exposed-jdbc-dsl: Total test time: 4m 47s
+tfb: Total time building so far: 3m 58s
+tfb: Total time verifying so far: 50s
+tfb: Total execution time so far: 5m 0s
+ktor-exposed-jdbc-dsl: Total TCP sockets: 554
+--------------------------------------------------------------------------------
+Benchmarking ktor-exposed-r2dbc-dsl
+--------------------------------------------------------------------------------
+BENCHMARKING QUERY ... 
+Benchmark results:
+Complete
+ktor-exposed-r2dbc-dsl: Benchmarking time: 0s
+ktor-exposed-r2dbc-dsl: Build time: 3m 56s
+ktor-exposed-r2dbc-dsl: Time starting database: 2s
+ktor-exposed-r2dbc-dsl: Time until accepting requests: 2s
+ktor-exposed-r2dbc-dsl: Verify time: 27s
+ktor-exposed-r2dbc-dsl: Total test time: 4m 33s
+tfb: Total time building so far: 7m 54s
+tfb: Total time verifying so far: 1m 17s
+tfb: Total execution time so far: 9m 35s
+ktor-exposed-r2dbc-dsl: Total TCP sockets: 248

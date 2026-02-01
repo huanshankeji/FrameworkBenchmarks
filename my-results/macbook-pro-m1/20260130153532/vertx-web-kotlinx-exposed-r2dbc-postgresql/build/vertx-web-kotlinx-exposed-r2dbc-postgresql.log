@@ -1,0 +1,105 @@
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 1/21 : FROM gradle:9.2.1-jdk25
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> 78c29809b41c
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 2/21 : WORKDIR /vertx-web-kotlinx
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> Running in 982f6f4014ec
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> c11d39f09bd9
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 3/21 : COPY gradle/libs.versions.toml gradle/libs.versions.toml
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> 7221853c5c85
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 4/21 : COPY buildSrc buildSrc
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> c85ad01694a6
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 5/21 : COPY settings.gradle.kts settings.gradle.kts
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> 2add47e2240d
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 6/21 : COPY build.gradle.kts build.gradle.kts
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> eec8d1c187e9
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 7/21 : COPY gradle.properties gradle.properties
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> 64f38708c817
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 8/21 : RUN mkdir -p common without-db/default with-db/common with-db/default with-db/r2dbc-common with-db/r2dbc with-db/exposed-common with-db/exposed-r2dbc with-db/exposed-vertx-sql-client
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> Running in b2900459afa4
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> 46101d861876
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 9/21 : COPY common/build.gradle.kts common/build.gradle.kts
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> df8f9ccb43c3
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 10/21 : COPY common/src common/src
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> 92899ef9ab31
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 11/21 : COPY with-db/common/build.gradle.kts with-db/common/build.gradle.kts
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> 65daf5fe42b4
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 12/21 : COPY with-db/common/src with-db/common/src
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> ec6369177671
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 13/21 : COPY with-db/r2dbc-common/build.gradle.kts with-db/r2dbc-common/build.gradle.kts
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> 836c775e3ef5
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 14/21 : COPY with-db/r2dbc-common/src with-db/r2dbc-common/src
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> 548b47ea4f30
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 15/21 : COPY with-db/exposed-common/build.gradle.kts with-db/exposed-common/build.gradle.kts
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> 7003f9120074
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 16/21 : COPY with-db/exposed-common/src with-db/exposed-common/src
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> fc2a0bc2ec8e
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 17/21 : COPY with-db/exposed-r2dbc/build.gradle.kts with-db/exposed-r2dbc/build.gradle.kts
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> 98f79364472d
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 18/21 : COPY with-db/exposed-r2dbc/src with-db/exposed-r2dbc/src
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> 35ccf5d6c572
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 19/21 : RUN gradle --no-daemon with-db:exposed-r2dbc:installDist
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> Running in 93e401a45aab
+vertx-web-kotlinx-exposed-r2dbc-postgresql: To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Daemon will be stopped at the end of the build 
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Calculating task graph as no cached configuration is available for tasks: with-db:exposed-r2dbc:installDist
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Configure project :buildSrc
+vertx-web-kotlinx-exposed-r2dbc-postgresql: WARNING: Unsupported Kotlin plugin version.
+vertx-web-kotlinx-exposed-r2dbc-postgresql: The `embedded-kotlin` and `kotlin-dsl` plugins rely on features of Kotlin `2.2.20` that might work differently than in the requested version `2.3.0`.
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :buildSrc:checkKotlinGradlePluginConfigurationErrors SKIPPED
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :buildSrc:generateExternalPluginSpecBuilders
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :buildSrc:extractPrecompiledScriptPluginPlugins
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :buildSrc:compilePluginsBlocks
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :buildSrc:generateScriptPluginAdapters
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :buildSrc:pluginDescriptors
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :buildSrc:processResources
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :buildSrc:generatePrecompiledScriptPluginAccessors
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :buildSrc:compileKotlin
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :buildSrc:compileJava NO-SOURCE
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :buildSrc:compileGroovy NO-SOURCE
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :buildSrc:classes
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :buildSrc:jar
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :common:checkKotlinGradlePluginConfigurationErrors SKIPPED
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :with-db:exposed-common:checkKotlinGradlePluginConfigurationErrors SKIPPED
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :with-db:exposed-r2dbc:checkKotlinGradlePluginConfigurationErrors SKIPPED
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :with-db:r2dbc-common:checkKotlinGradlePluginConfigurationErrors SKIPPED
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :with-db:with-db-common:checkKotlinGradlePluginConfigurationErrors SKIPPED
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :with-db:exposed-common:processResources NO-SOURCE
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :with-db:with-db-common:processResources NO-SOURCE
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :with-db:exposed-r2dbc:processResources NO-SOURCE
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :common:processResources NO-SOURCE
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :with-db:r2dbc-common:processResources NO-SOURCE
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :common:compileKotlin
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :common:compileJava NO-SOURCE
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :common:classes UP-TO-DATE
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :common:jar
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :with-db:with-db-common:compileKotlin
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :with-db:with-db-common:compileJava NO-SOURCE
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :with-db:with-db-common:classes UP-TO-DATE
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :with-db:with-db-common:jar
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :with-db:r2dbc-common:compileKotlin
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :with-db:r2dbc-common:compileJava NO-SOURCE
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :with-db:r2dbc-common:classes UP-TO-DATE
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :with-db:r2dbc-common:jar
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :with-db:exposed-common:compileKotlin
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :with-db:exposed-common:compileJava NO-SOURCE
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :with-db:exposed-common:classes UP-TO-DATE
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :with-db:exposed-common:jar
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :with-db:exposed-r2dbc:compileKotlin
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :with-db:exposed-r2dbc:compileJava NO-SOURCE
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :with-db:exposed-r2dbc:classes UP-TO-DATE
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :with-db:exposed-r2dbc:jar
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :with-db:exposed-r2dbc:startScripts
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Task :with-db:exposed-r2dbc:installDist
+vertx-web-kotlinx-exposed-r2dbc-postgresql: BUILD SUCCESSFUL in 5m 28s
+vertx-web-kotlinx-exposed-r2dbc-postgresql: 21 actionable tasks: 21 executed
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Configuration cache entry stored.
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> 68b8aaa9ba02
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 20/21 : EXPOSE 8080
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> Running in 9b32ff7f8a21
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> 5a90b8d41814
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 21/21 : CMD export JAVA_OPTS="     --enable-native-access=ALL-UNNAMED     --sun-misc-unsafe-memory-access=allow     --add-opens=java.base/java.lang=ALL-UNNAMED     -server     -XX:+UseNUMA     -XX:+UseParallelGC     -XX:+UnlockDiagnosticVMOptions     -XX:+DebugNonSafepoints     -Djava.lang.Integer.IntegerCache.high=10000     -Dvertx.disableMetrics=true     -Dvertx.disableWebsockets=true     -Dvertx.disableContextTimings=true     -Dvertx.disableHttpHeadersValidation=true     -Dvertx.cacheImmutableHttpResponseHeaders=true     -Dvertx.internCommonHttpRequestHeadersToLowerCase=true     -Dio.netty.noUnsafe=false     -Dio.netty.buffer.checkBounds=false     -Dio.netty.buffer.checkAccessible=false     -Dio.netty.iouring.ringSize=16384     " &&     with-db/exposed-r2dbc/build/install/exposed-r2dbc/bin/exposed-r2dbc
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> Running in 792a148c1245
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> f53e453f47e6
+vertx-web-kotlinx-exposed-r2dbc-postgresql: [Warning] One or more build-args [BENCHMARK_ENV TFB_TEST_DATABASE TFB_TEST_NAME] were not consumed
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Successfully built f53e453f47e6
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Successfully tagged techempower/tfb.test.vertx-web-kotlinx-exposed-r2dbc-postgresql:latest
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Build time: 6m 55s

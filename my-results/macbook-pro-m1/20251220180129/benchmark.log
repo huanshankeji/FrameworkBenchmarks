@@ -1,0 +1,11 @@
+wrk: Build time: 22s
+techempower/postgres:latest: Build time: 3s
+vertx-web-kotlinx-r2dbc-postgresql: Build time: 2m 54s
+vertx-web-kotlinx-r2dbc-postgresql: Time starting database: 2s
+vertx-web-kotlinx-r2dbc-postgresql: Time until accepting requests: 1s
+vertx-web-kotlinx-r2dbc-postgresql: Verify time: 34s
+vertx-web-kotlinx-r2dbc-postgresql: Failed verify!
+vertx-web-kotlinx-r2dbc-postgresql: Total test time: 3m 32s
+tfb: Total time building so far: 3m 19s
+tfb: Total time verifying so far: 34s
+tfb: Total execution time so far: 3m 59s

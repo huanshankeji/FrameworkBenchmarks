@@ -1,0 +1,21 @@
+--------------------------------------------------------------------------------
+Benchmarking vertx-web-kotlinx
+--------------------------------------------------------------------------------
+BENCHMARKING JSON ... 
+Benchmark results:
+Complete
+BENCHMARKING PLAINTEXT ... 
+Benchmark results:
+Complete
+vertx-web-kotlinx: Benchmarking time: 3m 52s
+wrk: Build time: 4s
+vertx-web-kotlinx: Build time: 2m 52s
+vertx-web-kotlinx: Time starting database: 0s
+vertx-web-kotlinx: Time until accepting requests: 1s
+vertx-web-kotlinx: Verify time: 3m 58s
+vertx-web-kotlinx: Total test time: 6m 55s
+tfb: Total time building so far: 2m 56s
+tfb: Total time verifying so far: 3m 58s
+tfb: Total time benchmarking so far: 3m 52s
+tfb: Total execution time so far: 6m 59s
+vertx-web-kotlinx: Total TCP sockets: 22

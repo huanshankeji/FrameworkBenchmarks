@@ -1,0 +1,33 @@
+ktor-exposed-jdbc-dsl: Step 1/7 : FROM gradle:jdk25
+ktor-exposed-jdbc-dsl:  ---> 7e3839cec262
+ktor-exposed-jdbc-dsl: Step 2/7 : WORKDIR /ktor-exposed
+ktor-exposed-jdbc-dsl:  ---> Running in ef5d9ef4768c
+ktor-exposed-jdbc-dsl:  ---> c0925550403a
+ktor-exposed-jdbc-dsl: Step 3/7 : COPY ktor-exposed/settings.gradle.kts settings.gradle.kts
+ktor-exposed-jdbc-dsl:  ---> 90014c207306
+ktor-exposed-jdbc-dsl: Step 4/7 : COPY ktor-exposed/app app
+ktor-exposed-jdbc-dsl:  ---> 208db3ee0214
+ktor-exposed-jdbc-dsl: Step 5/7 : RUN gradle --no-daemon shadowJar
+ktor-exposed-jdbc-dsl:  ---> Running in 98386f502b8a
+ktor-exposed-jdbc-dsl: To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+ktor-exposed-jdbc-dsl: Daemon will be stopped at the end of the build 
+ktor-exposed-jdbc-dsl: > Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+ktor-exposed-jdbc-dsl: > Task :app:compileKotlin
+ktor-exposed-jdbc-dsl: > Task :app:processResources NO-SOURCE
+ktor-exposed-jdbc-dsl: > Task :app:compileJava NO-SOURCE
+ktor-exposed-jdbc-dsl: > Task :app:classes UP-TO-DATE
+ktor-exposed-jdbc-dsl: > Task :app:shadowJar
+ktor-exposed-jdbc-dsl: BUILD SUCCESSFUL in 3m 30s
+ktor-exposed-jdbc-dsl: 2 actionable tasks: 2 executed
+ktor-exposed-jdbc-dsl: Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.2.1/userguide/configuration_cache_enabling.html
+ktor-exposed-jdbc-dsl:  ---> b68253c33324
+ktor-exposed-jdbc-dsl: Step 6/7 : EXPOSE 9090
+ktor-exposed-jdbc-dsl:  ---> Running in ea12fc41295b
+ktor-exposed-jdbc-dsl:  ---> 28542140c6fc
+ktor-exposed-jdbc-dsl: Step 7/7 : CMD ["java", "-server", "-XX:+UseNUMA", "-XX:+UseParallelGC", "-XX:+AlwaysPreTouch", "-jar", "app/build/libs/app-all.jar", "Jdbc", "Dsl"]
+ktor-exposed-jdbc-dsl:  ---> Running in 209948daf3e0
+ktor-exposed-jdbc-dsl:  ---> ed08a718b5cc
+ktor-exposed-jdbc-dsl: [Warning] One or more build-args [BENCHMARK_ENV TFB_TEST_DATABASE TFB_TEST_NAME] were not consumed
+ktor-exposed-jdbc-dsl: Successfully built ed08a718b5cc
+ktor-exposed-jdbc-dsl: Successfully tagged techempower/tfb.test.ktor-exposed-jdbc-dsl:latest
+ktor-exposed-jdbc-dsl: Build time: 3m 38s

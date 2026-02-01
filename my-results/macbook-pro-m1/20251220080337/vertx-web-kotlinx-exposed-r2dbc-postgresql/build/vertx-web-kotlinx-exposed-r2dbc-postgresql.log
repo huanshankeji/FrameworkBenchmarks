@@ -1,0 +1,7 @@
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 1/21 : FROM gradle:9.2.1-jdk25
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Docker build failed; terminating
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Traceback (most recent call last):
+vertx-web-kotlinx-exposed-r2dbc-postgresql:   File "/FrameworkBenchmarks/toolset/utils/docker_helper.py", line 53, in __build
+vertx-web-kotlinx-exposed-r2dbc-postgresql:     raise Exception(token['errorDetail']['message'])
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Exception: Get "https://registry-1.docker.io/v2/": context deadline exceeded
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Build time: 16s

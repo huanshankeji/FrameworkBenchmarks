@@ -1,0 +1,13 @@
+ktor-exposed-dsl: Step 1/7 : FROM gradle:jdk21
+ktor-exposed-dsl:  ---> 59bd3f54b8c2
+ktor-exposed-dsl: Step 2/7 : WORKDIR /ktor-exposed
+ktor-exposed-dsl:  ---> Running in 4d0cbc333c64
+ktor-exposed-dsl:  ---> 11ee96be0bf4
+ktor-exposed-dsl: Step 3/7 : COPY ktor-exposed/settings.gradle.kts settings.gradle.kts
+ktor-exposed-dsl:  ---> 9670aad8e99d
+ktor-exposed-dsl: Step 4/7 : COPY ktor-exposed/app app
+ktor-exposed-dsl:  ---> 7a49020d202a
+ktor-exposed-dsl: Step 5/7 : RUN gradle --no-daemon shadowJar
+ktor-exposed-dsl:  ---> Running in a44711a65b13
+ktor-exposed-dsl: To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+ktor-exposed-dsl: Daemon will be stopped at the end of the build 

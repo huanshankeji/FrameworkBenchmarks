@@ -1,0 +1,60 @@
+vertx-web-kotlinx-r2dbc-postgresql: Step 1/19 : FROM gradle:9.2.1-jdk25
+vertx-web-kotlinx-r2dbc-postgresql:  ---> 7e3839cec262
+vertx-web-kotlinx-r2dbc-postgresql: Step 2/19 : WORKDIR /vertx-web-kotlinx
+vertx-web-kotlinx-r2dbc-postgresql:  ---> Using cache
+vertx-web-kotlinx-r2dbc-postgresql:  ---> 0528440c7e54
+vertx-web-kotlinx-r2dbc-postgresql: Step 3/19 : COPY gradle/libs.versions.toml gradle/libs.versions.toml
+vertx-web-kotlinx-r2dbc-postgresql:  ---> Using cache
+vertx-web-kotlinx-r2dbc-postgresql:  ---> d75efd3f2014
+vertx-web-kotlinx-r2dbc-postgresql: Step 4/19 : COPY buildSrc buildSrc
+vertx-web-kotlinx-r2dbc-postgresql:  ---> Using cache
+vertx-web-kotlinx-r2dbc-postgresql:  ---> 020da7487ecb
+vertx-web-kotlinx-r2dbc-postgresql: Step 5/19 : COPY settings.gradle.kts settings.gradle.kts
+vertx-web-kotlinx-r2dbc-postgresql:  ---> Using cache
+vertx-web-kotlinx-r2dbc-postgresql:  ---> 96c319cd217d
+vertx-web-kotlinx-r2dbc-postgresql: Step 6/19 : COPY build.gradle.kts build.gradle.kts
+vertx-web-kotlinx-r2dbc-postgresql:  ---> Using cache
+vertx-web-kotlinx-r2dbc-postgresql:  ---> 60afe7b8c8a0
+vertx-web-kotlinx-r2dbc-postgresql: Step 7/19 : COPY gradle.properties gradle.properties
+vertx-web-kotlinx-r2dbc-postgresql:  ---> Using cache
+vertx-web-kotlinx-r2dbc-postgresql:  ---> 00259248f249
+vertx-web-kotlinx-r2dbc-postgresql: Step 8/19 : RUN mkdir -p common without-db/default with-db/common with-db/default with-db/r2dbc-common with-db/r2dbc with-db/exposed-common with-db/exposed-r2dbc with-db/exposed-vertx-sql-client
+vertx-web-kotlinx-r2dbc-postgresql:  ---> Using cache
+vertx-web-kotlinx-r2dbc-postgresql:  ---> 2bd6ac58e58c
+vertx-web-kotlinx-r2dbc-postgresql: Step 9/19 : COPY common/build.gradle.kts common/build.gradle.kts
+vertx-web-kotlinx-r2dbc-postgresql:  ---> Using cache
+vertx-web-kotlinx-r2dbc-postgresql:  ---> fd5396297c7a
+vertx-web-kotlinx-r2dbc-postgresql: Step 10/19 : COPY common/src common/src
+vertx-web-kotlinx-r2dbc-postgresql:  ---> Using cache
+vertx-web-kotlinx-r2dbc-postgresql:  ---> a73329aa07a0
+vertx-web-kotlinx-r2dbc-postgresql: Step 11/19 : COPY with-db/common/build.gradle.kts with-db/common/build.gradle.kts
+vertx-web-kotlinx-r2dbc-postgresql:  ---> Using cache
+vertx-web-kotlinx-r2dbc-postgresql:  ---> 59a10cb3ddd6
+vertx-web-kotlinx-r2dbc-postgresql: Step 12/19 : COPY with-db/common/src with-db/common/src
+vertx-web-kotlinx-r2dbc-postgresql:  ---> Using cache
+vertx-web-kotlinx-r2dbc-postgresql:  ---> 753cfc98bd40
+vertx-web-kotlinx-r2dbc-postgresql: Step 13/19 : COPY with-db/r2dbc-common/build.gradle.kts with-db/r2dbc-common/build.gradle.kts
+vertx-web-kotlinx-r2dbc-postgresql:  ---> Using cache
+vertx-web-kotlinx-r2dbc-postgresql:  ---> e2a007178675
+vertx-web-kotlinx-r2dbc-postgresql: Step 14/19 : COPY with-db/r2dbc-common/src with-db/r2dbc-common/src
+vertx-web-kotlinx-r2dbc-postgresql:  ---> Using cache
+vertx-web-kotlinx-r2dbc-postgresql:  ---> fdcdba52a462
+vertx-web-kotlinx-r2dbc-postgresql: Step 15/19 : COPY with-db/r2dbc/build.gradle.kts with-db/r2dbc/build.gradle.kts
+vertx-web-kotlinx-r2dbc-postgresql:  ---> Using cache
+vertx-web-kotlinx-r2dbc-postgresql:  ---> d96d438ba0e3
+vertx-web-kotlinx-r2dbc-postgresql: Step 16/19 : COPY with-db/r2dbc/src with-db/r2dbc/src
+vertx-web-kotlinx-r2dbc-postgresql:  ---> Using cache
+vertx-web-kotlinx-r2dbc-postgresql:  ---> 90467e44dc89
+vertx-web-kotlinx-r2dbc-postgresql: Step 17/19 : RUN gradle --no-daemon with-db:r2dbc:installDist
+vertx-web-kotlinx-r2dbc-postgresql:  ---> Using cache
+vertx-web-kotlinx-r2dbc-postgresql:  ---> 37793efa7c7d
+vertx-web-kotlinx-r2dbc-postgresql: Step 18/19 : EXPOSE 8080
+vertx-web-kotlinx-r2dbc-postgresql:  ---> Using cache
+vertx-web-kotlinx-r2dbc-postgresql:  ---> 53cda9883f48
+vertx-web-kotlinx-r2dbc-postgresql: Step 19/19 : CMD export JAVA_OPTS="     --enable-native-access=ALL-UNNAMED     --sun-misc-unsafe-memory-access=allow     --add-opens=java.base/java.lang=ALL-UNNAMED     -server     -XX:+UseNUMA     -XX:+UseParallelGC     -XX:+UnlockDiagnosticVMOptions     -XX:+DebugNonSafepoints     -Djava.lang.Integer.IntegerCache.high=10000     -Dvertx.disableMetrics=true     -Dvertx.disableWebsockets=true     -Dvertx.disableContextTimings=true     -Dvertx.disableHttpHeadersValidation=true     -Dvertx.cacheImmutableHttpResponseHeaders=true     -Dvertx.internCommonHttpRequestHeadersToLowerCase=true     -Dio.netty.noUnsafe=false     -Dio.netty.buffer.checkBounds=false     -Dio.netty.buffer.checkAccessible=false     -Dio.netty.iouring.ringSize=16384     -Dreactor.bufferSize.small=1024     " &&     with-db/r2dbc/build/install/r2dbc/bin/r2dbc
+vertx-web-kotlinx-r2dbc-postgresql:  ---> Using cache
+vertx-web-kotlinx-r2dbc-postgresql:  ---> f172c3513ee2
+vertx-web-kotlinx-r2dbc-postgresql: [Warning] One or more build-args [BENCHMARK_ENV TFB_TEST_DATABASE TFB_TEST_NAME] were not consumed
+vertx-web-kotlinx-r2dbc-postgresql: Successfully built f172c3513ee2
+vertx-web-kotlinx-r2dbc-postgresql: Successfully tagged techempower/tfb.test.vertx-web-kotlinx-r2dbc-postgresql:latest
+vertx-web-kotlinx-r2dbc-postgresql: Build time: 5s

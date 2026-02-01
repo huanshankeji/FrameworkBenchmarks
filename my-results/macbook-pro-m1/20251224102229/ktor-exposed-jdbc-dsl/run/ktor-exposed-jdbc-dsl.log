@@ -1,0 +1,12 @@
+ktor-exposed-jdbc-dsl: [0.001s][warning][os] NUMA support disabled: Failed to initialize libnuma
+ktor-exposed-jdbc-dsl: [main] INFO io.ktor.server.Application - Autoreload is disabled because the development mode is off.
+ktor-exposed-jdbc-dsl: [main] WARN com.zaxxer.hikari.HikariConfig - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+ktor-exposed-jdbc-dsl: [main] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+ktor-exposed-jdbc-dsl: [main] INFO com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@20a8a64e
+ktor-exposed-jdbc-dsl: [main] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+ktor-exposed-jdbc-dsl: [main] INFO io.ktor.server.Application - Application started in 0.657 seconds.
+ktor-exposed-jdbc-dsl: WARNING: A restricted method in java.lang.System has been called
+ktor-exposed-jdbc-dsl: WARNING: java.lang.System::loadLibrary has been called by io.netty.util.internal.NativeLibraryUtil in an unnamed module (file:/ktor-exposed/app/build/libs/app-all.jar)
+ktor-exposed-jdbc-dsl: WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+ktor-exposed-jdbc-dsl: WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+ktor-exposed-jdbc-dsl: [DefaultDispatcher-worker-1] INFO io.ktor.server.Application - Responding at http://0.0.0.0:9090

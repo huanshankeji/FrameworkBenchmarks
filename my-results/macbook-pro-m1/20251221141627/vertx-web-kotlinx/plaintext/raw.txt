@@ -1,0 +1,110 @@
+---------------------------------------------------------
+ Running Primer plaintext
+ wrk -H 'Host: tfb-server' -H 'Accept: text/plain,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 5 -c 8 --timeout 8 -t 8 http://tfb-server:8080/plaintext
+---------------------------------------------------------
+Running 5s test @ http://tfb-server:8080/plaintext
+  8 threads and 8 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   271.93us    3.09ms  79.74ms   99.17%
+    Req/Sec    33.23k     4.64k   50.48k    84.62%
+  Latency Distribution
+     50%   19.00us
+     75%   47.00us
+     90%   51.00us
+     99%    2.46ms
+  1335666 requests in 5.10s, 171.96MB read
+Requests/sec: 261887.85
+Transfer/sec:     33.72MB
+---------------------------------------------------------
+ Running Warmup plaintext
+ wrk -H 'Host: tfb-server' -H 'Accept: text/plain,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 512 --timeout 8 -t 8 http://tfb-server:8080/plaintext
+---------------------------------------------------------
+Running 15s test @ http://tfb-server:8080/plaintext
+  8 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.55ms    1.94ms  25.18ms   85.11%
+    Req/Sec    62.31k    10.15k  118.56k    67.86%
+  Latency Distribution
+     50%  668.00us
+     75%    2.38ms
+     90%    4.23ms
+     99%    8.23ms
+  7462619 requests in 15.10s, 0.94GB read
+Requests/sec: 494305.36
+Transfer/sec:     63.55MB
+---------------------------------------------------------
+ Concurrency: 256 for plaintext
+ wrk -H 'Host: tfb-server' -H 'Accept: text/plain,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 256 --timeout 8 -t 8 http://tfb-server:8080/plaintext -s pipeline.lua -- 16
+---------------------------------------------------------
+Running 15s test @ http://tfb-server:8080/plaintext
+  8 threads and 256 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     2.42ms    2.70ms  57.80ms   88.94%
+    Req/Sec   229.33k    37.83k  455.68k    83.17%
+  Latency Distribution
+     50%    1.60ms
+     75%    3.25ms
+     90%    5.35ms
+     99%   12.07ms
+  27494064 requests in 15.08s, 3.46GB read
+Requests/sec: 1823165.92
+Transfer/sec:    234.73MB
+STARTTIME 1766326990
+ENDTIME 1766327005
+---------------------------------------------------------
+ Concurrency: 1024 for plaintext
+ wrk -H 'Host: tfb-server' -H 'Accept: text/plain,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 1024 --timeout 8 -t 8 http://tfb-server:8080/plaintext -s pipeline.lua -- 16
+---------------------------------------------------------
+Running 15s test @ http://tfb-server:8080/plaintext
+  8 threads and 1024 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     6.45ms    5.10ms  61.87ms   75.11%
+    Req/Sec   234.60k    28.47k  355.23k    70.89%
+  Latency Distribution
+     50%    5.07ms
+     75%    8.96ms
+     90%   13.40ms
+     99%   23.21ms
+  28017440 requests in 15.05s, 3.52GB read
+Requests/sec: 1861770.02
+Transfer/sec:    239.70MB
+STARTTIME 1766327007
+ENDTIME 1766327022
+---------------------------------------------------------
+ Concurrency: 4096 for plaintext
+ wrk -H 'Host: tfb-server' -H 'Accept: text/plain,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 4096 --timeout 8 -t 8 http://tfb-server:8080/plaintext -s pipeline.lua -- 16
+---------------------------------------------------------
+Running 15s test @ http://tfb-server:8080/plaintext
+  8 threads and 4096 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    22.25ms   15.57ms 186.42ms   72.98%
+    Req/Sec   232.86k    23.41k  347.68k    74.24%
+  Latency Distribution
+     50%   19.31ms
+     75%   30.00ms
+     90%   41.93ms
+     99%   73.24ms
+  27801184 requests in 15.09s, 3.50GB read
+Requests/sec: 1841919.91
+Transfer/sec:    237.14MB
+STARTTIME 1766327024
+ENDTIME 1766327039
+---------------------------------------------------------
+ Concurrency: 16384 for plaintext
+ wrk -H 'Host: tfb-server' -H 'Accept: text/plain,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 16384 --timeout 8 -t 8 http://tfb-server:8080/plaintext -s pipeline.lua -- 16
+---------------------------------------------------------
+Running 15s test @ http://tfb-server:8080/plaintext
+  8 threads and 16384 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    93.30ms   62.66ms 580.05ms   73.56%
+    Req/Sec   218.77k    59.75k  606.06k    79.46%
+  Latency Distribution
+     50%   83.48ms
+     75%  125.76ms
+     90%  166.22ms
+     99%  322.55ms
+  22496896 requests in 15.17s, 2.83GB read
+Requests/sec: 1483180.46
+Transfer/sec:    190.95MB
+STARTTIME 1766327041
+ENDTIME 1766327057

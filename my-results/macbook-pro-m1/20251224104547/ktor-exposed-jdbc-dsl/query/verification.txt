@@ -1,0 +1,6 @@
+--------------------------------------------------------------------------------
+VERIFYING QUERY
+--------------------------------------------------------------------------------
+   FAIL for http://tfb-server:9090
+     Connection to server timed out
+     See https://github.com/TechEmpower/FrameworkBenchmarks/wiki/Project-Information-Framework-Tests-Overview#specific-test-requirements

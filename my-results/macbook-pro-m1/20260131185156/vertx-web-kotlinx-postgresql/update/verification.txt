@@ -1,0 +1,9 @@
+--------------------------------------------------------------------------------
+VERIFYING UPDATE
+--------------------------------------------------------------------------------
+   PASS for http://tfb-server:8080/updates?queries=20
+     Executed queries: 20480/20480
+   PASS for http://tfb-server:8080/updates?queries=20
+     Rows read: 10128/10240
+   PASS for http://tfb-server:8080/updates?queries=20
+     Rows updated: 10128/10240

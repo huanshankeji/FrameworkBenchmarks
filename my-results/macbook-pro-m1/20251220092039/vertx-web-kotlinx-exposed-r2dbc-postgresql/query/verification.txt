@@ -1,0 +1,12 @@
+--------------------------------------------------------------------------------
+VERIFYING QUERY
+--------------------------------------------------------------------------------
+   WARN for http://tfb-server:8080/queries?queries=2
+     Invalid Date header, found "Sat, 20 Dec 2025 09:24 GMT", did not match "%a, %d %b %Y %H:%M:%S %Z".
+     See https://github.com/TechEmpower/FrameworkBenchmarks/wiki/Project-Information-Framework-Tests-Overview#specific-test-requirements
+   PASS for http://tfb-server:8080/queries?queries=20
+     Executed queries: 10240/10240
+     See https://github.com/TechEmpower/FrameworkBenchmarks/wiki/Project-Information-Framework-Tests-Overview#specific-test-requirements
+   PASS for http://tfb-server:8080/queries?queries=20
+     Rows read: 10128/10240
+     See https://github.com/TechEmpower/FrameworkBenchmarks/wiki/Project-Information-Framework-Tests-Overview#specific-test-requirements

@@ -1,0 +1,7 @@
+--------------------------------------------------------------------------------
+VERIFYING FORTUNE
+--------------------------------------------------------------------------------
+   PASS for http://tfb-server:8080/fortunes
+     Executed queries: 512/512
+   PASS for http://tfb-server:8080/fortunes
+     Rows read: 6077/6144

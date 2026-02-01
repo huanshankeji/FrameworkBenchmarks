@@ -1,0 +1,38 @@
+--------------------------------------------------------------------------------
+VERIFYING UPDATE
+--------------------------------------------------------------------------------
+   FAIL for http://tfb-server:8080
+     Caused Exception in TFB
+                 This almost certainly means your return value is incorrect,
+                 but also that you have found a bug. Please submit an issue
+                 including this message: connection to server at "tfb-database" (172.18.0.3), port 5432 failed: FATAL:  sorry, too many clients already
+     Traceback (most recent call last):
+       File "/FrameworkBenchmarks/toolset/benchmark/framework_test.py", line 113, in verify_type
+         results = test.verify(base_url)
+                   ^^^^^^^^^^^^^^^^^^^^^
+       File "/FrameworkBenchmarks/toolset/test_types/update/update.py", line 31, in verify
+         problems = verify_query_cases(self, cases, url, True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+       File "/FrameworkBenchmarks/toolset/test_types/verifications.py", line 415, in verify_query_cases
+         problems += verify_queries_count(test_instance, "world", url + "20", concurrency, repetitions, expected_queries,
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+       File "/FrameworkBenchmarks/toolset/test_types/verifications.py", line 434, in verify_queries_count
+         queries, rows, rows_updated, margin, trans_failures = databases[test_instance.database.lower()].verify_queries(test_instance.config,
+                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+       File "/FrameworkBenchmarks/toolset/databases/abstract_database.py", line 85, in verify_queries
+         queries = int(cls.get_queries(config))
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+       File "/FrameworkBenchmarks/toolset/databases/postgres/postgres.py", line 60, in get_queries
+         return cls.__exec_and_fetchone(config, "SELECT SUM(calls) FROM pg_stat_statements WHERE query ~* '[[:<:]]%s[[:>:]]'" % cls.tbl_name)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+       File "/FrameworkBenchmarks/toolset/databases/postgres/postgres.py", line 80, in __exec_and_fetchone
+         db = cls.get_connection(config)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+       File "/FrameworkBenchmarks/toolset/databases/postgres/postgres.py", line 13, in get_connection
+         db = psycopg2.connect(
+              ^^^^^^^^^^^^^^^^^
+       File "/usr/lib/python3/dist-packages/psycopg2/__init__.py", line 122, in connect
+         conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     psycopg2.OperationalError: connection to server at "tfb-database" (172.18.0.3), port 5432 failed: FATAL:  sorry, too many clients already
+     See https://github.com/TechEmpower/FrameworkBenchmarks/wiki/Project-Information-Framework-Tests-Overview#specific-test-requirements

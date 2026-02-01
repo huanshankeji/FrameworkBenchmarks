@@ -1,0 +1,8611 @@
+[
+  {
+    "1765292583.395": {
+      "epoch": {
+        "epoch": 1765292583.395
+      },
+      "total cpu usage": {
+        "usr": 0.249,
+        "sys": 0.125,
+        "idl": 99.626,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 840749056.0,
+        "free": 5892304896.0,
+        "cach": 1412075520.0,
+        "avai": 7226544128.0
+      },
+      "system": {
+        "int": 303.0,
+        "csw": 392.0
+      },
+      "procs": {
+        "run": 0.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 11.86,
+        "5m": 6.29,
+        "15m": 2.81
+      },
+      "interrupts": {
+        "2": 161.0,
+        "11": 135.0,
+        "14": 2.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 1.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 640.0,
+        "inodes": 26332.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 14.0,
+        "alloc": 38.0,
+        "free": 25.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292584.385": {
+      "epoch": {
+        "epoch": 1765292584.385
+      },
+      "total cpu usage": {
+        "usr": 57.854,
+        "sys": 11.877,
+        "idl": 30.14,
+        "wai": 0.128,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 32768.0,
+        "dsk/vda:writ": 24215552.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 918327296.0,
+        "free": 5814722560.0,
+        "cach": 1412083712.0,
+        "avai": 7149125632.0
+      },
+      "system": {
+        "int": 19778.0,
+        "csw": 37772.0
+      },
+      "procs": {
+        "run": 13.0,
+        "blk": 0.0,
+        "new": 12.0
+      },
+      "load avg": {
+        "1m": 11.87,
+        "5m": 6.39,
+        "15m": 2.85
+      },
+      "interrupts": {
+        "2": 1702.0,
+        "11": 5779.0,
+        "14": 18.0,
+        "15": 0.0,
+        "16": 20.0,
+        "17": 0.0,
+        "18": 11.0,
+        "23": 0.0,
+        "24": 14.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 1.0,
+        "io/vda:writ": 34.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 992.0,
+        "inodes": 26841.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 4383.0,
+        "alloc": 83235.0,
+        "free": 63761.0
+      },
+      "vda": {
+        "vda:util": 0.7
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292585.387": {
+      "epoch": {
+        "epoch": 1765292585.387
+      },
+      "total cpu usage": {
+        "usr": 73.438,
+        "sys": 24.349,
+        "idl": 2.214,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1234833408.0,
+        "free": 5498216448.0,
+        "cach": 1412083712.0,
+        "avai": 6832619520.0
+      },
+      "system": {
+        "int": 35711.0,
+        "csw": 78093.0
+      },
+      "procs": {
+        "run": 15.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 11.87,
+        "5m": 6.39,
+        "15m": 2.85
+      },
+      "interrupts": {
+        "2": 634.0,
+        "11": 7661.0,
+        "14": 2.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 1.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 992.0,
+        "inodes": 26841.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 1837.0,
+        "alloc": 216587.0,
+        "free": 138362.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292586.385": {
+      "epoch": {
+        "epoch": 1765292586.385
+      },
+      "total cpu usage": {
+        "usr": 75.703,
+        "sys": 22.89,
+        "idl": 1.407,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1236041728.0,
+        "free": 5496999936.0,
+        "cach": 1412091904.0,
+        "avai": 6831403008.0
+      },
+      "system": {
+        "int": 35636.0,
+        "csw": 78086.0
+      },
+      "procs": {
+        "run": 15.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 11.87,
+        "5m": 6.39,
+        "15m": 2.85
+      },
+      "interrupts": {
+        "2": 377.0,
+        "11": 7809.0,
+        "14": 2.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 3.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 992.0,
+        "inodes": 26841.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 35.0,
+        "alloc": 126117.0,
+        "free": 126164.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292587.385": {
+      "epoch": {
+        "epoch": 1765292587.385
+      },
+      "total cpu usage": {
+        "usr": 73.885,
+        "sys": 24.586,
+        "idl": 1.529,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1235353600.0,
+        "free": 5497688064.0,
+        "cach": 1412091904.0,
+        "avai": 6832091136.0
+      },
+      "system": {
+        "int": 41524.0,
+        "csw": 93197.0
+      },
+      "procs": {
+        "run": 15.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 11.87,
+        "5m": 6.39,
+        "15m": 2.85
+      },
+      "interrupts": {
+        "2": 309.0,
+        "11": 7840.0,
+        "14": 4.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 1.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 992.0,
+        "inodes": 26841.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 6.0,
+        "alloc": 119050.0,
+        "free": 119045.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292588.385": {
+      "epoch": {
+        "epoch": 1765292588.385
+      },
+      "total cpu usage": {
+        "usr": 74.398,
+        "sys": 24.081,
+        "idl": 1.521,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1236119552.0,
+        "free": 5496922112.0,
+        "cach": 1412091904.0,
+        "avai": 6831325184.0
+      },
+      "system": {
+        "int": 40379.0,
+        "csw": 86203.0
+      },
+      "procs": {
+        "run": 14.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 11.87,
+        "5m": 6.39,
+        "15m": 2.85
+      },
+      "interrupts": {
+        "2": 299.0,
+        "11": 7891.0,
+        "14": 2.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 1.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 992.0,
+        "inodes": 26841.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 8.0,
+        "alloc": 120105.0,
+        "free": 120172.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292589.385": {
+      "epoch": {
+        "epoch": 1765292589.385
+      },
+      "total cpu usage": {
+        "usr": 73.469,
+        "sys": 25.128,
+        "idl": 1.403,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1234628608.0,
+        "free": 5498413056.0,
+        "cach": 1412091904.0,
+        "avai": 6832816128.0
+      },
+      "system": {
+        "int": 43765.0,
+        "csw": 94350.0
+      },
+      "procs": {
+        "run": 13.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 11.96,
+        "5m": 6.5,
+        "15m": 2.91
+      },
+      "interrupts": {
+        "2": 312.0,
+        "11": 7815.0,
+        "14": 2.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 1.0,
+        "23": 0.0,
+        "24": 9.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 992.0,
+        "inodes": 26841.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 5.0,
+        "alloc": 112353.0,
+        "free": 112224.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292590.385": {
+      "epoch": {
+        "epoch": 1765292590.385
+      },
+      "total cpu usage": {
+        "usr": 74.131,
+        "sys": 24.453,
+        "idl": 1.416,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 425984.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1232707584.0,
+        "free": 5500338176.0,
+        "cach": 1412087808.0,
+        "avai": 6834749440.0
+      },
+      "system": {
+        "int": 43439.0,
+        "csw": 95176.0
+      },
+      "procs": {
+        "run": 12.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 11.96,
+        "5m": 6.5,
+        "15m": 2.91
+      },
+      "interrupts": {
+        "2": 330.0,
+        "11": 7766.0,
+        "14": 4.0,
+        "15": 0.0,
+        "16": 5.0,
+        "17": 0.0,
+        "18": 3.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 3.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 992.0,
+        "inodes": 26841.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 9.0,
+        "alloc": 111323.0,
+        "free": 111376.0
+      },
+      "vda": {
+        "vda:util": 2.4
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292591.385": {
+      "epoch": {
+        "epoch": 1765292591.385
+      },
+      "total cpu usage": {
+        "usr": 72.925,
+        "sys": 25.16,
+        "idl": 1.916,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1234632704.0,
+        "free": 5498413056.0,
+        "cach": 1412087808.0,
+        "avai": 6832824320.0
+      },
+      "system": {
+        "int": 42284.0,
+        "csw": 92068.0
+      },
+      "procs": {
+        "run": 14.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 11.96,
+        "5m": 6.5,
+        "15m": 2.91
+      },
+      "interrupts": {
+        "2": 575.0,
+        "11": 7818.0,
+        "14": 2.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 1.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 992.0,
+        "inodes": 26841.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 3.0,
+        "alloc": 114638.0,
+        "free": 114624.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292592.385": {
+      "epoch": {
+        "epoch": 1765292592.385
+      },
+      "total cpu usage": {
+        "usr": 75.162,
+        "sys": 23.415,
+        "idl": 1.423,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1235021824.0,
+        "free": 5498023936.0,
+        "cach": 1412087808.0,
+        "avai": 6832435200.0
+      },
+      "system": {
+        "int": 39629.0,
+        "csw": 84400.0
+      },
+      "procs": {
+        "run": 15.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 11.96,
+        "5m": 6.5,
+        "15m": 2.91
+      },
+      "interrupts": {
+        "2": 371.0,
+        "11": 7723.0,
+        "14": 2.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 1.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 992.0,
+        "inodes": 26841.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 15.0,
+        "alloc": 117539.0,
+        "free": 117528.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292593.385": {
+      "epoch": {
+        "epoch": 1765292593.385
+      },
+      "total cpu usage": {
+        "usr": 74.557,
+        "sys": 23.797,
+        "idl": 1.646,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1235546112.0,
+        "free": 5497487360.0,
+        "cach": 1412100096.0,
+        "avai": 6831919104.0
+      },
+      "system": {
+        "int": 38962.0,
+        "csw": 84544.0
+      },
+      "procs": {
+        "run": 14.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 11.96,
+        "5m": 6.5,
+        "15m": 2.91
+      },
+      "interrupts": {
+        "2": 362.0,
+        "11": 7893.0,
+        "14": 11.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 1.0,
+        "23": 0.0,
+        "24": 5.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 992.0,
+        "inodes": 26841.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 21.0,
+        "alloc": 123287.0,
+        "free": 123285.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292594.385": {
+      "epoch": {
+        "epoch": 1765292594.385
+      },
+      "total cpu usage": {
+        "usr": 75.223,
+        "sys": 23.116,
+        "idl": 1.66,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1234800640.0,
+        "free": 5498232832.0,
+        "cach": 1412100096.0,
+        "avai": 6832664576.0
+      },
+      "system": {
+        "int": 37025.0,
+        "csw": 79910.0
+      },
+      "procs": {
+        "run": 16.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 12.2,
+        "5m": 6.64,
+        "15m": 2.97
+      },
+      "interrupts": {
+        "2": 389.0,
+        "11": 7838.0,
+        "14": 4.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 3.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 992.0,
+        "inodes": 26841.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 17.0,
+        "alloc": 125229.0,
+        "free": 125232.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292595.385": {
+      "epoch": {
+        "epoch": 1765292595.385
+      },
+      "total cpu usage": {
+        "usr": 73.503,
+        "sys": 25.223,
+        "idl": 1.274,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1236418560.0,
+        "free": 5496606720.0,
+        "cach": 1412108288.0,
+        "avai": 6831038464.0
+      },
+      "system": {
+        "int": 43141.0,
+        "csw": 93379.0
+      },
+      "procs": {
+        "run": 12.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 12.2,
+        "5m": 6.64,
+        "15m": 2.97
+      },
+      "interrupts": {
+        "2": 338.0,
+        "11": 7844.0,
+        "14": 2.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 1.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 992.0,
+        "inodes": 26841.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 2.0,
+        "alloc": 116438.0,
+        "free": 116353.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292596.384": {
+      "epoch": {
+        "epoch": 1765292596.384
+      },
+      "total cpu usage": {
+        "usr": 75.638,
+        "sys": 23.087,
+        "idl": 1.276,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1236926464.0,
+        "free": 5496098816.0,
+        "cach": 1412108288.0,
+        "avai": 6830530560.0
+      },
+      "system": {
+        "int": 39715.0,
+        "csw": 82033.0
+      },
+      "procs": {
+        "run": 1.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 12.2,
+        "5m": 6.64,
+        "15m": 2.97
+      },
+      "interrupts": {
+        "2": 352.0,
+        "11": 7829.0,
+        "14": 4.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 2.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 992.0,
+        "inodes": 26841.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 11.0,
+        "alloc": 123961.0,
+        "free": 124048.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292597.386": {
+      "epoch": {
+        "epoch": 1765292597.386
+      },
+      "total cpu usage": {
+        "usr": 74.55,
+        "sys": 24.165,
+        "idl": 1.285,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1235730432.0,
+        "free": 5497294848.0,
+        "cach": 1412108288.0,
+        "avai": 6831726592.0
+      },
+      "system": {
+        "int": 41880.0,
+        "csw": 88364.0
+      },
+      "procs": {
+        "run": 13.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 12.2,
+        "5m": 6.64,
+        "15m": 2.97
+      },
+      "interrupts": {
+        "2": 404.0,
+        "11": 7782.0,
+        "14": 4.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 1.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 992.0,
+        "inodes": 26841.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 5.0,
+        "alloc": 115734.0,
+        "free": 115665.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    }
+  },
+  {
+    "1765292600.386": {
+      "epoch": {
+        "epoch": 1765292600.386
+      },
+      "total cpu usage": {
+        "usr": 0.629,
+        "sys": 0.755,
+        "idl": 98.616,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1231630336.0,
+        "free": 5499727872.0,
+        "cach": 1413771264.0,
+        "avai": 6835830784.0
+      },
+      "system": {
+        "int": 6050.0,
+        "csw": 9921.0
+      },
+      "procs": {
+        "run": 0.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 11.39,
+        "5m": 6.56,
+        "15m": 2.97
+      },
+      "interrupts": {
+        "2": 4318.0,
+        "11": 440.0,
+        "14": 577.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 705.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 640.0,
+        "inodes": 26329.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 18.0,
+        "alloc": 636.0,
+        "free": 988.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292601.385": {
+      "epoch": {
+        "epoch": 1765292601.385
+      },
+      "total cpu usage": {
+        "usr": 45.823,
+        "sys": 13.544,
+        "idl": 40.633,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1253986304.0,
+        "free": 5476253696.0,
+        "cach": 1413771264.0,
+        "avai": 6812917760.0
+      },
+      "system": {
+        "int": 14550.0,
+        "csw": 25853.0
+      },
+      "procs": {
+        "run": 15.0,
+        "blk": 0.0,
+        "new": 11.0
+      },
+      "load avg": {
+        "1m": 11.39,
+        "5m": 6.56,
+        "15m": 2.97
+      },
+      "interrupts": {
+        "2": 823.0,
+        "11": 4869.0,
+        "14": 14.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 10.0,
+        "23": 0.0,
+        "24": 4.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 2464.0,
+        "inodes": 28377.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 3260.0,
+        "alloc": 89938.0,
+        "free": 81883.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292602.385": {
+      "epoch": {
+        "epoch": 1765292602.385
+      },
+      "total cpu usage": {
+        "usr": 73.368,
+        "sys": 24.021,
+        "idl": 2.611,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1252966400.0,
+        "free": 5477273600.0,
+        "cach": 1413771264.0,
+        "avai": 6813937664.0
+      },
+      "system": {
+        "int": 26637.0,
+        "csw": 52549.0
+      },
+      "procs": {
+        "run": 12.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 11.39,
+        "5m": 6.56,
+        "15m": 2.97
+      },
+      "interrupts": {
+        "2": 697.0,
+        "11": 7614.0,
+        "14": 2.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 3.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 2464.0,
+        "inodes": 28377.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 56.0,
+        "alloc": 121302.0,
+        "free": 121154.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292603.387": {
+      "epoch": {
+        "epoch": 1765292603.387
+      },
+      "total cpu usage": {
+        "usr": 73.232,
+        "sys": 25.0,
+        "idl": 1.768,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1253941248.0,
+        "free": 5476249600.0,
+        "cach": 1413771264.0,
+        "avai": 6812938240.0
+      },
+      "system": {
+        "int": 34944.0,
+        "csw": 74347.0
+      },
+      "procs": {
+        "run": 15.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 11.39,
+        "5m": 6.56,
+        "15m": 2.97
+      },
+      "interrupts": {
+        "2": 352.0,
+        "11": 7896.0,
+        "14": 2.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 1.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 2464.0,
+        "inodes": 28377.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 17.0,
+        "alloc": 122923.0,
+        "free": 123048.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292604.385": {
+      "epoch": {
+        "epoch": 1765292604.385
+      },
+      "total cpu usage": {
+        "usr": 74.492,
+        "sys": 23.985,
+        "idl": 1.523,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1252704256.0,
+        "free": 5477486592.0,
+        "cach": 1413771264.0,
+        "avai": 6814175232.0
+      },
+      "system": {
+        "int": 33333.0,
+        "csw": 70428.0
+      },
+      "procs": {
+        "run": 16.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 11.67,
+        "5m": 6.7,
+        "15m": 3.03
+      },
+      "interrupts": {
+        "2": 425.0,
+        "11": 7886.0,
+        "14": 2.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 1.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 2464.0,
+        "inodes": 28377.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 34.0,
+        "alloc": 124628.0,
+        "free": 125062.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292605.385": {
+      "epoch": {
+        "epoch": 1765292605.385
+      },
+      "total cpu usage": {
+        "usr": 75.253,
+        "sys": 23.106,
+        "idl": 1.641,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 163840.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1253363712.0,
+        "free": 5476835328.0,
+        "cach": 1413763072.0,
+        "avai": 6813523968.0
+      },
+      "system": {
+        "int": 29221.0,
+        "csw": 59097.0
+      },
+      "procs": {
+        "run": 13.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 11.67,
+        "5m": 6.7,
+        "15m": 3.03
+      },
+      "interrupts": {
+        "2": 539.0,
+        "11": 7915.0,
+        "14": 4.0,
+        "15": 0.0,
+        "16": 4.0,
+        "17": 0.0,
+        "18": 1.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 2.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 2464.0,
+        "inodes": 28377.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 171.0,
+        "alloc": 132209.0,
+        "free": 132037.0
+      },
+      "vda": {
+        "vda:util": 0.9
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292606.385": {
+      "epoch": {
+        "epoch": 1765292606.385
+      },
+      "total cpu usage": {
+        "usr": 73.964,
+        "sys": 24.482,
+        "idl": 1.554,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1253453824.0,
+        "free": 5476343808.0,
+        "cach": 1414037504.0,
+        "avai": 6813360128.0
+      },
+      "system": {
+        "int": 31618.0,
+        "csw": 67000.0
+      },
+      "procs": {
+        "run": 14.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 11.67,
+        "5m": 6.7,
+        "15m": 3.03
+      },
+      "interrupts": {
+        "2": 473.0,
+        "11": 7735.0,
+        "14": 2.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 3.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 2464.0,
+        "inodes": 28377.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 154.0,
+        "alloc": 121865.0,
+        "free": 121804.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292607.385": {
+      "epoch": {
+        "epoch": 1765292607.385
+      },
+      "total cpu usage": {
+        "usr": 73.511,
+        "sys": 25.349,
+        "idl": 1.141,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1253638144.0,
+        "free": 5476159488.0,
+        "cach": 1414037504.0,
+        "avai": 6813175808.0
+      },
+      "system": {
+        "int": 34795.0,
+        "csw": 73862.0
+      },
+      "procs": {
+        "run": 13.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 11.67,
+        "5m": 6.7,
+        "15m": 3.03
+      },
+      "interrupts": {
+        "2": 300.0,
+        "11": 7889.0,
+        "14": 2.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 2.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 2464.0,
+        "inodes": 28377.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 8.0,
+        "alloc": 123121.0,
+        "free": 122932.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292608.385": {
+      "epoch": {
+        "epoch": 1765292608.385
+      },
+      "total cpu usage": {
+        "usr": 74.502,
+        "sys": 24.17,
+        "idl": 1.328,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1251684352.0,
+        "free": 5478113280.0,
+        "cach": 1414037504.0,
+        "avai": 6815129600.0
+      },
+      "system": {
+        "int": 32870.0,
+        "csw": 70929.0
+      },
+      "procs": {
+        "run": 11.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 11.67,
+        "5m": 6.7,
+        "15m": 3.03
+      },
+      "interrupts": {
+        "2": 367.0,
+        "11": 7512.0,
+        "14": 2.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 1.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 2464.0,
+        "inodes": 28377.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 12.0,
+        "alloc": 116544.0,
+        "free": 116720.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292609.385": {
+      "epoch": {
+        "epoch": 1765292609.385
+      },
+      "total cpu usage": {
+        "usr": 75.727,
+        "sys": 22.63,
+        "idl": 1.643,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1253691392.0,
+        "free": 5476106240.0,
+        "cach": 1414037504.0,
+        "avai": 6813122560.0
+      },
+      "system": {
+        "int": 29780.0,
+        "csw": 62852.0
+      },
+      "procs": {
+        "run": 13.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 11.78,
+        "5m": 6.8,
+        "15m": 3.09
+      },
+      "interrupts": {
+        "2": 575.0,
+        "11": 7926.0,
+        "14": 2.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 1.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 2464.0,
+        "inodes": 28377.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 6.0,
+        "alloc": 131066.0,
+        "free": 131161.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292610.385": {
+      "epoch": {
+        "epoch": 1765292610.385
+      },
+      "total cpu usage": {
+        "usr": 74.81,
+        "sys": 23.291,
+        "idl": 1.899,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1253109760.0,
+        "free": 5476687872.0,
+        "cach": 1414037504.0,
+        "avai": 6813704192.0
+      },
+      "system": {
+        "int": 26332.0,
+        "csw": 51443.0
+      },
+      "procs": {
+        "run": 13.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 11.78,
+        "5m": 6.8,
+        "15m": 3.09
+      },
+      "interrupts": {
+        "2": 744.0,
+        "11": 7891.0,
+        "14": 2.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 3.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 2464.0,
+        "inodes": 28377.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 15.0,
+        "alloc": 135222.0,
+        "free": 135256.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292611.385": {
+      "epoch": {
+        "epoch": 1765292611.385
+      },
+      "total cpu usage": {
+        "usr": 74.651,
+        "sys": 22.307,
+        "idl": 3.042,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1254707200.0,
+        "free": 5475069952.0,
+        "cach": 1414057984.0,
+        "avai": 6812114944.0
+      },
+      "system": {
+        "int": 24178.0,
+        "csw": 46149.0
+      },
+      "procs": {
+        "run": 13.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 11.78,
+        "5m": 6.8,
+        "15m": 3.09
+      },
+      "interrupts": {
+        "2": 1047.0,
+        "11": 7845.0,
+        "14": 3.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 1.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 2464.0,
+        "inodes": 28377.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 12.0,
+        "alloc": 138400.0,
+        "free": 138092.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292612.385": {
+      "epoch": {
+        "epoch": 1765292612.385
+      },
+      "total cpu usage": {
+        "usr": 74.522,
+        "sys": 23.567,
+        "idl": 1.911,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1252270080.0,
+        "free": 5477507072.0,
+        "cach": 1414057984.0,
+        "avai": 6814552064.0
+      },
+      "system": {
+        "int": 29672.0,
+        "csw": 59304.0
+      },
+      "procs": {
+        "run": 14.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 11.78,
+        "5m": 6.8,
+        "15m": 3.09
+      },
+      "interrupts": {
+        "2": 671.0,
+        "11": 7861.0,
+        "14": 4.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 1.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 2464.0,
+        "inodes": 28377.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 8.0,
+        "alloc": 129849.0,
+        "free": 130026.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292613.385": {
+      "epoch": {
+        "epoch": 1765292613.385
+      },
+      "total cpu usage": {
+        "usr": 74.937,
+        "sys": 23.671,
+        "idl": 1.392,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1254744064.0,
+        "free": 5475033088.0,
+        "cach": 1414057984.0,
+        "avai": 6812078080.0
+      },
+      "system": {
+        "int": 33095.0,
+        "csw": 68624.0
+      },
+      "procs": {
+        "run": 16.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 11.78,
+        "5m": 6.8,
+        "15m": 3.09
+      },
+      "interrupts": {
+        "2": 427.0,
+        "11": 7903.0,
+        "14": 13.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 1.0,
+        "23": 0.0,
+        "24": 5.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 2464.0,
+        "inodes": 28377.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 11.0,
+        "alloc": 127621.0,
+        "free": 127617.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292614.385": {
+      "epoch": {
+        "epoch": 1765292614.385
+      },
+      "total cpu usage": {
+        "usr": 75.158,
+        "sys": 23.447,
+        "idl": 1.394,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1251934208.0,
+        "free": 5477810176.0,
+        "cach": 1414057984.0,
+        "avai": 6814871552.0
+      },
+      "system": {
+        "int": 31705.0,
+        "csw": 65225.0
+      },
+      "procs": {
+        "run": 13.0,
+        "blk": 0.0,
+        "new": 1.0
+      },
+      "load avg": {
+        "1m": 11.8,
+        "5m": 6.89,
+        "15m": 3.14
+      },
+      "interrupts": {
+        "2": 470.0,
+        "11": 7889.0,
+        "14": 35.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 3.0,
+        "23": 0.0,
+        "24": 10.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 2464.0,
+        "inodes": 28377.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 23.0,
+        "alloc": 125459.0,
+        "free": 125533.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    }
+  },
+  {
+    "1765292617.385": {
+      "epoch": {
+        "epoch": 1765292617.385
+      },
+      "total cpu usage": {
+        "usr": 8.038,
+        "sys": 11.308,
+        "idl": 80.654,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1239568384.0,
+        "free": 5486682112.0,
+        "cach": 1418760192.0,
+        "avai": 6827507712.0
+      },
+      "system": {
+        "int": 83232.0,
+        "csw": 138122.0
+      },
+      "procs": {
+        "run": 1.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 11.8,
+        "5m": 6.89,
+        "15m": 3.14
+      },
+      "interrupts": {
+        "2": 60192.0,
+        "11": 4179.0,
+        "14": 8496.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 10295.0,
+        "23": 0.0,
+        "24": 44.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 576.0,
+        "inodes": 26329.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 56.0,
+        "alloc": 2466.0,
+        "free": 1504.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292618.388": {
+      "epoch": {
+        "epoch": 1765292618.388
+      },
+      "total cpu usage": {
+        "usr": 37.813,
+        "sys": 18.05,
+        "idl": 44.137,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1346117632.0,
+        "free": 5371461632.0,
+        "cach": 1419735040.0,
+        "avai": 6717386752.0
+      },
+      "system": {
+        "int": 57063.0,
+        "csw": 100430.0
+      },
+      "procs": {
+        "run": 14.0,
+        "blk": 0.0,
+        "new": 12.0
+      },
+      "load avg": {
+        "1m": 11.8,
+        "5m": 6.89,
+        "15m": 3.14
+      },
+      "interrupts": {
+        "2": 33913.0,
+        "11": 5895.0,
+        "14": 5412.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 7406.0,
+        "23": 0.0,
+        "24": 20.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 8640.0,
+        "inodes": 34521.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 4684.0,
+        "alloc": 90543.0,
+        "free": 60026.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292619.386": {
+      "epoch": {
+        "epoch": 1765292619.386
+      },
+      "total cpu usage": {
+        "usr": 69.806,
+        "sys": 25.548,
+        "idl": 4.645,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1346732032.0,
+        "free": 5370556416.0,
+        "cach": 1420021760.0,
+        "avai": 6716698624.0
+      },
+      "system": {
+        "int": 25755.0,
+        "csw": 57702.0
+      },
+      "procs": {
+        "run": 9.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 12.3,
+        "5m": 7.08,
+        "15m": 3.22
+      },
+      "interrupts": {
+        "2": 1482.0,
+        "11": 7677.0,
+        "14": 956.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 2776.0,
+        "23": 0.0,
+        "24": 13.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 8640.0,
+        "inodes": 34521.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 19.0,
+        "alloc": 118857.0,
+        "free": 118783.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292620.385": {
+      "epoch": {
+        "epoch": 1765292620.385
+      },
+      "total cpu usage": {
+        "usr": 72.379,
+        "sys": 24.808,
+        "idl": 2.813,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 360448.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1346985984.0,
+        "free": 5369761792.0,
+        "cach": 1420550144.0,
+        "avai": 6716301312.0
+      },
+      "system": {
+        "int": 23572.0,
+        "csw": 51736.0
+      },
+      "procs": {
+        "run": 18.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 12.3,
+        "5m": 7.08,
+        "15m": 3.22
+      },
+      "interrupts": {
+        "2": 1115.0,
+        "11": 7813.0,
+        "14": 955.0,
+        "15": 0.0,
+        "16": 5.0,
+        "17": 0.0,
+        "18": 2218.0,
+        "23": 0.0,
+        "24": 3.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 3.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 8640.0,
+        "inodes": 34521.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 16.0,
+        "alloc": 126085.0,
+        "free": 125949.0
+      },
+      "vda": {
+        "vda:util": 0.3
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292621.385": {
+      "epoch": {
+        "epoch": 1765292621.385
+      },
+      "total cpu usage": {
+        "usr": 71.066,
+        "sys": 25.254,
+        "idl": 3.68,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1351319552.0,
+        "free": 5365100544.0,
+        "cach": 1420873728.0,
+        "avai": 6712020992.0
+      },
+      "system": {
+        "int": 26695.0,
+        "csw": 60514.0
+      },
+      "procs": {
+        "run": 14.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 12.3,
+        "5m": 7.08,
+        "15m": 3.22
+      },
+      "interrupts": {
+        "2": 1344.0,
+        "11": 7859.0,
+        "14": 1267.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 2433.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 8640.0,
+        "inodes": 34521.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 12.0,
+        "alloc": 118859.0,
+        "free": 118887.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292622.385": {
+      "epoch": {
+        "epoch": 1765292622.385
+      },
+      "total cpu usage": {
+        "usr": 71.228,
+        "sys": 24.041,
+        "idl": 4.731,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1345359872.0,
+        "free": 5370712064.0,
+        "cach": 1421213696.0,
+        "avai": 6717820928.0
+      },
+      "system": {
+        "int": 26189.0,
+        "csw": 55384.0
+      },
+      "procs": {
+        "run": 15.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 12.3,
+        "5m": 7.08,
+        "15m": 3.22
+      },
+      "interrupts": {
+        "2": 1187.0,
+        "11": 7768.0,
+        "14": 915.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 1685.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 8640.0,
+        "inodes": 34521.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 8.0,
+        "alloc": 120629.0,
+        "free": 120522.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292623.385": {
+      "epoch": {
+        "epoch": 1765292623.385
+      },
+      "total cpu usage": {
+        "usr": 73.946,
+        "sys": 24.138,
+        "idl": 1.916,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1342722048.0,
+        "free": 5373317120.0,
+        "cach": 1421246464.0,
+        "avai": 6720516096.0
+      },
+      "system": {
+        "int": 25603.0,
+        "csw": 49074.0
+      },
+      "procs": {
+        "run": 14.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 12.3,
+        "5m": 7.08,
+        "15m": 3.22
+      },
+      "interrupts": {
+        "2": 775.0,
+        "11": 7883.0,
+        "14": 2.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 1.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 8640.0,
+        "inodes": 34521.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 34.0,
+        "alloc": 128377.0,
+        "free": 128877.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292624.385": {
+      "epoch": {
+        "epoch": 1765292624.385
+      },
+      "total cpu usage": {
+        "usr": 74.841,
+        "sys": 23.126,
+        "idl": 2.033,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1343434752.0,
+        "free": 5372604416.0,
+        "cach": 1421246464.0,
+        "avai": 6719909888.0
+      },
+      "system": {
+        "int": 26232.0,
+        "csw": 50440.0
+      },
+      "procs": {
+        "run": 12.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 12.59,
+        "5m": 7.22,
+        "15m": 3.29
+      },
+      "interrupts": {
+        "2": 845.0,
+        "11": 7896.0,
+        "14": 2.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 1.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 8640.0,
+        "inodes": 34521.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 10.0,
+        "alloc": 127934.0,
+        "free": 127993.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292625.385": {
+      "epoch": {
+        "epoch": 1765292625.385
+      },
+      "total cpu usage": {
+        "usr": 74.811,
+        "sys": 23.678,
+        "idl": 1.511,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1343545344.0,
+        "free": 5372493824.0,
+        "cach": 1421246464.0,
+        "avai": 6719799296.0
+      },
+      "system": {
+        "int": 29978.0,
+        "csw": 60946.0
+      },
+      "procs": {
+        "run": 12.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 12.59,
+        "5m": 7.22,
+        "15m": 3.29
+      },
+      "interrupts": {
+        "2": 498.0,
+        "11": 7963.0,
+        "14": 2.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 1.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 8640.0,
+        "inodes": 34521.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 19.0,
+        "alloc": 123740.0,
+        "free": 123448.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292626.385": {
+      "epoch": {
+        "epoch": 1765292626.385
+      },
+      "total cpu usage": {
+        "usr": 73.711,
+        "sys": 24.906,
+        "idl": 1.384,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 98304.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1343680512.0,
+        "free": 5372366848.0,
+        "cach": 1421238272.0,
+        "avai": 6719672320.0
+      },
+      "system": {
+        "int": 28636.0,
+        "csw": 58254.0
+      },
+      "procs": {
+        "run": 14.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 12.59,
+        "5m": 7.22,
+        "15m": 3.29
+      },
+      "interrupts": {
+        "2": 418.0,
+        "11": 7958.0,
+        "14": 2.0,
+        "15": 0.0,
+        "16": 4.0,
+        "17": 0.0,
+        "18": 3.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 2.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 8640.0,
+        "inodes": 34521.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 8.0,
+        "alloc": 126987.0,
+        "free": 127072.0
+      },
+      "vda": {
+        "vda:util": 1.8
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292627.388": {
+      "epoch": {
+        "epoch": 1765292627.388
+      },
+      "total cpu usage": {
+        "usr": 74.013,
+        "sys": 24.841,
+        "idl": 1.146,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1344061440.0,
+        "free": 5371973632.0,
+        "cach": 1421250560.0,
+        "avai": 6719279104.0
+      },
+      "system": {
+        "int": 30206.0,
+        "csw": 63710.0
+      },
+      "procs": {
+        "run": 14.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 12.59,
+        "5m": 7.22,
+        "15m": 3.29
+      },
+      "interrupts": {
+        "2": 425.0,
+        "11": 7871.0,
+        "14": 8.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 1.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 8640.0,
+        "inodes": 34521.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 13.0,
+        "alloc": 121174.0,
+        "free": 121070.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292628.384": {
+      "epoch": {
+        "epoch": 1765292628.384
+      },
+      "total cpu usage": {
+        "usr": 74.841,
+        "sys": 23.253,
+        "idl": 1.906,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1342791680.0,
+        "free": 5373243392.0,
+        "cach": 1421250560.0,
+        "avai": 6720602112.0
+      },
+      "system": {
+        "int": 27037.0,
+        "csw": 53979.0
+      },
+      "procs": {
+        "run": 12.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 12.59,
+        "5m": 7.22,
+        "15m": 3.29
+      },
+      "interrupts": {
+        "2": 606.0,
+        "11": 7902.0,
+        "14": 2.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 1.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 8640.0,
+        "inodes": 34521.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 5.0,
+        "alloc": 127346.0,
+        "free": 127492.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292629.386": {
+      "epoch": {
+        "epoch": 1765292629.386
+      },
+      "total cpu usage": {
+        "usr": 74.43,
+        "sys": 24.304,
+        "idl": 1.266,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1343111168.0,
+        "free": 5372923904.0,
+        "cach": 1421250560.0,
+        "avai": 6720282624.0
+      },
+      "system": {
+        "int": 25425.0,
+        "csw": 49144.0
+      },
+      "procs": {
+        "run": 16.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 12.62,
+        "5m": 7.32,
+        "15m": 3.34
+      },
+      "interrupts": {
+        "2": 502.0,
+        "11": 7918.0,
+        "14": 2.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 1.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 8640.0,
+        "inodes": 34521.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 22.0,
+        "alloc": 130226.0,
+        "free": 130396.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292630.385": {
+      "epoch": {
+        "epoch": 1765292630.385
+      },
+      "total cpu usage": {
+        "usr": 74.181,
+        "sys": 24.433,
+        "idl": 1.385,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 44957696.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1344937984.0,
+        "free": 5371092992.0,
+        "cach": 1421254656.0,
+        "avai": 6718550016.0
+      },
+      "system": {
+        "int": 28105.0,
+        "csw": 55663.0
+      },
+      "procs": {
+        "run": 13.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 12.62,
+        "5m": 7.32,
+        "15m": 3.34
+      },
+      "interrupts": {
+        "2": 551.0,
+        "11": 7962.0,
+        "14": 4.0,
+        "15": 0.0,
+        "16": 5.0,
+        "17": 0.0,
+        "18": 4.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 11.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 8640.0,
+        "inodes": 34521.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 7.0,
+        "alloc": 125543.0,
+        "free": 125486.0
+      },
+      "vda": {
+        "vda:util": 0.5
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292631.385": {
+      "epoch": {
+        "epoch": 1765292631.385
+      },
+      "total cpu usage": {
+        "usr": 75.452,
+        "sys": 22.997,
+        "idl": 1.55,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1343213568.0,
+        "free": 5372809216.0,
+        "cach": 1421262848.0,
+        "avai": 6720286720.0
+      },
+      "system": {
+        "int": 27822.0,
+        "csw": 54425.0
+      },
+      "procs": {
+        "run": 13.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 12.62,
+        "5m": 7.32,
+        "15m": 3.34
+      },
+      "interrupts": {
+        "2": 538.0,
+        "11": 7747.0,
+        "14": 4.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 1.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 8640.0,
+        "inodes": 34521.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 12.0,
+        "alloc": 126523.0,
+        "free": 126856.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292632.385": {
+      "epoch": {
+        "epoch": 1765292632.385
+      },
+      "total cpu usage": {
+        "usr": 74.871,
+        "sys": 23.196,
+        "idl": 1.933,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1344307200.0,
+        "free": 5371715584.0,
+        "cach": 1421262848.0,
+        "avai": 6719238144.0
+      },
+      "system": {
+        "int": 24394.0,
+        "csw": 47276.0
+      },
+      "procs": {
+        "run": 16.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 12.62,
+        "5m": 7.32,
+        "15m": 3.34
+      },
+      "interrupts": {
+        "2": 684.0,
+        "11": 7770.0,
+        "14": 2.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 1.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 8640.0,
+        "inodes": 34521.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 13.0,
+        "alloc": 127483.0,
+        "free": 127516.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    }
+  },
+  {
+    "1765292635.385": {
+      "epoch": {
+        "epoch": 1765292635.385
+      },
+      "total cpu usage": {
+        "usr": 20.62,
+        "sys": 25.067,
+        "idl": 54.313,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 360448.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1529552896.0,
+        "free": 5155512320.0,
+        "cach": 1436454912.0,
+        "avai": 6526136320.0
+      },
+      "system": {
+        "int": 63943.0,
+        "csw": 114731.0
+      },
+      "procs": {
+        "run": 21.0,
+        "blk": 0.0,
+        "new": 11.0
+      },
+      "load avg": {
+        "1m": 12.17,
+        "5m": 7.31,
+        "15m": 3.36
+      },
+      "interrupts": {
+        "2": 39927.0,
+        "11": 5310.0,
+        "14": 6587.0,
+        "15": 0.0,
+        "16": 5.0,
+        "17": 0.0,
+        "18": 9031.0,
+        "23": 0.0,
+        "24": 45.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 3.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 24160.0,
+        "inodes": 50029.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 6686.0,
+        "alloc": 78114.0,
+        "free": 10239.0
+      },
+      "vda": {
+        "vda:util": 0.2
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292636.385": {
+      "epoch": {
+        "epoch": 1765292636.385
+      },
+      "total cpu usage": {
+        "usr": 27.411,
+        "sys": 68.401,
+        "idl": 4.188,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1589968896.0,
+        "free": 5088534528.0,
+        "cach": 1436999680.0,
+        "avai": 6462603264.0
+      },
+      "system": {
+        "int": 20887.0,
+        "csw": 47422.0
+      },
+      "procs": {
+        "run": 16.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 12.17,
+        "5m": 7.31,
+        "15m": 3.36
+      },
+      "interrupts": {
+        "2": 530.0,
+        "11": 7868.0,
+        "14": 1832.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 3604.0,
+        "23": 0.0,
+        "24": 6.0,
+        "25": 1.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 29856.0,
+        "inodes": 55691.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 559.0,
+        "alloc": 61554.0,
+        "free": 45491.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292637.385": {
+      "epoch": {
+        "epoch": 1765292637.385
+      },
+      "total cpu usage": {
+        "usr": 45.929,
+        "sys": 52.799,
+        "idl": 1.272,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1661059072.0,
+        "free": 5015240704.0,
+        "cach": 1437319168.0,
+        "avai": 6390640640.0
+      },
+      "system": {
+        "int": 13688.0,
+        "csw": 24810.0
+      },
+      "procs": {
+        "run": 17.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 12.17,
+        "5m": 7.31,
+        "15m": 3.36
+      },
+      "interrupts": {
+        "2": 779.0,
+        "11": 7787.0,
+        "14": 697.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 1276.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 31680.0,
+        "inodes": 57537.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 5656.0,
+        "alloc": 96595.0,
+        "free": 77098.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292638.385": {
+      "epoch": {
+        "epoch": 1765292638.385
+      },
+      "total cpu usage": {
+        "usr": 57.741,
+        "sys": 37.944,
+        "idl": 4.315,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1680760832.0,
+        "free": 4994056192.0,
+        "cach": 1437671424.0,
+        "avai": 6370258944.0
+      },
+      "system": {
+        "int": 18513.0,
+        "csw": 40181.0
+      },
+      "procs": {
+        "run": 17.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 12.17,
+        "5m": 7.31,
+        "15m": 3.36
+      },
+      "interrupts": {
+        "2": 1307.0,
+        "11": 7748.0,
+        "14": 1311.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 2684.0,
+        "23": 0.0,
+        "24": 4.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 32672.0,
+        "inodes": 58546.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 1960.0,
+        "alloc": 97439.0,
+        "free": 91070.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292639.385": {
+      "epoch": {
+        "epoch": 1765292639.385
+      },
+      "total cpu usage": {
+        "usr": 63.01,
+        "sys": 32.653,
+        "idl": 4.337,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1686380544.0,
+        "free": 4986986496.0,
+        "cach": 1438142464.0,
+        "avai": 6364229632.0
+      },
+      "system": {
+        "int": 21331.0,
+        "csw": 45753.0
+      },
+      "procs": {
+        "run": 17.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 12.48,
+        "5m": 7.46,
+        "15m": 3.43
+      },
+      "interrupts": {
+        "2": 1353.0,
+        "11": 7707.0,
+        "14": 1428.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 3316.0,
+        "23": 0.0,
+        "24": 17.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 33184.0,
+        "inodes": 59081.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 381.0,
+        "alloc": 103201.0,
+        "free": 101582.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292640.386": {
+      "epoch": {
+        "epoch": 1765292640.386
+      },
+      "total cpu usage": {
+        "usr": 71.447,
+        "sys": 25.508,
+        "idl": 3.046,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 98304.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1701810176.0,
+        "free": 4970983424.0,
+        "cach": 1438625792.0,
+        "avai": 6348718080.0
+      },
+      "system": {
+        "int": 19715.0,
+        "csw": 38826.0
+      },
+      "procs": {
+        "run": 17.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 12.48,
+        "5m": 7.46,
+        "15m": 3.43
+      },
+      "interrupts": {
+        "2": 1543.0,
+        "11": 7812.0,
+        "14": 1038.0,
+        "15": 0.0,
+        "16": 4.0,
+        "17": 0.0,
+        "18": 2242.0,
+        "23": 0.0,
+        "24": 11.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 2.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 33216.0,
+        "inodes": 59097.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 1627.0,
+        "alloc": 121212.0,
+        "free": 117367.0
+      },
+      "vda": {
+        "vda:util": 0.3
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292641.385": {
+      "epoch": {
+        "epoch": 1765292641.385
+      },
+      "total cpu usage": {
+        "usr": 71.63,
+        "sys": 24.39,
+        "idl": 3.979,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1704058880.0,
+        "free": 4968484864.0,
+        "cach": 1438871552.0,
+        "avai": 6346551296.0
+      },
+      "system": {
+        "int": 19715.0,
+        "csw": 43262.0
+      },
+      "procs": {
+        "run": 17.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 12.48,
+        "5m": 7.46,
+        "15m": 3.43
+      },
+      "interrupts": {
+        "2": 1341.0,
+        "11": 7704.0,
+        "14": 1141.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 2098.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 33216.0,
+        "inodes": 59097.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 31.0,
+        "alloc": 116325.0,
+        "free": 116096.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292642.385": {
+      "epoch": {
+        "epoch": 1765292642.385
+      },
+      "total cpu usage": {
+        "usr": 69.211,
+        "sys": 24.936,
+        "idl": 5.852,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1701904384.0,
+        "free": 4970176512.0,
+        "cach": 1439330304.0,
+        "avai": 6348410880.0
+      },
+      "system": {
+        "int": 22702.0,
+        "csw": 48913.0
+      },
+      "procs": {
+        "run": 18.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 12.48,
+        "5m": 7.46,
+        "15m": 3.43
+      },
+      "interrupts": {
+        "2": 1920.0,
+        "11": 7677.0,
+        "14": 1256.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 3251.0,
+        "23": 0.0,
+        "24": 6.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 33216.0,
+        "inodes": 59097.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 23.0,
+        "alloc": 116071.0,
+        "free": 116091.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292643.385": {
+      "epoch": {
+        "epoch": 1765292643.385
+      },
+      "total cpu usage": {
+        "usr": 71.759,
+        "sys": 25.417,
+        "idl": 2.824,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1703161856.0,
+        "free": 4968525824.0,
+        "cach": 1439711232.0,
+        "avai": 6347182080.0
+      },
+      "system": {
+        "int": 20119.0,
+        "csw": 43715.0
+      },
+      "procs": {
+        "run": 20.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 12.48,
+        "5m": 7.46,
+        "15m": 3.43
+      },
+      "interrupts": {
+        "2": 1138.0,
+        "11": 7724.0,
+        "14": 1060.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 2290.0,
+        "23": 0.0,
+        "24": 4.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 33216.0,
+        "inodes": 59097.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 27.0,
+        "alloc": 118388.0,
+        "free": 118256.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292644.385": {
+      "epoch": {
+        "epoch": 1765292644.385
+      },
+      "total cpu usage": {
+        "usr": 67.215,
+        "sys": 24.304,
+        "idl": 8.481,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1699614720.0,
+        "free": 4971565056.0,
+        "cach": 1440210944.0,
+        "avai": 6350753792.0
+      },
+      "system": {
+        "int": 24550.0,
+        "csw": 53134.0
+      },
+      "procs": {
+        "run": 16.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 12.6,
+        "5m": 7.57,
+        "15m": 3.48
+      },
+      "interrupts": {
+        "2": 2816.0,
+        "11": 7850.0,
+        "14": 1714.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 2945.0,
+        "23": 0.0,
+        "24": 8.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 33216.0,
+        "inodes": 59097.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 32.0,
+        "alloc": 110682.0,
+        "free": 111248.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292645.385": {
+      "epoch": {
+        "epoch": 1765292645.385
+      },
+      "total cpu usage": {
+        "usr": 70.573,
+        "sys": 25.223,
+        "idl": 4.204,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 98304.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1701052416.0,
+        "free": 4969750528.0,
+        "cach": 1440567296.0,
+        "avai": 6349279232.0
+      },
+      "system": {
+        "int": 21715.0,
+        "csw": 43945.0
+      },
+      "procs": {
+        "run": 14.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 12.6,
+        "5m": 7.57,
+        "15m": 3.48
+      },
+      "interrupts": {
+        "2": 1559.0,
+        "11": 7780.0,
+        "14": 1275.0,
+        "15": 0.0,
+        "16": 4.0,
+        "17": 0.0,
+        "18": 2409.0,
+        "23": 0.0,
+        "24": 3.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 2.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 33216.0,
+        "inodes": 59097.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 53.0,
+        "alloc": 119369.0,
+        "free": 118772.0
+      },
+      "vda": {
+        "vda:util": 2.6
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292646.385": {
+      "epoch": {
+        "epoch": 1765292646.385
+      },
+      "total cpu usage": {
+        "usr": 68.159,
+        "sys": 26.598,
+        "idl": 5.243,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 98304.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1700864000.0,
+        "free": 4969336832.0,
+        "cach": 1441161216.0,
+        "avai": 6349381632.0
+      },
+      "system": {
+        "int": 26886.0,
+        "csw": 57272.0
+      },
+      "procs": {
+        "run": 15.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 12.6,
+        "5m": 7.57,
+        "15m": 3.48
+      },
+      "interrupts": {
+        "2": 1749.0,
+        "11": 7702.0,
+        "14": 1549.0,
+        "15": 0.0,
+        "16": 1.0,
+        "17": 0.0,
+        "18": 4025.0,
+        "23": 0.0,
+        "24": 9.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 1.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 33216.0,
+        "inodes": 59097.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 32.0,
+        "alloc": 112660.0,
+        "free": 112929.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292647.385": {
+      "epoch": {
+        "epoch": 1765292647.385
+      },
+      "total cpu usage": {
+        "usr": 69.192,
+        "sys": 26.01,
+        "idl": 4.798,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1702625280.0,
+        "free": 4967100416.0,
+        "cach": 1441624064.0,
+        "avai": 6347653120.0
+      },
+      "system": {
+        "int": 24682.0,
+        "csw": 53471.0
+      },
+      "procs": {
+        "run": 11.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 12.6,
+        "5m": 7.57,
+        "15m": 3.48
+      },
+      "interrupts": {
+        "2": 1971.0,
+        "11": 7820.0,
+        "14": 1513.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 2872.0,
+        "23": 0.0,
+        "24": 2.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 33216.0,
+        "inodes": 59097.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 143.0,
+        "alloc": 115765.0,
+        "free": 113916.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292648.385": {
+      "epoch": {
+        "epoch": 1765292648.385
+      },
+      "total cpu usage": {
+        "usr": 73.511,
+        "sys": 24.208,
+        "idl": 2.281,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1701793792.0,
+        "free": 4967813120.0,
+        "cach": 1441742848.0,
+        "avai": 6348640256.0
+      },
+      "system": {
+        "int": 19068.0,
+        "csw": 38602.0
+      },
+      "procs": {
+        "run": 16.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 12.6,
+        "5m": 7.57,
+        "15m": 3.48
+      },
+      "interrupts": {
+        "2": 1209.0,
+        "11": 7860.0,
+        "14": 888.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 1425.0,
+        "23": 0.0,
+        "24": 6.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 33216.0,
+        "inodes": 59097.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 81.0,
+        "alloc": 120424.0,
+        "free": 121783.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    },
+    "1765292649.384": {
+      "epoch": {
+        "epoch": 1765292649.384
+      },
+      "total cpu usage": {
+        "usr": 72.343,
+        "sys": 23.688,
+        "idl": 3.969,
+        "wai": 0.0,
+        "stl": 0.0
+      },
+      "dsk/vda": {
+        "dsk/vda:read": 0.0,
+        "dsk/vda:writ": 0.0
+      },
+      "dsk/vdb": {
+        "dsk/vdb:read": 0.0,
+        "dsk/vdb:writ": 0.0
+      },
+      "net/eth0": {
+        "recv": 0.0,
+        "send": 0.0
+      },
+      "paging": {
+        "in": 0.0,
+        "out": 0.0
+      },
+      "memory usage": {
+        "used": 1699487744.0,
+        "free": 4969619456.0,
+        "cach": 1442238464.0,
+        "avai": 6350905344.0
+      },
+      "system": {
+        "int": 21103.0,
+        "csw": 47088.0
+      },
+      "procs": {
+        "run": 13.0,
+        "blk": 0.0,
+        "new": 0.0
+      },
+      "load avg": {
+        "1m": 12.96,
+        "5m": 7.72,
+        "15m": 3.56
+      },
+      "interrupts": {
+        "2": 1362.0,
+        "11": 7709.0,
+        "14": 1119.0,
+        "15": 0.0,
+        "16": 0.0,
+        "17": 0.0,
+        "18": 2583.0,
+        "23": 0.0,
+        "24": 16.0,
+        "25": 0.0
+      },
+      "io/vda": {
+        "io/vda:read": 0.0,
+        "io/vda:writ": 0.0
+      },
+      "io/vdb": {
+        "io/vdb:read": 0.0,
+        "io/vdb:writ": 0.0
+      },
+      "swap": {
+        "used": 0.0,
+        "free": 1073737728.0
+      },
+      "async": {
+        "#aio": 0.0
+      },
+      "filesystem": {
+        "files": 33216.0,
+        "inodes": 59097.0
+      },
+      "sysv ipc": {
+        "msg": 0.0,
+        "sem": 0.0,
+        "shm": 0.0
+      },
+      "file locks": {
+        "pos": 0.0,
+        "lck": 0.0,
+        "rea": 0.0,
+        "wri": 0.0
+      },
+      "sockets": {
+        "tot": 65.0,
+        "tcp": 1.0,
+        "udp": 1.0,
+        "raw": 0.0,
+        "frg": 0.0
+      },
+      "tcp sockets": {
+        "lis": 1.0,
+        "act": 0.0,
+        "syn": 0.0,
+        "tim": 0.0,
+        "clo": 0.0
+      },
+      "raw": {
+        "raw": 0.0
+      },
+      "udp": {
+        "lis": 1.0,
+        "act": 0.0
+      },
+      "unix sockets": {
+        "dgm": 0.0,
+        "str": 62.0,
+        "lis": 0.0,
+        "act": 62.0
+      },
+      "virtual memory": {
+        "majpf": 0.0,
+        "minpf": 14.0,
+        "alloc": 115933.0,
+        "free": 116294.0
+      },
+      "vda": {
+        "vda:util": 0.0
+      },
+      "vdb": {
+        "vdb:util": 0.0
+      },
+      "rpc client": {
+        "call": 0.0,
+        "retr": 0.0,
+        "refr": 0.0
+      },
+      "rpc server": {
+        "call": 0.0,
+        "erca": 0.0,
+        "erau": 0.0,
+        "ercl": 0.0,
+        "xdrc": 0.0
+      }
+    }
+  }
+]

@@ -1,0 +1,6 @@
+--------------------------------------------------------------------------------
+VERIFYING UPDATE
+--------------------------------------------------------------------------------
+   FAIL for http://tfb-server:8080
+     Connection to server timed out
+     See https://github.com/TechEmpower/FrameworkBenchmarks/wiki/Project-Information-Framework-Tests-Overview#specific-test-requirements

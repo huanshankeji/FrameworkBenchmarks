@@ -1,0 +1,897 @@
+{
+  "uuid": "5e30efda-e58d-4183-a653-f12241e4d579",
+  "name": "(unspecified, datetime = 2025-12-21 14:16:27)",
+  "environmentDescription": "(unspecified, hostname = 1a2a5ee3337f)",
+  "git": {
+    "commitId": "42bb9ca12db6a487d221cbe160eb09e19f18f17b",
+    "repositoryUrl": "https://github.com/huanshankeji/FrameworkBenchmarks.git",
+    "branchName": "vertx-web-kotlinx-exposed"
+  },
+  "operatingSystem": {
+    "name": "Linux",
+    "version": "6.10.14-linuxkit"
+  },
+  "startTime": 1766326587875,
+  "completionTime": 1766332067271,
+  "concurrencyLevels": [
+    16,
+    32,
+    64,
+    128,
+    256,
+    512
+  ],
+  "pipelineConcurrencyLevels": [
+    256,
+    1024,
+    4096,
+    16384
+  ],
+  "queryIntervals": [
+    1,
+    5,
+    10,
+    15,
+    20
+  ],
+  "cachedQueryIntervals": [
+    1,
+    10,
+    20,
+    50,
+    100
+  ],
+  "frameworks": [
+    "vertx-web-kotlinx",
+    "vertx-web-kotlinx-exposed-r2dbc-postgresql",
+    "vertx-web-kotlinx-exposed-vertx-sql-client-postgresql",
+    "vertx-web-kotlinx-postgresql",
+    "vertx-web-kotlinx-r2dbc-postgresql"
+  ],
+  "duration": 15,
+  "rawData": {
+    "plaintext": {
+      "vertx-web-kotlinx": [
+        {
+          "latencyAvg": "2.42ms",
+          "latencyStdev": "2.70ms",
+          "latencyMax": "57.80ms",
+          "totalRequests": 27494064,
+          "startTime": 1766326990,
+          "endTime": 1766327005
+        },
+        {
+          "latencyAvg": "6.45ms",
+          "latencyStdev": "5.10ms",
+          "latencyMax": "61.87ms",
+          "totalRequests": 28017440,
+          "startTime": 1766327007,
+          "endTime": 1766327022
+        },
+        {
+          "latencyAvg": "22.25ms",
+          "latencyStdev": "15.57ms",
+          "latencyMax": "186.42ms",
+          "totalRequests": 27801184,
+          "startTime": 1766327024,
+          "endTime": 1766327039
+        },
+        {
+          "latencyAvg": "93.30ms",
+          "latencyStdev": "62.66ms",
+          "latencyMax": "580.05ms",
+          "totalRequests": 22496896,
+          "startTime": 1766327041,
+          "endTime": 1766327057
+        }
+      ]
+    },
+    "update": {
+      "vertx-web-kotlinx-exposed-r2dbc-postgresql": [
+        {
+          "latencyAvg": "98.99ms",
+          "latencyStdev": "5.00ms",
+          "latencyMax": "135.97ms",
+          "totalRequests": 77496,
+          "startTime": 1766327645,
+          "endTime": 1766327660
+        },
+        {
+          "latencyAvg": "333.17ms",
+          "latencyStdev": "13.10ms",
+          "latencyMax": "412.71ms",
+          "totalRequests": 22845,
+          "startTime": 1766327662,
+          "endTime": 1766327677
+        },
+        {
+          "latencyAvg": "577.71ms",
+          "latencyStdev": "69.93ms",
+          "latencyMax": "689.20ms",
+          "totalRequests": 13054,
+          "startTime": 1766327679,
+          "endTime": 1766327694
+        },
+        {
+          "latencyAvg": "524.79ms",
+          "latencyStdev": "227.34ms",
+          "latencyMax": "1.01s",
+          "totalRequests": 14272,
+          "startTime": 1766327696,
+          "endTime": 1766327711
+        },
+        {
+          "latencyAvg": "576.61ms",
+          "latencyStdev": "201.27ms",
+          "latencyMax": "1.25s",
+          "totalRequests": 12965,
+          "startTime": 1766327713,
+          "endTime": 1766327728
+        }
+      ],
+      "vertx-web-kotlinx-postgresql": [
+        {
+          "latencyAvg": "6.28ms",
+          "latencyStdev": "6.48ms",
+          "latencyMax": "239.15ms",
+          "totalRequests": 1214237,
+          "connect": 0,
+          "read": 0,
+          "write": 0,
+          "timeout": 512,
+          "startTime": 1766328484,
+          "endTime": 1766328829
+        },
+        {
+          "latencyAvg": "17.18ms",
+          "latencyStdev": "7.47ms",
+          "latencyMax": "142.53ms",
+          "totalRequests": 453589,
+          "startTime": 1766328831,
+          "endTime": 1766328846
+        },
+        {
+          "latencyAvg": "30.08ms",
+          "latencyStdev": "8.25ms",
+          "latencyMax": "77.38ms",
+          "totalRequests": 255498,
+          "startTime": 1766328848,
+          "endTime": 1766328863
+        },
+        {
+          "latencyAvg": "44.67ms",
+          "latencyStdev": "9.86ms",
+          "latencyMax": "96.58ms",
+          "totalRequests": 171971,
+          "startTime": 1766328865,
+          "endTime": 1766328881
+        },
+        {
+          "latencyAvg": "58.66ms",
+          "latencyStdev": "10.85ms",
+          "latencyMax": "118.56ms",
+          "totalRequests": 131016,
+          "startTime": 1766328883,
+          "endTime": 1766328898
+        }
+      ]
+    },
+    "cached-query": {},
+    "json": {
+      "vertx-web-kotlinx": [
+        {
+          "latencyAvg": "85.34us",
+          "latencyStdev": "257.56us",
+          "latencyMax": "12.00ms",
+          "totalRequests": 4094596,
+          "connect": 0,
+          "read": 0,
+          "write": 0,
+          "timeout": 14,
+          "startTime": 1766326857,
+          "endTime": 1766326872
+        },
+        {
+          "latencyAvg": "382.22us",
+          "latencyStdev": "2.64ms",
+          "latencyMax": "102.05ms",
+          "totalRequests": 4440081,
+          "startTime": 1766326874,
+          "endTime": 1766326889
+        },
+        {
+          "latencyAvg": "746.08us",
+          "latencyStdev": "2.77ms",
+          "latencyMax": "79.26ms",
+          "totalRequests": 5079326,
+          "connect": 0,
+          "read": 0,
+          "write": 0,
+          "timeout": 4,
+          "startTime": 1766326891,
+          "endTime": 1766326906
+        },
+        {
+          "latencyAvg": "824.87us",
+          "latencyStdev": "1.36ms",
+          "latencyMax": "27.48ms",
+          "totalRequests": 5909546,
+          "startTime": 1766326908,
+          "endTime": 1766326923
+        },
+        {
+          "latencyAvg": "1.11ms",
+          "latencyStdev": "1.58ms",
+          "latencyMax": "25.32ms",
+          "totalRequests": 6826522,
+          "connect": 0,
+          "read": 0,
+          "write": 0,
+          "timeout": 124,
+          "startTime": 1766326925,
+          "endTime": 1766326940
+        },
+        {
+          "latencyAvg": "1.62ms",
+          "latencyStdev": "2.09ms",
+          "latencyMax": "37.76ms",
+          "totalRequests": 7212379,
+          "connect": 0,
+          "read": 0,
+          "write": 0,
+          "timeout": 274,
+          "startTime": 1766326943,
+          "endTime": 1766326958
+        }
+      ]
+    },
+    "db": {
+      "vertx-web-kotlinx-exposed-r2dbc-postgresql": [
+        {
+          "latencyAvg": "1.49ms",
+          "latencyStdev": "615.39us",
+          "latencyMax": "13.26ms",
+          "totalRequests": 162305,
+          "startTime": 1766327396,
+          "endTime": 1766327411
+        },
+        {
+          "latencyAvg": "2.75ms",
+          "latencyStdev": "1.28ms",
+          "latencyMax": "15.27ms",
+          "totalRequests": 175767,
+          "startTime": 1766327413,
+          "endTime": 1766327428
+        },
+        {
+          "latencyAvg": "5.22ms",
+          "latencyStdev": "3.09ms",
+          "latencyMax": "26.68ms",
+          "totalRequests": 189124,
+          "startTime": 1766327430,
+          "endTime": 1766327445
+        },
+        {
+          "latencyAvg": "14.26ms",
+          "latencyStdev": "7.80ms",
+          "latencyMax": "166.23ms",
+          "totalRequests": 140093,
+          "startTime": 1766327447,
+          "endTime": 1766327462
+        },
+        {
+          "latencyAvg": "26.64ms",
+          "latencyStdev": "3.04ms",
+          "latencyMax": "65.41ms",
+          "totalRequests": 144534,
+          "startTime": 1766327464,
+          "endTime": 1766327479
+        },
+        {
+          "latencyAvg": "42.14ms",
+          "latencyStdev": "16.88ms",
+          "latencyMax": "98.96ms",
+          "totalRequests": 182478,
+          "startTime": 1766327481,
+          "endTime": 1766327496
+        }
+      ],
+      "vertx-web-kotlinx-postgresql": [
+        {
+          "latencyAvg": "214.18us",
+          "latencyStdev": "229.19us",
+          "latencyMax": "4.91ms",
+          "totalRequests": 1311517,
+          "startTime": 1766328235,
+          "endTime": 1766328250
+        },
+        {
+          "latencyAvg": "367.32us",
+          "latencyStdev": "300.33us",
+          "latencyMax": "5.45ms",
+          "totalRequests": 1426109,
+          "startTime": 1766328252,
+          "endTime": 1766328267
+        },
+        {
+          "latencyAvg": "590.30us",
+          "latencyStdev": "510.62us",
+          "latencyMax": "9.19ms",
+          "totalRequests": 1823858,
+          "connect": 0,
+          "read": 0,
+          "write": 0,
+          "timeout": 62,
+          "startTime": 1766328269,
+          "endTime": 1766328284
+        },
+        {
+          "latencyAvg": "1.02ms",
+          "latencyStdev": "0.96ms",
+          "latencyMax": "16.43ms",
+          "totalRequests": 2202113,
+          "startTime": 1766328286,
+          "endTime": 1766328301
+        },
+        {
+          "latencyAvg": "1.74ms",
+          "latencyStdev": "1.51ms",
+          "latencyMax": "17.83ms",
+          "totalRequests": 2502848,
+          "connect": 0,
+          "read": 0,
+          "write": 0,
+          "timeout": 163,
+          "startTime": 1766328303,
+          "endTime": 1766328318
+        },
+        {
+          "latencyAvg": "3.16ms",
+          "latencyStdev": "2.51ms",
+          "latencyMax": "34.95ms",
+          "totalRequests": 2612637,
+          "startTime": 1766328320,
+          "endTime": 1766328335
+        }
+      ],
+      "vertx-web-kotlinx-r2dbc-postgresql": [
+        {
+          "latencyAvg": "296.62us",
+          "latencyStdev": "318.65us",
+          "latencyMax": "11.50ms",
+          "totalRequests": 957089,
+          "connect": 0,
+          "read": 0,
+          "write": 0,
+          "timeout": 12,
+          "startTime": 1766329352,
+          "endTime": 1766329367
+        },
+        {
+          "latencyAvg": "528.83us",
+          "latencyStdev": "474.51us",
+          "latencyMax": "8.83ms",
+          "totalRequests": 1043759,
+          "startTime": 1766329369,
+          "endTime": 1766329384
+        },
+        {
+          "latencyAvg": "0.99ms",
+          "latencyStdev": "768.43us",
+          "latencyMax": "13.86ms",
+          "totalRequests": 1076656,
+          "connect": 0,
+          "read": 0,
+          "write": 0,
+          "timeout": 37,
+          "startTime": 1766329386,
+          "endTime": 1766329401
+        },
+        {
+          "latencyAvg": "1.90ms",
+          "latencyStdev": "1.42ms",
+          "latencyMax": "18.29ms",
+          "totalRequests": 1109906,
+          "connect": 0,
+          "read": 0,
+          "write": 0,
+          "timeout": 12,
+          "startTime": 1766329403,
+          "endTime": 1766329418
+        },
+        {
+          "latencyAvg": "3.85ms",
+          "latencyStdev": "3.44ms",
+          "latencyMax": "67.71ms",
+          "totalRequests": 1133514,
+          "startTime": 1766329420,
+          "endTime": 1766329436
+        },
+        {
+          "latencyAvg": "7.00ms",
+          "latencyStdev": "6.33ms",
+          "latencyMax": "161.75ms",
+          "totalRequests": 1090456,
+          "connect": 0,
+          "read": 0,
+          "write": 0,
+          "timeout": 511,
+          "startTime": 1766329438,
+          "endTime": 1766329802
+        }
+      ]
+    },
+    "query": {
+      "vertx-web-kotlinx-exposed-r2dbc-postgresql": [
+        {
+          "latencyAvg": "48.78ms",
+          "latencyStdev": "10.70ms",
+          "latencyMax": "89.64ms",
+          "totalRequests": 157683,
+          "startTime": 1766327529,
+          "endTime": 1766327544
+        },
+        {
+          "latencyAvg": "241.43ms",
+          "latencyStdev": "9.15ms",
+          "latencyMax": "310.69ms",
+          "totalRequests": 31533,
+          "startTime": 1766327546,
+          "endTime": 1766327561
+        },
+        {
+          "latencyAvg": "470.66ms",
+          "latencyStdev": "18.15ms",
+          "latencyMax": "518.44ms",
+          "totalRequests": 16128,
+          "startTime": 1766327563,
+          "endTime": 1766327578
+        },
+        {
+          "latencyAvg": "423.69ms",
+          "latencyStdev": "179.52ms",
+          "latencyMax": "749.59ms",
+          "totalRequests": 18048,
+          "startTime": 1766327580,
+          "endTime": 1766327595
+        },
+        {
+          "latencyAvg": "550.47ms",
+          "latencyStdev": "232.74ms",
+          "latencyMax": "1.05s",
+          "totalRequests": 13480,
+          "startTime": 1766327597,
+          "endTime": 1766327612
+        }
+      ],
+      "vertx-web-kotlinx-postgresql": [
+        {
+          "latencyAvg": "3.23ms",
+          "latencyStdev": "2.56ms",
+          "latencyMax": "33.48ms",
+          "totalRequests": 2565841,
+          "startTime": 1766328368,
+          "endTime": 1766328383
+        },
+        {
+          "latencyAvg": "9.87ms",
+          "latencyStdev": "4.64ms",
+          "latencyMax": "41.30ms",
+          "totalRequests": 786249,
+          "connect": 0,
+          "read": 0,
+          "write": 0,
+          "timeout": 13,
+          "startTime": 1766328385,
+          "endTime": 1766328400
+        },
+        {
+          "latencyAvg": "17.30ms",
+          "latencyStdev": "7.12ms",
+          "latencyMax": "94.54ms",
+          "totalRequests": 448342,
+          "startTime": 1766328402,
+          "endTime": 1766328417
+        },
+        {
+          "latencyAvg": "24.43ms",
+          "latencyStdev": "7.78ms",
+          "latencyMax": "76.44ms",
+          "totalRequests": 315084,
+          "startTime": 1766328419,
+          "endTime": 1766328434
+        },
+        {
+          "latencyAvg": "32.67ms",
+          "latencyStdev": "9.34ms",
+          "latencyMax": "92.89ms",
+          "totalRequests": 235688,
+          "startTime": 1766328436,
+          "endTime": 1766328451
+        }
+      ],
+      "vertx-web-kotlinx-r2dbc-postgresql": [
+        {
+          "latencyAvg": "7.04ms",
+          "latencyStdev": "4.88ms",
+          "latencyMax": "49.10ms",
+          "totalRequests": 1182097,
+          "startTime": 1766329835,
+          "endTime": 1766329850
+        },
+        {
+          "latencyAvg": "26.59ms",
+          "latencyStdev": "15.43ms",
+          "latencyMax": "105.11ms",
+          "totalRequests": 305170,
+          "startTime": 1766329852,
+          "endTime": 1766329867
+        },
+        {
+          "latencyAvg": "87.81ms",
+          "latencyStdev": "23.80ms",
+          "latencyMax": "138.68ms",
+          "totalRequests": 87569,
+          "startTime": 1766329869,
+          "endTime": 1766329884
+        },
+        {
+          "latencyAvg": "145.71ms",
+          "latencyStdev": "13.52ms",
+          "latencyMax": "297.69ms",
+          "totalRequests": 52695,
+          "startTime": 1766329886,
+          "endTime": 1766329901
+        },
+        {
+          "latencyAvg": "195.38ms",
+          "latencyStdev": "13.93ms",
+          "latencyMax": "237.84ms",
+          "totalRequests": 39038,
+          "connect": 0,
+          "read": 0,
+          "write": 0,
+          "timeout": 512,
+          "startTime": 1766329903,
+          "endTime": 1766330906
+        }
+      ]
+    },
+    "fortune": {
+      "vertx-web-kotlinx-exposed-r2dbc-postgresql": [
+        {
+          "latencyAvg": "1.81ms",
+          "latencyStdev": "1.99ms",
+          "latencyMax": "65.09ms",
+          "totalRequests": 147558,
+          "startTime": 1766327761,
+          "endTime": 1766327776
+        },
+        {
+          "latencyAvg": "3.05ms",
+          "latencyStdev": "1.38ms",
+          "latencyMax": "16.02ms",
+          "totalRequests": 159011,
+          "startTime": 1766327778,
+          "endTime": 1766327793
+        },
+        {
+          "latencyAvg": "6.13ms",
+          "latencyStdev": "2.41ms",
+          "latencyMax": "26.80ms",
+          "totalRequests": 157154,
+          "connect": 0,
+          "read": 0,
+          "write": 0,
+          "timeout": 12,
+          "startTime": 1766327795,
+          "endTime": 1766327810
+        },
+        {
+          "latencyAvg": "10.98ms",
+          "latencyStdev": "6.17ms",
+          "latencyMax": "67.00ms",
+          "totalRequests": 178658,
+          "startTime": 1766327812,
+          "endTime": 1766327827
+        },
+        {
+          "latencyAvg": "15.86ms",
+          "latencyStdev": "8.86ms",
+          "latencyMax": "95.48ms",
+          "totalRequests": 252159,
+          "startTime": 1766327829,
+          "endTime": 1766327844
+        },
+        {
+          "latencyAvg": "29.13ms",
+          "latencyStdev": "12.21ms",
+          "latencyMax": "208.34ms",
+          "totalRequests": 271469,
+          "startTime": 1766327846,
+          "endTime": 1766327861
+        }
+      ],
+      "vertx-web-kotlinx-postgresql": [
+        {
+          "latencyAvg": "238.96us",
+          "latencyStdev": "341.27us",
+          "latencyMax": "11.80ms",
+          "totalRequests": 1245848,
+          "connect": 0,
+          "read": 0,
+          "write": 0,
+          "timeout": 14,
+          "startTime": 1766328930,
+          "endTime": 1766328945
+        },
+        {
+          "latencyAvg": "399.83us",
+          "latencyStdev": "465.55us",
+          "latencyMax": "14.98ms",
+          "totalRequests": 1450370,
+          "startTime": 1766328947,
+          "endTime": 1766328962
+        },
+        {
+          "latencyAvg": "742.47us",
+          "latencyStdev": "0.89ms",
+          "latencyMax": "20.42ms",
+          "totalRequests": 1652899,
+          "connect": 0,
+          "read": 0,
+          "write": 0,
+          "timeout": 56,
+          "startTime": 1766328964,
+          "endTime": 1766328979
+        },
+        {
+          "latencyAvg": "1.25ms",
+          "latencyStdev": "1.20ms",
+          "latencyMax": "27.54ms",
+          "totalRequests": 1811055,
+          "startTime": 1766328981,
+          "endTime": 1766328996
+        },
+        {
+          "latencyAvg": "2.16ms",
+          "latencyStdev": "1.67ms",
+          "latencyMax": "28.99ms",
+          "totalRequests": 1932628,
+          "startTime": 1766328998,
+          "endTime": 1766329014
+        },
+        {
+          "latencyAvg": "4.59ms",
+          "latencyStdev": "3.86ms",
+          "latencyMax": "80.59ms",
+          "totalRequests": 1807161,
+          "startTime": 1766329016,
+          "endTime": 1766329031
+        }
+      ],
+      "vertx-web-kotlinx-r2dbc-postgresql": [
+        {
+          "latencyAvg": "512.04us",
+          "latencyStdev": "0.94ms",
+          "latencyMax": "26.11ms",
+          "totalRequests": 737677,
+          "startTime": 1766331958,
+          "endTime": 1766331973
+        },
+        {
+          "latencyAvg": "2.23ms",
+          "latencyStdev": "8.90ms",
+          "latencyMax": "147.02ms",
+          "totalRequests": 699902,
+          "startTime": 1766331975,
+          "endTime": 1766331990
+        },
+        {
+          "latencyAvg": "1.14ms",
+          "latencyStdev": "0.86ms",
+          "latencyMax": "18.09ms",
+          "totalRequests": 913268,
+          "startTime": 1766331992,
+          "endTime": 1766332008
+        },
+        {
+          "latencyAvg": "1.87ms",
+          "latencyStdev": "1.17ms",
+          "latencyMax": "16.54ms",
+          "totalRequests": 1068515,
+          "connect": 0,
+          "read": 0,
+          "write": 0,
+          "timeout": 51,
+          "startTime": 1766332010,
+          "endTime": 1766332025
+        },
+        {
+          "latencyAvg": "3.42ms",
+          "latencyStdev": "2.01ms",
+          "latencyMax": "22.17ms",
+          "totalRequests": 1157138,
+          "startTime": 1766332027,
+          "endTime": 1766332042
+        },
+        {
+          "latencyAvg": "6.36ms",
+          "latencyStdev": "3.19ms",
+          "latencyMax": "30.93ms",
+          "totalRequests": 1221105,
+          "startTime": 1766332044,
+          "endTime": 1766332059
+        }
+      ]
+    },
+    "commitCounts": {
+      "vertx-web": 0
+    },
+    "slocCounts": {
+      "vertx-web": 38795
+    }
+  },
+  "completed": {
+    "vertx-web-kotlinx": "20251221142419",
+    "vertx-web-kotlinx-exposed-r2dbc-postgresql": "20251221143743",
+    "vertx-web-kotlinx-exposed-vertx-sql-client-postgresql": "ERROR: Problem starting vertx-web-kotlinx-exposed-vertx-sql-client-postgresql",
+    "vertx-web-kotlinx-postgresql": "20251221145713",
+    "vertx-web-kotlinx-r2dbc-postgresql": "20251221154741"
+  },
+  "succeeded": {
+    "plaintext": [
+      "vertx-web-kotlinx"
+    ],
+    "update": [
+      "vertx-web-kotlinx-exposed-r2dbc-postgresql",
+      "vertx-web-kotlinx-postgresql"
+    ],
+    "cached-query": [],
+    "json": [
+      "vertx-web-kotlinx"
+    ],
+    "db": [
+      "vertx-web-kotlinx-exposed-r2dbc-postgresql",
+      "vertx-web-kotlinx-postgresql",
+      "vertx-web-kotlinx-r2dbc-postgresql"
+    ],
+    "query": [
+      "vertx-web-kotlinx-exposed-r2dbc-postgresql",
+      "vertx-web-kotlinx-postgresql",
+      "vertx-web-kotlinx-r2dbc-postgresql"
+    ],
+    "fortune": [
+      "vertx-web-kotlinx-exposed-r2dbc-postgresql",
+      "vertx-web-kotlinx-postgresql",
+      "vertx-web-kotlinx-r2dbc-postgresql"
+    ]
+  },
+  "failed": {
+    "plaintext": [],
+    "update": [
+      "vertx-web-kotlinx-r2dbc-postgresql"
+    ],
+    "cached-query": [],
+    "json": [],
+    "db": [],
+    "query": [],
+    "fortune": []
+  },
+  "verify": {
+    "vertx-web-kotlinx": {
+      "json": "pass",
+      "plaintext": "pass"
+    },
+    "vertx-web-kotlinx-exposed-r2dbc-postgresql": {
+      "db": "pass",
+      "query": "pass",
+      "update": "pass",
+      "fortune": "pass"
+    },
+    "vertx-web-kotlinx-postgresql": {
+      "db": "pass",
+      "query": "pass",
+      "update": "pass",
+      "fortune": "pass"
+    },
+    "vertx-web-kotlinx-r2dbc-postgresql": {
+      "db": "pass",
+      "query": "pass",
+      "update": "fail",
+      "fortune": "pass"
+    }
+  },
+  "testMetadata": [
+    {
+      "project_name": "vertx-web-kotlinx",
+      "name": "vertx-web-kotlinx",
+      "approach": "realistic",
+      "classification": "micro",
+      "database": "none",
+      "framework": "vertx-web",
+      "language": "kotlin",
+      "orm": "raw",
+      "platform": "vert.x",
+      "webserver": "none",
+      "os": "linux",
+      "database_os": "linux",
+      "display_name": "vertx-web-kotlinx",
+      "notes": "",
+      "versus": "vertx-web",
+      "tags": []
+    },
+    {
+      "project_name": "vertx-web-kotlinx",
+      "name": "vertx-web-kotlinx-exposed-r2dbc-postgresql",
+      "approach": "realistic",
+      "classification": "micro",
+      "database": "postgres",
+      "framework": "vertx-web",
+      "language": "kotlin",
+      "orm": "full",
+      "platform": "vert.x",
+      "webserver": "none",
+      "os": "linux",
+      "database_os": "linux",
+      "display_name": "vertx-web-kotlinx-exposed-r2dbc-postgresql",
+      "notes": "",
+      "versus": "vertx-web-kotlinx-r2dbc-postgresql",
+      "tags": []
+    },
+    {
+      "project_name": "vertx-web-kotlinx",
+      "name": "vertx-web-kotlinx-exposed-vertx-sql-client-postgresql",
+      "approach": "realistic",
+      "classification": "micro",
+      "database": "postgres",
+      "framework": "vertx-web",
+      "language": "kotlin",
+      "orm": "full",
+      "platform": "vert.x",
+      "webserver": "none",
+      "os": "linux",
+      "database_os": "linux",
+      "display_name": "vertx-web-kotlinx-exposed-vertx-sql-client-postgresql",
+      "notes": "",
+      "versus": "vertx-web-kotlinx-postgresql",
+      "tags": []
+    },
+    {
+      "project_name": "vertx-web-kotlinx",
+      "name": "vertx-web-kotlinx-postgresql",
+      "approach": "realistic",
+      "classification": "micro",
+      "database": "postgres",
+      "framework": "vertx-web",
+      "language": "kotlin",
+      "orm": "raw",
+      "platform": "vert.x",
+      "webserver": "none",
+      "os": "linux",
+      "database_os": "linux",
+      "display_name": "vertx-web-kotlinx-postgresql",
+      "notes": "",
+      "versus": "vertx-web-postgres",
+      "tags": []
+    },
+    {
+      "project_name": "vertx-web-kotlinx",
+      "name": "vertx-web-kotlinx-r2dbc-postgresql",
+      "approach": "realistic",
+      "classification": "micro",
+      "database": "postgres",
+      "framework": "vertx-web",
+      "language": "kotlin",
+      "orm": "full",
+      "platform": "vert.x",
+      "webserver": "none",
+      "os": "linux",
+      "database_os": "linux",
+      "display_name": "vertx-web-kotlinx-r2dbc-postgresql",
+      "notes": "",
+      "versus": "vertx-web-kotlinx-postgresql",
+      "tags": []
+    }
+  ]
+}

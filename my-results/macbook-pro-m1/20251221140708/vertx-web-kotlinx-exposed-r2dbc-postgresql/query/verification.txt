@@ -1,0 +1,7 @@
+--------------------------------------------------------------------------------
+VERIFYING QUERY
+--------------------------------------------------------------------------------
+   PASS for http://tfb-server:8080/queries?queries=20
+     Executed queries: 10240/10240
+   PASS for http://tfb-server:8080/queries?queries=20
+     Rows read: 10128/10240

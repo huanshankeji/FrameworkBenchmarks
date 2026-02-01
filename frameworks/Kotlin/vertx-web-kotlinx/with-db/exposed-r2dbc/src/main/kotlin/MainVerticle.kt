@@ -15,13 +15,11 @@ import org.jetbrains.exposed.v1.r2dbc.transactions.suspendTransaction
 https://github.com/pgjdbc/r2dbc-postgresql/issues/360#issuecomment-869422327 offers a workaround, but it doesn't seem like the officially recommended approach.
 The PostgreSQL R2DBC driver doesn't seem to have full support for pipelining and multiplexing as discussed in https://github.com/pgjdbc/r2dbc-postgresql/pull/28.
  */
-class MainVerticle : CommonWithDbVerticle<R2dbcDatabase, R2dbcTransaction>(),
+class MainVerticle(private val sharedR2dbcDatabase: R2dbcDatabase) : CommonWithDbVerticle<R2dbcDatabase, R2dbcTransaction>(),
     CommonWithDbVerticleI.SequentialSelectWorlds<R2dbcDatabase, R2dbcTransaction> {
     override suspend fun initDbClient(): R2dbcDatabase =
-    // This seems to cause too many connections to be created, resulting in `io.r2dbc.postgresql.PostgresqlConnectionFactory$PostgresConnectionException: [08003] Cannot connect to tfb-database/<unresolved>:5432`.
-    //r2DbcDatabaseConnect()
-        // Updated to 512 to match ktor-netty-exposed-r2dbc-dsl configuration for better performance
-        r2dbcDatabaseConnectPool(512)
+        // Use the shared R2dbcDatabase instance with a single connection pool of 512
+        sharedR2dbcDatabase
 
     override val httpServerStrictThreadMode get() = false
     //override val coHandlerCoroutineContext: CoroutineContext get() = EmptyCoroutineContext

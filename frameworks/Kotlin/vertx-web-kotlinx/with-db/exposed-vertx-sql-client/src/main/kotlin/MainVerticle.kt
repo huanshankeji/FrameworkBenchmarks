@@ -1,6 +1,6 @@
 import com.huanshankeji.exposedvertxsqlclient.DatabaseClient
+import com.huanshankeji.exposedvertxsqlclient.DatabaseExposedTransactionProvider
 import com.huanshankeji.exposedvertxsqlclient.ExperimentalEvscApi
-import com.huanshankeji.exposedvertxsqlclient.JdbcTransactionExposedTransactionProvider
 import com.huanshankeji.exposedvertxsqlclient.postgresql.PgDatabaseClientConfig
 import com.huanshankeji.exposedvertxsqlclient.postgresql.vertx.pgclient.createPgConnection
 import database.*
@@ -29,7 +29,7 @@ class MainVerticle(val exposedDatabase: Database) : CommonWithDbVerticle<Databas
         })
         return DatabaseClient(
             pgConnection,
-            PgDatabaseClientConfig(JdbcTransactionExposedTransactionProvider(exposedDatabase), validateBatch = false)
+            PgDatabaseClientConfig(DatabaseExposedTransactionProvider(exposedDatabase), validateBatch = false)
         )
     }
 

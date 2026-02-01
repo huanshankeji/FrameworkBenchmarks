@@ -1,0 +1,54 @@
+--------------------------------------------------------------------------------
+Benchmarking ktor-exposed-r2dbc-dsl
+--------------------------------------------------------------------------------
+BENCHMARKING DB ... 
+Benchmark results:
+Complete
+BENCHMARKING QUERY ... 
+Benchmark results:
+Complete
+BENCHMARKING UPDATE ... 
+Benchmark results:
+Complete
+BENCHMARKING FORTUNE ... 
+Benchmark results:
+Complete
+ktor-exposed-r2dbc-dsl: Benchmarking time: 8m 18s
+wrk: Build time: 19s
+techempower/postgres:latest: Build time: 6s
+ktor-exposed-r2dbc-dsl: Build time: 1m 49s
+ktor-exposed-r2dbc-dsl: Time starting database: 2s
+ktor-exposed-r2dbc-dsl: Time until accepting requests: 2s
+ktor-exposed-r2dbc-dsl: Verify time: 9m 9s
+ktor-exposed-r2dbc-dsl: Total test time: 11m 9s
+tfb: Total time building so far: 2m 14s
+tfb: Total time verifying so far: 9m 9s
+tfb: Total time benchmarking so far: 8m 18s
+tfb: Total execution time so far: 11m 36s
+ktor-exposed-r2dbc-dsl: Total TCP sockets: 14
+--------------------------------------------------------------------------------
+Benchmarking vertx-web-kotlinx-exposed-r2dbc-postgresql
+--------------------------------------------------------------------------------
+BENCHMARKING DB ... 
+Benchmark results:
+Complete
+BENCHMARKING QUERY ... 
+Benchmark results:
+Complete
+BENCHMARKING UPDATE ... 
+Benchmark results:
+Complete
+BENCHMARKING FORTUNE ... 
+Benchmark results:
+Complete
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Benchmarking time: 8m 19s
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Build time: 2m 34s
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Time starting database: 1s
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Time until accepting requests: 1s
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Verify time: 9m 4s
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Total test time: 11m 47s
+tfb: Total time building so far: 4m 48s
+tfb: Total time verifying so far: 18m 13s
+tfb: Total time benchmarking so far: 16m 37s
+tfb: Total execution time so far: 23m 24s
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Total TCP sockets: 14

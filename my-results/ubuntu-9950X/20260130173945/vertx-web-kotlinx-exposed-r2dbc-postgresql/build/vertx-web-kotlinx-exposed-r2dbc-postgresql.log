@@ -1,0 +1,76 @@
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 1/21 : FROM gradle:9.2.1-jdk25
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> 2212a01f25c1
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 2/21 : WORKDIR /vertx-web-kotlinx
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> Running in 5f671f5cf9ac
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> b2fec718c1e3
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 3/21 : COPY gradle/libs.versions.toml gradle/libs.versions.toml
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> ce1e5e7d86e6
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 4/21 : COPY buildSrc buildSrc
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> 8c213e7c4a7b
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 5/21 : COPY settings.gradle.kts settings.gradle.kts
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> 17ed9a3459a2
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 6/21 : COPY build.gradle.kts build.gradle.kts
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> a53253925155
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 7/21 : COPY gradle.properties gradle.properties
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> 2af473f99a7a
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 8/21 : RUN mkdir -p common without-db/default with-db/common with-db/default with-db/r2dbc-common with-db/r2dbc with-db/exposed-common with-db/exposed-r2dbc with-db/exposed-vertx-sql-client
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> Running in 9b809b3796d3
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> f0de0fc98529
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 9/21 : COPY common/build.gradle.kts common/build.gradle.kts
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> a8e16079eccd
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 10/21 : COPY common/src common/src
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> e9690d638d68
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 11/21 : COPY with-db/common/build.gradle.kts with-db/common/build.gradle.kts
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> 708734a9c599
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 12/21 : COPY with-db/common/src with-db/common/src
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> 39782d62f959
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 13/21 : COPY with-db/r2dbc-common/build.gradle.kts with-db/r2dbc-common/build.gradle.kts
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> 1f5cf2387502
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 14/21 : COPY with-db/r2dbc-common/src with-db/r2dbc-common/src
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> b60f353d6db3
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 15/21 : COPY with-db/exposed-common/build.gradle.kts with-db/exposed-common/build.gradle.kts
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> 7e6a657b823c
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 16/21 : COPY with-db/exposed-common/src with-db/exposed-common/src
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> 9d60b3a53163
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 17/21 : COPY with-db/exposed-r2dbc/build.gradle.kts with-db/exposed-r2dbc/build.gradle.kts
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> c8bf85f2ab5e
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 18/21 : COPY with-db/exposed-r2dbc/src with-db/exposed-r2dbc/src
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> d40ef1e10a5e
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Step 19/21 : RUN gradle --no-daemon with-db:exposed-r2dbc:installDist
+vertx-web-kotlinx-exposed-r2dbc-postgresql:  ---> Running in 211ad769442a
+vertx-web-kotlinx-exposed-r2dbc-postgresql: To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Daemon will be stopped at the end of the build 
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Calculating task graph as no cached configuration is available for tasks: with-db:exposed-r2dbc:installDist
+vertx-web-kotlinx-exposed-r2dbc-postgresql: 
+vertx-web-kotlinx-exposed-r2dbc-postgresql: FAILURE: Build failed with an exception.
+vertx-web-kotlinx-exposed-r2dbc-postgresql: * What went wrong:
+vertx-web-kotlinx-exposed-r2dbc-postgresql: A problem occurred configuring project ':buildSrc'.
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Could not resolve all artifacts for configuration 'classpath'.
+vertx-web-kotlinx-exposed-r2dbc-postgresql:    > Could not resolve org.gradle.kotlin:gradle-kotlin-dsl-plugins:6.4.1.
+vertx-web-kotlinx-exposed-r2dbc-postgresql:      Required by:
+vertx-web-kotlinx-exposed-r2dbc-postgresql:          buildscript of project ':buildSrc' > org.gradle.kotlin.kotlin-dsl:org.gradle.kotlin.kotlin-dsl.gradle.plugin:6.4.1
+vertx-web-kotlinx-exposed-r2dbc-postgresql:       > Could not resolve org.gradle.kotlin:gradle-kotlin-dsl-plugins:6.4.1.
+vertx-web-kotlinx-exposed-r2dbc-postgresql:          > Could not get resource 'https://plugins.gradle.org/m2/org/gradle/kotlin/gradle-kotlin-dsl-plugins/6.4.1/gradle-kotlin-dsl-plugins-6.4.1.pom'.
+vertx-web-kotlinx-exposed-r2dbc-postgresql:             > Could not GET 'https://plugins-artifacts.gradle.org/org.gradle.kotlin/gradle-kotlin-dsl-plugins/6.4.1/1bd17f851f5bbded0e0b3d7a619cc17712ab9845eaa45bbcca90715fcea3105f/gradle-kotlin-dsl-plugins-6.4.1.pom'.
+vertx-web-kotlinx-exposed-r2dbc-postgresql:                > plugins-artifacts.gradle.org: Temporary failure in name resolution
+vertx-web-kotlinx-exposed-r2dbc-postgresql:    > Could not resolve org.jetbrains.kotlin:kotlin-gradle-plugin:2.3.0.
+vertx-web-kotlinx-exposed-r2dbc-postgresql:      Required by:
+vertx-web-kotlinx-exposed-r2dbc-postgresql:          buildscript of project ':buildSrc' > org.jetbrains.kotlin.jvm:org.jetbrains.kotlin.jvm.gradle.plugin:2.3.0
+vertx-web-kotlinx-exposed-r2dbc-postgresql:       > Could not resolve org.jetbrains.kotlin:kotlin-gradle-plugin:2.3.0.
+vertx-web-kotlinx-exposed-r2dbc-postgresql:          > Could not get resource 'https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-gradle-plugin/2.3.0/kotlin-gradle-plugin-2.3.0.pom'.
+vertx-web-kotlinx-exposed-r2dbc-postgresql:             > Could not GET 'https://plugins-artifacts.gradle.org/org.jetbrains.kotlin/kotlin-gradle-plugin/2.3.0/878727bf21a83adad89d4e6088484ddbf39f6a84a94280221a6e1c2f8841303e/kotlin-gradle-plugin-2.3.0.pom'.
+vertx-web-kotlinx-exposed-r2dbc-postgresql:                > plugins-artifacts.gradle.org
+vertx-web-kotlinx-exposed-r2dbc-postgresql: 
+vertx-web-kotlinx-exposed-r2dbc-postgresql: * Try:
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Run with --stacktrace option to get the stack trace.
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Run with --info or --debug option to get more log output.
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Run with --scan to generate a Build Scan (powered by Develocity).
+vertx-web-kotlinx-exposed-r2dbc-postgresql: > Get more help at https://help.gradle.org.
+vertx-web-kotlinx-exposed-r2dbc-postgresql: BUILD FAILED in 35s
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Configuration cache entry stored.
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Docker build failed; terminating
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Traceback (most recent call last):
+vertx-web-kotlinx-exposed-r2dbc-postgresql:   File "/FrameworkBenchmarks/toolset/utils/docker_helper.py", line 53, in __build
+vertx-web-kotlinx-exposed-r2dbc-postgresql:     raise Exception(token['errorDetail']['message'])
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Exception: The command '/bin/sh -c gradle --no-daemon with-db:exposed-r2dbc:installDist' returned a non-zero code: 1
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Build time: 1m 13s

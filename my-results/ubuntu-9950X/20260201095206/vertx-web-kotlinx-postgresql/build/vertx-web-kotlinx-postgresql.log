@@ -1,0 +1,68 @@
+vertx-web-kotlinx-postgresql: Step 1/17 : FROM gradle:9.2.1-jdk25
+vertx-web-kotlinx-postgresql:  ---> 2212a01f25c1
+vertx-web-kotlinx-postgresql: Step 2/17 : WORKDIR /vertx-web-kotlinx
+vertx-web-kotlinx-postgresql:  ---> Running in 0730700e0d99
+vertx-web-kotlinx-postgresql:  ---> 4bfa9a4ffafe
+vertx-web-kotlinx-postgresql: Step 3/17 : COPY gradle/libs.versions.toml gradle/libs.versions.toml
+vertx-web-kotlinx-postgresql:  ---> a60f8b53fdc3
+vertx-web-kotlinx-postgresql: Step 4/17 : COPY buildSrc buildSrc
+vertx-web-kotlinx-postgresql:  ---> 0d064cf9a10e
+vertx-web-kotlinx-postgresql: Step 5/17 : COPY settings.gradle.kts settings.gradle.kts
+vertx-web-kotlinx-postgresql:  ---> def6fd552afd
+vertx-web-kotlinx-postgresql: Step 6/17 : COPY build.gradle.kts build.gradle.kts
+vertx-web-kotlinx-postgresql:  ---> beea2a859ec9
+vertx-web-kotlinx-postgresql: Step 7/17 : COPY gradle.properties gradle.properties
+vertx-web-kotlinx-postgresql:  ---> 7f41f4810f19
+vertx-web-kotlinx-postgresql: Step 8/17 : RUN mkdir -p common without-db/default with-db/common with-db/default with-db/r2dbc-common with-db/r2dbc with-db/exposed-common with-db/exposed-r2dbc with-db/exposed-vertx-sql-client
+vertx-web-kotlinx-postgresql:  ---> Running in 1ca1c172f89b
+vertx-web-kotlinx-postgresql:  ---> 199a93ee18e9
+vertx-web-kotlinx-postgresql: Step 9/17 : COPY common/build.gradle.kts common/build.gradle.kts
+vertx-web-kotlinx-postgresql:  ---> 2a540d296baf
+vertx-web-kotlinx-postgresql: Step 10/17 : COPY common/src common/src
+vertx-web-kotlinx-postgresql:  ---> 43eaf9cd7b2d
+vertx-web-kotlinx-postgresql: Step 11/17 : COPY with-db/common/build.gradle.kts with-db/common/build.gradle.kts
+vertx-web-kotlinx-postgresql:  ---> f43539422028
+vertx-web-kotlinx-postgresql: Step 12/17 : COPY with-db/common/src with-db/common/src
+vertx-web-kotlinx-postgresql:  ---> 421ca8b91860
+vertx-web-kotlinx-postgresql: Step 13/17 : COPY with-db/default/build.gradle.kts with-db/default/build.gradle.kts
+vertx-web-kotlinx-postgresql:  ---> 0af431a86ace
+vertx-web-kotlinx-postgresql: Step 14/17 : COPY with-db/default/src with-db/default/src
+vertx-web-kotlinx-postgresql:  ---> 2e909df2dd8e
+vertx-web-kotlinx-postgresql: Step 15/17 : RUN gradle --no-daemon with-db:default:installDist
+vertx-web-kotlinx-postgresql:  ---> Running in 0559a17c1054
+vertx-web-kotlinx-postgresql: To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+vertx-web-kotlinx-postgresql: Daemon will be stopped at the end of the build 
+vertx-web-kotlinx-postgresql: Calculating task graph as no cached configuration is available for tasks: with-db:default:installDist
+vertx-web-kotlinx-postgresql: 
+vertx-web-kotlinx-postgresql: FAILURE: Build failed with an exception.
+vertx-web-kotlinx-postgresql: 
+vertx-web-kotlinx-postgresql: * What went wrong:
+vertx-web-kotlinx-postgresql: A problem occurred configuring project ':buildSrc'.
+vertx-web-kotlinx-postgresql: > Could not resolve all artifacts for configuration 'classpath'.
+vertx-web-kotlinx-postgresql:    > Could not resolve org.gradle.kotlin:gradle-kotlin-dsl-plugins:6.4.1.
+vertx-web-kotlinx-postgresql:      Required by:
+vertx-web-kotlinx-postgresql:          buildscript of project ':buildSrc' > org.gradle.kotlin.kotlin-dsl:org.gradle.kotlin.kotlin-dsl.gradle.plugin:6.4.1
+vertx-web-kotlinx-postgresql:       > Could not resolve org.gradle.kotlin:gradle-kotlin-dsl-plugins:6.4.1.
+vertx-web-kotlinx-postgresql:          > Could not get resource 'https://plugins.gradle.org/m2/org/gradle/kotlin/gradle-kotlin-dsl-plugins/6.4.1/gradle-kotlin-dsl-plugins-6.4.1.pom'.
+vertx-web-kotlinx-postgresql:             > Could not GET 'https://plugins-artifacts.gradle.org/org.gradle.kotlin/gradle-kotlin-dsl-plugins/6.4.1/1bd17f851f5bbded0e0b3d7a619cc17712ab9845eaa45bbcca90715fcea3105f/gradle-kotlin-dsl-plugins-6.4.1.pom'.
+vertx-web-kotlinx-postgresql:                > plugins-artifacts.gradle.org: Temporary failure in name resolution
+vertx-web-kotlinx-postgresql:    > Could not resolve org.jetbrains.kotlin:kotlin-gradle-plugin:2.3.0.
+vertx-web-kotlinx-postgresql:      Required by:
+vertx-web-kotlinx-postgresql:          buildscript of project ':buildSrc' > org.jetbrains.kotlin.jvm:org.jetbrains.kotlin.jvm.gradle.plugin:2.3.0
+vertx-web-kotlinx-postgresql:       > Could not resolve org.jetbrains.kotlin:kotlin-gradle-plugin:2.3.0.
+vertx-web-kotlinx-postgresql:          > Could not get resource 'https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-gradle-plugin/2.3.0/kotlin-gradle-plugin-2.3.0.pom'.
+vertx-web-kotlinx-postgresql:             > Could not GET 'https://plugins-artifacts.gradle.org/org.jetbrains.kotlin/kotlin-gradle-plugin/2.3.0/878727bf21a83adad89d4e6088484ddbf39f6a84a94280221a6e1c2f8841303e/kotlin-gradle-plugin-2.3.0.pom'.
+vertx-web-kotlinx-postgresql:                > plugins-artifacts.gradle.org
+vertx-web-kotlinx-postgresql: * Try:
+vertx-web-kotlinx-postgresql: > Run with --stacktrace option to get the stack trace.
+vertx-web-kotlinx-postgresql: > Run with --info or --debug option to get more log output.
+vertx-web-kotlinx-postgresql: > Run with --scan to generate a Build Scan (powered by Develocity).
+vertx-web-kotlinx-postgresql: > Get more help at https://help.gradle.org.
+vertx-web-kotlinx-postgresql: BUILD FAILED in 39s
+vertx-web-kotlinx-postgresql: Configuration cache entry stored.
+vertx-web-kotlinx-postgresql: Docker build failed; terminating
+vertx-web-kotlinx-postgresql: Traceback (most recent call last):
+vertx-web-kotlinx-postgresql:   File "/FrameworkBenchmarks/toolset/utils/docker_helper.py", line 53, in __build
+vertx-web-kotlinx-postgresql:     raise Exception(token['errorDetail']['message'])
+vertx-web-kotlinx-postgresql: Exception: The command '/bin/sh -c gradle --no-daemon with-db:default:installDist' returned a non-zero code: 1
+vertx-web-kotlinx-postgresql: Build time: 1m 22s

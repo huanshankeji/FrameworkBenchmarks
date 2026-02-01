@@ -1,0 +1,18 @@
+--------------------------------------------------------------------------------
+Benchmarking ktor-exposed-r2dbc-dsl
+--------------------------------------------------------------------------------
+ktor-exposed-r2dbc-dsl: ERROR: Problem starting ktor-exposed-r2dbc-dsl
+ktor-exposed-r2dbc-dsl: Total test time: 1m 54s
+tfb: Total time building so far: 3m 12s
+tfb: Total time verifying so far: 0s
+tfb: Total execution time so far: 3m 15s
+ktor-exposed-r2dbc-dsl: Total TCP sockets: 20
+--------------------------------------------------------------------------------
+Benchmarking vertx-web-kotlinx-exposed-r2dbc-postgresql
+--------------------------------------------------------------------------------
+vertx-web-kotlinx-exposed-r2dbc-postgresql: ERROR: Problem starting vertx-web-kotlinx-exposed-r2dbc-postgresql
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Total test time: 1m 39s
+tfb: Total time building so far: 4m 50s
+tfb: Total time verifying so far: 0s
+tfb: Total execution time so far: 4m 58s
+vertx-web-kotlinx-exposed-r2dbc-postgresql: Total TCP sockets: 17

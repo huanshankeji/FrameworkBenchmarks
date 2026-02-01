@@ -1,0 +1,28 @@
+--------------------------------------------------------------------------------
+Benchmarking vertx-web-kotlinx-r2dbc-postgresql
+--------------------------------------------------------------------------------
+BENCHMARKING DB ... 
+Benchmark results:
+Complete
+BENCHMARKING QUERY ... 
+Benchmark results:
+Complete
+BENCHMARKING UPDATE ... 
+Benchmark results:
+Complete
+BENCHMARKING FORTUNE ... 
+Benchmark results:
+Complete
+vertx-web-kotlinx-r2dbc-postgresql: Benchmarking time: 8m 20s
+wrk: Build time: 23s
+techempower/postgres:latest: Build time: 6s
+vertx-web-kotlinx-r2dbc-postgresql: Build time: 3m 12s
+vertx-web-kotlinx-r2dbc-postgresql: Time starting database: 2s
+vertx-web-kotlinx-r2dbc-postgresql: Time until accepting requests: 1s
+vertx-web-kotlinx-r2dbc-postgresql: Verify time: 9m 5s
+vertx-web-kotlinx-r2dbc-postgresql: Total test time: 12m 27s
+tfb: Total time building so far: 3m 41s
+tfb: Total time verifying so far: 9m 5s
+tfb: Total time benchmarking so far: 8m 20s
+tfb: Total execution time so far: 12m 58s
+vertx-web-kotlinx-r2dbc-postgresql: Total TCP sockets: 10

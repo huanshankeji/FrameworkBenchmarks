@@ -1,0 +1,35 @@
+vertx-web-kotlinx-postgresql: Step 1/17 : FROM gradle:9.3.1-jdk25
+vertx-web-kotlinx-postgresql:  ---> 5d8e1b9d325e
+vertx-web-kotlinx-postgresql: Step 2/17 : WORKDIR /vertx-web-kotlinx
+vertx-web-kotlinx-postgresql:  ---> Running in ff0ba9c71346
+vertx-web-kotlinx-postgresql:  ---> 350bdf7b6609
+vertx-web-kotlinx-postgresql: Step 3/17 : COPY gradle/libs.versions.toml gradle/libs.versions.toml
+vertx-web-kotlinx-postgresql:  ---> 74baee0ffafd
+vertx-web-kotlinx-postgresql: Step 4/17 : COPY buildSrc buildSrc
+vertx-web-kotlinx-postgresql:  ---> ac253e45c583
+vertx-web-kotlinx-postgresql: Step 5/17 : COPY settings.gradle.kts settings.gradle.kts
+vertx-web-kotlinx-postgresql:  ---> e37323860355
+vertx-web-kotlinx-postgresql: Step 6/17 : COPY build.gradle.kts build.gradle.kts
+vertx-web-kotlinx-postgresql:  ---> b587ab6c8d1a
+vertx-web-kotlinx-postgresql: Step 7/17 : COPY gradle.properties gradle.properties
+vertx-web-kotlinx-postgresql:  ---> f0505a27de2d
+vertx-web-kotlinx-postgresql: Step 8/17 : RUN mkdir -p common without-db/default with-db/common with-db/default with-db/r2dbc-common with-db/r2dbc with-db/exposed-common with-db/exposed-r2dbc with-db/exposed-vertx-sql-client
+vertx-web-kotlinx-postgresql:  ---> Running in bdbee95b0ba4
+vertx-web-kotlinx-postgresql:  ---> d296f4f6ba79
+vertx-web-kotlinx-postgresql: Step 9/17 : COPY common/build.gradle.kts common/build.gradle.kts
+vertx-web-kotlinx-postgresql:  ---> 7bfe67a7fb48
+vertx-web-kotlinx-postgresql: Step 10/17 : COPY common/src common/src
+vertx-web-kotlinx-postgresql:  ---> 8e068a283e56
+vertx-web-kotlinx-postgresql: Step 11/17 : COPY with-db/common/build.gradle.kts with-db/common/build.gradle.kts
+vertx-web-kotlinx-postgresql:  ---> 921ac2a89763
+vertx-web-kotlinx-postgresql: Step 12/17 : COPY with-db/common/src with-db/common/src
+vertx-web-kotlinx-postgresql:  ---> 620f07d3fc83
+vertx-web-kotlinx-postgresql: Step 13/17 : COPY with-db/default/build.gradle.kts with-db/default/build.gradle.kts
+vertx-web-kotlinx-postgresql:  ---> 719ff5ba55a8
+vertx-web-kotlinx-postgresql: Step 14/17 : COPY with-db/default/src with-db/default/src
+vertx-web-kotlinx-postgresql:  ---> 25897951d662
+vertx-web-kotlinx-postgresql: Step 15/17 : RUN gradle --no-daemon with-db:default:installDist
+vertx-web-kotlinx-postgresql:  ---> Running in 91b1f1c2b3d1
+vertx-web-kotlinx-postgresql: To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+vertx-web-kotlinx-postgresql: Daemon will be stopped at the end of the build 
+vertx-web-kotlinx-postgresql: Calculating task graph as no cached configuration is available for tasks: with-db:default:installDist

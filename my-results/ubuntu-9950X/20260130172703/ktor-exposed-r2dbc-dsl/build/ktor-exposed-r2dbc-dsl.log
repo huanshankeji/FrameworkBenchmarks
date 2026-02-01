@@ -1,0 +1,43 @@
+ktor-exposed-r2dbc-dsl: Step 1/7 : FROM gradle:jdk25
+ktor-exposed-r2dbc-dsl:  ---> 2e614dffcc02
+ktor-exposed-r2dbc-dsl: Step 2/7 : WORKDIR /ktor-exposed
+ktor-exposed-r2dbc-dsl:  ---> Running in 20bbba6a1f68
+ktor-exposed-r2dbc-dsl:  ---> 6d8342e18f27
+ktor-exposed-r2dbc-dsl: Step 3/7 : COPY ktor-exposed/settings.gradle.kts settings.gradle.kts
+ktor-exposed-r2dbc-dsl:  ---> 09fb1390cc44
+ktor-exposed-r2dbc-dsl: Step 4/7 : COPY ktor-exposed/app app
+ktor-exposed-r2dbc-dsl:  ---> 42c2c4527e9b
+ktor-exposed-r2dbc-dsl: Step 5/7 : RUN gradle --no-daemon shadowJar
+ktor-exposed-r2dbc-dsl:  ---> Running in 4adb0ea0205f
+ktor-exposed-r2dbc-dsl: To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+ktor-exposed-r2dbc-dsl: Daemon will be stopped at the end of the build 
+ktor-exposed-r2dbc-dsl: 
+ktor-exposed-r2dbc-dsl: FAILURE: Build failed with an exception.
+ktor-exposed-r2dbc-dsl: * What went wrong:
+ktor-exposed-r2dbc-dsl: A problem occurred configuring project ':app'.
+ktor-exposed-r2dbc-dsl: > Could not resolve all artifacts for configuration 'classpath'.
+ktor-exposed-r2dbc-dsl:    > Could not resolve org.jetbrains.kotlin:kotlin-gradle-plugin:2.3.0.
+ktor-exposed-r2dbc-dsl:      Required by:
+ktor-exposed-r2dbc-dsl:          buildscript of project ':app' > org.jetbrains.kotlin.jvm:org.jetbrains.kotlin.jvm.gradle.plugin:2.3.0
+ktor-exposed-r2dbc-dsl:       > Could not resolve org.jetbrains.kotlin:kotlin-gradle-plugin:2.3.0.
+ktor-exposed-r2dbc-dsl:          > Could not parse POM https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-gradle-plugin/2.3.0/kotlin-gradle-plugin-2.3.0.pom
+ktor-exposed-r2dbc-dsl:             > Could not resolve org.jetbrains.kotlin:kotlin-gradle-plugins-bom:2.3.0.
+ktor-exposed-r2dbc-dsl:                > Could not resolve org.jetbrains.kotlin:kotlin-gradle-plugins-bom:2.3.0.
+ktor-exposed-r2dbc-dsl:                   > Could not get resource 'https://plugins.gradle.org/m2/org/jetbrains/kotlin/kotlin-gradle-plugins-bom/2.3.0/kotlin-gradle-plugins-bom-2.3.0.pom'.
+ktor-exposed-r2dbc-dsl:                      > Could not GET 'https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-gradle-plugins-bom/2.3.0/kotlin-gradle-plugins-bom-2.3.0.pom'.
+ktor-exposed-r2dbc-dsl:                         > repo.maven.apache.org: Temporary failure in name resolution
+ktor-exposed-r2dbc-dsl: > There are 2 more failures with identical causes.
+ktor-exposed-r2dbc-dsl: 
+ktor-exposed-r2dbc-dsl: * Try:
+ktor-exposed-r2dbc-dsl: > Run with --stacktrace option to get the stack trace.
+ktor-exposed-r2dbc-dsl: > Run with --info or --debug option to get more log output.
+ktor-exposed-r2dbc-dsl: > Run with --scan to get full insights from a Build Scan (powered by Develocity).
+ktor-exposed-r2dbc-dsl: > Get more help at https://help.gradle.org.
+ktor-exposed-r2dbc-dsl: 
+ktor-exposed-r2dbc-dsl: BUILD FAILED in 40s
+ktor-exposed-r2dbc-dsl: Docker build failed; terminating
+ktor-exposed-r2dbc-dsl: Traceback (most recent call last):
+ktor-exposed-r2dbc-dsl:   File "/FrameworkBenchmarks/toolset/utils/docker_helper.py", line 53, in __build
+ktor-exposed-r2dbc-dsl:     raise Exception(token['errorDetail']['message'])
+ktor-exposed-r2dbc-dsl: Exception: The command '/bin/sh -c gradle --no-daemon shadowJar' returned a non-zero code: 1
+ktor-exposed-r2dbc-dsl: Build time: 2m 9s

@@ -1,0 +1,9 @@
+--------------------------------------------------------------------------------
+Benchmarking vertx-web-kotlinx-postgresql
+--------------------------------------------------------------------------------
+vertx-web-kotlinx-postgresql: ERROR: Problem starting vertx-web-kotlinx-postgresql
+vertx-web-kotlinx-postgresql: Total test time: 30s
+tfb: Total time building so far: 2m 43s
+tfb: Total time verifying so far: 0s
+tfb: Total execution time so far: 2m 47s
+vertx-web-kotlinx-postgresql: Total TCP sockets: 29

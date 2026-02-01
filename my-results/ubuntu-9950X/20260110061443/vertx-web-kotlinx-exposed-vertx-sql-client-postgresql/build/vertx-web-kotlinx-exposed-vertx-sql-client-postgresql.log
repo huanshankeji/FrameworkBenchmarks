@@ -1,0 +1,7 @@
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 1/21 : FROM gradle:9.2.1-jdk25
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Docker build failed; terminating
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Traceback (most recent call last):
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:   File "/FrameworkBenchmarks/toolset/utils/docker_helper.py", line 53, in __build
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:     raise Exception(token['errorDetail']['message'])
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Exception: failed to resolve reference "docker.io/library/gradle:9.2.1-jdk25": failed to do request: Head "https://registry-1.docker.io/v2/library/gradle/manifests/9.2.1-jdk25": dialing registry-1.docker.io:443 container via direct connection because Docker Desktop has no HTTPS proxy: connecting to registry-1.docker.io:443: dial tcp: lookup registry-1.docker.io on 1.1.1.2:53: read udp 198.18.194.67:34723->1.1.1.2:53: i/o timeout
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Build time: 22s

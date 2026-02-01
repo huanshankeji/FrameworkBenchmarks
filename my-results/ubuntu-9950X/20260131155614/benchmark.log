@@ -1,0 +1,9 @@
+--------------------------------------------------------------------------------
+Benchmarking vertx-web-kotlinx-exposed-vertx-sql-client-postgresql
+--------------------------------------------------------------------------------
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: ERROR: Problem starting vertx-web-kotlinx-exposed-vertx-sql-client-postgresql
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Total test time: 1m 16s
+tfb: Total time building so far: 2m 23s
+tfb: Total time verifying so far: 0s
+tfb: Total execution time so far: 2m 27s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Total TCP sockets: 17

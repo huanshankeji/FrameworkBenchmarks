@@ -1,0 +1,40 @@
+ktor-exposed-r2dbc-dsl: Step 1/7 : FROM gradle:jdk25
+ktor-exposed-r2dbc-dsl:  ---> 34ac44f5ffc1
+ktor-exposed-r2dbc-dsl: Step 2/7 : WORKDIR /ktor-exposed
+ktor-exposed-r2dbc-dsl:  ---> Running in 0f7b3702e72f
+ktor-exposed-r2dbc-dsl:  ---> c4644789634f
+ktor-exposed-r2dbc-dsl: Step 3/7 : COPY ktor-exposed/settings.gradle.kts settings.gradle.kts
+ktor-exposed-r2dbc-dsl:  ---> 7a8a16d804c3
+ktor-exposed-r2dbc-dsl: Step 4/7 : COPY ktor-exposed/app app
+ktor-exposed-r2dbc-dsl:  ---> 55e312f48062
+ktor-exposed-r2dbc-dsl: Step 5/7 : RUN gradle --no-daemon shadowJar
+ktor-exposed-r2dbc-dsl:  ---> Running in 2c3aa4e1123b
+ktor-exposed-r2dbc-dsl: To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+ktor-exposed-r2dbc-dsl: Daemon will be stopped at the end of the build 
+ktor-exposed-r2dbc-dsl: 
+ktor-exposed-r2dbc-dsl: FAILURE: Build failed with an exception.
+ktor-exposed-r2dbc-dsl: * Where:
+ktor-exposed-r2dbc-dsl: Build file '/ktor-exposed/app/build.gradle.kts' line: 4
+ktor-exposed-r2dbc-dsl: 
+ktor-exposed-r2dbc-dsl: * What went wrong:
+ktor-exposed-r2dbc-dsl: Plugin [id: 'org.jetbrains.kotlin.jvm', version: '2.3.0'] was not found in any of the following sources:
+ktor-exposed-r2dbc-dsl: 
+ktor-exposed-r2dbc-dsl: - Gradle Core Plugins (plugin is not in 'org.gradle' namespace)
+ktor-exposed-r2dbc-dsl: - Included Builds (No included builds contain this plugin)
+ktor-exposed-r2dbc-dsl: - Plugin Repositories (could not resolve plugin artifact 'org.jetbrains.kotlin.jvm:org.jetbrains.kotlin.jvm.gradle.plugin:2.3.0')
+ktor-exposed-r2dbc-dsl:   Searched in the following repositories:
+ktor-exposed-r2dbc-dsl:     Gradle Central Plugin Repository
+ktor-exposed-r2dbc-dsl: 
+ktor-exposed-r2dbc-dsl: * Try:
+ktor-exposed-r2dbc-dsl: > Run with --stacktrace option to get the stack trace.
+ktor-exposed-r2dbc-dsl: > Run with --info or --debug option to get more log output.
+ktor-exposed-r2dbc-dsl: > Run with --scan to get full insights from a Build Scan (powered by Develocity).
+ktor-exposed-r2dbc-dsl: > Get more help at https://help.gradle.org.
+ktor-exposed-r2dbc-dsl: 
+ktor-exposed-r2dbc-dsl: BUILD FAILED in 23s
+ktor-exposed-r2dbc-dsl: Docker build failed; terminating
+ktor-exposed-r2dbc-dsl: Traceback (most recent call last):
+ktor-exposed-r2dbc-dsl:   File "/FrameworkBenchmarks/toolset/utils/docker_helper.py", line 53, in __build
+ktor-exposed-r2dbc-dsl:     raise Exception(token['errorDetail']['message'])
+ktor-exposed-r2dbc-dsl: Exception: The command '/bin/sh -c gradle --no-daemon shadowJar' returned a non-zero code: 1
+ktor-exposed-r2dbc-dsl: Build time: 1m 53s

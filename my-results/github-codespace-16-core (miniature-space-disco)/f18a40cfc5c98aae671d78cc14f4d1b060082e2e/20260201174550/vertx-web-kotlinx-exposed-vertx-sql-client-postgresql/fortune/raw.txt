@@ -1,0 +1,148 @@
+---------------------------------------------------------
+ Running Primer fortune
+ wrk -H 'Host: tfb-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 5 -c 8 --timeout 8 -t 8 http://tfb-server:8080/fortunes
+---------------------------------------------------------
+Running 5s test @ http://tfb-server:8080/fortunes
+  8 threads and 8 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   221.35us   68.93us   3.70ms   98.70%
+    Req/Sec     4.53k   139.95     4.75k    87.99%
+  Latency Distribution
+     50%  216.00us
+     75%  228.00us
+     90%  242.00us
+     99%  300.00us
+  184035 requests in 5.10s, 238.52MB read
+Requests/sec:  36087.89
+Transfer/sec:     46.77MB
+---------------------------------------------------------
+ Running Warmup fortune
+ wrk -H 'Host: tfb-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 512 --timeout 8 -t 16 "http://tfb-server:8080/fortunes"
+---------------------------------------------------------
+Running 15s test @ http://tfb-server:8080/fortunes
+  16 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     3.97ms    1.83ms  29.30ms   76.24%
+    Req/Sec     8.12k   770.44    40.11k    96.08%
+  Latency Distribution
+     50%    3.56ms
+     75%    4.81ms
+     90%    6.32ms
+     99%   10.19ms
+  1943256 requests in 15.10s, 2.46GB read
+Requests/sec: 128683.02
+Transfer/sec:    166.75MB
+---------------------------------------------------------
+ Concurrency: 16 for fortune
+ wrk -H 'Host: tfb-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 16 --timeout 8 -t 16 "http://tfb-server:8080/fortunes"
+---------------------------------------------------------
+Running 15s test @ http://tfb-server:8080/fortunes
+  16 threads and 16 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   229.34us  130.87us   6.81ms   95.22%
+    Req/Sec     4.48k   740.57     5.65k    72.97%
+  Latency Distribution
+     50%  196.00us
+     75%  232.00us
+     90%  303.00us
+     99%  596.00us
+  1077351 requests in 15.10s, 1.36GB read
+Requests/sec:  71350.33
+Transfer/sec:     92.47MB
+STARTTIME 1769968517
+ENDTIME 1769968532
+---------------------------------------------------------
+ Concurrency: 32 for fortune
+ wrk -H 'Host: tfb-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 32 --timeout 8 -t 16 "http://tfb-server:8080/fortunes"
+---------------------------------------------------------
+Running 15s test @ http://tfb-server:8080/fortunes
+  16 threads and 32 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   407.77us  138.01us   4.48ms   81.48%
+    Req/Sec     4.91k   320.91     6.23k    65.84%
+  Latency Distribution
+     50%  382.00us
+     75%  455.00us
+     90%  555.00us
+     99%    0.93ms
+  1180944 requests in 15.10s, 1.49GB read
+Requests/sec:  78210.53
+Transfer/sec:    101.36MB
+STARTTIME 1769968534
+ENDTIME 1769968549
+---------------------------------------------------------
+ Concurrency: 64 for fortune
+ wrk -H 'Host: tfb-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 64 --timeout 8 -t 16 "http://tfb-server:8080/fortunes"
+---------------------------------------------------------
+Running 15s test @ http://tfb-server:8080/fortunes
+  16 threads and 64 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   696.83us  252.00us   7.50ms   78.93%
+    Req/Sec     5.75k   261.44     6.53k    74.38%
+  Latency Distribution
+     50%  654.00us
+     75%  792.00us
+     90%    0.98ms
+     99%    1.59ms
+  1383004 requests in 15.10s, 1.75GB read
+Requests/sec:  91576.85
+Transfer/sec:    118.67MB
+STARTTIME 1769968551
+ENDTIME 1769968566
+---------------------------------------------------------
+ Concurrency: 128 for fortune
+ wrk -H 'Host: tfb-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 128 --timeout 8 -t 16 "http://tfb-server:8080/fortunes"
+---------------------------------------------------------
+Running 15s test @ http://tfb-server:8080/fortunes
+  16 threads and 128 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.25ms  626.13us  13.06ms   80.16%
+    Req/Sec     6.54k   451.07    11.42k    80.20%
+  Latency Distribution
+     50%    1.09ms
+     75%    1.48ms
+     90%    2.02ms
+     99%    3.51ms
+  1568396 requests in 15.10s, 1.99GB read
+Requests/sec: 103870.94
+Transfer/sec:    134.62MB
+STARTTIME 1769968568
+ENDTIME 1769968584
+---------------------------------------------------------
+ Concurrency: 256 for fortune
+ wrk -H 'Host: tfb-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 256 --timeout 8 -t 16 "http://tfb-server:8080/fortunes"
+---------------------------------------------------------
+Running 15s test @ http://tfb-server:8080/fortunes
+  16 threads and 256 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     2.16ms    0.97ms  20.77ms   78.06%
+    Req/Sec     7.46k   386.50    12.94k    75.88%
+  Latency Distribution
+     50%    1.94ms
+     75%    2.57ms
+     90%    3.38ms
+     99%    5.51ms
+  1783252 requests in 15.02s, 2.26GB read
+Requests/sec: 118686.33
+Transfer/sec:    153.82MB
+STARTTIME 1769968586
+ENDTIME 1769968601
+---------------------------------------------------------
+ Concurrency: 512 for fortune
+ wrk -H 'Host: tfb-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 512 --timeout 8 -t 16 "http://tfb-server:8080/fortunes"
+---------------------------------------------------------
+Running 15s test @ http://tfb-server:8080/fortunes
+  16 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     3.96ms    1.88ms  29.70ms   77.85%
+    Req/Sec     8.16k   777.89    40.44k    94.67%
+  Latency Distribution
+     50%    3.52ms
+     75%    4.77ms
+     90%    6.33ms
+     99%   10.39ms
+  1953014 requests in 15.10s, 2.47GB read
+Requests/sec: 129355.11
+Transfer/sec:    167.65MB
+STARTTIME 1769968603
+ENDTIME 1769968618

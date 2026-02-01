@@ -1,0 +1,129 @@
+---------------------------------------------------------
+ Running Primer update
+ wrk -H 'Host: tfb-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 5 -c 8 --timeout 8 -t 8 "http://tfb-server:8080/updates?queries=2"
+---------------------------------------------------------
+Running 5s test @ http://tfb-server:8080/updates?queries=2
+  8 threads and 8 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   319.55us  709.82us  32.75ms   99.72%
+    Req/Sec     3.41k   240.84     3.74k    84.31%
+  Latency Distribution
+     50%  287.00us
+     75%  300.00us
+     90%  319.00us
+     99%  427.00us
+  138441 requests in 5.10s, 25.29MB read
+Requests/sec:  27144.84
+Transfer/sec:      4.96MB
+---------------------------------------------------------
+ Running Warmup update
+ wrk -H 'Host: tfb-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 512 --timeout 8 -t 32 "http://tfb-server:8080/updates?queries=2"
+---------------------------------------------------------
+Running 15s test @ http://tfb-server:8080/updates?queries=2
+  32 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     3.87ms    1.85ms  20.82ms   69.76%
+    Req/Sec     4.20k   299.54     8.91k    84.89%
+  Latency Distribution
+     50%    3.63ms
+     75%    4.91ms
+     90%    6.30ms
+     99%    9.34ms
+  2015899 requests in 15.10s, 368.27MB read
+Requests/sec: 133497.59
+Transfer/sec:     24.39MB
+---------------------------------------------------------
+ Queries: 1 for update
+ wrk -H 'Host: tfb-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 512 --timeout 8 -t 32 "http://tfb-server:8080/updates?queries=1"
+---------------------------------------------------------
+Running 15s test @ http://tfb-server:8080/updates?queries=1
+  32 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     2.71ms    1.49ms  26.55ms   72.54%
+    Req/Sec     6.07k   266.88     9.30k    77.47%
+  Latency Distribution
+     50%    2.46ms
+     75%    3.47ms
+     90%    4.63ms
+     99%    7.42ms
+  2912701 requests in 15.10s, 443.26MB read
+Requests/sec: 192885.64
+Transfer/sec:     29.35MB
+STARTTIME 1767854569
+ENDTIME 1767854584
+---------------------------------------------------------
+ Queries: 5 for update
+ wrk -H 'Host: tfb-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 512 --timeout 8 -t 32 "http://tfb-server:8080/updates?queries=5"
+---------------------------------------------------------
+Running 15s test @ http://tfb-server:8080/updates?queries=5
+  32 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     6.48ms    2.69ms  31.19ms   69.85%
+    Req/Sec     2.50k   198.76     6.47k    93.58%
+  Latency Distribution
+     50%    6.20ms
+     75%    8.04ms
+     90%    9.98ms
+     99%   14.23ms
+  1195876 requests in 15.10s, 328.33MB read
+Requests/sec:  79206.43
+Transfer/sec:     21.75MB
+STARTTIME 1767854586
+ENDTIME 1767854602
+---------------------------------------------------------
+ Queries: 10 for update
+ wrk -H 'Host: tfb-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 512 --timeout 8 -t 32 "http://tfb-server:8080/updates?queries=10"
+---------------------------------------------------------
+Running 15s test @ http://tfb-server:8080/updates?queries=10
+  32 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    10.44ms    3.50ms  31.35ms   68.86%
+    Req/Sec     1.54k    87.24     4.29k    81.40%
+  Latency Distribution
+     50%   10.14ms
+     75%   12.58ms
+     90%   15.06ms
+     99%   19.95ms
+  737720 requests in 15.05s, 314.33MB read
+Requests/sec:  49011.53
+Transfer/sec:     20.88MB
+STARTTIME 1767854604
+ENDTIME 1767854619
+---------------------------------------------------------
+ Queries: 15 for update
+ wrk -H 'Host: tfb-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 512 --timeout 8 -t 32 "http://tfb-server:8080/updates?queries=15"
+---------------------------------------------------------
+Running 15s test @ http://tfb-server:8080/updates?queries=15
+  32 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    14.38ms    4.28ms  39.53ms   69.40%
+    Req/Sec     1.12k   141.73     5.99k    98.52%
+  Latency Distribution
+     50%   14.08ms
+     75%   17.04ms
+     90%   19.98ms
+     99%   25.80ms
+  534995 requests in 15.10s, 309.01MB read
+Requests/sec:  35432.32
+Transfer/sec:     20.47MB
+STARTTIME 1767854621
+ENDTIME 1767854636
+---------------------------------------------------------
+ Queries: 20 for update
+ wrk -H 'Host: tfb-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 512 --timeout 8 -t 32 "http://tfb-server:8080/updates?queries=20"
+---------------------------------------------------------
+Running 15s test @ http://tfb-server:8080/updates?queries=20
+  32 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    18.71ms    4.97ms  50.98ms   69.02%
+    Req/Sec     0.86k    55.31     2.20k    79.21%
+  Latency Distribution
+     50%   18.36ms
+     75%   21.82ms
+     90%   25.24ms
+     99%   31.82ms
+  411199 requests in 15.06s, 299.74MB read
+Requests/sec:  27309.83
+Transfer/sec:     19.91MB
+STARTTIME 1767854638
+ENDTIME 1767854653

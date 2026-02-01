@@ -20,8 +20,8 @@ class MainVerticle : CommonWithDbVerticle<R2dbcDatabase, R2dbcTransaction>(),
     override suspend fun initDbClient(): R2dbcDatabase =
     // This seems to cause too many connections to be created, resulting in `io.r2dbc.postgresql.PostgresqlConnectionFactory$PostgresConnectionException: [08003] Cannot connect to tfb-database/<unresolved>:5432`.
     //r2DbcDatabaseConnect()
-        // since a pool is created for every `Verticle`, the size 1 is optimal as tested.
-        r2dbcDatabaseConnectPool(1)
+        // Updated to 512 to match ktor-netty-exposed-r2dbc-dsl configuration for better performance
+        r2dbcDatabaseConnectPool(512)
 
     override val httpServerStrictThreadMode get() = false
     //override val coHandlerCoroutineContext: CoroutineContext get() = EmptyCoroutineContext

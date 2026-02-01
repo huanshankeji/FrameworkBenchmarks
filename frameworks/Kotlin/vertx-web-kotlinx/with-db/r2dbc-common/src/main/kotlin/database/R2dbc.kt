@@ -2,21 +2,26 @@ package database
 
 import io.r2dbc.pool.ConnectionPool
 import io.r2dbc.pool.ConnectionPoolConfiguration
-import io.r2dbc.spi.ConnectionFactories
-import io.r2dbc.spi.ConnectionFactoryOptions
-import io.r2dbc.spi.ConnectionFactoryOptions.DRIVER
+import io.r2dbc.postgresql.PostgresqlConnectionConfiguration
+import io.r2dbc.postgresql.PostgresqlConnectionFactory
+import io.r2dbc.postgresql.client.SSLMode
+import io.r2dbc.spi.ConnectionFactory
+import java.time.Duration
 
 // not used currently
 // Note that this URL doesn't have `USER` and `PASSWORD`
 const val POSTGRESQL_R2DBC_URL = "r2dbc:postgresql://$HOST:5432/$DATABASE"
 
-val connectionFactory = ConnectionFactories.get(
-    ConnectionFactoryOptions.builder()
-        .option(DRIVER, "postgresql")
-        .option(ConnectionFactoryOptions.HOST, HOST)
-        .option(ConnectionFactoryOptions.USER, USER)
-        .option(ConnectionFactoryOptions.PASSWORD, PASSWORD)
-        .option(ConnectionFactoryOptions.DATABASE, DATABASE)
+val connectionFactory: ConnectionFactory = PostgresqlConnectionFactory(
+    PostgresqlConnectionConfiguration.builder()
+        .host(HOST)
+        .port(5432)
+        .database(DATABASE)
+        .username(USER)
+        .password(PASSWORD)
+        .sslMode(SSLMode.DISABLE)
+        .tcpKeepAlive(true)
+        .tcpNoDelay(true)
         .build()
 )
 
@@ -24,6 +29,9 @@ fun connectionPoolConfiguration(size: Int) =
     ConnectionPoolConfiguration.builder(connectionFactory)
         .initialSize(size)
         .maxSize(size)
+        .maxIdleTime(Duration.ofSeconds(30))
+        .maxAcquireTime(Duration.ofSeconds(5))
+        .validationQuery("SELECT 1")
         .build()
 
 fun connectionPool(size: Int) =

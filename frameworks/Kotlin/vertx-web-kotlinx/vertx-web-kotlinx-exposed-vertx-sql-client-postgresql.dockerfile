@@ -34,9 +34,9 @@ RUN gradle --no-daemon with-db:exposed-vertx-sql-client:installDist
 
 # Install async-profiler for profiling (optional but recommended)
 RUN apt-get update && apt-get install -y wget && \
-    wget -q https://github.com/async-profiler/async-profiler/releases/download/v2.9/async-profiler-2.9-linux-x64.tar.gz && \
-    tar -xzf async-profiler-2.9-linux-x64.tar.gz -C /opt && \
-    rm async-profiler-2.9-linux-x64.tar.gz
+    wget -q https://github.com/async-profiler/async-profiler/releases/download/v4.3/async-profiler-4.3-linux-x64.tar.gz && \
+    tar -xzf async-profiler-4.3-linux-x64.tar.gz -C /opt && \
+    rm async-profiler-4.3-linux-x64.tar.gz
 
 EXPOSE 8080
 
@@ -44,6 +44,7 @@ EXPOSE 8080
 ENV TRANSACTION_PROVIDER=jdbc
 
 CMD export JAVA_OPTS=" \
+    -agentpath:/opt/async-profiler-4.3-linux-x64/lib/libasyncProfiler.so=start,event=cpu,file=/tmp/profile.html,interval=1000000 \
     --enable-native-access=ALL-UNNAMED \
     --sun-misc-unsafe-memory-access=allow \
     --add-opens=java.base/java.lang=ALL-UNNAMED \
@@ -64,4 +65,5 @@ CMD export JAVA_OPTS=" \
     -Dio.netty.buffer.checkAccessible=false \
     -Dio.netty.iouring.ringSize=16384 \
     " && \
+    trap 'cp /tmp/profile.html /FrameworkBenchmarks/results/profile-jdbc.html 2>/dev/null || true' EXIT TERM INT && \
     with-db/exposed-vertx-sql-client/build/install/exposed-vertx-sql-client/bin/exposed-vertx-sql-client

@@ -1,0 +1,135 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.huanshankeji",
+    "module": "exposed-vertx-sql-client-oracle",
+    "version": "0.8.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.3.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.vertx",
+          "module": "vertx-oracle-client"
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "exposed-vertx-sql-client-oracle-0.8.0-SNAPSHOT.jar",
+          "url": "exposed-vertx-sql-client-oracle-0.8.0-SNAPSHOT.jar",
+          "size": 16078,
+          "sha512": "74adc59252e7641f245d7ecb7578388fcdb4ee10838df2fd25d91dc735b1e9e19a33c39df4fadf77287847f609cc95d7140ef9717c165d6cd1deea9f4ccbffcc",
+          "sha256": "930f3f8b560bedd9216b338db383cd355eb8fab46ba909359cca82f77e81eeda",
+          "sha1": "60b0ce90e7af72599a007fe20e027bebe25049da",
+          "md5": "1821cb4ae29bc88c04add44ce6df0cc8"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.vertx",
+          "module": "vertx-stack-depchain",
+          "version": {
+            "requires": "5.0.5"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "com.huanshankeji",
+          "module": "exposed-vertx-sql-client-core",
+          "version": {
+            "requires": "0.8.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "com.oracle.database.jdbc",
+          "module": "ojdbc11",
+          "version": {
+            "requires": "23.26.0.0.0"
+          }
+        },
+        {
+          "group": "io.vertx",
+          "module": "vertx-oracle-client"
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "exposed-vertx-sql-client-oracle-0.8.0-SNAPSHOT.jar",
+          "url": "exposed-vertx-sql-client-oracle-0.8.0-SNAPSHOT.jar",
+          "size": 16078,
+          "sha512": "74adc59252e7641f245d7ecb7578388fcdb4ee10838df2fd25d91dc735b1e9e19a33c39df4fadf77287847f609cc95d7140ef9717c165d6cd1deea9f4ccbffcc",
+          "sha256": "930f3f8b560bedd9216b338db383cd355eb8fab46ba909359cca82f77e81eeda",
+          "sha1": "60b0ce90e7af72599a007fe20e027bebe25049da",
+          "md5": "1821cb4ae29bc88c04add44ce6df0cc8"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "exposed-vertx-sql-client-oracle-0.8.0-SNAPSHOT-sources.jar",
+          "url": "exposed-vertx-sql-client-oracle-0.8.0-SNAPSHOT-sources.jar",
+          "size": 3826,
+          "sha512": "4918fdaea99fcd09018870bd09a280951f55c8a2acad197e2841631772eeffbce0c43b1cb6f1f296556c05346a2794342204d66bce5764f9be2a150286e9789e",
+          "sha256": "417a657c3780c2af9a65e182d76c32390c5ce0f88128b43bbd363a9172271572",
+          "sha1": "52400ad2efa19cfe0faa848a568fb1c81f30a206",
+          "md5": "435298fa3cf80977a9cc188397959f60"
+        }
+      ]
+    }
+  ]
+}

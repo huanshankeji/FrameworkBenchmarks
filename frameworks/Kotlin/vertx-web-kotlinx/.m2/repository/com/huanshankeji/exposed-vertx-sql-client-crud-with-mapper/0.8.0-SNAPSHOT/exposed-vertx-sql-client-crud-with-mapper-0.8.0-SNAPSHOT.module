@@ -1,0 +1,134 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.huanshankeji",
+    "module": "exposed-vertx-sql-client-crud-with-mapper",
+    "version": "0.8.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.3.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "exposed-vertx-sql-client-crud-with-mapper-0.8.0-SNAPSHOT.jar",
+          "url": "exposed-vertx-sql-client-crud-with-mapper-0.8.0-SNAPSHOT.jar",
+          "size": 10799,
+          "sha512": "ff2dcf66161647432040203fa3372bcf0f27e527394677eb2b498cf9b97ce2dc7302f900670d39354fd55e7c68bdf7a802596a65664e5567a177af942688d5fa",
+          "sha256": "04321c956cf2ccae3398266523bf45b6d733770fa4de07f8e5a9b009c5689b5c",
+          "sha1": "549d6c1aae673ba5189ead44d312c30cdbf91930",
+          "md5": "f1202437866ebce27388b03a74ba707a"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.vertx",
+          "module": "vertx-stack-depchain",
+          "version": {
+            "requires": "5.0.5"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "com.huanshankeji",
+          "module": "exposed-vertx-sql-client-core",
+          "version": {
+            "requires": "0.8.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "com.huanshankeji",
+          "module": "exposed-vertx-sql-client-crud",
+          "version": {
+            "requires": "0.8.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "com.huanshankeji",
+          "module": "exposed-gadt-mapping",
+          "version": {
+            "requires": "0.4.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "exposed-vertx-sql-client-crud-with-mapper-0.8.0-SNAPSHOT.jar",
+          "url": "exposed-vertx-sql-client-crud-with-mapper-0.8.0-SNAPSHOT.jar",
+          "size": 10799,
+          "sha512": "ff2dcf66161647432040203fa3372bcf0f27e527394677eb2b498cf9b97ce2dc7302f900670d39354fd55e7c68bdf7a802596a65664e5567a177af942688d5fa",
+          "sha256": "04321c956cf2ccae3398266523bf45b6d733770fa4de07f8e5a9b009c5689b5c",
+          "sha1": "549d6c1aae673ba5189ead44d312c30cdbf91930",
+          "md5": "f1202437866ebce27388b03a74ba707a"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "exposed-vertx-sql-client-crud-with-mapper-0.8.0-SNAPSHOT-sources.jar",
+          "url": "exposed-vertx-sql-client-crud-with-mapper-0.8.0-SNAPSHOT-sources.jar",
+          "size": 3953,
+          "sha512": "0b159e205f2494b3fee5a4d48efa9b6917a9c90a44a1ffd58a665682d1edfe04f97241f5d39b8ac83e735b400f8935e155756b0ca7c67bb47a71bf45b2901517",
+          "sha256": "820975a692d7fe083e00ae74638c1e6533423a866225325553919ee645d926e4",
+          "sha1": "a8e1deb9992c546dfb5c0ea7f5a3f0d9a7469e87",
+          "md5": "f4f86985a9290220d249cafb7cad35af"
+        }
+      ]
+    }
+  ]
+}

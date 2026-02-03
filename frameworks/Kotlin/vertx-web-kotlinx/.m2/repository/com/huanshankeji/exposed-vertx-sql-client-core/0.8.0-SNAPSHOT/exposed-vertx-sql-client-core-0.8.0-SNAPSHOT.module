@@ -1,0 +1,220 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.huanshankeji",
+    "module": "exposed-vertx-sql-client-core",
+    "version": "0.8.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.3.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.exposed",
+          "module": "exposed-core",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.exposed",
+          "module": "exposed-jdbc",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "com.huanshankeji",
+          "module": "kotlin-common-exposed",
+          "version": {
+            "requires": "0.7.0"
+          }
+        },
+        {
+          "group": "io.vertx",
+          "module": "vertx-sql-client"
+        },
+        {
+          "group": "io.arrow-kt",
+          "module": "arrow-core",
+          "version": {
+            "requires": "2.1.2"
+          }
+        },
+        {
+          "group": "com.huanshankeji",
+          "module": "kotlin-common-coroutines",
+          "version": {
+            "requires": "0.7.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "exposed-vertx-sql-client-core-0.8.0-SNAPSHOT.jar",
+          "url": "exposed-vertx-sql-client-core-0.8.0-SNAPSHOT.jar",
+          "size": 160558,
+          "sha512": "edf3027d55d48f7ce420f93b4513bafe8c2a24ef6dce3fd3b034ab78b9a88f90f8f61ad0dd65f0df8be7d124f2fcf63e349fa96e2dc013e56ecc4752971561c1",
+          "sha256": "ebe01750ba97da98c1483bba54df77e6f2033256ab3282cb5b153e3baa097caa",
+          "sha1": "54db1b14722269e949a456c441602729c376a7ec",
+          "md5": "d48683aede5d5ef7619e4e09353e3712"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.vertx",
+          "module": "vertx-stack-depchain",
+          "version": {
+            "requires": "5.0.5"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "io.vertx",
+          "module": "vertx-lang-kotlin"
+        },
+        {
+          "group": "io.vertx",
+          "module": "vertx-lang-kotlin-coroutines"
+        },
+        {
+          "group": "com.huanshankeji",
+          "module": "kotlin-common-vertx",
+          "version": {
+            "requires": "0.7.0"
+          }
+        },
+        {
+          "group": "com.huanshankeji",
+          "module": "kotlin-common-core",
+          "version": {
+            "requires": "0.7.0"
+          }
+        },
+        {
+          "group": "com.huanshankeji",
+          "module": "kotlin-common-net",
+          "version": {
+            "requires": "0.7.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.exposed",
+          "module": "exposed-core",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.exposed",
+          "module": "exposed-jdbc",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "com.huanshankeji",
+          "module": "kotlin-common-exposed",
+          "version": {
+            "requires": "0.7.0"
+          }
+        },
+        {
+          "group": "io.vertx",
+          "module": "vertx-sql-client"
+        },
+        {
+          "group": "io.arrow-kt",
+          "module": "arrow-core",
+          "version": {
+            "requires": "2.1.2"
+          }
+        },
+        {
+          "group": "com.huanshankeji",
+          "module": "kotlin-common-coroutines",
+          "version": {
+            "requires": "0.7.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "exposed-vertx-sql-client-core-0.8.0-SNAPSHOT.jar",
+          "url": "exposed-vertx-sql-client-core-0.8.0-SNAPSHOT.jar",
+          "size": 160558,
+          "sha512": "edf3027d55d48f7ce420f93b4513bafe8c2a24ef6dce3fd3b034ab78b9a88f90f8f61ad0dd65f0df8be7d124f2fcf63e349fa96e2dc013e56ecc4752971561c1",
+          "sha256": "ebe01750ba97da98c1483bba54df77e6f2033256ab3282cb5b153e3baa097caa",
+          "sha1": "54db1b14722269e949a456c441602729c376a7ec",
+          "md5": "d48683aede5d5ef7619e4e09353e3712"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "exposed-vertx-sql-client-core-0.8.0-SNAPSHOT-sources.jar",
+          "url": "exposed-vertx-sql-client-core-0.8.0-SNAPSHOT-sources.jar",
+          "size": 25143,
+          "sha512": "6699f98ff75f8cde501eead9aeb09281c910e633c4b3b975c71dc0ac83c25b703e40c966d5963ab6693d1cf0b3cdad24ed741397ca14c8fddea895ec7f2a64da",
+          "sha256": "50a284f180b8fca29d7b74dc394acc4e7151f4c8e676ecbd5d27fb54de9e6212",
+          "sha1": "a799a348309df18ade39950d890666d08cf12166",
+          "md5": "840cd744de60415219b95626c7646a9b"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.huanshankeji</groupId>
+  <artifactId>exposed-vertx-sql-client-postgresql</artifactId>
+  <versioning>
+    <latest>0.8.0-SNAPSHOT</latest>
+    <versions>
+      <version>0.8.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20260203033011</lastUpdated>
+  </versioning>
+</metadata>

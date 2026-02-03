@@ -1,0 +1,120 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.huanshankeji",
+    "module": "exposed-vertx-sql-client-crud",
+    "version": "0.8.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.3.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "exposed-vertx-sql-client-crud-0.8.0-SNAPSHOT.jar",
+          "url": "exposed-vertx-sql-client-crud-0.8.0-SNAPSHOT.jar",
+          "size": 47107,
+          "sha512": "8be1af7b10ed785e68a97ac2a62d781ba77ff76f1e528a8b205ad969b312944a448ef7e1c45ac5a540c293a824139df5bb66ebc33f229224cba3c0a723017306",
+          "sha256": "e13c12207aa16b5eb65f21467e720965584c63835df88d94291f2c3acec25dec",
+          "sha1": "fd510d004397015e55d037849b0b4f14873457d0",
+          "md5": "c6d95c8120bcc30ea3a1daad43e7a8aa"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.vertx",
+          "module": "vertx-stack-depchain",
+          "version": {
+            "requires": "5.0.5"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "com.huanshankeji",
+          "module": "exposed-vertx-sql-client-core",
+          "version": {
+            "requires": "0.8.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "exposed-vertx-sql-client-crud-0.8.0-SNAPSHOT.jar",
+          "url": "exposed-vertx-sql-client-crud-0.8.0-SNAPSHOT.jar",
+          "size": 47107,
+          "sha512": "8be1af7b10ed785e68a97ac2a62d781ba77ff76f1e528a8b205ad969b312944a448ef7e1c45ac5a540c293a824139df5bb66ebc33f229224cba3c0a723017306",
+          "sha256": "e13c12207aa16b5eb65f21467e720965584c63835df88d94291f2c3acec25dec",
+          "sha1": "fd510d004397015e55d037849b0b4f14873457d0",
+          "md5": "c6d95c8120bcc30ea3a1daad43e7a8aa"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "exposed-vertx-sql-client-crud-0.8.0-SNAPSHOT-sources.jar",
+          "url": "exposed-vertx-sql-client-crud-0.8.0-SNAPSHOT-sources.jar",
+          "size": 4273,
+          "sha512": "1286cecff1fd0449c94642f5b8f163b23e469cad657739892e4f917b30f72b49bcc65cc65729ec5aa8d43a569692e296e17e2924f5106c548e43d2a75f9b1a03",
+          "sha256": "357b20376769aed2c80596d461793c1bd54be973db7da8c4183c3056eedc350b",
+          "sha1": "73b1e2bb1e65211aa5ca6bdcdd5a6aa36c811f76",
+          "md5": "48c1793b49f2d4c7bdd743f1cfe44394"
+        }
+      ]
+    }
+  ]
+}

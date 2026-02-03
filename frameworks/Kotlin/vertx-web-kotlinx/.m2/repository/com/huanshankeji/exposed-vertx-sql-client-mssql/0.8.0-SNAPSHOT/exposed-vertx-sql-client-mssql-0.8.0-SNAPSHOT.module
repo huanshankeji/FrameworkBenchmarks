@@ -1,0 +1,135 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.huanshankeji",
+    "module": "exposed-vertx-sql-client-mssql",
+    "version": "0.8.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.3.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.vertx",
+          "module": "vertx-mssql-client"
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "exposed-vertx-sql-client-mssql-0.8.0-SNAPSHOT.jar",
+          "url": "exposed-vertx-sql-client-mssql-0.8.0-SNAPSHOT.jar",
+          "size": 17586,
+          "sha512": "50c61e8f47a9f9f87d1fa04bc9909ff8b57d8904d247df825b923cd857944647ab948a0e774519cd1fcdf7d1e71dcf2c79243a34f2c87edd31410cfce0fe7461",
+          "sha256": "a0f5a35c371c7e1c973c193fa9c3c4f9bd3dfa37e7218027394ad901a32591a8",
+          "sha1": "212076118e82cbfd4374b926549730de9f41b351",
+          "md5": "9df9fc870e152b84565e30524b96e460"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.vertx",
+          "module": "vertx-stack-depchain",
+          "version": {
+            "requires": "5.0.5"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "com.huanshankeji",
+          "module": "exposed-vertx-sql-client-core",
+          "version": {
+            "requires": "0.8.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "com.microsoft.sqlserver",
+          "module": "mssql-jdbc",
+          "version": {
+            "requires": "13.2.1.jre11"
+          }
+        },
+        {
+          "group": "io.vertx",
+          "module": "vertx-mssql-client"
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "exposed-vertx-sql-client-mssql-0.8.0-SNAPSHOT.jar",
+          "url": "exposed-vertx-sql-client-mssql-0.8.0-SNAPSHOT.jar",
+          "size": 17586,
+          "sha512": "50c61e8f47a9f9f87d1fa04bc9909ff8b57d8904d247df825b923cd857944647ab948a0e774519cd1fcdf7d1e71dcf2c79243a34f2c87edd31410cfce0fe7461",
+          "sha256": "a0f5a35c371c7e1c973c193fa9c3c4f9bd3dfa37e7218027394ad901a32591a8",
+          "sha1": "212076118e82cbfd4374b926549730de9f41b351",
+          "md5": "9df9fc870e152b84565e30524b96e460"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "exposed-vertx-sql-client-mssql-0.8.0-SNAPSHOT-sources.jar",
+          "url": "exposed-vertx-sql-client-mssql-0.8.0-SNAPSHOT-sources.jar",
+          "size": 4347,
+          "sha512": "0a3c7cf8ec633803b095c37f9cc9b885c399e5b3e3327cdef296c8be47d0028ef5ecd2d3e7d774a17243667677ab41ccdabddb1d495a46c223e1ccde7db0ab3f",
+          "sha256": "555097278cc2561d7bb0625661a5927d63b91862b941037e598794fdcf86fb8a",
+          "sha1": "b96da2f816d889d326e09d8ddee1d0a374fc63b0",
+          "md5": "283acc8b7462bd52cc4f7d87c2d21f8d"
+        }
+      ]
+    }
+  ]
+}

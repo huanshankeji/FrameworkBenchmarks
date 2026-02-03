@@ -32,7 +32,16 @@ COPY with-db/exposed-vertx-sql-client/src with-db/exposed-vertx-sql-client/src
 
 RUN gradle --no-daemon with-db:exposed-vertx-sql-client:installDist
 
+# Install async-profiler for profiling (optional but recommended)
+RUN apt-get update && apt-get install -y wget && \
+    wget -q https://github.com/async-profiler/async-profiler/releases/download/v2.9/async-profiler-2.9-linux-x64.tar.gz && \
+    tar -xzf async-profiler-2.9-linux-x64.tar.gz -C /opt && \
+    rm async-profiler-2.9-linux-x64.tar.gz
+
 EXPOSE 8080
+
+# TRANSACTION_PROVIDER environment variable can be set to "jdbc" (default) or "database"
+ENV TRANSACTION_PROVIDER=jdbc
 
 CMD export JAVA_OPTS=" \
     --enable-native-access=ALL-UNNAMED \

@@ -1,6 +1,5 @@
 import com.huanshankeji.exposedvertxsqlclient.DatabaseClient
 import com.huanshankeji.exposedvertxsqlclient.ExperimentalEvscApi
-import com.huanshankeji.exposedvertxsqlclient.JdbcTransactionExposedTransactionProvider
 import com.huanshankeji.exposedvertxsqlclient.postgresql.PgDatabaseClientConfig
 import com.huanshankeji.exposedvertxsqlclient.postgresql.vertx.pgclient.createPgConnection
 import database.*
@@ -27,9 +26,13 @@ class MainVerticle(val exposedDatabase: Database) : CommonWithDbVerticle<Databas
             cachePreparedStatements = true
             pipeliningLimit = 256
         })
+        
+        // Use TransactionProviderSelector to switch between providers via TRANSACTION_PROVIDER env var
+        val transactionProvider = TransactionProviderSelector.createProvider(exposedDatabase)
+        
         return DatabaseClient(
             pgConnection,
-            PgDatabaseClientConfig(JdbcTransactionExposedTransactionProvider(exposedDatabase), validateBatch = false)
+            PgDatabaseClientConfig(transactionProvider, validateBatch = false)
         )
     }
 

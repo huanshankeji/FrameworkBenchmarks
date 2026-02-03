@@ -53,4 +53,4 @@ CMD export JAVA_OPTS=" \
     -Dio.netty.buffer.checkAccessible=false \
     -Dio.netty.iouring.ringSize=16384 \
     " && \
-    with-db/exposed-r2dbc/build/install/exposed-r2dbc/bin/exposed-r2dbc-separate-pool-size-1
+    with-db/exposed-r2dbc/build/install/exposed-r2dbc/bin/exposed-r2dbc false 1 false

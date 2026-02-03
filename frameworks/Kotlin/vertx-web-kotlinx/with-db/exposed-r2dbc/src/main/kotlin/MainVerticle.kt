@@ -18,7 +18,7 @@ The PostgreSQL R2DBC driver doesn't seem to have full support for pipelining and
 class MainVerticle(private val sharedR2dbcDatabase: R2dbcDatabase) : CommonWithDbVerticle<R2dbcDatabase, R2dbcTransaction>(),
     CommonWithDbVerticleI.SequentialSelectWorlds<R2dbcDatabase, R2dbcTransaction> {
     override suspend fun initDbClient(): R2dbcDatabase =
-        // Use the shared R2dbcDatabase instance with a single connection pool of 512
+        // Use the shared R2dbcDatabase instance with a single connection pool
         sharedR2dbcDatabase
 
     override val httpServerStrictThreadMode get() = false
@@ -45,4 +45,29 @@ class MainVerticle(private val sharedR2dbcDatabase: R2dbcDatabase) : CommonWithD
         FortuneTable.select(FortuneTable.id, FortuneTable.message)
             .map { it.toFortune() }.toList(fortunes)
     }
+}
+
+// Factory functions for creating R2dbcDatabase instances with different configurations
+
+/**
+ * Creates a shared R2dbcDatabase instance with a connection pool.
+ * Used for shared-pool benchmark configurations.
+ */
+fun createSharedR2dbcDatabase(poolSize: Int, useOptimizedConfig: Boolean): R2dbcDatabase =
+    if (useOptimizedConfig)
+        r2dbcDatabaseConnectPoolOptimized(poolSize)
+    else
+        r2dbcDatabaseConnectPoolOriginal(poolSize)
+
+/**
+ * Creates a MainVerticle that will create its own connection pool per verticle instance.
+ * Used for separate-pool benchmark configurations.
+ */
+fun createMainVerticleSeparatePool(poolSize: Int, useOptimizedConfig: Boolean): MainVerticle {
+    // Each verticle will create its own pool when initDbClient is called
+    val database = if (useOptimizedConfig)
+        r2dbcDatabaseConnectPoolOptimized(poolSize)
+    else
+        r2dbcDatabaseConnectPoolOriginal(poolSize)
+    return MainVerticle(database)
 }

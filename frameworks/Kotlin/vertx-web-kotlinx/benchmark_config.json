@@ -126,7 +126,7 @@
         "notes": "Pool size 8 per verticle, optimized connection factory with TCP settings and validation",
         "versus": "vertx-web-kotlinx-r2dbc-postgresql"
       },
-      "exposed-r2dbc-postgresql-shared-pool-512-optimized": {
+      "exposed-r2dbc-postgresql-shared-pool-size-512-optimized": {
         "db_url": "/db",
         "query_url": "/queries?queries=",
         "fortune_url": "/fortunes",
@@ -143,7 +143,7 @@
         "webserver": "None",
         "os": "Linux",
         "database_os": "Linux",
-        "display_name": "vertx-web-kotlinx-exposed-r2dbc-postgresql-shared-pool-512-optimized",
+        "display_name": "vertx-web-kotlinx-exposed-r2dbc-postgresql-shared-pool-size-512-optimized",
         "notes": "Shared pool of 512 connections, optimized connection factory with TCP settings and validation",
         "versus": "vertx-web-kotlinx-r2dbc-postgresql"
       },
@@ -165,7 +165,7 @@
         "os": "Linux",
         "database_os": "Linux",
         "display_name": "vertx-web-kotlinx-exposed-r2dbc-postgresql",
-        "notes": "Alias for shared-pool-512-optimized configuration",
+        "notes": "Alias for shared-pool-size-512-optimized configuration",
         "versus": "vertx-web-kotlinx-r2dbc-postgresql"
       },
       "exposed-vertx-sql-client-postgresql": {

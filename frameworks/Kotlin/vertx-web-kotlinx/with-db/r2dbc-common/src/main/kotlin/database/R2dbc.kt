@@ -37,8 +37,3 @@ fun connectionPoolConfigurationOptimized(size: Int) =
 
 fun connectionPoolOptimized(size: Int) =
     ConnectionPool(connectionPoolConfigurationOptimized(size))
-
-// Backwards compatibility - default to optimized
-val connectionFactory: ConnectionFactory = connectionFactoryOptimized
-fun connectionPoolConfiguration(size: Int) = connectionPoolConfigurationOptimized(size)
-fun connectionPool(size: Int) = connectionPoolOptimized(size)

@@ -9,7 +9,6 @@ import org.jetbrains.exposed.v1.core.eq
 import org.jetbrains.exposed.v1.core.statements.buildStatement
 import org.jetbrains.exposed.v1.jdbc.Database
 import org.jetbrains.exposed.v1.jdbc.select
-import TransactionProviderConfig
 
 @OptIn(ExperimentalEvscApi::class)
 class MainVerticle(val exposedDatabase: Database) : CommonWithDbVerticle<DatabaseClient<PgConnection>, Unit>(),
@@ -28,14 +27,9 @@ class MainVerticle(val exposedDatabase: Database) : CommonWithDbVerticle<Databas
             cachePreparedStatements = true
             pipeliningLimit = 256
         })
-        
-        // Use configured transaction provider for easy switching between implementations
-        val transactionProvider = TransactionProviderConfig.createProvider(exposedDatabase) 
-            as JdbcTransactionExposedTransactionProvider
-        
         return DatabaseClient(
             pgConnection,
-            PgDatabaseClientConfig(transactionProvider, validateBatch = false)
+            PgDatabaseClientConfig(JdbcTransactionExposedTransactionProvider(exposedDatabase), validateBatch = false)
         )
     }
 

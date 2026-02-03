@@ -12,7 +12,8 @@ import java.time.Duration
 // Note that this URL doesn't have `USER` and `PASSWORD`
 const val POSTGRESQL_R2DBC_URL = "r2dbc:postgresql://$HOST:5432/$DATABASE"
 
-val connectionFactory: ConnectionFactory = PostgresqlConnectionFactory(
+// Optimized configuration with TCP settings and connection validation
+val connectionFactoryOptimized: ConnectionFactory = PostgresqlConnectionFactory(
     PostgresqlConnectionConfiguration.builder()
         .host(HOST)
         .port(5432)
@@ -25,8 +26,8 @@ val connectionFactory: ConnectionFactory = PostgresqlConnectionFactory(
         .build()
 )
 
-fun connectionPoolConfiguration(size: Int) =
-    ConnectionPoolConfiguration.builder(connectionFactory)
+fun connectionPoolConfigurationOptimized(size: Int) =
+    ConnectionPoolConfiguration.builder(connectionFactoryOptimized)
         .initialSize(size)
         .maxSize(size)
         .maxIdleTime(Duration.ofSeconds(30))
@@ -34,5 +35,10 @@ fun connectionPoolConfiguration(size: Int) =
         .validationQuery("SELECT 1")
         .build()
 
-fun connectionPool(size: Int) =
-    ConnectionPool(connectionPoolConfiguration(size))
+fun connectionPoolOptimized(size: Int) =
+    ConnectionPool(connectionPoolConfigurationOptimized(size))
+
+// Backwards compatibility - default to optimized
+val connectionFactory: ConnectionFactory = connectionFactoryOptimized
+fun connectionPoolConfiguration(size: Int) = connectionPoolConfigurationOptimized(size)
+fun connectionPool(size: Int) = connectionPoolOptimized(size)

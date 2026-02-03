@@ -13,3 +13,14 @@ fun r2dbcDatabaseConnectPool(connectionPoolSize: Int) =
     R2dbcDatabase.connect(connectionPool(connectionPoolSize), R2dbcDatabaseConfig {
         explicitDialect = PostgreSQLDialect()
     })
+
+// Configuration variants for benchmarking
+fun r2dbcDatabaseConnectPoolOriginal(connectionPoolSize: Int) =
+    R2dbcDatabase.connect(connectionPoolOriginal(connectionPoolSize), R2dbcDatabaseConfig {
+        explicitDialect = PostgreSQLDialect()
+    })
+
+fun r2dbcDatabaseConnectPoolOptimized(connectionPoolSize: Int) =
+    R2dbcDatabase.connect(connectionPoolOptimized(connectionPoolSize), R2dbcDatabaseConfig {
+        explicitDialect = PostgreSQLDialect()
+    })

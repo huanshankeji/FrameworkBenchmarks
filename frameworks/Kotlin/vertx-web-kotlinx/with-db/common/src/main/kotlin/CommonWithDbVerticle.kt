@@ -65,7 +65,11 @@ abstract class CommonWithDbVerticle<DbClient : Any, Transaction> : CommonVerticl
     CommonWithDbVerticleI<DbClient, Transaction> {
     private lateinit var _dbClient: DbClient
     val dbClient: DbClient get() = _dbClient
-    override val random = Random(0)
+    override val random = Random(
+        System.currentTimeMillis() xor System.nanoTime() xor
+                this.hashCode().toLong() xor
+                Thread.currentThread().threadId()
+    )
 
     override suspend fun start() {
         _dbClient = initDbClient()

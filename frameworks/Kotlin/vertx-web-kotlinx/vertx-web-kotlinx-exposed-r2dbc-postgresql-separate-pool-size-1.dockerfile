@@ -1,6 +1,12 @@
 FROM gradle:9.2.1-jdk25
 
+# Update CA certificates to fix SSL issues
+USER root
+RUN apt-get update && apt-get install -y ca-certificates && update-ca-certificates
+
 WORKDIR /vertx-web-kotlinx
+RUN chown -R gradle:gradle /vertx-web-kotlinx
+USER gradle
 
 
 COPY gradle/libs.versions.toml gradle/libs.versions.toml
@@ -9,6 +15,11 @@ COPY buildSrc buildSrc
 COPY settings.gradle.kts settings.gradle.kts
 COPY build.gradle.kts build.gradle.kts
 COPY gradle.properties gradle.properties
+
+# Fix permissions for gradle user
+USER root
+RUN chown -R gradle:gradle /vertx-web-kotlinx
+USER gradle
 
 # make empty directories for subprojects that do not need to be copied for Gradle
 RUN mkdir -p common without-db/default with-db/common with-db/default with-db/r2dbc-common with-db/r2dbc with-db/exposed-common with-db/exposed-r2dbc with-db/exposed-vertx-sql-client
@@ -28,8 +39,10 @@ COPY with-db/exposed-common/src with-db/exposed-common/src
 COPY with-db/exposed-r2dbc/build.gradle.kts with-db/exposed-r2dbc/build.gradle.kts
 COPY with-db/exposed-r2dbc/src with-db/exposed-r2dbc/src
 
-# Set environment variables to disable SSL verification for Gradle
+# Set environment variables to disable SSL verification for Gradle and Java
+# Disable SSL verification by trusting all certificates
 ENV GRADLE_OPTS="-Djavax.net.ssl.trustAll=true -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true"
+ENV JAVA_TOOL_OPTIONS="-Dcom.sun.net.ssl.checkRevocation=false"
 
 RUN gradle --no-daemon --init-script init.gradle with-db:exposed-r2dbc:installDist
 

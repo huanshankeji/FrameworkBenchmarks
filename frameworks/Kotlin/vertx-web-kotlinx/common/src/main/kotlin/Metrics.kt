@@ -24,13 +24,22 @@ object Metrics {
 
     val registry: MeterRegistry get() = _registry
 
+    @Volatile
+    private var initialized = false
+
     /**
      * Initialize with an external registry (e.g., from Vert.x BackendRegistries).
      * This should be called early, before the timers are used.
+     * Can only be initialized once to avoid duplicate meter registrations.
      */
     fun initializeWithRegistry(externalRegistry: MeterRegistry) {
+        if (initialized && _registry != standaloneRegistry) {
+            logger.warning("Metrics already initialized with an external registry, skipping re-initialization")
+            return
+        }
         _registry = externalRegistry
-        // Re-register the timers with the new registry
+        initialized = true
+        // Initialize the timers with the new registry
         initializeTimers()
         logger.info("Metrics initialized with external registry: ${externalRegistry.javaClass.simpleName}")
     }
@@ -82,9 +91,12 @@ object Metrics {
 /**
  * Extension function to record time for a suspending block.
  * Micrometer's Timer.recordCallable doesn't work with suspend functions,
- * so we need a custom implementation.
+ * so we need a custom implementation that properly handles suspension.
+ *
+ * Note: The timing will include any suspension time, which is the desired behavior
+ * for measuring the wall-clock time of async operations.
  */
-inline fun <T> Timer.recordSuspend(block: () -> T): T {
+suspend inline fun <T> Timer.recordSuspend(crossinline block: suspend () -> T): T {
     val sample = Timer.start()
     try {
         return block()

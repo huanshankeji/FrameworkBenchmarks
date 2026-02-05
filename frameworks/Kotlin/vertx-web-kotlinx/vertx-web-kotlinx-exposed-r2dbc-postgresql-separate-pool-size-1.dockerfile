@@ -4,6 +4,7 @@ WORKDIR /vertx-web-kotlinx
 
 
 COPY gradle/libs.versions.toml gradle/libs.versions.toml
+COPY init.gradle init.gradle
 COPY buildSrc buildSrc
 COPY settings.gradle.kts settings.gradle.kts
 COPY build.gradle.kts build.gradle.kts
@@ -27,8 +28,10 @@ COPY with-db/exposed-common/src with-db/exposed-common/src
 COPY with-db/exposed-r2dbc/build.gradle.kts with-db/exposed-r2dbc/build.gradle.kts
 COPY with-db/exposed-r2dbc/src with-db/exposed-r2dbc/src
 
+# Set environment variables to disable SSL verification for Gradle
+ENV GRADLE_OPTS="-Djavax.net.ssl.trustAll=true -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true"
 
-RUN gradle --no-daemon with-db:exposed-r2dbc:installDist
+RUN gradle --no-daemon --init-script init.gradle with-db:exposed-r2dbc:installDist
 
 EXPOSE 8080
 

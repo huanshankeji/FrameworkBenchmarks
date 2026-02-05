@@ -33,6 +33,9 @@ RUN apt-get install \
     # Ubuntu's equivalent packages are too old and/or broken.
     pip3 install \
       --break-system-packages \
+      --trusted-host pypi.org \
+      --trusted-host pypi.python.org \
+      --trusted-host files.pythonhosted.org \
       docker==7.0.0 \
       mysqlclient==2.2.4 \
       pymongo==4.7.2

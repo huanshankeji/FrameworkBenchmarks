@@ -1,0 +1,30 @@
+allprojects {
+    buildscript {
+        repositories {
+            all { ArtifactRepository repo ->
+                if (repo instanceof MavenArtifactRepository) {
+                    repo.allowInsecureProtocol = true
+                }
+            }
+        }
+    }
+    repositories {
+        all { ArtifactRepository repo ->
+            if (repo instanceof MavenArtifactRepository) {
+                repo.allowInsecureProtocol = true  
+            }
+        }
+    }
+}
+
+settingsEvaluated { settings ->
+    settings.pluginManagement {
+        repositories {
+            all { ArtifactRepository repo ->
+                if (repo instanceof MavenArtifactRepository) {
+                    repo.allowInsecureProtocol = true
+                }
+            }
+        }
+    }
+}

@@ -1,11 +1,11 @@
-import database.*
+import database.r2dbcConnectPool
 
 suspend fun main(args: Array<String>) {
     // Parse CLI arguments
     val isSharedPool = args.getOrNull(0)?.toBooleanStrictOrNull() ?: true
     val poolSize = args.getOrNull(1)?.toIntOrNull() ?: 512
     val useOptimizedConfig = args.getOrNull(2)?.toBooleanStrictOrNull() ?: true
-    
+
     val benchmarkName = buildString {
         append("Vert.x-Web Kotlinx with Exposed R2DBC (and PostgreSQL)")
         if (!isSharedPool || poolSize != 512 || !useOptimizedConfig) {
@@ -20,18 +20,18 @@ suspend fun main(args: Array<String>) {
             }
         }
     }
-    
+
     if (isSharedPool) {
         commonRunVertxServer(
             benchmarkName,
-            { createSharedR2dbcDatabase(poolSize, useOptimizedConfig) },
+            { r2dbcConnectPool(poolSize, useOptimizedConfig) },
             ::MainVerticle
         )
     } else {
         commonRunVertxServer(
             benchmarkName,
             { Unit },
-            { createMainVerticleSeparatePool(poolSize, useOptimizedConfig) }
+            { MainVerticleWithSeparatePool(poolSize, useOptimizedConfig) }
         )
     }
 }

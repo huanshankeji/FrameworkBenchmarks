@@ -50,24 +50,8 @@ class MainVerticle(private val sharedR2dbcDatabase: R2dbcDatabase) : CommonWithD
 // Factory functions for creating R2dbcDatabase instances with different configurations
 
 /**
- * Creates a shared R2dbcDatabase instance with a connection pool.
- * Used for shared-pool benchmark configurations.
- */
-fun createSharedR2dbcDatabase(poolSize: Int, useOptimizedConfig: Boolean): R2dbcDatabase =
-    if (useOptimizedConfig)
-        r2dbcDatabaseConnectPoolOptimized(poolSize)
-    else
-        r2dbcDatabaseConnectPoolOriginal(poolSize)
-
-/**
  * Creates a MainVerticle that will create its own connection pool per verticle instance.
  * Used for separate-pool benchmark configurations.
  */
-fun createMainVerticleSeparatePool(poolSize: Int, useOptimizedConfig: Boolean): MainVerticle {
-    // Each verticle will create its own pool when initDbClient is called
-    val database = if (useOptimizedConfig)
-        r2dbcDatabaseConnectPoolOptimized(poolSize)
-    else
-        r2dbcDatabaseConnectPoolOriginal(poolSize)
-    return MainVerticle(database)
-}
+fun MainVerticleWithSeparatePool(poolSize: Int, useOptimizedConfig: Boolean): MainVerticle =
+    MainVerticle(r2dbcConnectPool(poolSize, useOptimizedConfig))

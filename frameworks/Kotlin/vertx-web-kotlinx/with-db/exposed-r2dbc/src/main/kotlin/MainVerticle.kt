@@ -15,11 +15,10 @@ import org.jetbrains.exposed.v1.r2dbc.transactions.suspendTransaction
 https://github.com/pgjdbc/r2dbc-postgresql/issues/360#issuecomment-869422327 offers a workaround, but it doesn't seem like the officially recommended approach.
 The PostgreSQL R2DBC driver doesn't seem to have full support for pipelining and multiplexing as discussed in https://github.com/pgjdbc/r2dbc-postgresql/pull/28.
  */
-class MainVerticle(private val sharedR2dbcDatabase: R2dbcDatabase) : CommonWithDbVerticle<R2dbcDatabase, R2dbcTransaction>(),
+class MainVerticle(private val r2dbcDatabase: R2dbcDatabase) : CommonWithDbVerticle<R2dbcDatabase, R2dbcTransaction>(),
     CommonWithDbVerticleI.SequentialSelectWorlds<R2dbcDatabase, R2dbcTransaction> {
     override suspend fun initDbClient(): R2dbcDatabase =
-        // Use the shared R2dbcDatabase instance with a single connection pool
-        sharedR2dbcDatabase
+        r2dbcDatabase
 
     override val httpServerStrictThreadMode get() = false
     //override val coHandlerCoroutineContext: CoroutineContext get() = EmptyCoroutineContext

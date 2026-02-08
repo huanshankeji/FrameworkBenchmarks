@@ -8,10 +8,6 @@ import io.r2dbc.postgresql.client.SSLMode
 import io.r2dbc.spi.ConnectionFactory
 import java.time.Duration
 
-// not used currently
-// Note that this URL doesn't have `USER` and `PASSWORD`
-const val POSTGRESQL_R2DBC_URL = "r2dbc:postgresql://$HOST:5432/$DATABASE"
-
 // Optimized configuration with TCP settings and connection validation
 val connectionFactoryOptimized: ConnectionFactory = PostgresqlConnectionFactory(
     PostgresqlConnectionConfiguration.builder()

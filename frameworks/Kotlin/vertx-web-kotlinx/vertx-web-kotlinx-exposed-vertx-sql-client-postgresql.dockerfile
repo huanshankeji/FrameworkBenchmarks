@@ -65,5 +65,5 @@ CMD export JAVA_OPTS=" \
     -Dio.netty.buffer.checkAccessible=false \
     -Dio.netty.iouring.ringSize=16384 \
     " && \
-    trap 'cp /tmp/profile.html /FrameworkBenchmarks/results/profile-jdbc.html 2>/dev/null || true' EXIT TERM INT && \
+    trap 'cp /tmp/profile.html /profiling-results/profile-${TRANSACTION_PROVIDER}.html 2>/dev/null || true' EXIT TERM INT && \
     with-db/exposed-vertx-sql-client/build/install/exposed-vertx-sql-client/bin/exposed-vertx-sql-client

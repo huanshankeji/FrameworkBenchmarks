@@ -11,6 +11,7 @@ r2dbc-postgresql = "1.1.1.RELEASE"
 r2dbc-pool = "1.0.2.RELEASE"
 exposed = "1.0.0-rc-4"
 exposedVertxSqlClient = "0.7.0"
+micrometer = "1.15.0"
 
 [libraries]
 # Kotlin Gradle plugin as a library for buildSrc
@@ -58,6 +59,11 @@ exposed-r2dbc = { module = "org.jetbrains.exposed:exposed-r2dbc", version.ref = 
 # Exposed Vert.x SQL Client
 exposedVertxSqlClient-core = { module = "com.huanshankeji:exposed-vertx-sql-client-core", version.ref = "exposedVertxSqlClient" }
 exposedVertxSqlClient-postgresql = { module = "com.huanshankeji:exposed-vertx-sql-client-postgresql", version.ref = "exposedVertxSqlClient" }
+
+
+# Micrometer metrics
+vertx-micrometer-metrics = { module = "io.vertx:vertx-micrometer-metrics" }
+micrometer-core = { module = "io.micrometer:micrometer-core", version.ref = "micrometer" }
 
 [plugins]
 kotlin-plugin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }

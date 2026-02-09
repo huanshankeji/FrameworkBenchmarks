@@ -18,4 +18,8 @@ dependencies {
     implementation(libs.kotlinx.io.core)
 
     implementation(libs.kotlinx.datetime)
+
+    // Micrometer metrics for fine-grained operation timing
+    api(libs.vertx.micrometer.metrics)
+    api(libs.micrometer.core)
 }

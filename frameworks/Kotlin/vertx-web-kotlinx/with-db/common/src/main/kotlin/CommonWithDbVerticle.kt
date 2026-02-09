@@ -136,12 +136,16 @@ abstract class CommonWithDbVerticle<DbClient : Any, Transaction> : CommonVerticl
         get("/updates").jsonResponseCoHandler(Serializers.worlds) {
             val queries = it.request().getQueries()
             withOptionalTransaction {
-                val worlds = selectRandomWorlds(queries)
+                val worlds = Metrics.selectRandomWorldsTimer.recordSuspend {
+                    selectRandomWorlds(queries)
+                }
                 val updatedWorlds = worlds.map { it.copy(randomNumber = random.nextIntBetween1And10000()) }
 
                 // Approach 1
                 // The updated worlds need to be sorted first to avoid deadlocks.
-                updateSortedWorlds(updatedWorlds.sortedBy { it.id })
+                Metrics.updateSortedWorldsTimer.recordSuspend {
+                    updateSortedWorlds(updatedWorlds.sortedBy { it.id })
+                }
 
                 /*
                 // Approach 2, worse performance

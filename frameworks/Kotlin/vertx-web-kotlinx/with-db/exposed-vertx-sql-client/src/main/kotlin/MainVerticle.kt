@@ -32,13 +32,23 @@ class MainVerticle(val exposedDatabase: Database) : CommonWithDbVerticle<Databas
             .single().toWorld()
 
     override suspend fun Unit.updateSortedWorlds(sortedWorlds: List<World>) {
-        dbClient.executeBatchUpdate(sortedWorlds.map { world ->
-            buildStatement {
-                WorldTable.update({ WorldTable.id eq world.id }) {
-                    it[randomNumber] = world.randomNumber
+        Metrics.executeBatchUpdateTotalTimer.recordSuspend {
+            // Measure time to build the update statements
+            val statements = Metrics.executeBatchUpdateBuildStatementsTimer.recordSuspend {
+                sortedWorlds.map { world ->
+                    buildStatement {
+                        WorldTable.update({ WorldTable.id eq world.id }) {
+                            it[randomNumber] = world.randomNumber
+                        }
+                    }
                 }
             }
-        })
+
+            // Measure time to execute the batch update
+            Metrics.executeBatchUpdateExecuteTimer.recordSuspend {
+                dbClient.executeBatchUpdate(statements)
+            }
+        }
     }
 
     override suspend fun Unit.selectFortunesInto(fortunes: MutableList<Fortune>) {

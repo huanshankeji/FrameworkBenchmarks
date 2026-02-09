@@ -22,9 +22,19 @@ This setup allows you to run the vertx-web-kotlinx application locally with Test
 
 ### 1. Start the Application
 
+**Default implementation (vertx-pg-client):**
 ```bash
 cd frameworks/Kotlin/vertx-web-kotlinx
 ./gradlew :benchmark-runner:run
+```
+
+**Specific implementation:**
+```bash
+# For exposed-vertx-sql-client (not yet implemented)
+./gradlew :benchmark-runner:run --args="exposed-vertx-sql-client"
+
+# For r2dbc (not yet implemented)
+./gradlew :benchmark-runner:run --args="r2dbc"
 ```
 
 This will:
@@ -102,11 +112,20 @@ Transfer/sec:      1.63MB
 
 ## Testing Different Implementations
 
-The benchmark runner currently uses the default implementation (`with-db/default`). To test other implementations:
+The benchmark runner is designed to work with all implementations. Currently, the default implementation is supported out of the box.
 
-### exposed-vertx-sql-client
+### Currently Supported
+- **default** (vertx-pg-client) - fully implemented
 
-1. Modify `benchmark-runner/build.gradle.kts`:
+### To Be Implemented
+To add support for other implementations like exposed-vertx-sql-client, r2dbc, etc., you need to:
+
+1. Add the implementation as a dependency in `benchmark-runner/build.gradle.kts`
+2. Update `BenchmarkRunner.kt` to call the correct main function
+
+For example, to add exposed-vertx-sql-client support:
+
+**Step 1: Update build.gradle.kts**
 ```kotlin
 dependencies {
     implementation(project(":with-db:exposed-vertx-sql-client"))
@@ -114,18 +133,19 @@ dependencies {
 }
 ```
 
-2. Modify `benchmark-runner/src/main/kotlin/BenchmarkRunner.kt`:
+**Step 2: Update BenchmarkRunner.kt**
 ```kotlin
-// Change from:
-MainKt.main()
-
-// To:
-// Import and call the appropriate main function for exposed-vertx-sql-client
+"exposed-vertx-sql-client" -> {
+    // Import the main function from exposed-vertx-sql-client
+    com.example.ExposedVertxSqlClientMainKt.main()
+}
 ```
 
-### r2dbc
-
-Similarly, change the project dependency and main function call.
+The advantage of this approach is that:
+- All implementations share the same Testcontainers PostgreSQL setup
+- No code duplication
+- Easy to add new implementations
+- Uses the actual implementation's main function (no code modification needed)
 
 ## Advantages over `./tfb --test`
 

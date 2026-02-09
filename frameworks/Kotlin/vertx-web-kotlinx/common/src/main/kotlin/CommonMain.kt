@@ -2,10 +2,9 @@ import io.vertx.core.Verticle
 import io.vertx.core.Vertx
 import io.vertx.core.impl.cpu.CpuCoreSensor
 import io.vertx.kotlin.core.deploymentOptionsOf
-import io.vertx.kotlin.core.vertxOptionsOf
 import io.vertx.kotlin.coroutines.coAwait
+import io.vertx.micrometer.MicrometerMetricsFactory
 import io.vertx.micrometer.MicrometerMetricsOptions
-import io.vertx.micrometer.backends.BackendRegistries
 import java.util.function.Supplier
 import java.util.logging.Logger
 
@@ -20,29 +19,25 @@ suspend fun <SharedResources> commonRunVertxServer(
     val serverName = "$benchmarkName benchmark server"
     logger.info("$serverName starting...")
 
-    // Configure Micrometer metrics with a named registry for fine-grained operation timing
-    // The registry name allows us to access it via BackendRegistries after Vertx initialization
-    val metricsRegistryName = "vertx-kotlinx-benchmark"
+    // Configure Micrometer metrics with a custom registry for fine-grained operation timing
+    // Using Vert.x Builder API to inject our existing registry as recommended in the docs
+    // See: https://vertx.io/docs/vertx-micrometer-metrics/java/#_reusing_an_existing_registry
     val metricsOptions = MicrometerMetricsOptions()
-        .setRegistryName(metricsRegistryName)
         .setEnabled(true)
 
-    val vertx = Vertx.vertx(
-        vertxOptionsOf(
-            eventLoopPoolSize = numProcessors, preferNativeTransport = true, disableTCCL = true,
-            metricsOptions = metricsOptions
+    val vertx = Vertx
+        .builder()
+        .withMetrics(MicrometerMetricsFactory(Metrics.registry))
+        .with(
+            io.vertx.core.VertxOptions()
+                .setEventLoopPoolSize(numProcessors)
+                .setPreferNativeTransport(true)
+                .setDisableTCCL(true)
+                .setMetricsOptions(metricsOptions)
         )
-    )
+        .build()
 
-    // Get the registry created by Vert.x and register our custom timers
-    // The registry is available after Vertx is created
-    val registry = BackendRegistries.getNow(metricsRegistryName)
-    if (registry != null) {
-        Metrics.initializeWithRegistry(registry)
-        logger.info("Metrics configured with Micrometer for fine-grained operation timing in updates test")
-    } else {
-        logger.warning("Could not get metrics registry from BackendRegistries, using standalone LoggingMeterRegistry")
-    }
+    logger.info("Metrics configured with Micrometer for fine-grained operation timing in updates test")
 
     vertx.exceptionHandler {
         logger.info("Vertx exception caught: $it")

@@ -8,84 +8,40 @@ import java.time.Duration
 /**
  * Global meter registry for metrics collection.
  * Uses LoggingMeterRegistry to output metrics to console for benchmarking analysis.
- * Can be initialized with an external registry (e.g., from Vert.x BackendRegistries) or use a standalone registry.
+ * 
+ * The registry is injected into Vert.x using MicrometerMetricsFactory as recommended
+ * in the Vert.x Micrometer docs: https://vertx.io/docs/vertx-micrometer-metrics/java/#_reusing_an_existing_registry
  */
 object Metrics {
-    private val standaloneConfig = object : LoggingRegistryConfig {
+    private val config = object : LoggingRegistryConfig {
         override fun get(key: String): String? = null
         // Log metrics every 10 seconds during benchmarking
         override fun step(): Duration = Duration.ofSeconds(10)
     }
 
-    private val standaloneRegistry: MeterRegistry = LoggingMeterRegistry(standaloneConfig, Clock.SYSTEM) { msg -> logger.info(msg) }
-
-    @Volatile
-    private var _registry: MeterRegistry = standaloneRegistry
-
-    val registry: MeterRegistry get() = _registry
-
-    @Volatile
-    private var initialized = false
-
-    /**
-     * Initialize with an external registry (e.g., from Vert.x BackendRegistries).
-     * This should be called early, before the timers are used.
-     * Can only be initialized once to avoid duplicate meter registrations.
-     */
-    fun initializeWithRegistry(externalRegistry: MeterRegistry) {
-        if (initialized && _registry != standaloneRegistry) {
-            logger.warning("Metrics already initialized with an external registry, skipping re-initialization")
-            return
-        }
-        _registry = externalRegistry
-        initialized = true
-        // Initialize the timers with the new registry
-        initializeTimers()
-        logger.info("Metrics initialized with external registry: ${externalRegistry.javaClass.simpleName}")
-    }
+    val registry: MeterRegistry = LoggingMeterRegistry(config, Clock.SYSTEM) { msg -> logger.info(msg) }
 
     // Timers for the updates endpoint operations
-    lateinit var selectRandomWorldsTimer: Timer
-        private set
+    val selectRandomWorldsTimer: Timer = Timer.builder("updates.selectRandomWorlds")
+        .description("Time to select random worlds in the updates endpoint")
+        .register(registry)
 
-    lateinit var updateSortedWorldsTimer: Timer
-        private set
+    val updateSortedWorldsTimer: Timer = Timer.builder("updates.updateSortedWorlds")
+        .description("Time to update sorted worlds in the updates endpoint")
+        .register(registry)
 
     // Fine-grained timers for executeBatchUpdate internal operations
-    lateinit var executeBatchUpdateBuildStatementsTimer: Timer
-        private set
+    val executeBatchUpdateBuildStatementsTimer: Timer = Timer.builder("updates.executeBatchUpdate.buildStatements")
+        .description("Time to build update statements for batch execution")
+        .register(registry)
 
-    lateinit var executeBatchUpdateExecuteTimer: Timer
-        private set
+    val executeBatchUpdateExecuteTimer: Timer = Timer.builder("updates.executeBatchUpdate.execute")
+        .description("Time to execute the batch update")
+        .register(registry)
 
-    lateinit var executeBatchUpdateTotalTimer: Timer
-        private set
-
-    init {
-        initializeTimers()
-    }
-
-    private fun initializeTimers() {
-        selectRandomWorldsTimer = Timer.builder("updates.selectRandomWorlds")
-            .description("Time to select random worlds in the updates endpoint")
-            .register(registry)
-
-        updateSortedWorldsTimer = Timer.builder("updates.updateSortedWorlds")
-            .description("Time to update sorted worlds in the updates endpoint")
-            .register(registry)
-
-        executeBatchUpdateBuildStatementsTimer = Timer.builder("updates.executeBatchUpdate.buildStatements")
-            .description("Time to build update statements for batch execution")
-            .register(registry)
-
-        executeBatchUpdateExecuteTimer = Timer.builder("updates.executeBatchUpdate.execute")
-            .description("Time to execute the batch update")
-            .register(registry)
-
-        executeBatchUpdateTotalTimer = Timer.builder("updates.executeBatchUpdate.total")
-            .description("Total time for executeBatchUpdate operation")
-            .register(registry)
-    }
+    val executeBatchUpdateTotalTimer: Timer = Timer.builder("updates.executeBatchUpdate.total")
+        .description("Total time for executeBatchUpdate operation")
+        .register(registry)
 }
 
 /**

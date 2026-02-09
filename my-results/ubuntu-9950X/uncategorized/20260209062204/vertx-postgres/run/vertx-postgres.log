@@ -1,0 +1,53 @@
+vertx-postgres: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+vertx-postgres: SLF4J: Defaulting to no-operation (NOP) logger implementation
+vertx-postgres: SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+vertx-postgres: Feb 09, 2026 6:25:43 AM vertx.App
+vertx-postgres: INFO: Vertx: 5.0.7
+vertx-postgres: Feb 09, 2026 6:25:43 AM vertx.App
+vertx-postgres: INFO: Processors: 32
+vertx-postgres: Feb 09, 2026 6:25:43 AM vertx.App
+vertx-postgres: INFO: Event Loop Size: 32
+vertx-postgres: Feb 09, 2026 6:25:43 AM vertx.App
+vertx-postgres: INFO: Native transport : true
+vertx-postgres: Feb 09, 2026 6:25:43 AM vertx.App
+vertx-postgres: INFO: Transport : IoUringTransport
+vertx-postgres: Feb 09, 2026 6:25:43 AM vertx.App
+vertx-postgres: INFO: Netty buffer bound check : false
+vertx-postgres: Feb 09, 2026 6:25:43 AM vertx.App
+vertx-postgres: INFO: Netty buffer accessibility check : false
+vertx-postgres: Feb 09, 2026 6:25:43 AM vertx.App
+vertx-postgres: INFO: vertx.disableHttpHeadersValidation : true
+vertx-postgres: Feb 09, 2026 6:25:43 AM vertx.App
+vertx-postgres: INFO: vertx.disableWebsockets : true
+vertx-postgres: Feb 09, 2026 6:25:43 AM vertx.App
+vertx-postgres: INFO: vertx.disableMetrics : true
+vertx-postgres: Feb 09, 2026 6:25:43 AM vertx.App
+vertx-postgres: INFO: vertx.disableContextTimings : true
+vertx-postgres: Feb 09, 2026 6:25:43 AM vertx.App
+vertx-postgres: INFO: vertx.disableDnsResolver : null
+vertx-postgres: Feb 09, 2026 6:25:43 AM vertx.App
+vertx-postgres: INFO: vertx.disableFileCaching : null
+vertx-postgres: Feb 09, 2026 6:25:43 AM vertx.App
+vertx-postgres: INFO: vertx.disableFileCPResolving : null
+vertx-postgres: Feb 09, 2026 6:25:43 AM vertx.App
+vertx-postgres: INFO: vertx.cacheDirBase : /tmp/vertx-cache
+vertx-postgres: Feb 09, 2026 6:25:43 AM vertx.App
+vertx-postgres: INFO: vertx.cacheImmutableHttpResponseHeaders : true
+vertx-postgres: Feb 09, 2026 6:25:43 AM vertx.App
+vertx-postgres: INFO: vertx.internCommonHttpRequestHeadersToLowerCase : true
+vertx-postgres: Feb 09, 2026 6:25:43 AM vertx.App
+vertx-postgres: INFO: vertx.logger-delegate-factory-class-name : null
+vertx-postgres: Feb 09, 2026 6:25:43 AM vertx.App
+vertx-postgres: INFO: vertx.jackson.defaultReadMaxNestingDepth : null
+vertx-postgres: Feb 09, 2026 6:25:43 AM vertx.App
+vertx-postgres: INFO: vertx.jackson.defaultReadMaxDocumentLength : null
+vertx-postgres: Feb 09, 2026 6:25:44 AM vertx.App
+vertx-postgres: INFO: vertx.jackson.defaultReadMaxNumberLength : null
+vertx-postgres: Feb 09, 2026 6:25:44 AM vertx.App
+vertx-postgres: INFO: vertx.jackson.defaultReadMaxStringLength : null
+vertx-postgres: Feb 09, 2026 6:25:44 AM vertx.App
+vertx-postgres: INFO: vertx.jackson.defaultReadMaxNameLength : null
+vertx-postgres: Feb 09, 2026 6:25:44 AM vertx.App
+vertx-postgres: INFO: vertx.jackson.defaultMaxTokenCount : null
+vertx-postgres: Feb 09, 2026 6:25:45 AM vertx.App
+vertx-postgres: INFO: Server listening on port 8080

@@ -1,0 +1,8 @@
+--------------------------------------------------------------------------------
+VERIFYING CACHED-QUERY
+--------------------------------------------------------------------------------
+   PASS for http://tfb-server:8080/cached-queries?count=2
+   PASS for http://tfb-server:8080/cached-queries?count=0
+   PASS for http://tfb-server:8080/cached-queries?count=foo
+   PASS for http://tfb-server:8080/cached-queries?count=501
+   PASS for http://tfb-server:8080/cached-queries?count=

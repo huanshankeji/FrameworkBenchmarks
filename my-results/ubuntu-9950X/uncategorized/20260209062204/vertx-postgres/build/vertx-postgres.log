@@ -1,0 +1,31 @@
+vertx-postgres: Step 1/7 : FROM maven:3.9.9-eclipse-temurin-24-noble as maven
+vertx-postgres:  ---> 3d8e7908046b
+vertx-postgres: Step 2/7 : WORKDIR /vertx
+vertx-postgres:  ---> Running in bda9000836e2
+vertx-postgres:  ---> e64b87c11386
+vertx-postgres: Step 3/7 : COPY src src
+vertx-postgres:  ---> cc06f7d7bc80
+vertx-postgres: Step 4/7 : COPY pom.xml pom.xml
+vertx-postgres:  ---> 425f58da182f
+vertx-postgres: Step 5/7 : RUN mvn package -q
+vertx-postgres:  ---> Running in b0741e4cfdd1
+vertx-postgres: WARNING: A restricted method in java.lang.System has been called
+vertx-postgres: WARNING: java.lang.System::load has been called by org.fusesource.jansi.internal.JansiLoader in an unnamed module (file:/usr/share/maven/lib/jansi-2.4.1.jar)
+vertx-postgres: WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+vertx-postgres: WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+vertx-postgres: 
+vertx-postgres: WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+vertx-postgres: WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/usr/share/maven/lib/guava-33.2.1-jre.jar)
+vertx-postgres: WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+vertx-postgres: WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+vertx-postgres:  ---> bcb6d2c7ec3a
+vertx-postgres: Step 6/7 : EXPOSE 8080
+vertx-postgres:  ---> Running in f3a3a588a9bc
+vertx-postgres:  ---> 566b01b9a129
+vertx-postgres: Step 7/7 : CMD export DBIP=`getent hosts tfb-database | awk '{ print $1 }'` &&     sed -i "s|tfb-database|$DBIP|g" /vertx/src/main/conf/config.json &&     java       --enable-native-access=ALL-UNNAMED       --sun-misc-unsafe-memory-access=allow       --add-opens=java.base/java.lang=ALL-UNNAMED       -Xms2G       -Xmx2G       -server       -XX:+UseNUMA       -XX:+UseParallelGC       -XX:+UnlockDiagnosticVMOptions       -XX:+DebugNonSafepoints       -Djava.lang.Integer.IntegerCache.high=10000       -Dvertx.disableMetrics=true       -Dvertx.disableWebsockets=true       -Dvertx.disableContextTimings=true       -Dvertx.disableHttpHeadersValidation=true       -Dvertx.cacheImmutableHttpResponseHeaders=true       -Dvertx.internCommonHttpRequestHeadersToLowerCase=true       -Dvertx.eventLoopPoolSize=$((`grep --count ^processor /proc/cpuinfo`))       -Dio.netty.noUnsafe=false       -Dio.netty.buffer.checkBounds=false       -Dio.netty.buffer.checkAccessible=false       -Dio.netty.iouring.ringSize=16384       -jar       target/vertx.benchmark-0.0.1-SNAPSHOT-fat.jar       src/main/conf/config.json
+vertx-postgres:  ---> Running in ef1433513842
+vertx-postgres:  ---> 31e16f4ad7b8
+vertx-postgres: [Warning] One or more build-args [BENCHMARK_ENV TFB_TEST_DATABASE TFB_TEST_NAME] were not consumed
+vertx-postgres: Successfully built 31e16f4ad7b8
+vertx-postgres: Successfully tagged techempower/tfb.test.vertx-postgres:latest
+vertx-postgres: Build time: 1m 42s

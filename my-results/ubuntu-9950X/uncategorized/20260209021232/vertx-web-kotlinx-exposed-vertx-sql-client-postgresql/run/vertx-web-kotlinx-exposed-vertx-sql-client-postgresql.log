@@ -1,0 +1,1610 @@
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: [0.000s][warning][os] NUMA support disabled: Failed to initialize libnuma
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: SLF4J: No SLF4J providers were found.
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: SLF4J: Defaulting to no-operation (NOP) logger implementation
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:07 AM CommonMainKt commonRunVertxServer
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: Vert.x-Web Kotlinx with Exposed Vert.x SQL Client (and PostgreSQL) benchmark server starting...
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:07 AM io.micrometer.core.instrument.push.PushMeterRegistry start
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: publishing metrics for LoggingMeterRegistry every 10s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:07 AM CommonMainKt commonRunVertxServer
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: Metrics configured with Micrometer for fine-grained operation timing in updates test
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:07 AM io.micrometer.common.util.internal.logging.WarnThenDebugLogger log
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: WARNING: This Gauge has been already registered (MeterId{name='vertx.net.client.active.connections', tags=[]}), the registration will be ignored. Note that subsequent logs will be logged at debug level.
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:08 AM CommonMainKt commonRunVertxServer
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: Vert.x-Web Kotlinx with Exposed Vert.x SQL Client (and PostgreSQL) benchmark server started.
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=2 throughput=0.2/s mean=0.008477018s max=0.024613855s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=521 throughput=52.1/s mean=0.003690601s max=0.025476274s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=11244 throughput=1124.4/s mean=0.015794125s max=0.065087835s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.buildStatements{} delta_count=5 throughput=0.5/s mean=0.000491781s max=0.002408909s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.execute{} delta_count=5 throughput=0.5/s mean=0.001325147s max=0.004481039s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.total{} delta_count=5 throughput=0.5/s mean=0.001819149s max=0.005520029s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.selectRandomWorlds{} delta_count=5 throughput=0.5/s mean=0.000583106s max=0.010163418s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.updateSortedWorlds{} delta_count=5 throughput=0.5/s mean=0.001898779s max=0.005882799s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=14 throughput=1.4/s mean=0.000545355s max=0.065087835s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=8
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=7
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.buildStatements{} delta_count=520 throughput=52/s mean=0.000032353s max=0.003164599s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.execute{} delta_count=520 throughput=52/s mean=0.004322856s max=0.019866806s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.total{} delta_count=520 throughput=52/s mean=0.004359438s max=0.019871825s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.selectRandomWorlds{} delta_count=520 throughput=52/s mean=0.004431531s max=0.019728085s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.updateSortedWorlds{} delta_count=520 throughput=52/s mean=0.004386606s max=0.019874185s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:16:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=11766 throughput=1176.6/s mean=0.003911957s max=0.065087835s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.errors{} delta_count=1 throughput=0.1/s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=512
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=279
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=266818 throughput=26681.8/s mean=0.000083195s max=0.019847856s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=512
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=245
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=2330480 throughput=233048/s mean=0.000714251s max=0.022393526s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.errors{} delta_count=425 throughput=42.5/s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=16
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=11
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=3475706 throughput=347570.6/s mean=0.000687566s max=0.026275534s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=16
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=12
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=519756 throughput=51975.6/s mean=0.000101172s max=0.026275534s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=8
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=770704 throughput=77070.4/s mean=0.000099676s max=0.019769355s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=3
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:17:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=3997716 throughput=399771.6/s mean=0.000034343s max=0.027220774s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.errors{} delta_count=2 throughput=0.2/s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=64
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=39
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=5085704 throughput=508570.4/s mean=0.000069571s max=0.027220774s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.errors{} delta_count=33 throughput=3.3/s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=128
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=52
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=2404373 throughput=240437.3/s mean=0.000120899s max=0.027220774s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=128
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=54
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=2892804 throughput=289280.4/s mean=0.000219964s max=0.018615256s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.errors{} delta_count=87 throughput=8.7/s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=256
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=121
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=2432014 throughput=243201.4/s mean=0.000310382s max=0.014847586s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=256
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=123
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=3091584 throughput=309158.4/s mean=0.000415261s max=0.015007317s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.errors{} delta_count=207 throughput=20.7/s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=512
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=275
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:18:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=2988323 throughput=298832.3/s mean=0.000655576s max=0.026100253s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.errors{} delta_count=460 throughput=46/s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=3267752 throughput=326775.2/s mean=0.00070247s max=0.026100253s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.errors{} delta_count=1 throughput=0.1/s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=399064 throughput=39906.4/s mean=0.00010796s max=0.028487504s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=512
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=452
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=4594555 throughput=459455.5/s mean=0.001101556s max=0.028487504s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.errors{} delta_count=468 throughput=46.8/s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=3191655 throughput=319165.5/s mean=0.001093527s max=0.026740364s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=512
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=256
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=3280612 throughput=328061.2/s mean=0.000718465s max=0.026740364s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.errors{} delta_count=443 throughput=44.3/s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=512
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=1529
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:19:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=3569051 throughput=356905.1/s mean=0.001172149s max=0.029089114s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=512
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=1417
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=7350246 throughput=735024.6/s mean=0.002097886s max=0.029089114s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.errors{} delta_count=444 throughput=44.4/s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=512
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=3002
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=6554598 throughput=655459.8/s mean=0.002931871s max=0.032036192s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=512
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=3192
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=8928466 throughput=892846.6/s mean=0.003526515s max=0.033471671s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.errors{} delta_count=460 throughput=46/s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=512
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=4519
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=1854597 throughput=185459.7/s mean=0.004180927s max=0.033827002s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.errors{} delta_count=470 throughput=47/s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=512
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=5672
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=14223144 throughput=1422314.4/s mean=0.004545504s max=0.035192832s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=512
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=6843
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:20:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=10483828 throughput=1048382.8/s mean=0.005792076s max=0.045357499s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=8
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=6
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=4204191 throughput=420419.1/s mean=0.005730796s max=0.045357499s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.errors{} delta_count=465 throughput=46.5/s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=512
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=815
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.buildStatements{} delta_count=126994 throughput=12699.4/s mean=0.000000467s max=0.00346475s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.execute{} delta_count=126994 throughput=12699.4/s mean=0.000099776s max=0.013887487s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.total{} delta_count=126994 throughput=12699.4/s mean=0.00010053s max=0.013889186s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.selectRandomWorlds{} delta_count=126994 throughput=12699.4/s mean=0.000147787s max=0.014028097s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.updateSortedWorlds{} delta_count=126994 throughput=12699.4/s mean=0.000100886s max=0.013889906s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=1384011 throughput=138401.1/s mean=0.004040992s max=0.045357499s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=512
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=731
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.buildStatements{} delta_count=881364 throughput=88136.4/s mean=0.000000417s max=0.005030928s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.execute{} delta_count=881146 throughput=88114.6/s mean=0.001659895s max=0.015347126s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.total{} delta_count=881146 throughput=88114.6/s mean=0.001660614s max=0.015347506s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.selectRandomWorlds{} delta_count=881364 throughput=88136.4/s mean=0.001797369s max=0.015172947s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.updateSortedWorlds{} delta_count=881145 throughput=88114.5/s mean=0.001661046s max=0.015347957s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=2643877 throughput=264387.7/s mean=0.001717697s max=0.039173291s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.errors{} delta_count=446 throughput=44.6/s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=512
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=418
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.buildStatements{} delta_count=1153873 throughput=115387.3/s mean=0.000000392s max=0.005030928s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.execute{} delta_count=1154091 throughput=115409.1/s mean=0.001620731s max=0.015347126s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.total{} delta_count=1154091 throughput=115409.1/s mean=0.00162143s max=0.015347506s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.selectRandomWorlds{} delta_count=1153873 throughput=115387.3/s mean=0.001757746s max=0.015226956s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.updateSortedWorlds{} delta_count=1154092 throughput=115409.2/s mean=0.001621856s max=0.015347957s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=3461834 throughput=346183.4/s mean=0.001678359s max=0.015343066s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=512
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=463
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.buildStatements{} delta_count=1175539 throughput=117553.9/s mean=0.000000342s max=0.006327618s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.execute{} delta_count=1175354 throughput=117535.4/s mean=0.001142921s max=0.028666023s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.total{} delta_count=1175354 throughput=117535.4/s mean=0.001143556s max=0.028666343s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.selectRandomWorlds{} delta_count=1175540 throughput=117554/s mean=0.001228507s max=0.028656664s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.updateSortedWorlds{} delta_count=1175352 throughput=117535.2/s mean=0.001143939s max=0.028666633s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=2350897 throughput=235089.7/s mean=0.001163959s max=0.028664562s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.errors{} delta_count=466 throughput=46.6/s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=512
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=1558
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.buildStatements{} delta_count=1574841 throughput=157484.1/s mean=0.000000341s max=0.006603248s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.execute{} delta_count=1575026 throughput=157502.6/s mean=0.001140502s max=0.028666023s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.total{} delta_count=1575026 throughput=157502.6/s mean=0.00114113s max=0.028666343s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.selectRandomWorlds{} delta_count=1574840 throughput=157484/s mean=0.001223184s max=0.028656664s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.updateSortedWorlds{} delta_count=1575028 throughput=157502.8/s mean=0.001141523s max=0.028666633s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:21:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=3149863 throughput=314986.3/s mean=0.001160146s max=0.028664562s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.buildStatements{} delta_count=760964 throughput=76096.4/s mean=0.000000822s max=0.006829887s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.execute{} delta_count=760733 throughput=76073.3/s mean=0.002853947s max=0.032749432s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.total{} delta_count=760733 throughput=76073.3/s mean=0.002855097s max=0.032750691s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.selectRandomWorlds{} delta_count=760964 throughput=76096.4/s mean=0.003023841s max=0.032737662s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.updateSortedWorlds{} delta_count=760733 throughput=76073.3/s mean=0.002855736s max=0.032751573s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=4565579 throughput=456557.9/s mean=0.002925969s max=0.032737592s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.errors{} delta_count=473 throughput=47.3/s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=512
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=2911
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.buildStatements{} delta_count=582840 throughput=58284/s mean=0.000000896s max=0.006829887s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.execute{} delta_count=582823 throughput=58282.3/s mean=0.003196753s max=0.032749432s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.total{} delta_count=582823 throughput=58282.3/s mean=0.003197968s max=0.032750691s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.selectRandomWorlds{} delta_count=582841 throughput=58284.1/s mean=0.003361793s max=0.032737662s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.updateSortedWorlds{} delta_count=582822 throughput=58282.2/s mean=0.003198661s max=0.032751573s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=4054316 throughput=405431.6/s mean=0.003455022s max=0.032737592s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=512
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=3850
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.buildStatements{} delta_count=512170 throughput=51217/s mean=0.000001342s max=0.008707007s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.execute{} delta_count=512159 throughput=51215.9/s mean=0.004727404s max=0.032749432s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.total{} delta_count=512159 throughput=51215.9/s mean=0.0047291s max=0.032750691s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.selectRandomWorlds{} delta_count=512169 throughput=51216.9/s mean=0.004868062s max=0.032737662s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.updateSortedWorlds{} delta_count=512160 throughput=51216/s mean=0.004729988s max=0.032751573s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=5633879 throughput=563387.9/s mean=0.004723044s max=0.032737592s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.errors{} delta_count=486 throughput=48.6/s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=512
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=3619
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.buildStatements{} delta_count=331352 throughput=33135.2/s mean=0.000001732s max=0.008707007s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.execute{} delta_count=331389 throughput=33138.9/s mean=0.005850491s max=0.027368323s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.total{} delta_count=331389 throughput=33138.9/s mean=0.005852577s max=0.027370894s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.selectRandomWorlds{} delta_count=331352 throughput=33135.2/s mean=0.005961084s max=0.030523063s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.updateSortedWorlds{} delta_count=331389 throughput=33138.9/s mean=0.005853625s max=0.027371893s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=4582620 throughput=458262/s mean=0.005936627s max=0.030479143s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.errors{} delta_count=457 throughput=45.7/s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=512
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=4764
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.buildStatements{} delta_count=370924 throughput=37092.4/s mean=0.00000184s max=0.008707007s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.execute{} delta_count=371146 throughput=37114.6/s mean=0.006594331s max=0.034541072s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.total{} delta_count=371146 throughput=37114.6/s mean=0.006596525s max=0.034543022s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.selectRandomWorlds{} delta_count=370924 throughput=37092.4/s mean=0.006699962s max=0.030523063s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.updateSortedWorlds{} delta_count=371146 throughput=37114.6/s mean=0.006597649s max=0.034543962s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=5934946 throughput=593494.6/s mean=0.006495622s max=0.034536091s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=512
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=5068
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.buildStatements{} delta_count=234185 throughput=23418.5/s mean=0.000002222s max=0.008947138s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.execute{} delta_count=233968 throughput=23396.8/s mean=0.008465768s max=0.034541072s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.total{} delta_count=233968 throughput=23396.8/s mean=0.008468348s max=0.034543022s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.selectRandomWorlds{} delta_count=234186 throughput=23418.6/s mean=0.008504767s max=0.030965304s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.updateSortedWorlds{} delta_count=233968 throughput=23396.8/s mean=0.00846977s max=0.034543962s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:22:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=4917867 throughput=491786.7/s mean=0.008247333s max=0.034536091s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.errors{} delta_count=488 throughput=48.8/s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.buildStatements{} delta_count=208547 throughput=20854.7/s mean=0.000002209s max=0.008947138s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.execute{} delta_count=208764 throughput=20876.4/s mean=0.008404029s max=0.034541072s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.executeBatchUpdate.total{} delta_count=208764 throughput=20876.4/s mean=0.00840664s max=0.034543022s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.selectRandomWorlds{} delta_count=208546 throughput=20854.6/s mean=0.008460358s max=0.030965304s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: updates.updateSortedWorlds{} delta_count=208764 throughput=20876.4/s mean=0.00840798s max=0.034543962s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=4405178 throughput=440517.8/s mean=0.008156035s max=0.034536091s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=512
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=254
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=356172 throughput=35617.2/s mean=0.000356076s max=0.033752782s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=3028937 throughput=302893.7/s mean=0.000866908s max=0.033752782s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.errors{} delta_count=438 throughput=43.8/s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=16
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=7
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=1446206 throughput=144620.6/s mean=0.000839986s max=0.022734534s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=811292 throughput=81129.2/s mean=0.000099906s max=0.022734534s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.errors{} delta_count=3 throughput=0.3/s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=15
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:23:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=1452155 throughput=145215.5/s mean=0.000057286s max=0.012718717s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=64
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=29
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=3426498 throughput=342649.8/s mean=0.000040833s max=0.026984643s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.errors{} delta_count=1 throughput=0.1/s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=64
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=27
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:16 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=2000944 throughput=200094.4/s mean=0.00010678s max=0.026984643s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.errors{} delta_count=31 throughput=3.1/s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=128
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=75
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:26 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=2162131 throughput=216213.1/s mean=0.000129238s max=0.026984643s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=128
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=8
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:36 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=2112372 throughput=211237.2/s mean=0.000253317s max=0.012897597s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.errors{} delta_count=84 throughput=8.4/s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=256
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=104
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:46 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=1930469 throughput=193046.9/s mean=0.000308837s max=0.016169176s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=512
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=225
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:24:56 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=2652809 throughput=265280.9/s mean=0.000477608s max=0.016169176s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:25:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.errors{} delta_count=223 throughput=22.3/s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:25:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.http.server.active.connections{} value=512
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:25:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.net.client.active.connections{} value=32
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:25:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:25:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:25:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.in.use{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:25:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:25:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-virtual-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:25:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.queue.pending{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:25:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-internal-blocking,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:25:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-worker-thread,pool_type=worker} value=0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:25:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.pool.ratio{pool_name=vert.x-virtual-thread,pool_type=worker} value=NaN
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:25:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.pending{} value=256
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 2:25:06 AM Metrics registry$lambda$0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: vertx.sql.processing.time{} delta_count=2287365 throughput=228736.5/s mean=0.000715566s max=0.027724853s

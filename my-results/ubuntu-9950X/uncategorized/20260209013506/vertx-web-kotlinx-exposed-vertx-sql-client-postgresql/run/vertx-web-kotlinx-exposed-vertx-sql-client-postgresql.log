@@ -1,0 +1,16 @@
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: [0.000s][warning][os] NUMA support disabled: Failed to initialize libnuma
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: SLF4J: No SLF4J providers were found.
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: SLF4J: Defaulting to no-operation (NOP) logger implementation
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 1:40:03 AM CommonMainKt commonRunVertxServer
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: Vert.x-Web Kotlinx with Exposed Vert.x SQL Client (and PostgreSQL) benchmark server starting...
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 1:40:03 AM io.micrometer.core.instrument.push.PushMeterRegistry start
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: publishing metrics for LoggingMeterRegistry every 10s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 1:40:03 AM Metrics initializeWithRegistry
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: Metrics initialized with external registry: CompositeMeterRegistry
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 1:40:03 AM CommonMainKt commonRunVertxServer
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: Metrics configured with Micrometer for fine-grained operation timing in updates test
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 1:40:04 AM io.micrometer.common.util.internal.logging.WarnThenDebugLogger log
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: WARNING: This Gauge has been already registered (MeterId{name='vertx.net.client.active.connections', tags=[]}), the registration will be ignored. Note that subsequent logs will be logged at debug level.
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 09, 2026 1:40:04 AM CommonMainKt commonRunVertxServer
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: Vert.x-Web Kotlinx with Exposed Vert.x SQL Client (and PostgreSQL) benchmark server started.

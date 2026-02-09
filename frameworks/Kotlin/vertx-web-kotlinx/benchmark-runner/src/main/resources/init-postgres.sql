@@ -1,4 +1,4 @@
--- Initialize database for benchmark tests
+-- Initialize database for benchmarking
 -- Based on toolset/databases/postgres/create-postgres.sql
 
 BEGIN;

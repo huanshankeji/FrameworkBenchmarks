@@ -9,6 +9,8 @@ import org.jetbrains.exposed.v1.core.eq
 import org.jetbrains.exposed.v1.core.statements.buildStatement
 import org.jetbrains.exposed.v1.jdbc.Database
 import org.jetbrains.exposed.v1.jdbc.select
+import org.jetbrains.exposed.v1.jdbc.transactions.transactionManager
+import java.sql.Connection
 
 @OptIn(ExperimentalEvscApi::class)
 class MainVerticle(val exposedDatabase: Database) : CommonWithDbVerticle<DatabaseClient<PgConnection>, Unit>(),
@@ -29,7 +31,11 @@ class MainVerticle(val exposedDatabase: Database) : CommonWithDbVerticle<Databas
         })
         return DatabaseClient(
             pgConnection,
-            PgDatabaseClientConfig(JdbcTransactionExposedTransactionProvider(exposedDatabase), validateBatch = false)
+            PgDatabaseClientConfig(
+                JdbcTransactionExposedTransactionProvider(
+                    exposedDatabase.transactionManager.newTransaction(Connection.TRANSACTION_READ_UNCOMMITTED, true)
+                ), validateBatch = false
+            )
         )
     }
 

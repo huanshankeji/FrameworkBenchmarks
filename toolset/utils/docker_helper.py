@@ -224,14 +224,6 @@ class DockerHelper:
             if self.benchmarker.config.extra_docker_runtime_args is not None:
                 extra_docker_args = {key: int(value) if value.isdigit() else value for key, value in (pair.split(":", 1) for pair in self.benchmarker.config.extra_docker_runtime_args)}
 
-            # Mount volume for profiling results to persist after container removal
-            # Ensure the directory exists and use absolute path
-            abs_run_log_dir = os.path.abspath(run_log_dir)
-            os.makedirs(abs_run_log_dir, exist_ok=True)
-            volumes = {
-                abs_run_log_dir: {'bind': '/profiling-results', 'mode': 'rw'}
-            }
-
             container = self.server.containers.run(
                 "techempower/tfb.test.%s" % test.name,
                 name=name,
@@ -251,7 +243,6 @@ class DockerHelper:
                 remove=True,
                 log_config={'type': None},
                 cpuset_cpus=cpuset_cpus,
-                volumes=volumes,
                 **extra_docker_args
                 )
 

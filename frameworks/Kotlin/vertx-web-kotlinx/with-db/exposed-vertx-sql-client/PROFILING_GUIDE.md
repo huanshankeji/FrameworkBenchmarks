@@ -46,16 +46,34 @@ export TRANSACTION_PROVIDER=database
 After running the `tfb` command, profiling reports and results can be found in:
 
 ### 1. Profiling Results (async-profiler flame graphs)
-```
-FrameworkBenchmarks/results/<timestamp>/vertx-web-kotlinx-exposed-vertx-sql-client-postgresql/run/
+
+The profiling results are embedded in the container logs. To extract them:
+
+```bash
+# Navigate to the results directory
+cd FrameworkBenchmarks
+
+# Find your results directory (has a timestamp in the name)
+ls -lt results/ | head -5
+
+# Extract profiling results using the extraction script
+./frameworks/Kotlin/vertx-web-kotlinx/with-db/exposed-vertx-sql-client/extract_profiling_results.sh results/<timestamp>
 ```
 
-This directory contains:
-- `profile-jdbc.html` - Flame graph for JdbcTransactionExposedTransactionProvider (when TRANSACTION_PROVIDER=jdbc)
-- `profile-database.html` - Flame graph for DatabaseExposedTransactionProvider (when TRANSACTION_PROVIDER=database)
-- `vertx-web-kotlinx-exposed-vertx-sql-client-postgresql.log` - Container logs
+This will create `profile.html` in:
+```
+results/<timestamp>/vertx-web-kotlinx-exposed-vertx-sql-client-postgresql/run/profile.html
+```
 
-**Note**: The profiling results are automatically saved to this directory through a volume mount. The container writes the flame graph to `/profiling-results/profile-${TRANSACTION_PROVIDER}.html` inside the container, which is mapped to the host results directory.
+**Alternative manual extraction:**
+```bash
+# The profiling HTML is embedded in the log file between markers
+# You can manually extract it:
+cd results/<timestamp>/vertx-web-kotlinx-exposed-vertx-sql-client-postgresql/run/
+sed -n '/===PROFILING_RESULTS_START===/,/===PROFILING_RESULTS_END===/p' \
+    vertx-web-kotlinx-exposed-vertx-sql-client-postgresql.log | \
+    grep -v "===PROFILING_RESULTS" > profile.html
+```
 
 ### 2. TFB Results Directory
 ```
@@ -79,9 +97,11 @@ The container logs are automatically saved to:
 FrameworkBenchmarks/results/<timestamp>/vertx-web-kotlinx-exposed-vertx-sql-client-postgresql/run/vertx-web-kotlinx-exposed-vertx-sql-client-postgresql.log
 ```
 
+The profiling HTML is embedded in this log file between `===PROFILING_RESULTS_START===` and `===PROFILING_RESULTS_END===` markers.
+
 ## Detailed Profiling with async-profiler
 
-The dockerfile automatically enables async-profiler for all benchmark runs. The profiling results are automatically saved as described above.
+The dockerfile automatically enables async-profiler for all benchmark runs. The profiling results are captured in the container logs and can be extracted as described above.
 
 ### Automatic Profiling
 
@@ -89,22 +109,19 @@ Profiling is enabled by default with these settings:
 - Event: CPU sampling
 - Output format: HTML flame graph
 - Interval: 1,000,000 nanoseconds (1ms)
-- Output location: `/profiling-results/profile-${TRANSACTION_PROVIDER}.html`
+- Output location: `/tmp/profile.html` (captured in logs at container exit)
 
-### Method 1: View Flame Graphs
+### Viewing Flame Graphs
 
-After the benchmark completes, the flame graph files are automatically saved:
+After extracting the profile.html file:
 
 ```bash
-# Navigate to the results directory
-cd FrameworkBenchmarks/results/<timestamp>/vertx-web-kotlinx-exposed-vertx-sql-client-postgresql/run/
-
 # Open the flame graph in a browser
-# For JDBC provider:
-open profile-jdbc.html  # or use your browser to open the file
-
-# For Database provider:
-open profile-database.html
+cd results/<timestamp>/vertx-web-kotlinx-exposed-vertx-sql-client-postgresql/run/
+open profile.html  # macOS
+# or
+xdg-open profile.html  # Linux
+# or just open it with your browser
 ```
 
 The flame graphs show:
@@ -113,7 +130,28 @@ The flame graphs show:
 - CPU time distribution across methods
 - Transaction management overhead
 
-### Method 2: Manual Profiling (If Needed)
+### Comparing Providers
+
+To compare both transaction providers:
+
+1. Run with JDBC provider (default):
+```bash
+./tfb --test vertx-web-kotlinx-exposed-vertx-sql-client-postgresql --type update
+./frameworks/Kotlin/vertx-web-kotlinx/with-db/exposed-vertx-sql-client/extract_profiling_results.sh results/<timestamp>
+mv results/<timestamp>/vertx-web-kotlinx-exposed-vertx-sql-client-postgresql/run/profile.html profile-jdbc.html
+```
+
+2. Run with Database provider:
+```bash
+export TRANSACTION_PROVIDER=database
+./tfb --test vertx-web-kotlinx-exposed-vertx-sql-client-postgresql --type update
+./frameworks/Kotlin/vertx-web-kotlinx/with-db/exposed-vertx-sql-client/extract_profiling_results.sh results/<timestamp>
+mv results/<timestamp>/vertx-web-kotlinx-exposed-vertx-sql-client-postgresql/run/profile.html profile-database.html
+```
+
+3. Compare the two flame graphs side by side
+
+### Manual Profiling (Optional)
 
 If you need additional profiling beyond the automatic flame graphs:
 
@@ -125,11 +163,11 @@ docker exec -it <container_id> bash
 # Inside container, find Java PID
 ps aux | grep java
 
-# Run additional profiling (optional - automatic profiling is already running)
+# Check async-profiler status (automatic profiling is already running)
 /opt/async-profiler-4.3-linux-x64/profiler.sh status <PID>
 ```
 
-### Method 3: Enable JFR (Alternative to async-profiler)
+### Alternative: Java Flight Recorder
 
 Modify the dockerfile to add JFR options:
 

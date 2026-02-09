@@ -39,7 +39,8 @@ jobs:
       - name: Install Python dependencies
         run: |
           # Install Python packages needed by the toolset
-          pip3 install --break-system-packages \
+          # Version pins match Dockerfile for consistency
+          pip3 install \
             docker==7.0.0 \
             mysqlclient==2.2.4 \
             pymongo==4.7.2

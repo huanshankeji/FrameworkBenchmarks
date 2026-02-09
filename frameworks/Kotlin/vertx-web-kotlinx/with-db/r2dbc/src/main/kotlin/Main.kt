@@ -24,26 +24,21 @@ suspend fun main(args: Array<String>) {
         }
     }
 
-    val connectionFactory: ConnectionFactory = if (isSharedPool) {
+    if (isSharedPool) {
         // Shared pool: create one ConnectionPool that all verticles will share
-        if (useOptimizedConfig) {
+        val connectionFactory: ConnectionFactory = if (useOptimizedConfig) {
             connectionPoolOptimized(poolSize)
         } else {
             connectionPoolOriginal(poolSize)
         }
-    } else {
-        // Separate pool: each verticle creates its own pool, so we just pass the pool size
-        // We'll use a dummy factory here, the actual pools are created in MainVerticle
-        throw IllegalStateException("Separate pool mode requires MainVerticleWithSeparatePool")
-    }
-
-    if (isSharedPool) {
+        
         commonRunVertxServer(
             benchmarkName,
             {},
             { MainVerticle(connectionFactory) }
         )
     } else {
+        // Separate pool: each verticle creates its own pool
         commonRunVertxServer(
             benchmarkName,
             {},

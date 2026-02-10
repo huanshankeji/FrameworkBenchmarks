@@ -15,9 +15,9 @@ dependencies {
     implementation(libs.vertx.lang.kotlin.coroutines)
     
     // Testcontainers
-    implementation("org.testcontainers:testcontainers:1.20.4")
-    implementation("org.testcontainers:postgresql:1.20.4")
-    
+    implementation("org.testcontainers:testcontainers:2.0.3")
+    implementation("org.testcontainers:postgresql:2.0.3")
+
     // Kotlin coroutines
     implementation(libs.kotlinx.coroutines.core)
 }

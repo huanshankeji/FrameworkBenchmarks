@@ -1,4 +1,4 @@
-**This is huanshankeji's master branch with custom configurations, mainly for GitHub Copilot. Please do not base on this branch to work on benchmarks.**
+**This is huanshankeji's GitHub default branch with custom configurations, mainly for GitHub Copilot. Please do not base on this branch to work on benchmarks.**
 
 # Welcome to [TechEmpower Framework Benchmarks (TFB)](http://www.techempower.com/benchmarks/)
 

@@ -205,7 +205,7 @@ When encountering `com.huanshankeji` snapshot dependencies:
 
 ### Python Toolset
 
-- Python 3.x (3.10 in CI)
+- Python 3.x (check `.github/workflows/build.yml` for current CI version)
 - Uses these key modules:
   - `docker` for container management
   - `colorama` for colored output

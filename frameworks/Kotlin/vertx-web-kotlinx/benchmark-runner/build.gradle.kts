@@ -16,7 +16,10 @@ dependencies {
     
     // Testcontainers
     implementation("org.testcontainers:testcontainers:2.0.3")
-    implementation("org.testcontainers:postgresql:2.0.3")
+    implementation("org.testcontainers:testcontainers-postgresql:2.0.3")
+    
+    // PostgreSQL JDBC driver (required for init scripts)
+    runtimeOnly("org.postgresql:postgresql:42.7.5")
 
     // Kotlin coroutines
     implementation(libs.kotlinx.coroutines.core)

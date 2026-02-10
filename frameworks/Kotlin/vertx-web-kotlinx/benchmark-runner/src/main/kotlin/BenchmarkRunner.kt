@@ -1,7 +1,6 @@
 import kotlinx.coroutines.runBlocking
 import org.testcontainers.containers.Network
 import org.testcontainers.containers.PostgreSQLContainer
-import org.testcontainers.utility.DockerImageName
 import main as defaultMain
 
 /**
@@ -35,7 +34,7 @@ suspend fun runBenchmark(args: Array<String>) {
     
     // Start PostgreSQL with Testcontainers
     println("Starting PostgreSQL container...")
-    val postgres = PostgreSQLContainer(DockerImageName.parse("postgres:18-alpine"))
+    val postgres = PostgreSQLContainer("postgres:18-alpine")
         .withDatabaseName("hello_world")
         .withUsername("benchmarkdbuser")
         .withPassword("benchmarkdbpass")

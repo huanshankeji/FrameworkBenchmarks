@@ -10,6 +10,8 @@ This is the **TechEmpower Framework Benchmarks (TFB)** repository - a comprehens
 
 **Live Results**: https://tfb-status.techempower.com/
 
+**⚠️ Important Note**: This fork is maintained by the huanshankeji organization. Information in this document about the `scripts/` and `toolset/` directories comes from the upstream TechEmpower repository and may not be fully accurate for this fork. When working with these areas, verify behavior against actual code and defer to the repository maintainer for authoritative guidance.
+
 ## Repository Structure
 
 ```
@@ -77,6 +79,22 @@ The primary way to interact with the test suite is through the `./tfb` script:
 - Mounts the repository and Docker socket
 - Runs `toolset/run-tests.py` inside the container
 - Requires Docker to be installed and running
+
+**⚠️ Known Issue in AI Coding Agent Environments**: 
+
+The `./tfb` command may fail in GitHub Copilot coding agent environments due to SSL certificate verification errors when building the Docker container. The error appears as:
+
+```
+[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain
+```
+
+This occurs when pip tries to install Python packages from PyPI during the Docker build process.
+
+**Workaround for AI Agents**:
+- **DO NOT attempt to run `./tfb` commands directly in the coding agent environment**
+- When test execution is required, document the changes made and **hand over the work to the repository maintainer** to run the tests
+- Include clear instructions for the maintainer on which tests to run (e.g., `./tfb --mode verify --test framework-name`)
+- If possible in your environment, you may attempt to use GitHub Codespaces with proper SSL certificate configuration, but this typically requires special permissions and setup
 
 ### Adding a New Framework
 
@@ -243,6 +261,8 @@ Tests run in "verify" mode check:
 - Response body format and content
 - Database query results
 - XSS prevention in templates
+
+**Note**: Verify mode also takes significantly less time to complete compared to full benchmark runs, making it ideal for development and validation.
 
 Verification logic is in `toolset/test_types/verifications.py`.
 

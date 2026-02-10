@@ -2,6 +2,7 @@ import kotlinx.coroutines.runBlocking
 import org.testcontainers.containers.Network
 import org.testcontainers.containers.PostgreSQLContainer
 import org.testcontainers.utility.DockerImageName
+import main as defaultMain
 
 /**
  * Benchmark runner that uses Testcontainers to start PostgreSQL and runs the vertx-web-kotlinx application.
@@ -21,7 +22,7 @@ import org.testcontainers.utility.DockerImageName
  * - exposed-r2dbc
  * - exposed-vertx-sql-client
  */
-suspend fun main(args: Array<String>) {
+suspend fun runBenchmark(args: Array<String>) {
     val implementation = args.getOrNull(0) ?: "default"
     
     println("=== Vert.x-Web Kotlinx Benchmark Runner ===")
@@ -71,7 +72,7 @@ suspend fun main(args: Array<String>) {
     when (implementation) {
         "default" -> {
             // Default PostgreSQL implementation
-            MainKt.main()
+            defaultMain()
         }
         "r2dbc" -> {
             // R2DBC implementation
@@ -101,6 +102,6 @@ suspend fun main(args: Array<String>) {
 }
 
 // Entry point for Gradle application plugin
-fun main(args: Array<String>) = runBlocking {
-    main(args)
+fun main(args: Array<String>): Unit = runBlocking {
+    runBenchmark(args)
 }

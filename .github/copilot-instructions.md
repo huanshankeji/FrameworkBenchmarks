@@ -94,7 +94,7 @@ This occurs when pip tries to install Python packages from PyPI during the Docke
 - **DO NOT attempt to run `./tfb` commands directly in the coding agent environment**
 - When test execution is required, document the changes made and **hand over the work to the repository maintainer** to run the tests
 - Include clear instructions for the maintainer on which tests to run (e.g., `./tfb --mode verify --test framework-name`)
-- If possible in your environment, you may attempt to use GitHub Codespaces with proper SSL certificate configuration, but this typically requires special permissions and setup
+- **Alternative**: GitHub Codespaces is confirmed to work for running `./tfb` commands without SSL certificate issues
 
 ### Adding a New Framework
 

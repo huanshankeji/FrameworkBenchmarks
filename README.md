@@ -1,3 +1,5 @@
+**This is huanshankeji's master branch with custom configurations, mainly for GitHub Copilot. Please do not base on this branch to work on benchmarks.**
+
 # Welcome to [TechEmpower Framework Benchmarks (TFB)](http://www.techempower.com/benchmarks/)
 
 [![Build Status](https://github.com/TechEmpower/FrameworkBenchmarks/workflows/build/badge.svg?branch=master&event=push)](https://github.com/TechEmpower/FrameworkBenchmarks/actions?query=workflow%3Abuild+branch%3Amaster)

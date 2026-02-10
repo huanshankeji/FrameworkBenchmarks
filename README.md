@@ -1,4 +1,4 @@
-**This is huanshankeji's GitHub default branch with custom configurations, mainly for GitHub Copilot. Please do not base on this branch to work on benchmarks.**
+**This is huanshankeji's GitHub default branch with custom configurations, mainly for GitHub Copilot. Please do not base on this branch to work on benchmarks. Continuously merge from the `copilot-coding-agent-env` branch when there are changes there.**
 
 # Welcome to [TechEmpower Framework Benchmarks (TFB)](http://www.techempower.com/benchmarks/)
 

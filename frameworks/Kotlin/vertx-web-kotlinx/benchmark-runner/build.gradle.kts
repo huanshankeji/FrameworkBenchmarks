@@ -27,3 +27,8 @@ dependencies {
 }
 
 application.mainClass.set("BenchmarkRunnerKt")
+
+// Pass system properties to the application
+tasks.named<JavaExec>("run") {
+    systemProperties(System.getProperties().toMap() as Map<String, Any>)
+}

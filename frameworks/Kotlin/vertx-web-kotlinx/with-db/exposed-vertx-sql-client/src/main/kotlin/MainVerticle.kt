@@ -40,7 +40,7 @@ class MainVerticle(val exposedTransactionProvider: StatementPreparationExposedTr
             .single().toWorld()
 
     override suspend fun Unit.updateSortedWorlds(sortedWorlds: List<World>) {
-        delay(random.nextInt(10000).microseconds)
+        delay(random.nextInt(100000).microseconds)
         dbClient.executeBatchUpdate(sortedWorlds.map { world ->
             buildStatement {
                 WorldTable.update({ WorldTable.id eq world.id }) {
@@ -48,6 +48,7 @@ class MainVerticle(val exposedTransactionProvider: StatementPreparationExposedTr
                 }
             }
         })
+        delay(random.nextInt(100000).microseconds)
     }
 
     override suspend fun Unit.selectFortunesInto(fortunes: MutableList<Fortune>) {

@@ -97,7 +97,7 @@ sleep 2
 
 # Run wrk benchmarks with queries=20
 echo "Running wrk benchmarks for update test (queries=20)..."
-./run-wrk-benchmarks.sh --type update -d 30 -t 16 -c 256 2>&1 | tee /tmp/benchmark-${PROVIDER}.txt
+./run-wrk-benchmarks.sh --type update -d 30 2>&1 | tee /tmp/benchmark-${PROVIDER}.txt
 
 # Stop profiling
 echo "Stopping async-profiler..."

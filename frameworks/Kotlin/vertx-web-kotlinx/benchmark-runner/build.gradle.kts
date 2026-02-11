@@ -26,7 +26,7 @@ dependencies {
     implementation(libs.kotlinx.coroutines.core)
 }
 
-application.mainClass.set("BenchmarkRunnerKt")
+application.mainClass.set("benchmarkrunner.BenchmarkRunnerKt")
 
 // Pass system properties to the application and fix Java 25 ICU issue
 tasks.named<JavaExec>("run") {

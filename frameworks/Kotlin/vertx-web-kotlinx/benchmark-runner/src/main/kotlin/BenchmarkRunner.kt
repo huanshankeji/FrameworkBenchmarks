@@ -1,5 +1,8 @@
+package benchmarkrunner
+
 import org.testcontainers.containers.Network
 import org.testcontainers.postgresql.PostgreSQLContainer
+import main as serverMain
 
 /**
  * Benchmark runner that uses Testcontainers to start PostgreSQL and runs the vertx-web-kotlinx application.
@@ -25,14 +28,14 @@ suspend fun main(/*args: Array<String>*/) {
     println("=== Vert.x-Web Kotlinx Benchmark Runner ===")
     //println("Implementation: $implementation")
     println()
-    
+
     // Create Docker network
     println("Creating Docker network...")
     val network = Network.newNetwork()
     
     // Start PostgreSQL with Testcontainers
     println("Starting PostgreSQL container...")
-    val postgres = PostgreSQLContainer("postgres:18-alpine")
+    val postgres = PostgreSQLContainer("postgres:latest")
         .withDatabaseName("hello_world")
         .withUsername("benchmarkdbuser")
         .withPassword("benchmarkdbpass")
@@ -75,7 +78,7 @@ suspend fun main(/*args: Array<String>*/) {
 
     println()
 
-    main()
+    serverMain()
 
     // Note: The application runs indefinitely until killed
     // PostgreSQL container will be stopped when JVM exits

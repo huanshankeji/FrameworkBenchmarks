@@ -12,7 +12,7 @@ This is the **TechEmpower Framework Benchmarks (TFB)** repository - a comprehens
 
 **⚠️ Important Note**: This fork is maintained by the huanshankeji organization. Information in this document about the `scripts/` and `toolset/` directories comes from the upstream TechEmpower repository and may not be fully accurate for this fork. When working with these areas, verify behavior against actual code and defer to the repository maintainer for authoritative guidance.
 
-**⚠️ Additional Disclaimer**: Information about the `scripts/` and `toolset/` directories was AI-summarized from upstream source code without human review. It may be incomplete, completely summarized, or inaccurate. Always verify against the actual code in these directories and consult the repository maintainer when working with these areas.
+**⚠️ Additional Disclaimer**: Information about the `scripts/` and `toolset/` directories was comppletely AI-summarized from upstream source code without human review. It may be incomplete or inaccurate. Always verify against the actual code in these directories and consult the repository maintainer when working with these areas. And update this file accordingly if you find any inaccuracies.
 
 ## Repository Structure
 

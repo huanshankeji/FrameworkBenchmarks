@@ -22,6 +22,7 @@ class MainVerticle : CommonWithDbVerticle<PgConnection, Unit>(),
             pgConnectOptionsOf(
                 database = DATABASE,
                 host = HOST,
+                port = PORT,
                 user = USER,
                 password = PASSWORD,
                 cachePreparedStatements = true,

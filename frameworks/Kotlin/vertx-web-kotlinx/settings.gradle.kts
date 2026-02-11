@@ -16,7 +16,9 @@ include(
     "with-db:exposed-common:r2dbc",
     */
     "with-db:exposed-r2dbc",
-    "with-db:exposed-vertx-sql-client"
+    "with-db:exposed-vertx-sql-client",
+    
+    "benchmark-runner"
 )
 
 // renamed explicitly to work around jar name conflicts

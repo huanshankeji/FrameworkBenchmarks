@@ -11,7 +11,7 @@
 #   -d, --duration SECONDS    Duration of test in seconds (default: 15)
 #   -t, --threads NUM         Number of threads (default: number of CPU cores)
 #   -c, --connections NUM     Number of connections (default: 512)
-#   --type TYPE               Test type to run: json, plaintext, db, queries, updates, fortunes, all (default: all)
+#   --type TYPE               Test type to run: json, plaintext, db, query, fortune, update, all (default: all)
 #   -h, --help                Show this help message
 
 set -e
@@ -49,13 +49,13 @@ while [[ $# -gt 0 ]]; do
             echo "  -d, --duration SECONDS    Duration of test in seconds (default: 15)"
             echo "  -t, --threads NUM         Number of threads (default: number of CPU cores)"
             echo "  -c, --connections NUM     Number of connections (default: 512)"
-            echo "  --type TYPE               Test type: json, plaintext, db, queries, updates, fortunes, all (default: all)"
+            echo "  --type TYPE               Test type: json, plaintext, db, query, fortune, update, all (default: all)"
             echo "  -h, --help                Show this help message"
             echo ""
             echo "Examples:"
             echo "  $0                                    # Run all tests with defaults"
             echo "  $0 --type db -d 30 -c 256             # Run only db test for 30s with 256 connections"
-            echo "  $0 --type queries -t 16               # Run queries tests with 16 threads"
+            echo "  $0 --type query -t 16               # Run query tests with 16 threads"
             exit 0
             ;;
         *)
@@ -125,15 +125,19 @@ case $TEST_TYPE in
     db)
         run_benchmark "Single Database Query" "/db" "application/json"
         ;;
-    queries)
+    query)
         run_benchmark "Multiple Queries (5)" "/queries?queries=5" "application/json"
         run_benchmark "Multiple Queries (20)" "/queries?queries=20" "application/json"
         ;;
-    updates)
+    cached-query)
+        echo "ERROR: cached-query test type is not implemented for this framework"
+        exit 1
+        ;;
+    update)
         run_benchmark "Updates (5)" "/updates?queries=5" "application/json"
         run_benchmark "Updates (20)" "/updates?queries=20" "application/json"
         ;;
-    fortunes)
+    fortune)
         run_benchmark "Fortunes" "/fortunes" "text/html"
         ;;
     all)
@@ -148,7 +152,7 @@ case $TEST_TYPE in
         ;;
     *)
         echo "ERROR: Invalid test type: $TEST_TYPE"
-        echo "Valid types: json, plaintext, db, queries, updates, fortunes, all"
+        echo "Valid types: json, plaintext, db, query, cached-query, fortune, update, all"
         exit 1
         ;;
 esac

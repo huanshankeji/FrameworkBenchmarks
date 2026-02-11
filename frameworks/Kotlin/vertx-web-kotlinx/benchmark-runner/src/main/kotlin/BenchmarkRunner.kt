@@ -35,7 +35,7 @@ suspend fun main(/*args: Array<String>*/) {
     
     // Start PostgreSQL with Testcontainers
     println("Starting PostgreSQL container...")
-    val postgres = PostgreSQLContainer("postgres:latest")
+    val postgres = PostgreSQLContainer("postgres:18-trixie")
         .withDatabaseName("hello_world")
         .withUsername("benchmarkdbuser")
         .withPassword("benchmarkdbpass")

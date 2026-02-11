@@ -11,8 +11,6 @@ echo "========================================="
 echo "Profiling with ${PROVIDER} provider"
 echo "========================================="
 
-cd /home/runner/work/FrameworkBenchmarks/FrameworkBenchmarks/frameworks/Kotlin/vertx-web-kotlinx
-
 # Start the application
 echo "Starting application with ${PROVIDER} provider..."
 ./gradlew :benchmark-runner:run --args="exposed-vertx-sql-client" \

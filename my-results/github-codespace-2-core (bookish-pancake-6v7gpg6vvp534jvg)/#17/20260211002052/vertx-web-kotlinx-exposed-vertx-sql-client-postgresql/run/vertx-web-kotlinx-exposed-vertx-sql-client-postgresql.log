@@ -1,0 +1,15 @@
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: === async-profiler: waiting for server to start ===
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: [0.001s][warning][os] NUMA support disabled: Failed to initialize libnuma
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Profiling started
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: SLF4J: No SLF4J providers were found.
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: SLF4J: Defaulting to no-operation (NOP) logger implementation
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 11, 2026 12:24:32 AM CommonMainKt commonRunVertxServer
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: Vert.x-Web Kotlinx with Exposed Vert.x SQL Client (and PostgreSQL) benchmark server starting...
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Using JdbcTransactionExposedTransactionProvider
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Using JdbcTransactionExposedTransactionProvider
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 11, 2026 12:24:33 AM CommonMainKt commonRunVertxServer
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: Vert.x-Web Kotlinx with Exposed Vert.x SQL Client (and PostgreSQL) benchmark server started.
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: === async-profiler: server started detected (PID: 8) ===
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Profiling started
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: === async-profiler: profiler restarted (capturing benchmark traffic only) ===

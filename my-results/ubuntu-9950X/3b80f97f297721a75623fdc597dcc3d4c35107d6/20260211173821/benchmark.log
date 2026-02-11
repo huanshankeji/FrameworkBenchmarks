@@ -1,0 +1,9 @@
+--------------------------------------------------------------------------------
+Benchmarking vertx-web-kotlinx-exposed-vertx-sql-client-postgresql
+--------------------------------------------------------------------------------
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: ERROR: Framework is not accepting requests from client machine
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Total test time: 4m 17s
+tfb: Total time building so far: 3m 33s
+tfb: Total time verifying so far: 0s
+tfb: Total execution time so far: 4m 41s
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Total TCP sockets: 81

@@ -1,0 +1,90 @@
+#!/bin/bash
+set -e
+
+PROVIDER=$1
+if [ -z "$PROVIDER" ]; then
+    echo "Usage: $0 <jdbc|database>"
+    exit 1
+fi
+
+echo "========================================="
+echo "Profiling with ${PROVIDER} provider"
+echo "========================================="
+
+cd /home/runner/work/FrameworkBenchmarks/FrameworkBenchmarks/frameworks/Kotlin/vertx-web-kotlinx
+
+# Start the application
+echo "Starting application with ${PROVIDER} provider..."
+./gradlew :benchmark-runner:run --args="exposed-vertx-sql-client" \
+    -Dtransaction.provider=${PROVIDER} \
+    --console=plain --no-daemon 2>&1 | tee /tmp/app-${PROVIDER}.log &
+
+APP_PID=$!
+
+# Wait for the application to start
+echo "Waiting for application to start..."
+for i in {1..60}; do
+    sleep 1
+    if ps aux | grep -q "[j]ava.*BenchmarkRunner"; then
+        echo "Application process found!"
+        break
+    fi
+    if [ $i -eq 60 ]; then
+        echo "ERROR: Timeout waiting for application to start"
+        tail -50 /tmp/app-${PROVIDER}.log
+        exit 1
+    fi
+done
+
+# Wait a bit more for the app to fully initialize
+sleep 10
+
+# Check if the application is running
+if ! ps -p $APP_PID > /dev/null 2>&1; then
+    echo "ERROR: Gradle process failed"
+    tail -50 /tmp/app-${PROVIDER}.log
+    exit 1
+fi
+
+# Find the Java process running the Vert.x application
+echo "Finding Java process..."
+JAVA_PID=$(ps aux | grep "[j]ava.*BenchmarkRunner" | head -1 | awk '{print $2}')
+
+if [ -z "$JAVA_PID" ]; then
+    echo "ERROR: Could not find Java process"
+    ps aux | grep java
+    kill $APP_PID 2>/dev/null || true
+    exit 1
+fi
+
+echo "Found Java process: $JAVA_PID"
+
+# Start async-profiler 4.3
+echo "Starting async-profiler..."
+/tmp/async-profiler-4.3-linux-x64/bin/asprof start -e cpu -o flamegraph -f /tmp/profile-${PROVIDER}.html $JAVA_PID
+
+# Wait a bit for profiler to initialize
+sleep 2
+
+# Run wrk benchmarks with queries=20
+echo "Running wrk benchmarks for update test (queries=20)..."
+./run-wrk-benchmarks.sh --type update -d 30 -t 16 -c 256 2>&1 | tee /tmp/benchmark-${PROVIDER}.txt
+
+# Stop profiling
+echo "Stopping async-profiler..."
+/tmp/async-profiler-4.3-linux-x64/bin/asprof stop -o flamegraph -f /tmp/profile-${PROVIDER}.html $JAVA_PID
+
+echo "Stopping application..."
+kill $APP_PID 2>/dev/null || true
+sleep 3
+kill -9 $APP_PID 2>/dev/null || true
+kill $JAVA_PID 2>/dev/null || true
+sleep 2
+kill -9 $JAVA_PID 2>/dev/null || true
+
+echo ""
+echo "Results saved:"
+echo "  - Flame graph: /tmp/profile-${PROVIDER}.html"
+echo "  - Benchmark results: /tmp/benchmark-${PROVIDER}.txt"
+echo "  - Application log: /tmp/app-${PROVIDER}.log"
+echo ""

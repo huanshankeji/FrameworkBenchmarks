@@ -1,0 +1,47 @@
+=== Vert.x-Web Kotlinx Benchmark with wrk ===
+
+Configuration:
+  Duration: 30s
+  Threads: 16
+  Connections: 256
+  Test Type: update
+
+Starting benchmarks...
+
+=========================================
+Benchmark: Updates (5)
+=========================================
+Running 30s test @ http://localhost:8080/updates?queries=5
+  16 threads and 256 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    95.74ms   29.60ms 493.43ms   89.70%
+    Req/Sec   171.47     36.33   300.00     74.79%
+  Latency Distribution
+     50%   87.99ms
+     75%   95.44ms
+     90%  125.02ms
+     99%  224.97ms
+  81301 requests in 30.08s, 22.39MB read
+Requests/sec:   2702.44
+Transfer/sec:    762.16KB
+
+=========================================
+Benchmark: Updates (20)
+=========================================
+Running 30s test @ http://localhost:8080/updates?queries=20
+  16 threads and 256 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   308.87ms   26.66ms 511.04ms   84.53%
+    Req/Sec    54.71     31.06   151.00     67.08%
+  Latency Distribution
+     50%  305.77ms
+     75%  317.72ms
+     90%  331.96ms
+     99%  430.10ms
+  24783 requests in 30.06s, 18.09MB read
+Requests/sec:    824.48
+Transfer/sec:    616.42KB
+
+=========================================
+Benchmarks Complete!
+=========================================

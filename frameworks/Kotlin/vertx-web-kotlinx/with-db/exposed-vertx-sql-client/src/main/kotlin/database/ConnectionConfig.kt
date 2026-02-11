@@ -2,8 +2,9 @@ package database
 
 import com.huanshankeji.exposedvertxsqlclient.ConnectionConfig
 
-val connectionConfig = ConnectionConfig.Socket(
-    host = HOST,
+val connectionConfig get() = ConnectionConfig.Socket(
+    host = host,
+    port = port,
     user = USER,
     password = PASSWORD,
     database = DATABASE

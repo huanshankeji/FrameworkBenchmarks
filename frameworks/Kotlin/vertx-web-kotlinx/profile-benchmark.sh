@@ -2,9 +2,40 @@
 set -e
 
 PROVIDER=$1
+
 if [ -z "$PROVIDER" ]; then
-    echo "Usage: $0 <jdbc|database>"
+    echo "Usage: $0 <jdbc|database> [profiler_path]"
+    echo "  profiler_path: Path to async-profiler bin directory (optional if asprof is in PATH)"
     exit 1
+fi
+
+# Check if asprof is available in PATH
+if command -v asprof &> /dev/null; then
+    ASPROF_CMD="asprof"
+    echo "Using asprof from PATH: $(which asprof)"
+else
+    PROFILER_PATH=$2
+    if [ -z "$PROFILER_PATH" ]; then
+        echo "ERROR: asprof command not found in PATH"
+        echo ""
+        echo "Please either:"
+        echo ""
+        echo "  1. Add async-profiler bin directory to your PATH:"
+        echo "     For current session:"
+        echo "       export PATH=\"/path/to/async-profiler/bin:\$PATH\""
+        echo "     For permanent use, add the above line to your ~/.bashrc or ~/.bash_profile"
+        echo ""
+        echo "  2. Provide the profiler path as second argument:"
+        echo "       $0 $PROVIDER /path/to/async-profiler/bin"
+        echo ""
+        exit 1
+    fi
+    ASPROF_CMD="${PROFILER_PATH}/asprof"
+    if [ ! -x "$ASPROF_CMD" ]; then
+        echo "ERROR: asprof not found at: $ASPROF_CMD"
+        exit 1
+    fi
+    echo "Using asprof from: $ASPROF_CMD"
 fi
 
 echo "========================================="
@@ -59,7 +90,7 @@ echo "Found Java process: $JAVA_PID"
 
 # Start async-profiler 4.3
 echo "Starting async-profiler..."
-/tmp/async-profiler-4.3-linux-x64/bin/asprof start -e cpu -o flamegraph -f /tmp/profile-${PROVIDER}.html $JAVA_PID
+$ASPROF_CMD start -e cpu -o flamegraph -f /tmp/profile-${PROVIDER}.html $JAVA_PID
 
 # Wait a bit for profiler to initialize
 sleep 2
@@ -70,7 +101,7 @@ echo "Running wrk benchmarks for update test (queries=20)..."
 
 # Stop profiling
 echo "Stopping async-profiler..."
-/tmp/async-profiler-4.3-linux-x64/bin/asprof stop -o flamegraph -f /tmp/profile-${PROVIDER}.html $JAVA_PID
+$ASPROF_CMD stop -o flamegraph -f /tmp/profile-${PROVIDER}.html $JAVA_PID
 
 echo "Stopping application..."
 kill $APP_PID 2>/dev/null || true

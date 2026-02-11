@@ -9,38 +9,21 @@ Configuration:
 Starting benchmarks...
 
 =========================================
-Benchmark: Updates (5)
-=========================================
-Running 30s test @ http://localhost:8080/updates?queries=5
-  16 threads and 256 connections
-  Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency    96.12ms   29.09ms 478.76ms   90.29%
-    Req/Sec   170.22     34.96   270.00     77.03%
-  Latency Distribution
-     50%   88.55ms
-     75%   95.62ms
-     90%  122.05ms
-     99%  209.12ms
-  80896 requests in 30.10s, 22.28MB read
-Requests/sec:   2687.88
-Transfer/sec:    758.15KB
-
-=========================================
 Benchmark: Updates (20)
 =========================================
 Running 30s test @ http://localhost:8080/updates?queries=20
   16 threads and 256 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency   311.90ms   25.99ms 559.53ms   86.94%
-    Req/Sec    53.15     29.19   151.00     69.84%
+    Latency   329.69ms   95.96ms   1.20s    94.52%
+    Req/Sec    51.14     27.37   151.00     62.51%
   Latency Distribution
-     50%  309.10ms
-     75%  320.28ms
-     90%  333.37ms
-     99%  425.97ms
-  24517 requests in 30.06s, 17.90MB read
-Requests/sec:    815.57
-Transfer/sec:    609.75KB
+     50%  315.96ms
+     75%  348.18ms
+     90%  378.51ms
+     99%  918.95ms
+  23534 requests in 30.10s, 17.18MB read
+Requests/sec:    781.97
+Transfer/sec:    584.59KB
 
 =========================================
 Benchmarks Complete!

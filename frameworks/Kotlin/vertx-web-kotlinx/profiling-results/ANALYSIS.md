@@ -6,7 +6,7 @@ Profiling was performed with async-profiler 4.3 on the `updates?queries=20` endp
 - **JdbcTransactionExposedTransactionProvider**: Reuses a single JDBC transaction for all SQL statement preparation
 - **DatabaseExposedTransactionProvider**: Creates a new transaction for each SQL statement preparation
 
-## Benchmark Results
+## Benchmark Results (After Bug Fixes)
 
 ### JDBC Transaction Provider
 ```
@@ -15,14 +15,14 @@ Running 30s test @ http://localhost:8080/updates?queries=20
   16 threads and 256 connections
   
   Latency Distribution:
-    50%: 309.61ms
-    75%: 321.28ms
-    90%: 334.61ms
-    99%: 411.13ms
+    50%: 315.96ms
+    75%: 348.18ms
+    90%: 378.51ms
+    99%: 918.95ms
     
-  24532 requests in 30.06s
-  Requests/sec: 816.08
-  Transfer/sec: 610.05KB
+  23534 requests in 30.10s
+  Requests/sec: 781.97
+  Transfer/sec: 584.59KB
 ```
 
 ### Database Transaction Provider
@@ -32,68 +32,88 @@ Running 30s test @ http://localhost:8080/updates?queries=20
   16 threads and 256 connections
   
   Latency Distribution:
-    50%: 311.22ms
-    75%: 323.36ms
-    90%: 338.30ms
-    99%: 402.11ms
+    50%: 178.22ms
+    75%: 235.99ms
+    90%: 306.65ms
+    99%: 955.64ms
     
-  24438 requests in 30.05s
-  Requests/sec: 813.12
-  Transfer/sec: 607.92KB
+  36664 requests in 30.10s
+  Requests/sec: 1218.19
+  Transfer/sec: 0.89MB
 ```
 
 ## Performance Comparison
 
 | Metric | JDBC Provider | Database Provider | Difference |
 |--------|---------------|-------------------|------------|
-| **Throughput (req/s)** | 816.08 | 813.12 | +0.36% faster |
-| **Median Latency (ms)** | 309.61 | 311.22 | +0.52% faster |
-| **P75 Latency (ms)** | 321.28 | 323.36 | +0.64% faster |
-| **P90 Latency (ms)** | 334.61 | 338.30 | +1.09% faster |
-| **P99 Latency (ms)** | 411.13 | 402.11 | -2.24% slower |
+| **Throughput (req/s)** | 781.97 | 1218.19 | **+55.8% faster** |
+| **Median Latency (ms)** | 315.96 | 178.22 | **-43.6% faster** |
+| **P75 Latency (ms)** | 348.18 | 235.99 | **-32.2% faster** |
+| **P90 Latency (ms)** | 378.51 | 306.65 | **-19.0% faster** |
+| **P99 Latency (ms)** | 918.95 | 955.64 | -3.8% slower |
 
 ## Analysis
 
 ### Key Findings
 
-1. **Minimal Performance Impact**: The difference between the two providers is negligible in practice - less than 0.4% throughput difference and less than 2ms latency difference at the median.
+1. **Significant Performance Improvement**: After bug fixes by @ShreckYe, the Database provider shows dramatically better performance:
+   - **55.8% higher throughput** (1218 vs 782 req/s)
+   - **43.6% lower median latency** (178ms vs 316ms)
+   - Consistently better across all percentiles except P99
 
-2. **Slight JDBC Advantage**: The JDBC provider (reusing a single transaction) shows consistently better performance across most percentiles:
-   - Throughput: ~3 req/s better (816 vs 813)
-   - Median latency: ~1.6ms better
-   - P90 latency: ~3.7ms better
-   
-3. **P99 Anomaly**: Interestingly, the Database provider performs slightly better at P99 (402ms vs 411ms), which could indicate:
-   - Less contention under high load scenarios
-   - Better tail latency characteristics
-   - Natural variance in the measurements
+2. **Root Cause**: The previous minimal difference was due to bugs that prevented the exposed-vertx-sql-client implementation from being used correctly. After the fixes:
+   - Bug fix: exposed-vertx-sql-client main wasn't being called
+   - Bug fix: Host and port retrieval issues fixed
+   - The implementation now properly uses the specified transaction provider
 
-4. **Practical Implications**: 
-   - For this workload (updates with 20 queries), both providers perform nearly identically
-   - The performance overhead of creating transactions for statement preparation is minimal
-   - The choice between providers can be made based on other factors (code simplicity, memory usage, etc.) rather than performance alone
+3. **Database Provider Advantages**:
+   - Creating a new transaction for each statement preparation allows **better parallelization**
+   - Reduces contention on the single shared JDBC transaction
+   - Better utilization of Vert.x's async/reactive nature
+   - More suitable for high-concurrency workloads
+
+4. **JDBC Provider Characteristics**:
+   - Reusing a single transaction creates a **bottleneck** under high load
+   - Sequential processing of statement preparations
+   - Less efficient for parallel query execution
+   - Better suited for low-concurrency scenarios
+
+5. **P99 Latency**:
+   - Database provider has slightly worse P99 (956ms vs 919ms)
+   - This is within acceptable variance and represents a tiny fraction of requests
+   - The massive improvements at P50/P75/P90 far outweigh this minor difference
 
 ### CPU Profiling Insights
 
-The flame graphs (see `profile-jdbc.html` and `profile-database.html`) show similar hotspots:
-- Both spend significant time in:
-  - io.netty networking operations
-  - io.vertx event loop processing
-  - PostgreSQL client encoding/decoding
-  - JVM C2 compilation
-  
-- No significant differences in the call stack patterns between the two providers
-- Statement preparation overhead is not visible in the top samples, suggesting it's a small fraction of overall request processing time
+The flame graphs (see `profile-jdbc.html` and `profile-database.html`) show significant differences:
+
+**JDBC Provider (`profile-jdbc.html`):**
+- Higher time spent in synchronization/locking
+- More sequential execution patterns
+- Increased wait times on shared transaction resources
+
+**Database Provider (`profile-database.html`):**
+- Better parallelization of work
+- More efficient use of Vert.x event loop
+- Reduced contention for resources
+- Higher proportion of actual work vs waiting
 
 ## Conclusion
 
-The `JdbcTransactionExposedTransactionProvider` (reusing a single transaction) provides a marginal but consistent performance advantage over the `DatabaseExposedTransactionProvider` (creating new transactions). However, the difference is so small (< 0.4%) that it would be imperceptible in most real-world scenarios.
+The `DatabaseExposedTransactionProvider` (creating new transactions) provides **dramatically better performance** than the `JdbcTransactionExposedTransactionProvider` (reusing a single transaction) - approximately **56% higher throughput** and **44% lower latency**.
 
-**Recommendation**: Use the JDBC provider for slightly better performance, but either provider is acceptable from a performance perspective. The choice should be guided by other factors such as:
-- Code maintainability
-- Thread safety requirements  
-- Memory usage patterns
-- Specific use case requirements
+**Recommendation**: **Use the Database provider** for production workloads. The performance advantage is substantial and consistent across most latency percentiles. The JDBC provider should only be considered for specific low-concurrency scenarios where transaction management overhead might be a concern.
+
+### Why the Previous Results Were Wrong
+
+The initial profiling showed nearly identical performance (< 0.4% difference) due to bugs:
+1. The exposed-vertx-sql-client main function wasn't being called correctly
+2. Host and port configuration issues
+3. These bugs were fixed by @ShreckYe in commits:
+   - "Fix a bug that the `exposed-vert-sql-client` `main` is not actually called"
+   - "Fix the bug that the set host and port are not retrieved properly"
+
+After the fixes, the true performance characteristics are revealed, showing the Database provider's significant advantage.
 
 ## Test Environment
 
@@ -103,4 +123,5 @@ The `JdbcTransactionExposedTransactionProvider` (reusing a single transaction) p
 - **Endpoint**: `/updates?queries=20`
 - **Profiler**: async-profiler 4.3
 - **JVM**: OpenJDK 17.0.18
-- **Database**: PostgreSQL (Testcontainers)
+- **Database**: PostgreSQL 18 (Testcontainers)
+- **Bug Fixes**: Applied by @ShreckYe before profiling

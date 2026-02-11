@@ -2,7 +2,7 @@ import kotlinx.coroutines.runBlocking
 import org.testcontainers.containers.Network
 import org.testcontainers.containers.PostgreSQLContainer
 import main as defaultMain
-import com.example.exposedvertxsqlclient.main as exposedVertxSqlClientMain
+import com.example.exposedvertxsqlclient.MainWrapper
 
 /**
  * Benchmark runner that uses Testcontainers to start PostgreSQL and runs the vertx-web-kotlinx application.
@@ -94,7 +94,7 @@ suspend fun runBenchmark(args: Array<String>) {
         }
         "exposed-vertx-sql-client" -> {
             // Exposed Vert.x SQL Client implementation
-            exposedVertxSqlClientMain()
+            MainWrapper.run()
         }
         else -> {
             error("Unknown implementation: $implementation")

@@ -28,7 +28,11 @@ dependencies {
 
 application.mainClass.set("BenchmarkRunnerKt")
 
-// Pass system properties to the application
+// Pass system properties to the application and fix Java 25 ICU issue
 tasks.named<JavaExec>("run") {
     systemProperties(System.getProperties().toMap() as Map<String, Any>)
+    jvmArgs = listOf(
+        "-Djava.io.tmpdir=/tmp",
+        "--add-opens=java.base/jdk.internal.icu.impl=ALL-UNNAMED"
+    )
 }

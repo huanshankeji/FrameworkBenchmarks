@@ -7,4 +7,4 @@ repositories {
     mavenCentral()
 }
 
-kotlin.jvmToolchain(25)
+kotlin.jvmToolchain(17)

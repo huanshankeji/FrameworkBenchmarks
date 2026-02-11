@@ -4,12 +4,12 @@ import com.huanshankeji.exposedvertxsqlclient.StatementPreparationExposedTransac
 import com.huanshankeji.exposedvertxsqlclient.postgresql.PgDatabaseClientConfig
 import com.huanshankeji.exposedvertxsqlclient.postgresql.vertx.pgclient.createPgConnection
 import database.*
+import io.vertx.kotlin.coroutines.coAwait
 import io.vertx.pgclient.PgConnection
-import kotlinx.coroutines.delay
 import org.jetbrains.exposed.v1.core.eq
 import org.jetbrains.exposed.v1.core.statements.buildStatement
 import org.jetbrains.exposed.v1.jdbc.select
-import kotlin.time.Duration.Companion.microseconds
+import java.util.concurrent.TimeUnit
 
 @OptIn(ExperimentalEvscApi::class)
 class MainVerticle(val exposedTransactionProvider: StatementPreparationExposedTransactionProvider) :
@@ -40,7 +40,10 @@ class MainVerticle(val exposedTransactionProvider: StatementPreparationExposedTr
             .single().toWorld()
 
     override suspend fun Unit.updateSortedWorlds(sortedWorlds: List<World>) {
-        delay(random.nextInt(100000).microseconds)
+        // `delay` seems to cause `java.lang.IllegalStateException: Only the context thread can write a message`.
+
+        //delay(random.nextInt(100000).microseconds)
+        vertx.timer(random.nextLong(100000), TimeUnit.MICROSECONDS).coAwait()
         dbClient.executeBatchUpdate(sortedWorlds.map { world ->
             buildStatement {
                 WorldTable.update({ WorldTable.id eq world.id }) {
@@ -48,7 +51,8 @@ class MainVerticle(val exposedTransactionProvider: StatementPreparationExposedTr
                 }
             }
         })
-        delay(random.nextInt(100000).microseconds)
+        //delay(random.nextInt(100000).microseconds)
+        vertx.timer(random.nextLong(100000), TimeUnit.MICROSECONDS).coAwait()
     }
 
     override suspend fun Unit.selectFortunesInto(fortunes: MutableList<Fortune>) {

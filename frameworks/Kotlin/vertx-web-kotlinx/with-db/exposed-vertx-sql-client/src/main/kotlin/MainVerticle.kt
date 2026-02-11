@@ -43,7 +43,7 @@ class MainVerticle(val exposedTransactionProvider: StatementPreparationExposedTr
         // `delay` seems to cause `java.lang.IllegalStateException: Only the context thread can write a message`.
 
         //delay(random.nextInt(100000).microseconds)
-        vertx.timer(random.nextLong(1, 100000), TimeUnit.MICROSECONDS).coAwait()
+        vertx.timer(random.nextLong(1, 10000), TimeUnit.MICROSECONDS).coAwait()
         dbClient.executeBatchUpdate(sortedWorlds.map { world ->
             buildStatement {
                 WorldTable.update({ WorldTable.id eq world.id }) {
@@ -52,7 +52,7 @@ class MainVerticle(val exposedTransactionProvider: StatementPreparationExposedTr
             }
         })
         //delay(random.nextInt(100000).microseconds)
-        vertx.timer(random.nextLong(1, 100000), TimeUnit.MICROSECONDS).coAwait()
+        vertx.timer(random.nextLong(1, 10000), TimeUnit.MICROSECONDS).coAwait()
     }
 
     override suspend fun Unit.selectFortunesInto(fortunes: MutableList<Fortune>) {

@@ -45,8 +45,18 @@ suspend fun runBenchmark(args: Array<String>) {
     postgres.start()
     
     println("PostgreSQL started:")
-    println("  Internal hostname: tfb-database:5432")
+    println("  Internal hostname: tfb-database:5432 (Docker network)")
     println("  External endpoint: ${postgres.host}:${postgres.firstMappedPort}")
+    println()
+    
+    // Override database connection settings with Testcontainers host/port
+    // This allows the application running on the host to connect to the containerized PostgreSQL
+    System.setProperty("db.host", postgres.host)
+    System.setProperty("db.port", postgres.firstMappedPort.toString())
+    
+    println("Database connection override:")
+    println("  Host: ${postgres.host}")
+    println("  Port: ${postgres.firstMappedPort}")
     println()
     
     // Start the Vert.x application

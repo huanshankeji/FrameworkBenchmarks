@@ -3,7 +3,7 @@ plugins {
 }
 
 dependencies {
-    implementation(project(":with-db:default"))
+    //implementation(project(":with-db:default"))
     implementation(project(":with-db:exposed-vertx-sql-client"))
     implementation(project(":with-db:with-db-common"))
     implementation(project(":common"))

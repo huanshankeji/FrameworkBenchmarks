@@ -3,6 +3,7 @@ plugins {
 }
 
 repositories {
+    mavenLocal() // for SNAPSHOT dependencies
     mavenCentral()
 }
 

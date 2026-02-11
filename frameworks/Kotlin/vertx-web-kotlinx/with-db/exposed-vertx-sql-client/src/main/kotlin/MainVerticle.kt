@@ -1,6 +1,7 @@
 import com.huanshankeji.exposedvertxsqlclient.DatabaseClient
 import com.huanshankeji.exposedvertxsqlclient.ExperimentalEvscApi
 import com.huanshankeji.exposedvertxsqlclient.JdbcTransactionExposedTransactionProvider
+import com.huanshankeji.exposedvertxsqlclient.DatabaseExposedTransactionProvider
 import com.huanshankeji.exposedvertxsqlclient.postgresql.PgDatabaseClientConfig
 import com.huanshankeji.exposedvertxsqlclient.postgresql.vertx.pgclient.createPgConnection
 import database.*
@@ -27,9 +28,27 @@ class MainVerticle(val exposedDatabase: Database) : CommonWithDbVerticle<Databas
             cachePreparedStatements = true
             pipeliningLimit = 256
         })
+        
+        // Select transaction provider based on system property
+        val providerType = System.getProperty("transaction.provider", "jdbc")
+        val transactionProvider = when (providerType.lowercase()) {
+            "database" -> {
+                println("Using DatabaseExposedTransactionProvider")
+                DatabaseExposedTransactionProvider(exposedDatabase)
+            }
+            "jdbc", "" -> {
+                println("Using JdbcTransactionExposedTransactionProvider (default)")
+                JdbcTransactionExposedTransactionProvider(exposedDatabase)
+            }
+            else -> {
+                println("Unknown transaction provider '$providerType', using JdbcTransactionExposedTransactionProvider")
+                JdbcTransactionExposedTransactionProvider(exposedDatabase)
+            }
+        }
+        
         return DatabaseClient(
             pgConnection,
-            PgDatabaseClientConfig(JdbcTransactionExposedTransactionProvider(exposedDatabase), validateBatch = false)
+            PgDatabaseClientConfig(transactionProvider, validateBatch = false)
         )
     }
 

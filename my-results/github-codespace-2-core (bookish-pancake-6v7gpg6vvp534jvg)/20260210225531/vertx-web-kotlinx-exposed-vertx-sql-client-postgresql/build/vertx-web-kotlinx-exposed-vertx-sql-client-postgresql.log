@@ -1,0 +1,77 @@
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 1/25 : FROM gradle:9.3.1-jdk25
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> e142e6ac8e15
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 2/25 : WORKDIR /vertx-web-kotlinx
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> Using cache
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> d6f6cc87966b
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 3/25 : COPY .m2/repository/com/huanshankeji/exposed-vertx-sql-client-core/0.8.0-SNAPSHOT /root/.m2/repository/com/huanshankeji/exposed-vertx-sql-client-core/0.8.0-SNAPSHOT
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> Using cache
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> 3e3d5f9b5976
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 4/25 : COPY .m2/repository/com/huanshankeji/exposed-vertx-sql-client-postgresql/0.8.0-SNAPSHOT /root/.m2/repository/com/huanshankeji/exposed-vertx-sql-client-postgresql/0.8.0-SNAPSHOT
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> Using cache
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> 733da29f3f8b
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 5/25 : COPY gradle/libs.versions.toml gradle/libs.versions.toml
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> Using cache
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> 3e1036a8fd7e
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 6/25 : COPY buildSrc buildSrc
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> Using cache
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> cccdefb0e2bc
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 7/25 : COPY settings.gradle.kts settings.gradle.kts
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> Using cache
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> 6e6333a93fce
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 8/25 : COPY build.gradle.kts build.gradle.kts
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> Using cache
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> fd151c4bc275
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 9/25 : COPY gradle.properties gradle.properties
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> Using cache
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> 302e64ad59f9
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 10/25 : RUN mkdir -p common without-db/default with-db/common with-db/default with-db/r2dbc-common with-db/r2dbc with-db/exposed-common with-db/exposed-r2dbc with-db/exposed-vertx-sql-client
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> Using cache
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> 907de00713f7
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 11/25 : COPY common/build.gradle.kts common/build.gradle.kts
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> Using cache
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> 5af20961c8c3
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 12/25 : COPY common/src common/src
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> Using cache
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> a4c687aa6fcf
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 13/25 : COPY with-db/common/build.gradle.kts with-db/common/build.gradle.kts
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> Using cache
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> 919c41f539cc
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 14/25 : COPY with-db/common/src with-db/common/src
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> Using cache
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> 0e9cadfcc686
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 15/25 : COPY with-db/exposed-common/build.gradle.kts with-db/exposed-common/build.gradle.kts
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> Using cache
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> a3c36667e7c3
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 16/25 : COPY with-db/exposed-common/src with-db/exposed-common/src
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> Using cache
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> 40f358db3178
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 17/25 : COPY with-db/exposed-vertx-sql-client/build.gradle.kts with-db/exposed-vertx-sql-client/build.gradle.kts
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> Using cache
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> 14d7bd218243
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 18/25 : COPY with-db/exposed-vertx-sql-client/src with-db/exposed-vertx-sql-client/src
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> Using cache
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> bc5e1ee388a6
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 19/25 : RUN gradle --no-daemon with-db:exposed-vertx-sql-client:installDist
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> Using cache
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> a371ac0676a9
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 20/25 : RUN apt-get update && apt-get install -y wget &&     wget -q https://github.com/async-profiler/async-profiler/releases/download/v4.3/async-profiler-4.3-linux-x64.tar.gz &&     tar -xzf async-profiler-4.3-linux-x64.tar.gz -C /opt &&     rm async-profiler-4.3-linux-x64.tar.gz
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> Using cache
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> 1d32dc7b44c7
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 21/25 : EXPOSE 8080
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> Using cache
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> 85c6244c1282
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 22/25 : ENV TRANSACTION_PROVIDER=jdbc
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> Running in 6ccfca59ea6f
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> f816f39232d3
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 23/25 : COPY start-with-profiling.sh /start-with-profiling.sh
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> 5fb63f169a69
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 24/25 : RUN chmod +x /start-with-profiling.sh
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> Running in e2afa3239736
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> a830c2309063
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Step 25/25 : CMD export JAVA_OPTS="     -agentpath:/opt/async-profiler-4.3-linux-x64/lib/libasyncProfiler.so=start,event=cpu,interval=1000000     --enable-native-access=ALL-UNNAMED     --sun-misc-unsafe-memory-access=allow     --add-opens=java.base/java.lang=ALL-UNNAMED     -server     -XX:+UseNUMA     -XX:+UseParallelGC     -XX:+UnlockDiagnosticVMOptions     -XX:+DebugNonSafepoints     -Djava.lang.Integer.IntegerCache.high=10000     -Dvertx.disableMetrics=true     -Dvertx.disableWebsockets=true     -Dvertx.disableContextTimings=true     -Dvertx.disableHttpHeadersValidation=true     -Dvertx.cacheImmutableHttpResponseHeaders=true     -Dvertx.internCommonHttpRequestHeadersToLowerCase=true     -Dio.netty.noUnsafe=false     -Dio.netty.buffer.checkBounds=false     -Dio.netty.buffer.checkAccessible=false     -Dio.netty.iouring.ringSize=16384     " &&     exec /start-with-profiling.sh
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> Running in a306fded89fb
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:  ---> ecc489798c9b
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: [Warning] One or more build-args [BENCHMARK_ENV TFB_TEST_DATABASE TFB_TEST_NAME] were not consumed
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Successfully built ecc489798c9b
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Successfully tagged techempower/tfb.test.vertx-web-kotlinx-exposed-vertx-sql-client-postgresql:latest
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Build time: 4s

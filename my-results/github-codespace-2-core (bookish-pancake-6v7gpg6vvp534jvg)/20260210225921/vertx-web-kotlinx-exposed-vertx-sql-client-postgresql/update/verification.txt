@@ -1,0 +1,15 @@
+--------------------------------------------------------------------------------
+VERIFYING UPDATE
+--------------------------------------------------------------------------------
+   WARN for http://tfb-server:8080/updates?queries=0
+     Invalid Date header, found "Tue, 10 Feb 2026 23:03 GMT", did not match "%a, %d %b %Y %H:%M:%S %Z".
+     See https://github.com/TechEmpower/FrameworkBenchmarks/wiki/Project-Information-Framework-Tests-Overview#specific-test-requirements
+   PASS for http://tfb-server:8080/updates?queries=20
+     Executed queries: 20480/20480
+     See https://github.com/TechEmpower/FrameworkBenchmarks/wiki/Project-Information-Framework-Tests-Overview#specific-test-requirements
+   PASS for http://tfb-server:8080/updates?queries=20
+     Rows read: 10128/10240
+     See https://github.com/TechEmpower/FrameworkBenchmarks/wiki/Project-Information-Framework-Tests-Overview#specific-test-requirements
+   PASS for http://tfb-server:8080/updates?queries=20
+     Rows updated: 10128/10240
+     See https://github.com/TechEmpower/FrameworkBenchmarks/wiki/Project-Information-Framework-Tests-Overview#specific-test-requirements

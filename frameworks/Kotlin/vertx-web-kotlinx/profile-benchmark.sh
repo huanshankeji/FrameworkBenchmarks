@@ -46,7 +46,7 @@ echo "========================================="
 echo "Starting application with ${PROVIDER} provider..."
 ./gradlew :benchmark-runner:run --args="exposed-vertx-sql-client" \
     -Dtransaction.provider=${PROVIDER} \
-    --console=plain --no-daemon 2>&1 | tee /tmp/app-${PROVIDER}.log &
+    --console=plain --no-daemon 2>&1 | tee app-${PROVIDER}.log &
 
 APP_PID=$!
 
@@ -60,7 +60,7 @@ for i in {1..60}; do
     fi
     if [ $i -eq 60 ]; then
         echo "ERROR: Timeout waiting for application to start"
-        tail -50 /tmp/app-${PROVIDER}.log
+        tail -50 app-${PROVIDER}.log
         exit 1
     fi
 done
@@ -71,7 +71,7 @@ sleep 10
 # Check if the application is running
 if ! ps -p $APP_PID > /dev/null 2>&1; then
     echo "ERROR: Gradle process failed"
-    tail -50 /tmp/app-${PROVIDER}.log
+    tail -50 app-${PROVIDER}.log
     exit 1
 fi
 
@@ -90,18 +90,18 @@ echo "Found Java process: $JAVA_PID"
 
 # Start async-profiler 4.3
 echo "Starting async-profiler..."
-$ASPROF_CMD start -e cpu -o flamegraph -f /tmp/profile-${PROVIDER}.html $JAVA_PID
+$ASPROF_CMD start -e cpu -o flamegraph -f profile-${PROVIDER}.html $JAVA_PID
 
 # Wait a bit for profiler to initialize
 sleep 2
 
 # Run wrk benchmarks with queries=20
 echo "Running wrk benchmarks for update test (queries=20)..."
-./run-wrk-benchmarks.sh --type update -d 30 2>&1 | tee /tmp/benchmark-${PROVIDER}.txt
+./run-wrk-benchmarks.sh --type update -d 30 2>&1 | tee benchmark-${PROVIDER}.txt
 
 # Stop profiling
 echo "Stopping async-profiler..."
-$ASPROF_CMD stop -o flamegraph -f /tmp/profile-${PROVIDER}.html $JAVA_PID
+$ASPROF_CMD stop -o flamegraph -f profile-${PROVIDER}.html $JAVA_PID
 
 echo "Stopping application..."
 kill $APP_PID 2>/dev/null || true
@@ -113,7 +113,7 @@ kill -9 $JAVA_PID 2>/dev/null || true
 
 echo ""
 echo "Results saved:"
-echo "  - Flame graph: /tmp/profile-${PROVIDER}.html"
-echo "  - Benchmark results: /tmp/benchmark-${PROVIDER}.txt"
-echo "  - Application log: /tmp/app-${PROVIDER}.log"
+echo "  - Flame graph: profile-${PROVIDER}.html"
+echo "  - Benchmark results: benchmark-${PROVIDER}.txt"
+echo "  - Application log: app-${PROVIDER}.log"
 echo ""

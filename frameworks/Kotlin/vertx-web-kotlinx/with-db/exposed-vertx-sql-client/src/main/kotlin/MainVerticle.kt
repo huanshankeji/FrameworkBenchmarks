@@ -5,9 +5,11 @@ import com.huanshankeji.exposedvertxsqlclient.postgresql.PgDatabaseClientConfig
 import com.huanshankeji.exposedvertxsqlclient.postgresql.vertx.pgclient.createPgConnection
 import database.*
 import io.vertx.pgclient.PgConnection
+import kotlinx.coroutines.delay
 import org.jetbrains.exposed.v1.core.eq
 import org.jetbrains.exposed.v1.core.statements.buildStatement
 import org.jetbrains.exposed.v1.jdbc.select
+import kotlin.time.Duration.Companion.microseconds
 
 @OptIn(ExperimentalEvscApi::class)
 class MainVerticle(val exposedTransactionProvider: StatementPreparationExposedTransactionProvider) :
@@ -38,6 +40,7 @@ class MainVerticle(val exposedTransactionProvider: StatementPreparationExposedTr
             .single().toWorld()
 
     override suspend fun Unit.updateSortedWorlds(sortedWorlds: List<World>) {
+        delay(random.nextInt(10000).microseconds)
         dbClient.executeBatchUpdate(sortedWorlds.map { world ->
             buildStatement {
                 WorldTable.update({ WorldTable.id eq world.id }) {

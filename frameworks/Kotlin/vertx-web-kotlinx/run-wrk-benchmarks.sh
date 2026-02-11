@@ -10,7 +10,7 @@
 set -e
 
 BASE_URL="http://localhost:8080"
-DURATION="15s"
+DURATION=15
 THREADS=32
 CONNECTIONS=512
 

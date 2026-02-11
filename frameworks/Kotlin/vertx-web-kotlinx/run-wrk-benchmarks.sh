@@ -126,7 +126,7 @@ case $TEST_TYPE in
         run_benchmark "Single Database Query" "/db" "application/json"
         ;;
     query)
-        run_benchmark "Multiple Queries (5)" "/queries?queries=5" "application/json"
+        #run_benchmark "Multiple Queries (5)" "/queries?queries=5" "application/json"
         run_benchmark "Multiple Queries (20)" "/queries?queries=20" "application/json"
         ;;
     cached-query)
@@ -134,7 +134,7 @@ case $TEST_TYPE in
         exit 1
         ;;
     update)
-        run_benchmark "Updates (5)" "/updates?queries=5" "application/json"
+        #run_benchmark "Updates (5)" "/updates?queries=5" "application/json"
         run_benchmark "Updates (20)" "/updates?queries=20" "application/json"
         ;;
     fortune)
@@ -144,9 +144,9 @@ case $TEST_TYPE in
         run_benchmark "JSON Serialization" "/json" "application/json"
         run_benchmark "Plaintext" "/plaintext" "text/plain"
         run_benchmark "Single Database Query" "/db" "application/json"
-        run_benchmark "Multiple Queries (5)" "/queries?queries=5" "application/json"
+        #run_benchmark "Multiple Queries (5)" "/queries?queries=5" "application/json"
         run_benchmark "Multiple Queries (20)" "/queries?queries=20" "application/json"
-        run_benchmark "Updates (5)" "/updates?queries=5" "application/json"
+        #run_benchmark "Updates (5)" "/updates?queries=5" "application/json"
         run_benchmark "Updates (20)" "/updates?queries=20" "application/json"
         run_benchmark "Fortunes" "/fortunes" "text/html"
         ;;

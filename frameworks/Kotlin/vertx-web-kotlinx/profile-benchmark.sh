@@ -88,9 +88,30 @@ fi
 
 echo "Found Java process: $JAVA_PID"
 
+# Check perf_event_paranoid setting
+PARANOID_LEVEL=$(cat /proc/sys/kernel/perf_event_paranoid 2>/dev/null || echo "unknown")
+if [ "$PARANOID_LEVEL" != "unknown" ] && [ "$PARANOID_LEVEL" -gt 1 ]; then
+    echo "WARNING: perf_event_paranoid is set to $PARANOID_LEVEL"
+    echo "This may prevent CPU profiling. Consider running:"
+    echo "  sudo sysctl kernel.perf_event_paranoid=-1"
+    echo ""
+    echo "Attempting to profile anyway (may result in empty flame graph)..."
+fi
+
 # Start async-profiler 4.3
 echo "Starting async-profiler..."
-$ASPROF_CMD start -e cpu -o flamegraph -f profile-${PROVIDER}.html $JAVA_PID
+if ! $ASPROF_CMD start -e cpu $JAVA_PID; then
+    echo "ERROR: Failed to start profiler with CPU events"
+    echo "This is likely due to restricted perf_event_paranoid settings."
+    echo ""
+    echo "Trying alternative profiling method (itimer)..."
+    if ! $ASPROF_CMD start -e itimer $JAVA_PID; then
+        echo "ERROR: Failed to start profiler with itimer events"
+        kill $APP_PID 2>/dev/null || true
+        exit 1
+    fi
+    echo "Using itimer profiling (less accurate but works without perf events)"
+fi
 
 # Wait a bit for profiler to initialize
 sleep 2
@@ -101,7 +122,26 @@ echo "Running wrk benchmarks for update test (queries=20)..."
 
 # Stop profiling
 echo "Stopping async-profiler..."
-$ASPROF_CMD stop -o flamegraph -f profile-${PROVIDER}.html $JAVA_PID
+if ! $ASPROF_CMD stop -o flamegraph -f profile-${PROVIDER}.html $JAVA_PID; then
+    echo "WARNING: Failed to stop profiler cleanly"
+    echo "The profile may be incomplete or empty"
+fi
+
+# Check if profile was generated with actual data
+if [ -f "profile-${PROVIDER}.html" ]; then
+    FILE_SIZE=$(wc -c < "profile-${PROVIDER}.html")
+    if [ "$FILE_SIZE" -lt 20000 ]; then
+        echo ""
+        echo "WARNING: Generated profile is very small ($FILE_SIZE bytes)"
+        echo "This usually means no samples were collected."
+        echo "Common causes:"
+        echo "  - perf_event_paranoid is too restrictive (check with: cat /proc/sys/kernel/perf_event_paranoid)"
+        echo "  - Profiler didn't have enough time to collect samples"
+        echo "  - Application wasn't under sufficient load"
+        echo ""
+        echo "See PROFILING-TROUBLESHOOTING.md for solutions"
+    fi
+fi
 
 echo "Stopping application..."
 kill $APP_PID 2>/dev/null || true

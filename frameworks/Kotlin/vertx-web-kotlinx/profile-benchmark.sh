@@ -88,21 +88,17 @@ fi
 
 echo "Found Java process: $JAVA_PID"
 
-# Check perf_event_paranoid setting
-PARANOID_LEVEL=$(cat /proc/sys/kernel/perf_event_paranoid 2>/dev/null || echo "unknown")
-if [ "$PARANOID_LEVEL" != "unknown" ] && [ "$PARANOID_LEVEL" -gt 1 ]; then
-    echo "WARNING: perf_event_paranoid is set to $PARANOID_LEVEL"
-    echo "This may prevent CPU profiling. Consider running:"
-    echo "  sudo sysctl kernel.perf_event_paranoid=-1"
-    echo ""
-    echo "Attempting to profile anyway (may result in empty flame graph)..."
-fi
+# Note: Wall-clock profiling doesn't require perf events
+echo "Note: Using wall-clock profiling mode (doesn't require special perf_event settings)"
+echo ""
 
-# Start async-profiler 4.3
-echo "Starting async-profiler..."
-if ! $ASPROF_CMD start -e cpu $JAVA_PID; then
-    echo "ERROR: Failed to start profiler with CPU events"
-    echo "This is likely due to restricted perf_event_paranoid settings."
+# Start async-profiler 4.3 in wall-clock mode
+echo "Starting async-profiler in wall-clock mode..."
+echo "Wall-clock profiling captures time spent regardless of CPU usage"
+echo "(includes I/O wait, locks, and other blocking operations)"
+echo ""
+if ! $ASPROF_CMD start -e wall $JAVA_PID; then
+    echo "ERROR: Failed to start profiler with wall-clock events"
     echo ""
     echo "Trying alternative profiling method (itimer)..."
     if ! $ASPROF_CMD start -e itimer $JAVA_PID; then
@@ -110,7 +106,7 @@ if ! $ASPROF_CMD start -e cpu $JAVA_PID; then
         kill $APP_PID 2>/dev/null || true
         exit 1
     fi
-    echo "Using itimer profiling (less accurate but works without perf events)"
+    echo "Using itimer profiling (similar to wall-clock)"
 fi
 
 # Wait a bit for profiler to initialize

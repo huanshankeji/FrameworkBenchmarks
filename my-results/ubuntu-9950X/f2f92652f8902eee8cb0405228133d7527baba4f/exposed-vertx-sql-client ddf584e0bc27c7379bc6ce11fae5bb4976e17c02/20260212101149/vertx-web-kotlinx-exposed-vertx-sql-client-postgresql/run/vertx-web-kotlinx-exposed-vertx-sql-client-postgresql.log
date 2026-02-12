@@ -1,0 +1,40 @@
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: [0.000s][warning][os] NUMA support disabled: Failed to initialize libnuma
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: SLF4J: No SLF4J providers were found.
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: SLF4J: Defaulting to no-operation (NOP) logger implementation
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 12, 2026 10:15:35 AM CommonMainKt commonRunVertxServer
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: Vert.x-Web Kotlinx with Exposed Vert.x SQL Client (and PostgreSQL) benchmark server starting...
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: Feb 12, 2026 10:15:36 AM CommonMainKt commonRunVertxServer
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: INFO: Vert.x-Web Kotlinx with Exposed Vert.x SQL Client (and PostgreSQL) benchmark server started.
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: thread: vert.x-eventloop-thread-28}, transaction (`newTransaction`): org.jetbrains.exposed.v1.jdbc.JdbcTransaction@81d7856
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: thread: vert.x-eventloop-thread-23}, transaction (`newTransaction`): org.jetbrains.exposed.v1.jdbc.JdbcTransaction@690fccae
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: thread: vert.x-eventloop-thread-3}, transaction (`newTransaction`): org.jetbrains.exposed.v1.jdbc.JdbcTransaction@4bc9d356
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: thread: vert.x-eventloop-thread-17}, transaction (`newTransaction`): org.jetbrains.exposed.v1.jdbc.JdbcTransaction@76d5324b
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: thread: vert.x-eventloop-thread-9}, transaction (`newTransaction`): org.jetbrains.exposed.v1.jdbc.JdbcTransaction@618245a3
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: thread: vert.x-eventloop-thread-19}, transaction (`newTransaction`): org.jetbrains.exposed.v1.jdbc.JdbcTransaction@3634b596
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: thread: vert.x-eventloop-thread-21}, transaction (`newTransaction`): org.jetbrains.exposed.v1.jdbc.JdbcTransaction@55a71586
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: thread: vert.x-eventloop-thread-31}, transaction (`newTransaction`): org.jetbrains.exposed.v1.jdbc.JdbcTransaction@136c7a95
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: thread: vert.x-eventloop-thread-6}, transaction (`newTransaction`): org.jetbrains.exposed.v1.jdbc.JdbcTransaction@5a1c85d2
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: thread: vert.x-eventloop-thread-4}, transaction (`newTransaction`): org.jetbrains.exposed.v1.jdbc.JdbcTransaction@8b8ef6b
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: thread: vert.x-eventloop-thread-15}, transaction (`newTransaction`): org.jetbrains.exposed.v1.jdbc.JdbcTransaction@6c274ee0
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: thread: vert.x-eventloop-thread-27}, transaction (`newTransaction`): org.jetbrains.exposed.v1.jdbc.JdbcTransaction@510a63a3
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: thread: vert.x-eventloop-thread-13}, transaction (`newTransaction`): org.jetbrains.exposed.v1.jdbc.JdbcTransaction@7c04163
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: thread: vert.x-eventloop-thread-29}, transaction (`newTransaction`): org.jetbrains.exposed.v1.jdbc.JdbcTransaction@73a2110a
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: thread: vert.x-eventloop-thread-30}, transaction (`newTransaction`): org.jetbrains.exposed.v1.jdbc.JdbcTransaction@36c295a3
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: thread: vert.x-eventloop-thread-8}, transaction (`newTransaction`): org.jetbrains.exposed.v1.jdbc.JdbcTransaction@22848376
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: thread: vert.x-eventloop-thread-5}, transaction (`newTransaction`): org.jetbrains.exposed.v1.jdbc.JdbcTransaction@25e16459
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: thread: vert.x-eventloop-thread-26}, transaction (`newTransaction`): org.jetbrains.exposed.v1.jdbc.JdbcTransaction@5685a8ed
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: thread: vert.x-eventloop-thread-22}, transaction (`newTransaction`): org.jetbrains.exposed.v1.jdbc.JdbcTransaction@13062ed8
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: thread: vert.x-eventloop-thread-0}, transaction (`newTransaction`): org.jetbrains.exposed.v1.jdbc.JdbcTransaction@73b4e273
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: thread: vert.x-eventloop-thread-18}, transaction (`newTransaction`): org.jetbrains.exposed.v1.jdbc.JdbcTransaction@5e33fedf
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: thread: vert.x-eventloop-thread-24}, transaction (`newTransaction`): org.jetbrains.exposed.v1.jdbc.JdbcTransaction@359698ba
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: thread: vert.x-eventloop-thread-1}, transaction (`newTransaction`): org.jetbrains.exposed.v1.jdbc.JdbcTransaction@5f81da9c
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: thread: vert.x-eventloop-thread-2}, transaction (`newTransaction`): org.jetbrains.exposed.v1.jdbc.JdbcTransaction@73f7d50c
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: thread: vert.x-eventloop-thread-14}, transaction (`newTransaction`): org.jetbrains.exposed.v1.jdbc.JdbcTransaction@697cf81c
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: thread: vert.x-eventloop-thread-11}, transaction (`newTransaction`): org.jetbrains.exposed.v1.jdbc.JdbcTransaction@400ae052
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: thread: vert.x-eventloop-thread-12}, transaction (`newTransaction`): org.jetbrains.exposed.v1.jdbc.JdbcTransaction@4668d373
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: thread: vert.x-eventloop-thread-16}, transaction (`newTransaction`): org.jetbrains.exposed.v1.jdbc.JdbcTransaction@1ce064dc
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: thread: vert.x-eventloop-thread-7}, transaction (`newTransaction`): org.jetbrains.exposed.v1.jdbc.JdbcTransaction@22c826e2
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: thread: vert.x-eventloop-thread-10}, transaction (`newTransaction`): org.jetbrains.exposed.v1.jdbc.JdbcTransaction@2d50dd
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: thread: vert.x-eventloop-thread-25}, transaction (`newTransaction`): org.jetbrains.exposed.v1.jdbc.JdbcTransaction@1d000a9d
+vertx-web-kotlinx-exposed-vertx-sql-client-postgresql: thread: vert.x-eventloop-thread-20}, transaction (`newTransaction`): org.jetbrains.exposed.v1.jdbc.JdbcTransaction@2f278ab1

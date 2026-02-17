@@ -1,0 +1,28 @@
+--------------------------------------------------------------------------------
+Benchmarking ktor-exposed-r2dbc-dsl
+--------------------------------------------------------------------------------
+BENCHMARKING DB ... 
+Benchmark results:
+Complete
+BENCHMARKING QUERY ... 
+Benchmark results:
+Complete
+BENCHMARKING UPDATE ... 
+Benchmark results:
+Complete
+BENCHMARKING FORTUNE ... 
+Benchmark results:
+Complete
+ktor-exposed-r2dbc-dsl: Benchmarking time: 13m 20s
+wrk: Build time: 18s
+techempower/postgres:latest: Build time: 1m 36s
+ktor-exposed-r2dbc-dsl: Build time: 4m 27s
+ktor-exposed-r2dbc-dsl: Time starting database: 2s
+ktor-exposed-r2dbc-dsl: Time until accepting requests: 3s
+ktor-exposed-r2dbc-dsl: Verify time: 14m 11s
+ktor-exposed-r2dbc-dsl: Total test time: 18m 52s
+tfb: Total time building so far: 6m 21s
+tfb: Total time verifying so far: 14m 11s
+tfb: Total time benchmarking so far: 13m 20s
+tfb: Total execution time so far: 20m 47s
+ktor-exposed-r2dbc-dsl: Total TCP sockets: 162

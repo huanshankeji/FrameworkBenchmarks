@@ -7,10 +7,10 @@ The figures below use the last `db/raw.txt` result (32 threads and 512 connectio
 | Variant | Final `Requests/sec` |
 | --- | ---: |
 | `PgConnection` | `578825.68` |
-| `PgBuilder.client()` | `339649.29` |
-| `PgBuilder.client().with(PoolOptions().setMaxSize(1))` | `338675.51` |
+| `PgBuilder.client()` | `339649.29` / `334115.11` |
+| `PgBuilder.client().with(PoolOptions().setMaxSize(1))` | `338675.51` / `508843.73` |
 | `PgBuilder.client().with(PoolOptions().setMaxSize(2))` | `543949.73` |
 | `PgBuilder.client().with(PoolOptions().setMaxSize(4))` | `569224.68` |
 | `PgBuilder.pool().with(PoolOptions().setMaxSize(4))` | `339562.52` |
 
-According to the results, he default pool size for `PgBuilder.client()` seems to be `1` instead of `4` as in `PoolOptions.DEFAULT_MAX_SIZE`.
+According to the results, the default pool size for `PgBuilder.client()` seems to be `1` instead of `4` as in `PoolOptions.DEFAULT_MAX_SIZE`.

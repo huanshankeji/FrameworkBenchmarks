@@ -2,6 +2,7 @@ import database.*
 import io.vertx.kotlin.coroutines.coAwait
 import io.vertx.kotlin.pgclient.pgConnectOptionsOf
 import io.vertx.pgclient.PgBuilder
+import io.vertx.sqlclient.PoolOptions
 import io.vertx.sqlclient.SqlClient
 import io.vertx.sqlclient.Tuple
 
@@ -12,7 +13,8 @@ class MainVerticle : CommonWithDbVerticle<SqlClient, Unit>(),
 
     override suspend fun initDbClient(): SqlClient =
         // Create a pipelined SQL client with parameters
-        PgBuilder.client()
+        PgBuilder.client() //.pool()
+            .with(PoolOptions().setMaxSize(4))
             .connectingTo(
                 pgConnectOptionsOf(
                     database = DATABASE,

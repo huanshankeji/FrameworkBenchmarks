@@ -22,7 +22,7 @@ class MainVerticle : CommonWithDbVerticle<PgConnection, Unit>(),
                 user = USER,
                 password = PASSWORD,
                 cachePreparedStatements = true,
-                //pipeliningLimit = 256
+                pipeliningLimit = 1
             )
         ).coAwait().apply {
             selectWorldQuery = preparedQuery(SELECT_WORLD_SQL)

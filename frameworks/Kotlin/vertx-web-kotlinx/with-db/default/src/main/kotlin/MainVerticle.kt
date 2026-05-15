@@ -33,7 +33,9 @@ class MainVerticle : CommonWithDbVerticle<PgConnection, Unit>(),
     suspend fun <T> withTransaction(function: suspend (SqlConnection) -> T): T {
         val transaction = dbClient.begin().coAwait()
         return try {
-            function(dbClient)
+            val result = function(dbClient)
+            transaction.commit().coAwait()
+            result
         } catch (e: Exception) {
             try {
                 transaction.rollback().coAwait()

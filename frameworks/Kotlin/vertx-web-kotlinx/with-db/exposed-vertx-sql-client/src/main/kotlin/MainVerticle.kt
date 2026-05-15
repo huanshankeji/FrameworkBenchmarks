@@ -2,33 +2,37 @@ import com.huanshankeji.exposedvertxsqlclient.DatabaseClient
 import com.huanshankeji.exposedvertxsqlclient.ExperimentalEvscApi
 import com.huanshankeji.exposedvertxsqlclient.JdbcTransactionExposedTransactionProvider
 import com.huanshankeji.exposedvertxsqlclient.postgresql.PgDatabaseClientConfig
-import com.huanshankeji.exposedvertxsqlclient.postgresql.vertx.pgclient.createPgConnection
 import database.*
-import io.vertx.pgclient.PgConnection
+import io.vertx.kotlin.pgclient.pgConnectOptionsOf
+import io.vertx.pgclient.PgBuilder
+import io.vertx.sqlclient.SqlClient
 import org.jetbrains.exposed.v1.core.eq
 import org.jetbrains.exposed.v1.core.statements.buildStatement
 import org.jetbrains.exposed.v1.jdbc.Database
 import org.jetbrains.exposed.v1.jdbc.select
 
 @OptIn(ExperimentalEvscApi::class)
-class MainVerticle(val exposedDatabase: Database) : CommonWithDbVerticle<DatabaseClient<PgConnection>, Unit>(),
-    CommonWithDbVerticleI.ParallelOrPipelinedSelectWorlds<DatabaseClient<PgConnection>, Unit>,
-    CommonWithDbVerticleI.WithoutTransaction<DatabaseClient<PgConnection>> {
-    // kept in case we support generating and reusing `PreparedQuery`
-    /*
-    lateinit var selectWorldQuery: PreparedQuery<RowSet<Row>>
-    lateinit var selectFortuneQuery: PreparedQuery<RowSet<Row>>
-    lateinit var updateWorldQuery: PreparedQuery<RowSet<Row>>
-    */
+class MainVerticle(val exposedDatabase: Database) : CommonWithDbVerticle<DatabaseClient<SqlClient>, Unit>(),
+    CommonWithDbVerticleI.ParallelOrPipelinedSelectWorlds<DatabaseClient<SqlClient>, Unit>,
+    CommonWithDbVerticleI.WithoutTransaction<DatabaseClient<SqlClient>> {
 
-    override suspend fun initDbClient(): DatabaseClient<PgConnection> {
+    override suspend fun initDbClient(): DatabaseClient<SqlClient> {
         // Parameters are copied from the "vertx-web" and "vertx" portions.
-        val pgConnection = createPgConnection(vertx, connectionConfig, {
-            cachePreparedStatements = true
-            pipeliningLimit = 256
-        })
+        val sqlClient = PgBuilder.client()
+            .connectingTo(
+                pgConnectOptionsOf(
+                    database = DATABASE,
+                    host = HOST,
+                    user = USER,
+                    password = PASSWORD,
+                    cachePreparedStatements = true,
+                    pipeliningLimit = 256
+                )
+            )
+            .build()
+
         return DatabaseClient(
-            pgConnection,
+            sqlClient,
             PgDatabaseClientConfig(JdbcTransactionExposedTransactionProvider(exposedDatabase), validateBatch = false)
         )
     }

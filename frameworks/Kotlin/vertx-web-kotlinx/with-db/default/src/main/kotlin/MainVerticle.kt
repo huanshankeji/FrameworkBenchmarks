@@ -1,35 +1,36 @@
 import database.*
+import io.vertx.core.Promise
 import io.vertx.kotlin.coroutines.coAwait
 import io.vertx.kotlin.pgclient.pgConnectOptionsOf
-import io.vertx.pgclient.PgConnection
-import io.vertx.sqlclient.*
+import io.vertx.pgclient.PgBuilder
+import io.vertx.sqlclient.Pool
+import io.vertx.sqlclient.SqlConnection
+import io.vertx.sqlclient.Tuple
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 // `PgConnection`s as used in the "vertx" portion offers better performance than `PgPool`s.
-class MainVerticle : CommonWithDbVerticle<PgConnection, Unit>(),
-    CommonWithDbVerticleI.ParallelOrPipelinedSelectWorlds<PgConnection, Unit>,
-    CommonWithDbVerticleI.WithoutTransaction<PgConnection> {
-    lateinit var selectWorldQuery: PreparedQuery<RowSet<Row>>
-    lateinit var selectFortuneQuery: PreparedQuery<RowSet<Row>>
-    lateinit var updateWorldQuery: PreparedQuery<RowSet<Row>>
+class MainVerticle : CommonWithDbVerticle<Pool, Unit>(),
+    CommonWithDbVerticleI.ParallelOrPipelinedSelectWorlds<Pool, Unit>,
+    CommonWithDbVerticleI.WithoutTransaction<Pool> {
 
-    override suspend fun initDbClient(): PgConnection =
+    override suspend fun initDbClient(): Pool =
         // Parameters are copied from the "vertx-web" and "vertx" portions.
-        PgConnection.connect(
-            vertx,
-            pgConnectOptionsOf(
-                database = DATABASE,
-                host = HOST,
-                user = USER,
-                password = PASSWORD,
-                cachePreparedStatements = true,
-                //pipeliningLimit = 256
+        PgBuilder.pool()
+            .using(vertx)
+            .connectingTo(
+                pgConnectOptionsOf(
+                    database = DATABASE,
+                    host = HOST,
+                    user = USER,
+                    password = PASSWORD,
+                    cachePreparedStatements = true,
+                    //pipeliningLimit = 256
+                )
             )
-        ).coAwait().apply {
-            selectWorldQuery = preparedQuery(SELECT_WORLD_SQL)
-            selectFortuneQuery = preparedQuery(SELECT_FORTUNE_SQL)
-            updateWorldQuery = preparedQuery(UPDATE_WORLD_SQL)
-        }
+            .build()
 
+    /*
     suspend fun <T> withTransaction(function: suspend (SqlConnection) -> T): T {
         val transaction = dbClient.begin().coAwait()
         return try {
@@ -43,6 +44,21 @@ class MainVerticle : CommonWithDbVerticle<PgConnection, Unit>(),
             throw e
         }
     }
+    */
+
+    suspend fun <T> withTransaction(function: suspend (SqlConnection) -> T): T =
+        dbClient.withTransaction {
+            val promise = Promise.promise<T>()
+            launch(Dispatchers.Unconfined) {
+                try {
+                    promise.complete(function(it))
+                } catch (t: Throwable) {
+                    promise.fail(t)
+                }
+            }
+            promise.future()
+        }.coAwait()
+
 
     override suspend fun Unit.selectWorld(id: Int) =
         withTransaction {
@@ -59,7 +75,8 @@ class MainVerticle : CommonWithDbVerticle<PgConnection, Unit>(),
 
     override suspend fun Unit.updateSortedWorlds(sortedWorlds: List<World>) {
         withTransaction {
-            it.preparedQuery(UPDATE_WORLD_SQL).executeBatch(sortedWorlds.map { Tuple.of(it.randomNumber, it.id) }).coAwait()
+            it.preparedQuery(UPDATE_WORLD_SQL)
+                .executeBatch(sortedWorlds.map { Tuple.of(it.randomNumber, it.id) }).coAwait()
         }
     }
 }

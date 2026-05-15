@@ -4,6 +4,7 @@ import io.vertx.kotlin.coroutines.coAwait
 import io.vertx.kotlin.pgclient.pgConnectOptionsOf
 import io.vertx.pgclient.PgBuilder
 import io.vertx.sqlclient.Pool
+import io.vertx.sqlclient.PoolOptions
 import io.vertx.sqlclient.SqlConnection
 import io.vertx.sqlclient.Tuple
 import kotlinx.coroutines.Dispatchers
@@ -28,6 +29,7 @@ class MainVerticle : CommonWithDbVerticle<Pool, Unit>(),
                     //pipeliningLimit = 256
                 )
             )
+            .with(PoolOptions().setMaxSize(4))
             .build()
 
     /*

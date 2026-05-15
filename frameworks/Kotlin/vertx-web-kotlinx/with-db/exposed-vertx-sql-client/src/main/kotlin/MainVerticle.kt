@@ -2,9 +2,8 @@ import com.huanshankeji.exposedvertxsqlclient.DatabaseClient
 import com.huanshankeji.exposedvertxsqlclient.ExperimentalEvscApi
 import com.huanshankeji.exposedvertxsqlclient.JdbcTransactionExposedTransactionProvider
 import com.huanshankeji.exposedvertxsqlclient.postgresql.PgDatabaseClientConfig
+import com.huanshankeji.exposedvertxsqlclient.postgresql.vertx.pgclient.createPgClient
 import database.*
-import io.vertx.kotlin.pgclient.pgConnectOptionsOf
-import io.vertx.pgclient.PgBuilder
 import io.vertx.sqlclient.SqlClient
 import org.jetbrains.exposed.v1.core.eq
 import org.jetbrains.exposed.v1.core.statements.buildStatement
@@ -18,18 +17,10 @@ class MainVerticle(val exposedDatabase: Database) : CommonWithDbVerticle<Databas
 
     override suspend fun initDbClient(): DatabaseClient<SqlClient> {
         // Parameters are copied from the "vertx-web" and "vertx" portions.
-        val sqlClient = PgBuilder.client()
-            .connectingTo(
-                pgConnectOptionsOf(
-                    database = DATABASE,
-                    host = HOST,
-                    user = USER,
-                    password = PASSWORD,
-                    cachePreparedStatements = true,
-                    pipeliningLimit = 256
-                )
-            )
-            .build()
+        val sqlClient = createPgClient(vertx, connectionConfig, {
+            cachePreparedStatements = true
+            pipeliningLimit = 256
+        })
 
         return DatabaseClient(
             sqlClient,

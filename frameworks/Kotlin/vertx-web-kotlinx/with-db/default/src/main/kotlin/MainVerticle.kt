@@ -5,7 +5,7 @@ import io.vertx.pgclient.PgBuilder
 import io.vertx.sqlclient.SqlClient
 import io.vertx.sqlclient.Tuple
 
-// Using pipelined `SqlClient` created with `PgBuilder.client()` for better performance
+// Using pipelined `SqlClient` created with `PgBuilder.client()` for testing
 class MainVerticle : CommonWithDbVerticle<SqlClient, Unit>(),
     CommonWithDbVerticleI.ParallelOrPipelinedSelectWorlds<SqlClient, Unit>,
     CommonWithDbVerticleI.WithoutTransaction<SqlClient> {
@@ -23,6 +23,7 @@ class MainVerticle : CommonWithDbVerticle<SqlClient, Unit>(),
                     pipeliningLimit = 256
                 )
             )
+            .using(vertx)
             .build()
 
     override suspend fun Unit.selectWorld(id: Int) =

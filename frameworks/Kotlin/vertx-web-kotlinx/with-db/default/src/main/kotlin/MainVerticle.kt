@@ -2,10 +2,7 @@ import database.*
 import io.vertx.kotlin.coroutines.coAwait
 import io.vertx.kotlin.pgclient.pgConnectOptionsOf
 import io.vertx.pgclient.PgConnection
-import io.vertx.sqlclient.PreparedQuery
-import io.vertx.sqlclient.Row
-import io.vertx.sqlclient.RowSet
-import io.vertx.sqlclient.Tuple
+import io.vertx.sqlclient.*
 
 // `PgConnection`s as used in the "vertx" portion offers better performance than `PgPool`s.
 class MainVerticle : CommonWithDbVerticle<PgConnection, Unit>(),
@@ -25,7 +22,7 @@ class MainVerticle : CommonWithDbVerticle<PgConnection, Unit>(),
                 user = USER,
                 password = PASSWORD,
                 cachePreparedStatements = true,
-                pipeliningLimit = 256
+                //pipeliningLimit = 256
             )
         ).coAwait().apply {
             selectWorldQuery = preparedQuery(SELECT_WORLD_SQL)
@@ -33,17 +30,36 @@ class MainVerticle : CommonWithDbVerticle<PgConnection, Unit>(),
             updateWorldQuery = preparedQuery(UPDATE_WORLD_SQL)
         }
 
+    suspend fun <T> withTransaction(function: suspend (SqlConnection) -> T): T {
+        val transaction = dbClient.begin().coAwait()
+        return try {
+            function(dbClient)
+        } catch (e: Exception) {
+            try {
+                transaction.rollback().coAwait()
+            } catch (rollbackE: Exception) {
+                e.addSuppressed(rollbackE)
+            }
+            throw e
+        }
+    }
 
     override suspend fun Unit.selectWorld(id: Int) =
-        selectWorldQuery.execute(Tuple.of(id)).coAwait()
-            .single().toWorld()
+        withTransaction {
+            it.preparedQuery(SELECT_WORLD_SQL).execute(Tuple.of(id)).coAwait()
+                .single().toWorld()
+        }
 
     override suspend fun Unit.selectFortunesInto(fortunes: MutableList<Fortune>) {
-        selectFortuneQuery.execute().coAwait()
-            .mapTo(fortunes) { it.toFortune() }
+        withTransaction {
+            it.preparedQuery(SELECT_FORTUNE_SQL).execute().coAwait()
+                .mapTo(fortunes) { it.toFortune() }
+        }
     }
 
     override suspend fun Unit.updateSortedWorlds(sortedWorlds: List<World>) {
-        updateWorldQuery.executeBatch(sortedWorlds.map { Tuple.of(it.randomNumber, it.id) }).coAwait()
+        withTransaction {
+            it.preparedQuery(UPDATE_WORLD_SQL).executeBatch(sortedWorlds.map { Tuple.of(it.randomNumber, it.id) }).coAwait()
+        }
     }
 }
